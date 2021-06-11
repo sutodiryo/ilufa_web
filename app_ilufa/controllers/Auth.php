@@ -87,7 +87,6 @@ class Auth extends CI_Controller
     }
   }
 
-
   function register()
   {
     $this->reg(0);
