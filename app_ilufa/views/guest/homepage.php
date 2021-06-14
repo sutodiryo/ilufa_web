@@ -4,12 +4,12 @@
 <head>
     <title>lufa 168 | Official Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Template by Colorlib" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-    <meta name="author" content="Colorlib" />
+    <meta name="description" content="lufa 168" />
+    <meta name="keywords" content="Ilufa 168, Ilufa, Ilufa Accesories" />
+    <meta name="author" content="Ilufa" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo GUEST ?>images/favicon.png" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/clear.css' />
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/common.css' />
@@ -654,7 +654,7 @@
                     <div class="clear"></div>
                 </div>
                 <div class="full-width">
-                    <iframe src="<?php echo GUEST ?>https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="clear"></div>

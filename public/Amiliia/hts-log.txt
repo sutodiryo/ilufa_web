@@ -1,0 +1,78 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 12 Jun 2021 11:58:08 at http://abcgomel.ru/amilia/index.html?storefront=envato-elements +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://abcgomel.ru/amilia/index.html?storefront=envato-elements -O1 "D:\Web\htdocs\template\winhttrack\Amiliia" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:00:29	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/favicon.ico (from abcgomel.ru/amilia/index.html?storefront=envato-elements)
+12:11:54	Warning: 	file not stored in cache due to bogus state (broken size, expected 3877200 got 2373640): abcgomel.ru/amilia/video/woman_sun.webm
+12:11:55	Warning: 	file not stored in cache due to bogus state (broken size, expected 2908963 got 2098104): abcgomel.ru/amilia/video/video-slide-2.webm
+12:11:55	Warning: 	file not stored in cache due to bogus state (broken size, expected 8181792 got 2395384): abcgomel.ru/amilia/video/woman_sun.mp4
+12:12:45	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/shortcodes.html (from abcgomel.ru/amilia/index.html?storefront=envato-elements)
+12:15:41	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/blog-single-facebook.html (from abcgomel.ru/amilia/index.html?storefront=envato-elements)
+12:15:44	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/blog-large-images.html (from abcgomel.ru/amilia/index.html?storefront=envato-elements)
+12:15:44	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/fonts/glyphicons-halflings-regular.eot (from abcgomel.ru/amilia/css/bootstrap.min.css)
+12:15:56	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/rs-plugin/assets/small_right_boxed.png (from abcgomel.ru/amilia/rs-plugin/css/settings.css)
+12:15:56	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/rs-plugin/assets/arrowright.png (from abcgomel.ru/amilia/rs-plugin/css/settings.css)
+12:17:11	Warning: 	Moved Permanently for https://sliderrevolution.com/robots.txt
+12:17:11	Warning: 	Redirected link is identical because of 'URL Hack' option: https://sliderrevolution.com/robots.txt and https://www.sliderrevolution.com/robots.txt
+12:17:11	Warning: 	Warning moved treated for https://sliderrevolution.com/robots.txt (real one is https://www.sliderrevolution.com/robots.txt)
+12:17:11	Warning: 	Moved Permanently for https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave21.png
+12:17:11	Warning: 	File has moved from https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave21.png to https://www.sliderrevolution.com/
+12:17:11	Warning: 	Moved Permanently for https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave11.png
+12:17:11	Warning: 	File has moved from https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave11.png to https://www.sliderrevolution.com/
+12:17:11	Warning: 	Moved Permanently for https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave3.png
+12:17:11	Warning: 	File has moved from https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave3.png to https://www.sliderrevolution.com/
+12:17:11	Warning: 	Moved Permanently for https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave4.png
+12:17:11	Warning: 	File has moved from https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave4.png to https://www.sliderrevolution.com/
+12:17:11	Warning: 	Moved Permanently for https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave51.png
+12:17:11	Warning: 	File has moved from https://sliderrevolution.com/?utm_source=themepunch.com&utm_medium=rdvisit/wp-content/uploads/2014/05/wave51.png to https://www.sliderrevolution.com/
+12:17:11	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/fonts/ElegantIcons.eot (from abcgomel.ru/amilia/css/icons-fonts.css)
+12:17:19	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/fonts/fontawesome-webfont.woff?v=4.2.0 (from abcgomel.ru/amilia/css/icons-fonts.css)
+12:17:28	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/fonts/fontawesome-webfont.svg?v=4.2.0 (from abcgomel.ru/amilia/css/icons-fonts.css)
+12:17:32	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/fonts/Oswald-Bold-webfont.ttf (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/caret.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/price-dash.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/box-icons.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/reade-more-bg.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/list-icons.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/icon-get-theme.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/arrow-rm-white@2x.png (from abcgomel.ru/amilia/css/style.css)
+12:17:34	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/next-extra-small-black@2x.png (from abcgomel.ru/amilia/css/style.css)
+12:17:35	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/device.png (from abcgomel.ru/amilia/index2.html)
+12:17:36	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/revo-slider/jump-men.png (from abcgomel.ru/amilia/index3.html)
+12:17:36	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/js/jquery.imagesloaded.min.js (from abcgomel.ru/amilia/index3.html)
+12:17:41	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/js/jquery.flexslider.js (from abcgomel.ru/amilia/index4.html)
+12:17:41	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/revo-slider/newyorkbg.jpg (from abcgomel.ru/amilia/index5.html)
+12:17:43	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/css/flexslider-for-posts.css (from abcgomel.ru/amilia/index-blog.html)
+12:17:44	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-full-big-1.jpg (from abcgomel.ru/amilia/index-blog.html)
+12:18:03	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-full-1.jpg (from abcgomel.ru/amilia/index-blog.html)
+12:18:11	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-full-6.jpg (from abcgomel.ru/amilia/index-blog.html)
+12:18:38	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-wide-3.jpg (from abcgomel.ru/amilia/index-blog-2.html)
+12:18:46	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-wide-5.jpg (from abcgomel.ru/amilia/index-blog-2.html)
+12:18:47	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-wide-6.jpg (from abcgomel.ru/amilia/index-blog-2.html)
+12:18:54	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-sqr-3-popular.jpg (from abcgomel.ru/amilia/index-blog-2.html)
+12:18:55	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-sqr-6-popular.jpg (from abcgomel.ru/amilia/index-blog-2.html)
+12:18:56	Warning: 	Retry after error -4 (Incorrect length (2395384 Bytes, 8181792 expected)) at link abcgomel.ru/amilia/video/woman_sun.mp4 (from abcgomel.ru/amilia/index-video.html)
+12:18:57	Warning: 	Retry after error -4 (Incorrect length (2373640 Bytes, 3877200 expected)) at link abcgomel.ru/amilia/video/woman_sun.webm (from abcgomel.ru/amilia/index-video.html)
+12:22:32	Warning: 	Retry after error -4 (Incorrect length (2098104 Bytes, 2908963 expected)) at link abcgomel.ru/amilia/video/video-slide-2.webm (from abcgomel.ru/amilia/index-video.html)
+12:26:56	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/js/jquery.countdown.min.js (from abcgomel.ru/amilia/coming-soon.html)
+12:26:56	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/blog.html (from abcgomel.ru/amilia/404.html)
+12:26:56	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/port-big-2.jpg (from abcgomel.ru/amilia/portfolio-2-col.html)
+12:26:56	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/port-wide-6.jpg (from abcgomel.ru/amilia/portfolio-timeline.html)
+12:26:57	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/js/jflickrfeed.min.js (from abcgomel.ru/amilia/portfolio-single-default.html)
+12:26:59	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/port-single-2.jpg (from abcgomel.ru/amilia/portfolio-single-slider.html)
+12:26:59	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/blog-sqr-7.jpg (from abcgomel.ru/amilia/blog-masonry.html)
+12:27:05	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/rs-plugin/assets/small_right_boxed.png (from abcgomel.ru/amilia/rs-plugin/css/settings.css)
+12:27:06	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/fonts/Oswald-Bold-webfont.ttf (from abcgomel.ru/amilia/css/style.css)
+12:27:06	Error: 	"Not Found" (404) at link abcgomel.ru/amilia/images/img/sliders/pattern.png (from abcgomel.ru/amilia/css/flexslider.css)
+12:30:07	Warning: 	Retry after error -4 (Incorrect length (6442160 Bytes, 8181792 expected)) at link abcgomel.ru/amilia/video/woman_sun.mp4 (from abcgomel.ru/amilia/index-video.html)
+12:30:07	Warning: 	Retry after error -4 (No data (connection closed)) at link abcgomel.ru/amilia/images/content/gmap-bg.jpg (from abcgomel.ru/amilia/shortcodes.html)
+12:30:07	Error: 	"Connect Error" (-4) after 2 retries at link abcgomel.ru/amilia/video/woman_sun.mp4 (from abcgomel.ru/amilia/index-video.html)
+12:30:07	Warning: 	Retry after error -4 (Connect Error) at link abcgomel.ru/amilia/images/content/gmap-bg.jpg (from abcgomel.ru/amilia/shortcodes.html)
+12:30:07	Error: 	"Connect Error" (-4) after 2 retries at link abcgomel.ru/amilia/images/content/gmap-bg.jpg (from abcgomel.ru/amilia/shortcodes.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 31 minutes 59 seconds : 460 links scanned, 402 files written (34258118 bytes overall) [36470736 bytes received at 19005 bytes/sec], 5839076 bytes transferred using HTTP compression in 122 files, ratio 24%, 4.0 requests per connection
+(11 errors, 56 warnings, 0 messages)
