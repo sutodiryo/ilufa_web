@@ -57,7 +57,7 @@ body a:hover {
 .menu-wrapper {
     transition: background-color .2s linear;
     z-index: 99 !important;
-    background-color: #221C5A;
+    background-color: #000000;
     width: 100% !important;
     top: 0;
     position: fixed;
@@ -127,7 +127,7 @@ body a:hover {
 }
 
 .section-title-holder {
-    background-color: #32DB8A;
+    background-color: #FC6500;
     width: 370px;
     height: 370px;
     z-index: 2;
@@ -135,7 +135,7 @@ body a:hover {
 
 .section-num span {
     margin-left: -64px;
-    color: #55B286;
+    color: #fca400;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 180px;
@@ -191,7 +191,7 @@ body a:hover {
     line-height: 100%;
     text-transform: uppercase;
     margin-top: -75px;
-    color: #221c5a;
+    color: #1F1F1F;
 }
 
 .extra-content-left {
@@ -226,13 +226,33 @@ body a:hover {
 .intro-page {
     padding-bottom: 170px;
     min-height: calc(100vh - 170px);
-    background-color: #221c5a;
-    background-image: url(demo-images/background_img_01b.jpg);
+    background-color: #1F1F1F;
+    /* background-image: url(); */
     background-repeat: repeat;
     background-position: center top;
     background-size: cover;
     z-index: 10;
+
+    /*
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -97;
+    */
 }
+
+.video-foreground,
+        .intro-page iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
 
 .top-logo {
     width: 160px !important;
@@ -278,16 +298,16 @@ h1.big-title {
 /* SERVICE SECTION */
 
 #services {
-    background-color: #221c5a;
+    background-color: #1F1F1F;
     z-index: 9;
 }
 
 #services .section-title-holder {
-    background-color: #32DB8A
+    background-color: #FC6500
 }
 
 #services .section-title-holder span {
-    color: #55B286;
+    color: #fca400;
 }
 
 .service-holder {
@@ -321,7 +341,7 @@ h1.big-title {
 /* PORTFOLIO SECTION */
 
 #portfolio {
-    background-color: #221C5A;
+    background-color: #1F1F1F;
     background-image: url("demo-images/background_img_02.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -946,7 +966,7 @@ span.contact-form-not-valid-tip {
 /* FOOTER */
 
 footer {
-    background-color: #221C5A;
+    background-color: #1F1F1F;
 }
 
 .footer {
@@ -983,7 +1003,7 @@ footer {
 /* SINGLE PORTFOLIO PAGE */
 
 #portfolio-1 {
-    background-color: #221c5a;
+    background-color: #1F1F1F;
     background-image: url("demo-images/background_img_05b.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -991,7 +1011,7 @@ footer {
 }
 
 #portfolio-2 {
-    background-color: #221c5a;
+    background-color: #1F1F1F;
     background-image: url(demo-images/item_background_01.jpg);
     background-repeat: no-repeat;
     background-position: left top;

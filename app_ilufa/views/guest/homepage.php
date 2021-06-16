@@ -18,10 +18,58 @@
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/prettyPhoto.css' />
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/sm-clean.css' />
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>style.css' />
+    <style>
+        .video-background {
+            background: #000;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -99;
+        }
+
+        .video-foreground,
+        .video-background iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+            .video-foreground {
+                height: 300%;
+                top: -100%;
+            }
+        }
+
+        @media (max-aspect-ratio: 16/9) {
+            .video-foreground {
+                width: 300%;
+                left: -100%;
+            }
+        }
+
+        .content {
+            padding: 25px;
+            background-color: rgba(#000, .3);
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+
+            h1 {
+                font-family: 'Roboto Slab', serif;
+                margin: 0;
+                color: #fff;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <table class="doc-loader">
         <tr>
             <td>
@@ -35,26 +83,39 @@
         <nav id="header-main-menu">
             <div class="mob-menu">MENU</div>
             <ul class="main-menu sm sm-clean">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Tentang Perusahaan</a></li>
+                <li><a href="#portfolio">Produk</a></li>
+                <li><a href="#about">Blog</a></li>
+                <li><a href="#news">Karir</a></li>
+                <!-- <li><a href="#video">Video</a></li> -->
+                <!-- <li><a href="#skills">Skills</a></li> -->
+                <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </div>
 
+
     <!-- Home -->
     <div id="home" class="section intro-page">
+
+        <div class="video-background">
+            <div class="video-foreground">
+                <!-- Youtube -->
+                <!-- <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe> -->
+
+                <!-- Vimeo -->
+                <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
         <div class="block content-1170 center-relative center-text">
             <img class="top-logo" src="<?php echo GUEST ?>demo-images/logo.png" alt="Boxus" />
             <br>
-            <h1 class="big-title">We Craft Awesome Web And <span>Graphic Design Solutions</span></h1>
-            <p class="title-desc">Support bright students today for a better tomorrow</p>
+            <h1 class="big-title">Jaringan Grosir <span>Aksesoris Gadget Terbesar di Indonesia</span></h1>
+            <!-- <p class="title-desc">Support bright students today for a better tomorrow</p> -->
         </div>
+
     </div>
 
     <!-- Service -->
