@@ -99,19 +99,17 @@
     <!-- Home -->
     <div id="home" class="section intro-page">
 
-        <div class="video-background">
-            <div class="video-foreground">
-                <!-- Youtube -->
-                <!-- <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe> -->
+        <!-- <div class="video-background">
+            <div class="video-foreground"> -->
+        <!-- <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe> -->
 
-                <!-- Vimeo -->
-                <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe>
+        <!-- <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> -->
 
         <div class="block content-1170 center-relative center-text">
             <img class="top-logo" src="<?php echo GUEST ?>demo-images/logo.png" alt="Boxus" />
-            <br>
+            <!-- <br> -->
             <h1 class="big-title">Jaringan Grosir <span>Aksesoris Gadget Terbesar di Indonesia</span></h1>
             <!-- <p class="title-desc">Support bright students today for a better tomorrow</p> -->
         </div>
@@ -122,6 +120,7 @@
     <div id="services" class="section">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder left">
+                <!-- <img src="<?php echo GUEST ?>demo-images/aboutt.png" alt=""> -->
                 <div class="section-num">
                     <span>01</span>
                 </div>
