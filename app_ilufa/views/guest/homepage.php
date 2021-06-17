@@ -102,9 +102,8 @@
         <!-- <div class="video-background">
             <div class="video-foreground"> -->
         <!-- <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe> -->
-
-        <!-- <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <!-- <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe> -->
+        <!-- </div>
         </div> -->
 
         <div class="block content-1170 center-relative center-text">
@@ -120,11 +119,12 @@
     <div id="services" class="section">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder left">
-                <!-- <img src="<?php echo GUEST ?>demo-images/aboutt.png" alt=""> -->
+
+                <!-- <img src="<?php echo GUEST ?>demo-images/about.png" alt="" style="opacity: 0.4; filter: alpha(opacity=40);"> -->
                 <div class="section-num">
                     <span>01</span>
                 </div>
-                <h2 class="entry-title">Ser</h2>
+                <h2 class="entry-title">Services</h2>
             </div>
             <div class="section-content-holder right">
                 <div class="content-wrapper">
