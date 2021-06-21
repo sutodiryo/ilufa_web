@@ -135,7 +135,7 @@ body a:hover {
 
 .section-num span {
     margin-left: -64px;
-    color: #fca400;
+    color: #FF4000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 180px;
@@ -226,8 +226,8 @@ body a:hover {
 .intro-page {
     padding-bottom: 170px;
     min-height: calc(100vh - 170px);
-    background-color: #1F1F1F;
-    /* background-image: url(); */
+    background-color: #000000;
+    background-image: url(demo-images/background_img_01b.jpg);
     background-repeat: repeat;
     background-position: center top;
     background-size: cover;
@@ -306,7 +306,7 @@ h1.big-title {
 }
 
 #services .section-title-holder span {
-    color: #fca400;
+    color: #FF4000;
 }
 
 .service-holder {

@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/sm-clean.css' />
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>style.css' />
     <style>
+        
         .video-background {
             background: #000;
             position: absolute;
@@ -84,10 +85,10 @@
             <div class="mob-menu">MENU</div>
             <ul class="main-menu sm sm-clean">
                 <li><a href="#home">Beranda</a></li>
-                <li><a href="#services">Tentang Perusahaan</a></li>
-                <li><a href="#portfolio">Produk</a></li>
-                <li><a href="#about">Blog</a></li>
-                <li><a href="#news">Karir</a></li>
+                <li><a href="#about">Tentang Perusahaan</a></li>
+                <li><a href="#product">Produk</a></li>
+                <li><a href="#news">Blog</a></li>
+                <li><a href="#career">Karir</a></li>
                 <!-- <li><a href="#video">Video</a></li> -->
                 <!-- <li><a href="#skills">Skills</a></li> -->
                 <li><a href="#contact">Kontak</a></li>
@@ -100,8 +101,8 @@
     <div id="home" class="section intro-page">
 
         <!-- <div class="video-background">
-            <div class="video-foreground"> -->
-        <!-- <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe> -->
+            <div class="video-foreground">
+                <iframe src="https://www.youtube.com/embed/0smcuxMuX2w?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen style="opacity: 0.4; filter: alpha(opacity=40);"></iframe> -->
         <!-- <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe> -->
         <!-- </div>
         </div> -->
@@ -115,203 +116,14 @@
 
     </div>
 
-    <!-- Service -->
-    <div id="services" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder left">
-
-                <!-- <img src="<?php echo GUEST ?>demo-images/about.png" alt="" style="opacity: 0.4; filter: alpha(opacity=40);"> -->
-                <div class="section-num">
-                    <span>01</span>
-                </div>
-                <h2 class="entry-title">Services</h2>
-            </div>
-            <div class="section-content-holder right">
-                <div class="content-wrapper">
-                    <script>
-                        var slider1_speed = "500";
-                        var slider1_auto = "false";
-                        var slider1_hover = "true";
-                    </script>
-                    <div class="image-slider-wrapper relative service slider1">
-                        <a id="slider1_next" class="image_slider_next" href="#"></a>
-
-                        <ul id="slider1" class="image-slider slides">
-                            <li>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">BRANDING</div>
-                                        <div class="service-content">
-                                            Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">MOBILE APPS</div>
-                                        <div class="service-content">
-                                            Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">WEB</div>
-                                        <div class="service-content">
-                                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">GRAPHIC</div>
-                                        <div class="service-content">
-                                            Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">SERVICES</div>
-                                        <div class="service-content">
-                                            Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">PSD</div>
-                                        <div class="service-content">
-                                            Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">HTML</div>
-                                        <div class="service-content">
-                                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">PHP</div>
-                                        <div class="service-content">
-                                            Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-
-                </div>
-            </div>
-            <div class='clear'></div>
-        </div>
-    </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder right">
-                <div class="section-num">
-                    <span>02</span>
-                </div>
-                <h2 class="entry-title">Portfolio</h2>
-            </div>
-            <div class="section-content-holder portfolio-holder left">
-                <div class="grid" id="portfolio-grid">
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item element-item p_one">
-                        <a href="single-portfolio.html">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_01.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item element-item p_one_half">
-                        <a href="single-portfolio2.html">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_02.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item element-item p_one_half">
-                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_08.jpg">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_08.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item element-item p_one">
-                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_05.jpg">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_05.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="clear"></div>
-                <div class="block portfolio-load-more-holder">
-                    <a target="_self" class="more-posts">LOAD MORE</a>
-                    <img src="<?php echo GUEST ?>images/icon_infinity.svg" alt="Load more">
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-
     <!-- About -->
     <div id="about" class="section">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder left">
                 <div class="section-num">
-                    <span>03</span>
+                    <span>01</span>
                 </div>
-                <h2 class="entry-title">CRAFTERS</h2>
+                <h2 class="entry-title">Tentang</h2>
             </div>
             <div class="section-content-holder right">
                 <div class="content-wrapper">
@@ -319,7 +131,10 @@
                         <p class="content-title">About</p>
                     </div>
                     <div class="one_half ">
-                        Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor
+                        iLuFA 168 merupakan salah satu perusahaan dengan bisnis utama menyediakan segala macam aksesoris handphone, gadget, peralatan pendukung fotografi, gaming, pembuatan konten audio visual dan sound recording.
+                        <!-- iLufa 168 didirikan oleh Bapak Liem Sin Liang pada tanggal 16 Agustus 2000 di kota Solo.
+                        iLuFA 168 merupakan Perusahaan yang semakin berkembang dengan selalu menjunjung tinggi tanggung jawab sebagai landasan dalam menjalankan usaha. -->
+                        <!-- Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor -->
                     </div>
                     <div class="one_half last ">
                         <span style="color: #e54b76;"><strong>2001-2003 ·</strong></span> <span style="color:#727190;"><em>Art Studio Lorem Donec</em></span><br>
@@ -413,16 +228,203 @@
         </div>
     </div>
 
+    <!-- Service -->
+    <!-- <div id="services" class="section">
+        <div class="block content-1170 center-relative">
+            <div class="section-title-holder left"> -->
+
+    <!-- <img src="<?php echo GUEST ?>demo-images/about.png" alt="" style="opacity: 0.4; filter: alpha(opacity=40);"> -->
+
+    <!-- <div class="section-num">
+                    <span>01</span>
+                </div>
+                <h2 class="entry-title">About</h2>
+            </div>
+            <div class="section-content-holder right">
+                <div class="content-wrapper">
+                    <script>
+                        var slider1_speed = "500";
+                        var slider1_auto = "false";
+                        var slider1_hover = "true";
+                    </script>
+                    <div class="image-slider-wrapper relative service slider1">
+                        <a id="slider1_next" class="image_slider_next" href="#"></a>
+
+                        <ul id="slider1" class="image-slider slides">
+                            <li>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">BRANDING</div>
+                                        <div class="service-content">dfdsgfhbg<br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">MOBILE APPS</div>
+                                        <div class="service-content">
+                                            Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">WEB</div>
+                                        <div class="service-content">
+                                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">GRAPHIC</div>
+                                        <div class="service-content">
+                                            Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">SERVICES</div>
+                                        <div class="service-content">
+                                            Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">PSD</div>
+                                        <div class="service-content">
+                                            Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">HTML</div>
+                                        <div class="service-content">
+                                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-holder ">
+                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
+                                    <div class="service-content-holder">
+                                        <div class="service-title">PHP</div>
+                                        <div class="service-content">
+                                            Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class='clear'></div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio -->
+    <div id="product" class="section">
+        <div class="block content-1170 center-relative">
+            <div class="section-title-holder right">
+                <div class="section-num">
+                    <span>02</span>
+                </div>
+                <h2 class="entry-title">Product</h2>
+            </div>
+            <div class="section-content-holder portfolio-holder left">
+                <div class="grid" id="portfolio-grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item element-item p_one">
+                        <a href="single-portfolio.html">
+                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_01.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                    </p>
+                                    <p class="portfolio-text">PSD MOCKUP</p>
+                                    <p class="portfolio-sec-text">Smart Watch</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_one_half">
+                        <a href="single-portfolio2.html">
+                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_02.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                    </p>
+                                    <p class="portfolio-text">PSD MOCKUP</p>
+                                    <p class="portfolio-sec-text">Smart Watch</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_one_half">
+                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_08.jpg">
+                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_08.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                    </p>
+                                    <p class="portfolio-text">PSD MOCKUP</p>
+                                    <p class="portfolio-sec-text">Smart Watch</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_one">
+                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_05.jpg">
+                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_05.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                    </p>
+                                    <p class="portfolio-text">PSD MOCKUP</p>
+                                    <p class="portfolio-sec-text">Smart Watch</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+                <div class="block portfolio-load-more-holder">
+                    <a target="_self" class="more-posts">LOAD MORE</a>
+                    <img src="<?php echo GUEST ?>images/icon_infinity.svg" alt="Load more">
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
     <!-- News -->
     <div id="news" class="section">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder right">
                 <div class="section-num">
-                    <span>
-                        04
-                    </span>
+                    <span>03</span>
                 </div>
-                <h2 class="entry-title">STORIES</h2>
+                <h2 class="entry-title">Blog</h2>
             </div>
             <div class="section-content-holder left">
                 <div class="content-wrapper">
@@ -544,7 +546,7 @@
     </div>
 
     <!-- Video -->
-    <div id="video" class="section">
+    <div id="career" class="section">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder left">
                 <div class="section-num">
@@ -714,6 +716,7 @@
                     <div class="clear"></div>
                 </div>
                 <div class="full-width">
+                    <!-- <div id="map"></div> -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -726,14 +729,14 @@
         <div class="footer content-1170 center-relative">
             <ul>
                 <li class="copyright-footer">
-                    © 2018 All rights reserved. | Boxus Template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    © <?php echo date("Y"); ?> All rights reserved. | Created by <a href="https://ilufa.co.id">Ilufa Team</a>
                 </li>
                 <li class="social-footer">
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-behance"></span></a>
-                    <a href="#"><span class="fa fa-dribbble"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                    <a href="#"><span class="fa fa-youtube"></span></a>
+                    <!-- <a href="#"><span class="fa fa-dribbble"></span></a> -->
                     <a href="#"><span class="fa fa-facebook"></span></a>
-                    <a href="#"><span class="fa fa-rss"></span></a>
+                    <!-- <a href="#"><span class="fa fa-rss"></span></a> -->
                 </li>
             </ul>
         </div>
@@ -753,6 +756,44 @@
     <script type='text/javascript' src='<?php echo GUEST ?>js/imagesloaded.pkgd.js'></script>
     <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.prettyPhoto.js'></script>
     <script type='text/javascript' src='<?php echo GUEST ?>js/main.js'></script>
+
+
+    <!-- <script>
+        var locations = [
+            ['Bondi Beach', -33.890542, 151.274856, 4],
+            ['Coogee Beach', -33.923036, 151.259052, 5],
+            ['Cronulla Beach', -34.028249, 151.157507, 3],
+            ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+            ['Maroubra Beach', -33.950198, 151.259302, 1]
+        ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: new google.maps.LatLng(-33.92, 151.25),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+    </script> -->
+
+
+
 </body>
 
 </html>
