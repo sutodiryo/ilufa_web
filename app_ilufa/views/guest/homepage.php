@@ -87,7 +87,7 @@
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang Perusahaan</a></li>
                 <li><a href="#product">Produk</a></li>
-                <li><a href="#news">Blog</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#career">Karir</a></li>
                 <!-- <li><a href="#video">Video</a></li> -->
                 <!-- <li><a href="#skills">Skills</a></li> -->
@@ -418,7 +418,7 @@
     </div>
 
     <!-- News -->
-    <div id="news" class="section">
+    <div id="blog" class="section">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder right">
                 <div class="section-num">
