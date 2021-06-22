@@ -756,8 +756,7 @@
     <script type='text/javascript' src='<?php echo GUEST ?>js/imagesloaded.pkgd.js'></script>
     <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.prettyPhoto.js'></script>
     <script type='text/javascript' src='<?php echo GUEST ?>js/main.js'></script>
-
-
+    
     <!-- <script>
         var locations = [
             ['Bondi Beach', -33.890542, 151.274856, 4],
@@ -791,8 +790,6 @@
             })(marker, i));
         }
     </script> -->
-
-
 
 </body>
 
