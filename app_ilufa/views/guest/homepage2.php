@@ -5,11 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="discrption" content="parallax one page" />
-    <meta name="keyword" content="agency, business, corporate, creative, freelancer, interior, joomla template, K2 Blog, minimal, modern, multipurpose, personal, portfolio, responsive, simple" />
+    <meta name="discrption" content="lufa 168" />
+    <meta name="keyword" content="lufa 168" />
 
     <!--  Title -->
-    <title>Droow - Creative Showcase Portfolio Template</title>
+    <title>Ilufa 168 | Official Website</title>
 
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
