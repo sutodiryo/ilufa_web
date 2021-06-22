@@ -9000,10 +9000,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .headefr-fexid .project-title .title-text-header .title-text-header-inner span {
   display: block;
-  line-height: 50px;
+  line-height: 60px;
   margin: 30px 0;
-  font-size: 65px;
-  font-size: 65px;
+  font-size: 50px;
+  /* font-size: 65px; */
   font-weight: 700;
 }
 

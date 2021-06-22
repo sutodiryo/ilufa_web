@@ -15,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="<?php echo GUEST ?>_droow/assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="<?php echo GUEST ?>_droow/assets/img/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="<?php echo GUEST ?>images/icon.png" type="image/png" /> -->
+    <!-- <link rel="icon" href="<?php echo GUEST ?>images/icon.png" type="image/png" /> -->
+    <link rel="icon" type="image/png" href="<?php echo GUEST ?>images/favicons.png">
 
     <!-- custom styles (optional) -->
     <link href="<?php echo GUEST ?>_droow/assets/css/plugins.css" rel="stylesheet" />
@@ -47,32 +48,32 @@
                 <div class="inner-header">
                     <div class="main-logo">
                         <a href="index-2.html">
-                            <img class="dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
-                            <img class="light-logo" src="<?php echo GUEST ?>_droow/assets/img/logo.png" alt="" />
+                            <img class="dark-logo" src="<?php echo GUEST ?>images/logo_1_dark.png" alt="" />
+                            <img class="light-logo" src="<?php echo GUEST ?>images/logo_1.png" alt="" />
                         </a>
                     </div>
                 </div>
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
-                        <li class="custom-drop-down">
-                            <a href="#">Home</a>
+                        <li><a href="#">Beranda</a></li>
+                        <!-- <li class="custom-drop-down">
+                            <a href="#">Beranda</a>
                             <ul>
                                 <li><a href="index-2.html">Main Demo</a></li>
                                 <li><a href="one-page-3.html">One Page Three</a></li>
                                 <li><a href="one-page-4.html">One Page Four</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="custom-drop-down">
-                            <a href="#">Slider</a>
+                            <a href="#">Tentang</a>
                             <ul>
                                 <li><a href="slider.html">Slider</a></li>
                                 <li><a href="slider2.html">Slider two</a></li>
                                 <li><a href="slider3.html">Slider Three</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">About</a></li>
                         <li class="custom-drop-down">
-                            <a href="#">Work</a>
+                            <a href="#">Produk</a>
                             <ul>
                                 <li><a href="work.html">Work</a></li>
                                 <li><a href="project-9.html">Header One</a></li>
@@ -87,7 +88,8 @@
                                 <li><a href="post.html">Single Post</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Karir</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
                     </ul>
                 </nav>
             </div>
@@ -97,7 +99,7 @@
                 <div class="logo main-logo">
                     <a href="index-2.html">
                         <img class="dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
-                        <img class="light-logo" src="<?php echo GUEST ?>_droow/assets/img/logo.png" alt="" />
+                        <img class="light-logo" src="<?php echo GUEST ?>images/logo.png" alt="" />
                     </a>
                 </div>
 
@@ -156,12 +158,17 @@
                             <div class="row justify-content-center align-items-center h-100">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="sub-text-header">
-                                        <h5>We make digital products and services.</h5>
+                                        <img src="<?php echo GUEST ?>demo-images/logo.png" alt="Ilufa 168" style="height:200px;" />
+                                        <!-- <h5>Jaringan Grosir Aksesoris Gadget Terbesar di Indonesia</h5> -->
                                     </div>
 
                                     <div class="title-text-header">
                                         <span class="title-text-header-inner">
-                                            <span>We are digital agency.</span>
+                                            <span>Jaringan Grosir Aksesoris Gadget<br>
+                                                <!-- <span style="text-decoration: underline;"> -->
+                                                Terbesar di Indonesia
+                                                <!-- </span> -->
+                                            </span>
                                         </span>
                                     </div>
 
