@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -28,7 +29,9 @@
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
         <div class="preloader-block">
-            <div class="title">Droow</div>
+            <div class="title">
+                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 350px;" />
+            </div>
             <div class="percent">0</div>
             <div class="loading">loading...</div>
         </div>
