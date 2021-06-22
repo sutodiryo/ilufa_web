@@ -7,4 +7,9 @@ class Guest extends CI_Controller {
 	{
 		$this->load->view('guest/homepage');
 	}
+
+	public function homepage2()
+	{
+		$this->load->view('guest/homepage2');
+	}
 }
