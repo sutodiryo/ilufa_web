@@ -55,15 +55,17 @@
                 </div>
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
-                        <li><a href="#">Beranda</a></li>
-                        <!-- <li class="custom-drop-down">
+                        <li><a href="#section_2">Beranda</a></li>
+                        <!--
+                        <li class="custom-drop-down">
                             <a href="#">Beranda</a>
                             <ul>
                                 <li><a href="index-2.html">Main Demo</a></li>
                                 <li><a href="one-page-3.html">One Page Three</a></li>
                                 <li><a href="one-page-4.html">One Page Four</a></li>
                             </ul>
-                        </li> -->
+                        </li>
+                        -->
                         <li class="custom-drop-down">
                             <a href="#">Tentang</a>
                             <ul>
@@ -181,7 +183,7 @@
 
             <div class="wrapper">
 
-                <section class="intro-about section-margin">
+                <section class="intro-about section-margin" id="section_2">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
