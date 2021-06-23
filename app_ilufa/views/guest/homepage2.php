@@ -22,6 +22,12 @@
     <!-- custom styles (optional) -->
     <link href="<?php echo GUEST ?>_droow/assets/css/plugins.css" rel="stylesheet" />
     <link href="<?php echo GUEST ?>_droow/assets/css/style.css" rel="stylesheet" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body class="dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
@@ -31,7 +37,7 @@
         <div class="preloader-before"></div>
         <div class="preloader-block">
             <div class="title">
-                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 350px;" />
+                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 300px;" />
             </div>
             <div class="percent">0</div>
             <div class="loading">loading...</div>
@@ -55,7 +61,7 @@
                 </div>
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
-                        <li><a href="#section_2">Beranda</a></li>
+                        <li><a href="#">Beranda</a></li>
                         <!--
                         <li class="custom-drop-down">
                             <a href="#">Beranda</a>
@@ -66,15 +72,17 @@
                             </ul>
                         </li>
                         -->
-                        <li class="custom-drop-down">
+                        <li><a href="#tentang">Tentang</a></li>
+                        <!-- <li class="custom-drop-down">
                             <a href="#">Tentang</a>
                             <ul>
                                 <li><a href="slider.html">Slider</a></li>
                                 <li><a href="slider2.html">Slider two</a></li>
                                 <li><a href="slider3.html">Slider Three</a></li>
                             </ul>
-                        </li>
-                        <li class="custom-drop-down">
+                        </li> -->
+                        <li><a href="#produk">Produk</a></li>
+                        <!-- <li class="custom-drop-down">
                             <a href="#">Produk</a>
                             <ul>
                                 <li><a href="work.html">Work</a></li>
@@ -82,7 +90,7 @@
                                 <li><a href="project-7.html">Header Two</a></li>
                                 <li><a href="project-5.html">Header Three</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="custom-drop-down">
                             <a href="#">Blog</a>
                             <ul>
@@ -149,7 +157,7 @@
                     <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
                         <div class=" " data-dsn="video" data-overlay="4">
                             <video class="bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>_droow/assets/img/video-bg.jpg" autoplay loop muted playsinline>
-                                <source src="http://theme.dsngrid.com/video/videos.mp4" type="video/mp4">
+                                <source src="https://theme.dsngrid.com/video/videos.mp4" type="video/mp4">
                                 Your browser does not support HTML5 video.
                             </video>
                         </div>
@@ -183,33 +191,28 @@
 
             <div class="wrapper">
 
-                <section class="intro-about section-margin" id="section_2">
+                <section class="intro-about section-margin" id="tentang">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="intro-content-text">
 
                                     <h2 data-dsn-grid="move-section" data-dsn-move="-30" data-dsn-duration="100%" data-dsn-opacity="1.2" data-dsn-responsive="tablet">
-                                        Hello we are, <br /> Dsn Grid
+                                        Tentang <br />Ilufa 168
                                     </h2>
 
-                                    <p data-dsn-animate="text">Founded in 2000, Dsn Grid has become one of the best
-                                        Digital
-                                        Agency in
-                                        ThemeForest.
-                                        Blue money going forward, but deploy to production. C-suite. First-order optimal
-                                        strategies build on a culture of contribution and inclusion so those options</p>
+                                    <p data-dsn-animate="text">
+                                        iLuFA 168 merupakan salah satu perusahaan dengan bisnis utama menyediakan segala macam aksesoris handphone, gadget, peralatan pendukung fotografi, gaming, pembuatan konten audio visual dan sound recording.
+                                        <h6 data-dsn-animate="text">Didirikan Pada</h6>
+                                        <!-- <small data-dsn-animate="text">Digital Artisit</small> -->
 
-                                    <h6 data-dsn-animate="text">SALVADOR DALI</h6>
-                                    <small data-dsn-animate="text">Digital Artisit</small>
+                                        <div class="exper">
+                                            <div class="numb-ex">
+                                                <span class="word" data-dsn-animate="text">16</span>
+                                            </div>
 
-                                    <div class="exper">
-                                        <div class="numb-ex">
-                                            <span class="word" data-dsn-animate="text">25</span>
+                                            <h4 data-dsn-animate="up">Agustus <br> 2000</h4>
                                         </div>
-
-                                        <h4 data-dsn-animate="up">YEARS OF <br> DIGITAL EXPERIENCE</h4>
-                                    </div>
 
                                 </div>
                             </div>
@@ -231,9 +234,9 @@
                     <div class="container">
                         <div class="one-title">
                             <div class="title-sub-container">
-                                <p class="title-sub">OUR SERVCIES</p>
+                                <p class="title-sub">Komitmen</p>
                             </div>
-                            <h2 class="title-main">New Branding Agency</h2>
+                            <h2 class="title-main">Komitmen Kami Pada Pelanggan</h2>
                         </div>
 
                         <div class="row">
@@ -303,9 +306,9 @@
                     <div class="container">
                         <div class="one-title">
                             <div class="title-sub-container">
-                                <p class="title-sub">Our Work</p>
+                                <p class="title-sub">Produk</p>
                             </div>
-                            <h2 class="title-main">Featured Projects</h2>
+                            <h2 class="title-main">Produk Terbaru</h2>
                         </div>
                     </div>
                     <div class="container-fluid">
@@ -493,7 +496,7 @@
                     <div class="container">
                         <div class="one-title" data-dsn-animate="up">
                             <div class="title-sub-container">
-                                <p class="title-sub">Latest News</p>
+                                <p class="title-sub">Blog</p>
                             </div>
                             <h2 class="title-main">Latest and greatest post</h2>
                         </div>
@@ -561,9 +564,9 @@
                     <div class="container">
                         <div class="one-title" data-dsn-animate="up">
                             <div class="title-sub-container">
-                                <p class="title-sub">Our clients</p>
+                                <p class="title-sub">Cabang</p>
                             </div>
-                            <h2 class="title-main">Your successful, our reputation</h2>
+                            <h2 class="title-main">Daftar Cabang Ilufa</h2>
                         </div>
 
                         <div class="wapper-client">
@@ -573,14 +576,25 @@
                                 <div class="info">
                                     <div class="content">
                                         <div class="icon">
-                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-plus"></i> lihat
                                         </div>
 
                                         <div class="entry">
                                             <div>
-                                                <h5>Google</h5>
-                                                <a href="#">www.google.com</a>
+                                                <h5><a href="https://google.com">Solo 1</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 2</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 3</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 4</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 5</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 6</a></h5>
+                                                <!-- <a href="#">www.google.com</a> -->
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -708,7 +722,7 @@
                             <div class="col-md-3 dsn-col-footer">
                                 <div class="footer-block">
                                     <div class="footer-logo">
-                                        <a href="#"><img src="<?php echo GUEST ?>_droow/assets/img/logo.png" alt=""></a>
+                                        <a href="#"><img src="<?php echo GUEST ?>images/logo.png" alt=""></a>
                                     </div>
 
                                     <div class="footer-social">
@@ -754,7 +768,6 @@
                             <div class="col-md-3 dsn-col-footer">
                                 <div class="col-address">
                                     <h4 class="footer-title">Address</h4>
-
                                     <p>El-Mahalla El-Kubra 37<br>
                                         1776 Damietta<br>
                                         Egypt</p>
@@ -765,8 +778,8 @@
 
                     <div class="copyright">
                         <div class="text-center">
-                            <p>© 2020 Droow Digital Agency</p>
-                            <div class="copright-text over-hidden">Designed by <a class="link-hover" data-hover-text="DSN Grid" href="#" target="_blank">DSN Grid</a>
+                            <p>© <?php echo date('Y'); ?> CV Satu Jalan Sukses - Ilufa 168</p>
+                            <div class="copright-text over-hidden">Designed by <a class="link-hover" data-hover-text="DSN Grid" href="#" target="_blank">168 Team</a>
                             </div>
                         </div>
                     </div>
