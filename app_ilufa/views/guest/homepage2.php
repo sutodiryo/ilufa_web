@@ -37,7 +37,7 @@
         <div class="preloader-before"></div>
         <div class="preloader-block">
             <div class="title">
-                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 300px;" />
+                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 250px;" />
             </div>
             <div class="percent">0</div>
             <div class="loading">loading...</div>
@@ -91,13 +91,14 @@
                                 <li><a href="project-5.html">Header Three</a></li>
                             </ul>
                         </li> -->
-                        <li class="custom-drop-down">
+                        <li><a href="#blog">Blog</a></li>
+                        <!-- <li class="custom-drop-down">
                             <a href="#">Blog</a>
                             <ul>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="post.html">Single Post</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li><a href="about.html">Karir</a></li>
                         <li><a href="contact.html">Kontak</a></li>
                     </ul>
@@ -143,7 +144,6 @@
                             <span>01024552406</span>
                         </address>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
                     <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
                         <div class=" " data-dsn="video" data-overlay="4">
                             <video class="bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>_droow/assets/img/video-bg.jpg" autoplay loop muted playsinline>
-                                <source src="https://theme.dsngrid.com/video/videos.mp4" type="video/mp4">
+                                <source src="<?php echo GUEST ?>videos/head_1.mp4" type="video/mp4">
                                 Your browser does not support HTML5 video.
                             </video>
                         </div>
@@ -168,7 +168,7 @@
                             <div class="row justify-content-center align-items-center h-100">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="sub-text-header">
-                                        <img src="<?php echo GUEST ?>demo-images/logo.png" alt="Ilufa 168" style="height:200px;" />
+                                        <img src="<?php echo GUEST ?>demo-images/logo.png" alt="Ilufa 168" style="height:170px;" />
                                         <!-- <h5>Jaringan Grosir Aksesoris Gadget Terbesar di Indonesia</h5> -->
                                     </div>
 
@@ -179,7 +179,20 @@
                                                 Terbesar di Indonesia
                                                 <!-- </span> -->
                                             </span>
+                                            <h6>Aplikasi Ilufa bisa di download di</h6>
+                                            <br>
+                                            <a href='https://play.google.com/store/apps/details?id=id.compro.ilufa168&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                                                <img src="<?php echo GUEST ?>images/play1.svg" width="150px">
+                                            </a>
+                                            <a href="https://apps.apple.com/id/app/ilufa168/id1549134035?l=id">
+                                                <img src="<?php echo GUEST ?>images/app1.svg" width="150px">
+                                            </a>
                                         </span>
+                                        <!-- <div class="link-custom">
+                                            <a class="image-zoom effect-ajax" href="#" data-dsn="parallax">
+                                                <span>Play Store</span>
+                                            </a>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -223,7 +236,7 @@
                         <div class="img-box">
                             <div class="img-cent" data-dsn-grid="move-up">
                                 <div class="img-container">
-                                    <img data-dsn-y="30%" src="<?php echo GUEST ?>_droow/assets/img/bgg.jpg" alt="">
+                                    <img data-dsn-y="30%" src="<?php echo GUEST ?>images/bgg.jpg" alt="">
                                 </div>
                             </div>
                         </div>

@@ -4592,28 +4592,28 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .next-project .project-title .title-text-header .title-text-header-inner span {
   display: block;
-  font-size: 65px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  line-height: 0.75em;
-  margin: 30px 0;
+  line-height: 0.55em;
+  margin: 15px 0;
 }
 
 @media only screen and (max-width: 767px) {
   .next-project .project-title .title-text-header .title-text-header-inner span {
-    font-size: 55px;
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .next-project .project-title .title-text-header .title-text-header-inner span {
-    font-size: 45px;
+    font-size: 12px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .next-project .project-title .title-text-header .title-text-header-inner span {
-    font-size: 38px;
+    font-size: 8px;
   }
 }
 
@@ -8960,7 +8960,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 40%;
   margin-top: -1px;
   width: 40px;
   height: 2px;
@@ -9001,7 +9001,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .headefr-fexid .project-title .title-text-header .title-text-header-inner span {
   display: block;
   line-height: 60px;
-  margin: 30px 0;
+  margin: 20px 0;
   font-size: 50px;
   /* font-size: 65px; */
   font-weight: 700;
@@ -9009,19 +9009,19 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 @media only screen and (max-width: 767px) {
   .headefr-fexid .project-title .title-text-header .title-text-header-inner span {
-    font-size: 55px;
+    font-size: 45px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .headefr-fexid .project-title .title-text-header .title-text-header-inner span {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .headefr-fexid .project-title .title-text-header .title-text-header-inner span {
-    font-size: 38px;
+    font-size: 25px;
   }
 }
 
@@ -9919,7 +9919,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
     display: none;
   }
   .dsn-slider .dsn-slider-content .slide-content .slide-content-inner .title-text-header .title-text-header-inner {
-    font-size: 55px;
+    font-size: 45px;
   }
   .dsn-slider .footer-slid .main-social,
   .dsn-slider .footer-slid .control-nav {
@@ -9994,7 +9994,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   z-index: 0;
-  font-size: 65px;
+  font-size: 50px;
   line-height: 1.2;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -10005,7 +10005,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .dsn-slider-content .slide-content .slide-content-inner .title-text-header .title-text-header-inner span {
   font-weight: 600;
   letter-spacing: -0.01em;
-  line-height: 0.75em;
+  line-height: 0.55em;
   white-space: nowrap;
   -webkit-user-select: none;
   -moz-user-select: none;
