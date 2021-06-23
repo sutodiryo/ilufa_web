@@ -168,17 +168,18 @@
                             <div class="row justify-content-center align-items-center h-100">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="sub-text-header">
-                                        <img src="<?php echo GUEST ?>demo-images/logo.png" alt="Ilufa 168" style="height:170px;" />
+                                        <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class="logo-header-main" />
                                         <!-- <h5>Jaringan Grosir Aksesoris Gadget Terbesar di Indonesia</h5> -->
                                     </div>
 
                                     <div class="title-text-header">
                                         <span class="title-text-header-inner">
-                                            <span>Jaringan Grosir Aksesoris Gadget<br>
+                                            <!-- <span>Jaringan Grosir Aksesoris Gadget<br> -->
                                                 <!-- <span style="text-decoration: underline;"> -->
-                                                Terbesar di Indonesia
+                                                <!-- Terbesar di Indonesia -->
                                                 <!-- </span> -->
-                                            </span>
+                                            <!-- </span> -->
+                                            <br>
                                             <h6>Aplikasi Ilufa bisa di download di</h6>
                                             <br>
                                             <a href='https://play.google.com/store/apps/details?id=id.compro.ilufa168&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>

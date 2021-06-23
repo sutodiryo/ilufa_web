@@ -4585,6 +4585,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   perspective: 1000px;
 }
 
+.logo-header-main{
+  height:100px;
+}
+
 .next-project .project-title .title-text-header .title-text-header-inner {
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -4615,6 +4619,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   .next-project .project-title .title-text-header .title-text-header-inner span {
     font-size: 8px;
   }
+  
+.logo-header-main{
+  height:65px;
+}
 }
 
 .next-project .project-title .sub-text-header {
