@@ -22,6 +22,7 @@
     <!-- custom styles (optional) -->
     <link href="<?php echo GUEST ?>_droow/assets/css/plugins.css" rel="stylesheet" />
     <link href="<?php echo GUEST ?>_droow/assets/css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <style>
         html {
@@ -33,9 +34,17 @@
             height: 100px;
         }
 
+        .main-header-text {
+            margin-top: 100px;
+        }
+
         @media only screen and (max-width: 400px) {
             .logo-header-main {
                 height: 65px;
+            }
+
+            .main-header-text {
+                margin-top: 60px;
             }
         }
     </style>
@@ -64,52 +73,18 @@
             <div class="extend-container">
                 <div class="inner-header">
                     <div class="main-logo">
-                        <a href="<?php echo base_url() ?>">
-                            <img class="dark-logo" src="<?php echo GUEST ?>images/logo_1_dark.png" alt="" />
-                            <img class="light-logo" src="<?php echo GUEST ?>images/logo_1.png" alt="" />
+                        <a href="#">
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_1_dark.png" alt="" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_1.png" alt="" />
                         </a>
                     </div>
                 </div>
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
                         <li><a href="#">Beranda</a></li>
-                        <!--
-                        <li class="custom-drop-down">
-                            <a href="#">Beranda</a>
-                            <ul>
-                                <li><a href="index-2.html">Main Demo</a></li>
-                                <li><a href="one-page-3.html">One Page Three</a></li>
-                                <li><a href="one-page-4.html">One Page Four</a></li>
-                            </ul>
-                        </li>
-                        -->
                         <li><a href="#tentang">Tentang</a></li>
-                        <!-- <li class="custom-drop-down">
-                            <a href="#">Tentang</a>
-                            <ul>
-                                <li><a href="slider.html">Slider</a></li>
-                                <li><a href="slider2.html">Slider two</a></li>
-                                <li><a href="slider3.html">Slider Three</a></li>
-                            </ul>
-                        </li> -->
                         <li><a href="#produk">Produk</a></li>
-                        <!-- <li class="custom-drop-down">
-                            <a href="#">Produk</a>
-                            <ul>
-                                <li><a href="work.html">Work</a></li>
-                                <li><a href="project-9.html">Header One</a></li>
-                                <li><a href="project-7.html">Header Two</a></li>
-                                <li><a href="project-5.html">Header Three</a></li>
-                            </ul>
-                        </li> -->
                         <li><a href="#blog">Blog</a></li>
-                        <!-- <li class="custom-drop-down">
-                            <a href="#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="post.html">Single Post</a></li>
-                            </ul>
-                        </li> -->
                         <li><a href="about.html">Karir</a></li>
                         <li><a href="contact.html">Kontak</a></li>
                     </ul>
@@ -120,8 +95,8 @@
             <div class="header-container">
                 <div class="logo main-logo">
                     <a href="index-2.html">
-                        <img class="dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
-                        <img class="light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
+                        <img class="lozad dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
+                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
                     </a>
                 </div>
 
@@ -167,7 +142,7 @@
                 <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project">
                     <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
                         <div class=" " data-dsn="video" data-overlay="4">
-                            <video class="bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>_droow/assets/img/video-bg.jpg" autoplay loop muted playsinline>
+                            <video class="lozad bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>_droow/assets/img/video-bg.jpg" autoplay loop muted playsinline>
                                 <source src="<?php echo GUEST ?>videos/head_1.mp4" type="video/mp4">
                                 Your browser does not support HTML5 video.
                             </video>
@@ -179,7 +154,7 @@
                             <div class="row justify-content-center align-items-center h-100">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="sub-text-header">
-                                        <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class="logo-header-main" />
+                                        <img src="<?php echo GUEST ?>images/logo.svg" alt="Ilufa 168" class="lozad logo-header-main" />
                                         <!-- <h5>Jaringan Grosir Aksesoris Gadget Terbesar di Indonesia</h5> -->
                                     </div>
 
@@ -191,13 +166,13 @@
                                             <!-- </span> -->
                                             <!-- </span> -->
                                             <br>
-                                            <h6>Aplikasi Ilufa bisa di download di</h6>
+                                            <h6 class="main-header-text">Aplikasi Ilufa bisa di download di</h6>
                                             <br>
                                             <a href='https://play.google.com/store/apps/details?id=id.compro.ilufa168&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                                                <img src="<?php echo GUEST ?>images/play1.svg" width="150px">
+                                                <img class="lozad" src="<?php echo GUEST ?>images/play1.svg" width="150px">
                                             </a>
                                             <a href="https://apps.apple.com/id/app/ilufa168/id1549134035?l=id">
-                                                <img src="<?php echo GUEST ?>images/app1.svg" width="150px">
+                                                <img class="lozad" src="<?php echo GUEST ?>images/app1.svg" width="150px">
                                             </a>
                                         </span>
                                         <!-- <div class="link-custom">
@@ -248,7 +223,7 @@
                         <div class="img-box">
                             <div class="img-cent" data-dsn-grid="move-up">
                                 <div class="img-container">
-                                    <img data-dsn-y="30%" src="<?php echo GUEST ?>images/bgg.jpg" alt="">
+                                    <img class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>images/bgg_2.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -308,10 +283,10 @@
                     </div>
                 </section>
 
-                <div class="box-seat box-seat-full section-margin">
+                <!-- <div class="box-seat box-seat-full section-margin">
                     <div class="container-fluid">
                         <div class="inner-img" data-dsn-grid="move-up">
-                            <img data-dsn-y="30%" src="<?php echo GUEST ?>_droow/assets/img/project/project2/3.jpg" alt="">
+                            <img class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>_droow/assets/img/project/project2/3.jpg" alt="">
                         </div>
                         <div class="pro-text">
                             <h3> How is your<br> visual identity?</h3>
@@ -325,7 +300,70 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+
+
+                <section class="our-services-2 section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Our Servcies</p>
+                            </div>
+                            <h2 class="title-main">New Branding Agency</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="services-item">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/1.png" alt="">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>DIGITAL PRODUCTS</h3>
+                                    </div>
+                                    <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="services-item selected">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/2.png" alt="">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>UI-UX DESIGN</h3>
+                                    </div>
+                                    <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="services-item">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/3.png" alt="">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>WEB DEVELOPMENT</h3>
+                                    </div>
+                                    <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="our-work work-under-header  section-margin" data-dsn-col="3">
                     <div class="container">
@@ -342,7 +380,7 @@
                                 <div class="work-container">
                                     <div class="slick-slider">
                                         <div class="work-item slick-slide">
-                                            <img class="has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project3/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project3/1.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
                                                 <a href="project-7.html" data-dsn-grid="move-up" class="effect-ajax">
@@ -356,7 +394,7 @@
                                         </div>
 
                                         <div class="work-item slick-slide">
-                                            <img class="has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project6/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project6/1.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
                                                 <a href="project-6.html" data-dsn-grid="move-up" class="effect-ajax">
@@ -370,7 +408,7 @@
                                         </div>
 
                                         <div class="work-item slick-slide">
-                                            <img class="has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project4/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project4/1.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
                                                 <a href="project-4.html" data-dsn-grid="move-up" class="effect-ajax">
@@ -384,7 +422,7 @@
                                         </div>
 
                                         <div class="work-item slick-slide">
-                                            <img class="has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project5/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project5/1.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
                                                 <a href="project-5.html" data-dsn-grid="move-up" class="effect-ajax">
@@ -410,7 +448,7 @@
                         <div class="row align-items-center h-100">
                             <div class="col-lg-6 ">
                                 <div class="box-im" data-dsn-grid="move-up">
-                                    <img class="has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project9/7.jpg" alt="" data-dsn-move="20%">
+                                    <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project9/7.jpg" alt="" data-dsn-move="20%">
                                 </div>
                             </div>
 
@@ -470,7 +508,7 @@
                                         </div>
                                         <div class="bottom">
                                             <div class="avatar">
-                                                <img src="<?php echo GUEST ?>_droow/assets/img/avatar/1.jpg" alt="">
+                                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/avatar/1.jpg" alt="">
                                             </div>
                                             <div class="label">
                                                 <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
@@ -487,7 +525,7 @@
                                         </div>
                                         <div class="bottom">
                                             <div class="avatar">
-                                                <img src="<?php echo GUEST ?>_droow/assets/img/avatar/2.jpg" alt="">
+                                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/avatar/2.jpg" alt="">
                                             </div>
                                             <div class="label">
                                                 <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
@@ -504,7 +542,7 @@
                                         </div>
                                         <div class="bottom">
                                             <div class="avatar">
-                                                <img src="<?php echo GUEST ?>_droow/assets/img/avatar/3.jpg" alt="">
+                                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/avatar/3.jpg" alt="">
                                             </div>
                                             <div class="label">
                                                 <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
@@ -529,7 +567,7 @@
                             <div class="slick-slider">
                                 <div class="item-new slick-slide">
                                     <div class="image" data-overlay="5">
-                                        <img src="<?php echo GUEST ?>_droow/assets/img/blog/1.jpg" alt="">
+                                        <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/blog/1.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <div class="background"></div>
@@ -547,7 +585,7 @@
 
                                 <div class="item-new slick-slide">
                                     <div class="image" data-overlay="5">
-                                        <img src="<?php echo GUEST ?>_droow/assets/img/blog/2.jpg" alt="">
+                                        <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/blog/2.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <div class="background"></div>
@@ -564,7 +602,7 @@
 
                                 <div class="item-new slick-slide">
                                     <div class="image" data-overlay="5">
-                                        <img src="<?php echo GUEST ?>_droow/assets/img/blog/3.jpg" alt="">
+                                        <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/blog/3.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <div class="background"></div>
@@ -596,7 +634,7 @@
 
                         <div class="wapper-client">
                             <div class="logo-box">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/logo/1.png" alt="">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/1.png" alt="">
 
                                 <div class="info">
                                     <div class="content">
@@ -626,7 +664,7 @@
                             </div>
 
                             <div class="logo-box">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/logo/2.png" alt="">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/2.png" alt="">
 
                                 <div class="info">
                                     <div class="content">
@@ -645,7 +683,7 @@
                             </div>
 
                             <div class="logo-box">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/logo/3.png" alt="">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/3.png" alt="">
 
                                 <div class="info">
                                     <div class="content">
@@ -664,7 +702,7 @@
                             </div>
 
                             <div class="logo-box">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/logo/4.png" alt="">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/4.png" alt="">
 
                                 <div class="info">
                                     <div class="content">
@@ -683,7 +721,7 @@
                             </div>
 
                             <div class="logo-box">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/logo/5.png" alt="">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/5.png" alt="">
 
                                 <div class="info">
                                     <div class="content">
@@ -702,7 +740,7 @@
                             </div>
 
                             <div class="logo-box">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/logo/6.png" alt="">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/6.png" alt="">
 
                                 <div class="info">
                                     <div class="content">
@@ -747,7 +785,7 @@
                             <div class="col-md-3 dsn-col-footer">
                                 <div class="footer-block">
                                     <div class="footer-logo">
-                                        <a href="#"><img src="<?php echo GUEST ?>images/logo.png" alt=""></a>
+                                        <a href="#"><img class="lozad" src="<?php echo GUEST ?>images/logo.png" alt=""></a>
                                     </div>
 
                                     <div class="footer-social">
