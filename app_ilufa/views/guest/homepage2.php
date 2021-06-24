@@ -29,6 +29,10 @@
         }
 
 
+        .logo-header-main {
+            height: 100px;
+        }
+
         @media only screen and (max-width: 400px) {
             .logo-header-main {
                 height: 65px;
@@ -60,7 +64,7 @@
             <div class="extend-container">
                 <div class="inner-header">
                     <div class="main-logo">
-                        <a href="index-2.html">
+                        <a href="<?php echo base_url() ?>">
                             <img class="dark-logo" src="<?php echo GUEST ?>images/logo_1_dark.png" alt="" />
                             <img class="light-logo" src="<?php echo GUEST ?>images/logo_1.png" alt="" />
                         </a>
