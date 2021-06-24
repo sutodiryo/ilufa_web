@@ -27,6 +27,13 @@
         html {
             scroll-behavior: smooth;
         }
+
+
+        @media only screen and (max-width: 400px) {
+            .logo-header-main {
+                height: 65px;
+            }
+        }
     </style>
 </head>
 
@@ -110,7 +117,7 @@
                 <div class="logo main-logo">
                     <a href="index-2.html">
                         <img class="dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
-                        <img class="light-logo" src="<?php echo GUEST ?>images/logo.png" alt="" />
+                        <img class="light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
                     </a>
                 </div>
 
@@ -175,9 +182,9 @@
                                     <div class="title-text-header">
                                         <span class="title-text-header-inner">
                                             <!-- <span>Jaringan Grosir Aksesoris Gadget<br> -->
-                                                <!-- <span style="text-decoration: underline;"> -->
-                                                <!-- Terbesar di Indonesia -->
-                                                <!-- </span> -->
+                                            <!-- <span style="text-decoration: underline;"> -->
+                                            <!-- Terbesar di Indonesia -->
+                                            <!-- </span> -->
                                             <!-- </span> -->
                                             <br>
                                             <h6>Aplikasi Ilufa bisa di download di</h6>
