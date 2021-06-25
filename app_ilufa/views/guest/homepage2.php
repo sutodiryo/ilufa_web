@@ -243,40 +243,57 @@
                             <div class="col-lg-6">
                                 <div class="services-item">
                                     <div class="line-before"></div>
-                                    <h4 class="subtitle">Brand Identity</h4>
-                                    <p>As Vintage decided to have a closer look into fast-paced New York web design
-                                        realm in person, we get to acquaint with most diverse and exceptionally
-                                        captivating personalities. </p>
+                                    <h4 class="subtitle">01</h4>
+                                    <p>Oleh karena pelanggan mempunyai kebutuhan, maka kami mempunyai pekerjaan yang dapat dilakukan </p>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="services-item">
                                     <div class="line-before"></div>
-                                    <h4 class="subtitle">Brand Identity</h4>
-                                    <p>As Vintage decided to have a closer look into fast-paced New York web design
-                                        realm in person, we get to acquaint with most diverse and exceptionally
-                                        captivating personalities. </p>
+                                    <h4 class="subtitle">02</h4>
+                                    <p>Oleh karena pelanggan mempunyai pilihan, maka kami harus menjadi pilihan terbaik </p>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="services-item">
                                     <div class="line-before"></div>
-                                    <h4 class="subtitle">Brand Identity</h4>
-                                    <p>As Vintage decided to have a closer look into fast-paced New York web design
-                                        realm in person, we get to acquaint with most diverse and exceptionally
-                                        captivating personalities. </p>
+                                    <h4 class="subtitle">03</h4>
+                                    <p>Oleh karena pelanggan mempunyai perasaan, maka kami harus penuh perhatian </p>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="services-item">
                                     <div class="line-before"></div>
-                                    <h4 class="subtitle">Brand Identity</h4>
-                                    <p>As Vintage decided to have a closer look into fast-paced New York web design
-                                        realm in person, we get to acquaint with most diverse and exceptionally
-                                        captivating personalities. </p>
+                                    <h4 class="subtitle">04</h4>
+                                    <p>Oleh karena pelanggan mempunyai suatu kepentingan, maka kami harus bertindak cepat dan responsif </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">05</h4>
+                                    <p>Oleh karena pelanggan itu unik, maka kami harus fleksibel </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">06</h4>
+                                    <p>Oleh karena pelanggan mempunyai harapan yang tinggi, maka kami harus mampu mewujudkanya </p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">07</h4>
+                                    <p>Oleh karena pelanggan mempunyai pengaruh, maka kami berusaha untuk memperoleh lebih banyak konsumen </p>
                                 </div>
                             </div>
                         </div>
@@ -308,9 +325,9 @@
                     <div class="container">
                         <div class="one-title" data-dsn-animate="up">
                             <div class="title-sub-container">
-                                <p class="title-sub">Our Servcies</p>
+                                <p class="title-sub">Skala</p>
                             </div>
-                            <h2 class="title-main">New Branding Agency</h2>
+                            <h2 class="title-main">Skala Kami</h2>
                         </div>
 
                         <div class="row">
@@ -322,7 +339,7 @@
                                         <img src="<?php echo GUEST ?>_droow/assets/img/services/1.png" alt="">
                                     </div>
                                     <div class="services-header">
-                                        <h3>DIGITAL PRODUCTS</h3>
+                                        <h3>XX Store</h3>
                                     </div>
                                     <p>Web design encompasses many different skills and disciplines in the production of
                                         all
@@ -338,7 +355,7 @@
                                         <img src="<?php echo GUEST ?>_droow/assets/img/services/2.png" alt="">
                                     </div>
                                     <div class="services-header">
-                                        <h3>UI-UX DESIGN</h3>
+                                        <h3>XXXX Member</h3>
                                     </div>
                                     <p>Web design encompasses many different skills and disciplines in the production of
                                         all
@@ -354,7 +371,7 @@
                                         <img src="<?php echo GUEST ?>_droow/assets/img/services/3.png" alt="">
                                     </div>
                                     <div class="services-header">
-                                        <h3>WEB DEVELOPMENT</h3>
+                                        <h3>XXX Mitra</h3>
                                     </div>
                                     <p>Web design encompasses many different skills and disciplines in the production of
                                         all
@@ -380,58 +397,62 @@
                                 <div class="work-container">
                                     <div class="slick-slider">
                                         <div class="work-item slick-slide">
-                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project3/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/spe-portable-bluetooth-+-mic-fj-2019.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
-                                                <a href="project-7.html" data-dsn-grid="move-up" class="effect-ajax">
-
-                                                    <h5 class="cat">Photography</h5>
-                                                    <h4>Nile - Kabutha</h4>
-                                                    <span><span>Veiw Project</span></span>
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Audio</h5>
+                                                    <h4>Speaker Portable Bluetooth + Mic FJ</h4>
+                                                    <span><span>Lihat Detail</span></span>
                                                 </a>
-
                                             </div>
                                         </div>
 
                                         <div class="work-item slick-slide">
-                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project6/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/fuze-luxury-route-66-vivo-y30-y50.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
-                                                <a href="project-6.html" data-dsn-grid="move-up" class="effect-ajax">
-
-                                                    <h5 class="cat">Fashion</h5>
-                                                    <h4>Bloawshom</h4>
-                                                    <span><span>Veiw Project</span></span>
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Phone Case</h5>
+                                                    <h4>Fuze Luxury Route 66 Vivo y30 y50</h4>
+                                                    <span><span>Lihat Detail</span></span>
                                                 </a>
-
                                             </div>
                                         </div>
 
                                         <div class="work-item slick-slide">
-                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project4/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/remax-hf-rm-512.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
-                                                <a href="project-4.html" data-dsn-grid="move-up" class="effect-ajax">
-
-                                                    <h5 class="cat">Photography</h5>
-                                                    <h4>Bastian Bux</h4>
-                                                    <span><span>Veiw Project</span></span>
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Audio</h5>
+                                                    <h4>Remax HF RM 512</h4>
+                                                    <span><span>Lihat Detail</span></span>
                                                 </a>
-
                                             </div>
                                         </div>
 
                                         <div class="work-item slick-slide">
-                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project5/1.jpg" alt="">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/pb-foomee-rb10 10000-mah-1.jpg" alt="">
                                             <div class="item-border"></div>
                                             <div class="item-info">
-                                                <a href="project-5.html" data-dsn-grid="move-up" class="effect-ajax">
-
-                                                    <h5 class="cat">Fashion</h5>
-                                                    <h4>Bloawshom</h4>
-                                                    <span><span>Veiw Project</span></span>
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Power Product</h5>
+                                                    <h4>Pwer Bank Foomee Rb10 10000 mAh</h4>
+                                                    <span><span>Lihat Detail</span></span>
                                                 </a>
+                                            </div>
+                                        </div>
 
+                                        <div class="work-item slick-slide">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/foomee-ja02-wireless-charger.jpg" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Power Product</h5>
+                                                    <h4>Foomee JA02 Wireless Charger</h4>
+                                                    <span><span>Lihat Detail</span></span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -448,7 +469,7 @@
                         <div class="row align-items-center h-100">
                             <div class="col-lg-6 ">
                                 <div class="box-im" data-dsn-grid="move-up">
-                                    <img class="lozad has-top-bottom" src="<?php echo GUEST ?>_droow/assets/img/project/project9/7.jpg" alt="" data-dsn-move="20%">
+                                    <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/foomee-ja02-wireless-charger.jpg" alt="" data-dsn-move="20%">
                                 </div>
                             </div>
 
@@ -458,7 +479,7 @@
                                 <div class="box-info">
 
                                     <div class="vertical-title" data-dsn-animate="up">
-                                        <h2>Time Tag Watch.</h2>
+                                        <h2>Foomee JA02 Wireless Charger</h2>
                                     </div>
 
                                     <h6 data-dsn-animate="up">Sometimes, we need to check the time, wondering when our
