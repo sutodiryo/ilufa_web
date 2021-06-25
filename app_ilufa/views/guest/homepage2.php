@@ -38,6 +38,10 @@
             margin-top: 100px;
         }
 
+        .footer-logo {
+            height: 70px;
+        }
+
         @media only screen and (max-width: 400px) {
             .logo-header-main {
                 height: 65px;
@@ -561,6 +565,20 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="item">
+                                        <div class="quote">
+                                            <p>"komplit, terlebih murah-murah harganya. jadi langganan belanja aksesoris di ilufa :)"</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="avatar">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GhiQiVArrmhHZKgd4uUQN9mJ-9e_KZDY39yD7OO=w60-h60-p-rp-mo-ba2-br100" alt="">
+                                            </div>
+                                            <div class="label">
+                                                <div class="cell">- Verundra W, Pelanggan Store Klaten</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -794,27 +812,33 @@
                 <div class="container">
                     <div class="footer-links p-relative">
                         <div class="row">
-                            <div class="col-md-3 dsn-col-footer">
+                            <div class="col-md-4 dsn-col-footer">
                                 <div class="footer-block">
                                     <div class="footer-logo">
-                                        <a href="#"><img class="lozad" src="<?php echo GUEST ?>images/logo.png" alt=""></a>
-                                    </div>
+                                        <a href="#">
 
-                                    <div class="footer-social">
+                                            <img src="<?php echo GUEST ?>images/logo.svg" alt="Ilufa 168" class="lozad footer-logo" />
 
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-
-                                        </ul>
+                                        </a>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 dsn-col-footer">
+                            <div class="col-md-4 dsn-col-footer">
+                                <div class="footer-block">
+                                    <h4 class="footer-title">Navigation</h4>
+                                    <div class="footer-social">
+                                        <ul>
+                                            <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://api.whatsapp.com/send/?phone=6282116750168&text&app_absent=0"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3 dsn-col-footer">
                                 <div class="footer-block col-menu">
                                     <h4 class="footer-title">Navigation</h4>
                                     <nav>
@@ -828,9 +852,9 @@
                                         </ul>
                                     </nav>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="col-md-3 dsn-col-footer">
+                            <div class="col-md-4 dsn-col-footer">
                                 <div class="footer-block col-contact">
                                     <h4 class="footer-title">Contact</h4>
                                     <p><strong>T</strong> <span>:</span> +001 225 3351</p>
@@ -840,14 +864,14 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 dsn-col-footer">
+                            <!-- <div class="col-md-4 dsn-col-footer">
                                 <div class="col-address">
                                     <h4 class="footer-title">Address</h4>
                                     <p>El-Mahalla El-Kubra 37<br>
                                         1776 Damietta<br>
                                         Egypt</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
