@@ -89,8 +89,8 @@
                         <li><a href="#tentang">Tentang</a></li>
                         <li><a href="#produk">Produk</a></li>
                         <li><a href="#blog">Blog</a></li>
-                        <li><a href="about.html">Karir</a></li>
-                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="#karir">Karir</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
                     </ul>
                 </nav>
             </div>
@@ -322,8 +322,6 @@
                         </div>
                     </div>
                 </div> -->
-
-
 
                 <section class="our-services-2 section-margin">
                     <div class="container">
