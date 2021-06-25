@@ -520,53 +520,44 @@
                             <div class="items">
                                 <div class="bg"></div>
                                 <div class="slick-slider">
+
                                     <div class="item">
                                         <div class="quote">
-                                            <p>"The Brief team has been sincerely committed to
-                                                designing great communication around our projects. Our customers love
-                                                their
-                                                creative work - and so do we!"</p>
+                                            <p>"Literally everything about cellular. Mainly softcase dan aksesoris, dari budget hingga premium. Kartu member sering hilang, sekarang diganti dengan aplikasi. Good move!"</p>
                                         </div>
                                         <div class="bottom">
                                             <div class="avatar">
-                                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/avatar/1.jpg" alt="">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GgBunAjbw_jZmHnPKEp2EDDKRm842RbXzHDw6_8yw=w60-h60-p-rp-mo-ba4-br100" alt="">
                                             </div>
                                             <div class="label">
-                                                <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
+                                                <div class="cell">- MH Hawali, Pelanggan Store Semarang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quote">
+                                            <p>"produk yang tersedia bermacam-macam, dan yang saya tahu ada produk dengan garansi hingga satu tahun. pelayanannya sangat baik."</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="avatar">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GhwuiDPbl3VUKtheQC-jP4eZ7NtoJ6A-NlakXj6VQ=w60-h60-p-rp-mo-ba3-br100" alt="">
+                                            </div>
+                                            <div class="label">
+                                                <div class="cell">- Martha Dewi, Pelanggan Store Semarang</div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="item">
                                         <div class="quote">
-                                            <p>"Stage direction, music, ballet, workshops, backstage, the GTG presents
-                                                the
-                                                first
-                                                episode of the series “Les Indes galantes en création"</p>
+                                            <p>"Pelayanan ramah...harga bersaing. Lebih murah kalau sudah jadi member."</p>
                                         </div>
                                         <div class="bottom">
                                             <div class="avatar">
-                                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/avatar/2.jpg" alt="">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14Gh0qFGzvlnlMBKf8q-QBTjnRibQwlbHyjxWeGygGA=w60-h60-p-rp-mo-ba4-br100" alt="">
                                             </div>
                                             <div class="label">
-                                                <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="quote">
-                                            <p>"The Brief team has been sincerely committed to
-                                                designing great communication around our projects. Our customers love
-                                                their
-                                                creative work - and so do we!"</p>
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="avatar">
-                                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/avatar/3.jpg" alt="">
-                                            </div>
-                                            <div class="label">
-                                                <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
+                                                <div class="cell">- Arru, Pelanggan Store Salatiga</div>
                                             </div>
                                         </div>
                                     </div>
