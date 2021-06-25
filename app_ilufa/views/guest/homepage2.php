@@ -340,14 +340,14 @@
                                     <div class="corner corner-top"></div>
                                     <div class="corner corner-bottom"></div>
                                     <div class="icon">
-                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/1.png" alt="">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/1.png" alt="" class="lozad">
                                     </div>
                                     <div class="services-header">
-                                        <h3>XX Store</h3>
+                                        <h3>24 Store</h3>
                                     </div>
-                                    <p>Web design encompasses many different skills and disciplines in the production of
+                                    <!-- <p>Web design encompasses many different skills and disciplines in the production of
                                         all
-                                        web.</p>
+                                        web.</p> -->
                                 </div>
                             </div>
 
@@ -356,14 +356,14 @@
                                     <div class="corner corner-top"></div>
                                     <div class="corner corner-bottom"></div>
                                     <div class="icon">
-                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/2.png" alt="">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/2.png" alt="" class="lozad">
                                     </div>
                                     <div class="services-header">
-                                        <h3>XXXX Member</h3>
+                                        <h3>93.221 Member</h3>
                                     </div>
-                                    <p>Web design encompasses many different skills and disciplines in the production of
+                                    <!-- <p>Web design encompasses many different skills and disciplines in the production of
                                         all
-                                        web.</p>
+                                        web.</p> -->
                                 </div>
                             </div>
 
@@ -372,14 +372,14 @@
                                     <div class="corner corner-top"></div>
                                     <div class="corner corner-bottom"></div>
                                     <div class="icon">
-                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/3.png" alt="">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/3.png" alt="" class="lozad">
                                     </div>
                                     <div class="services-header">
-                                        <h3>XXX Mitra</h3>
+                                        <h3>1.785 Mitra</h3>
                                     </div>
-                                    <p>Web design encompasses many different skills and disciplines in the production of
+                                    <!-- <p>Web design encompasses many different skills and disciplines in the production of
                                         all
-                                        web.</p>
+                                        web.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -816,24 +816,21 @@
                                 <div class="footer-block">
                                     <div class="footer-logo">
                                         <a href="#">
-
-                                            <img src="<?php echo GUEST ?>images/logo.svg" alt="Ilufa 168" class="lozad footer-logo" />
-
+                                            <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class="lozad" height="200px" width="500px" />
                                         </a>
-
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4 dsn-col-footer">
                                 <div class="footer-block">
-                                    <h4 class="footer-title">Navigation</h4>
+                                    <h4 class="footer-title">Temukan kami di</h4>
                                     <div class="footer-social">
                                         <ul>
-                                            <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://facebook.com/ilufaofficial"><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href="https://api.whatsapp.com/send/?phone=6282116750168&text&app_absent=0"><i class="fab fa-whatsapp"></i></a></li>
-                                            <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="https://youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                                            <li><a href="https://instagram.com/168ilufa_official"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UCOns8B-ZYPeeGDD8AVR4kAA"><i class="fab fa-youtube"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -856,11 +853,10 @@
 
                             <div class="col-md-4 dsn-col-footer">
                                 <div class="footer-block col-contact">
-                                    <h4 class="footer-title">Contact</h4>
-                                    <p><strong>T</strong> <span>:</span> +001 225 3351</p>
-                                    <p><strong>F</strong> <span>:</span>+001 225 3351</p>
-                                    <p class="over-hidden"><strong>E</strong> <span>:</span><a class="link-hover" data-hover-text="info@dsngrid.com" href="#">info@dsngrid.com</a>
-                                    </p>
+                                    <h4 class="footer-title">Hubungi kami</h4>
+                                    <p><a href="tel:6282116750168"><strong><i class="fa fa-phone"></i></strong><span></span>+62 821 16750 168</a></p>
+                                    <p><a href="tel:628891168168"><strong><i class="fa fa-phone"></i></strong><span></span>+62 8891 168 168</a></p>
+                                    <p class="over-hidden"><a class="link-hover" data-hover-text="168@ilufa.co.id" href="mailto:168@ilufa.co.id"><strong><i class="fa fa-envelope"></i></strong><span></span>168@ilufa.co.id</a></p>
                                 </div>
                             </div>
 
@@ -878,7 +874,7 @@
                     <div class="copyright">
                         <div class="text-center">
                             <p>© <?php echo date('Y'); ?> CV Satu Jalan Sukses - Ilufa 168</p>
-                            <div class="copright-text over-hidden">Designed by <a class="link-hover" data-hover-text="DSN Grid" href="#" target="_blank">168 Team</a>
+                            <div class="copright-text over-hidden">Designed by <a class="link-hover" data-hover-text="DSN Grid" href="https://ilufa.co.id" target="_blank">168 Team</a>
                             </div>
                         </div>
                     </div>
