@@ -1,796 +1,917 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-    <title>lufa 168 | Official Website</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="lufa 168" />
-    <meta name="keywords" content="Ilufa 168, Ilufa, Ilufa Accesories" />
-    <meta name="author" content="Ilufa" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="discrption" content="lufa 168" />
+    <meta name="keyword" content="lufa 168" />
 
-    <link rel="shortcut icon" href="<?php echo GUEST ?>images/favicon.png" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/clear.css' />
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/common.css' />
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/font-awesome.min.css' />
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/carouFredSel.css' />
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/prettyPhoto.css' />
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/sm-clean.css' />
-    <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>style.css' />
+    <!--  Title -->
+    <title>Ilufa 168 | Official Website</title>
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
+
+    <!-- <link rel="shortcut icon" href="<?php echo GUEST ?>images/icon.png" type="image/png" /> -->
+    <!-- <link rel="icon" href="<?php echo GUEST ?>images/icon.png" type="image/png" /> -->
+    <link rel="icon" type="image/png" href="<?php echo GUEST ?>images/favicons.png">
+
+    <!-- custom styles (optional) -->
+    <link href="<?php echo GUEST ?>_droow/assets/css/plugins.css" rel="stylesheet" />
+    <link href="<?php echo GUEST ?>_droow/assets/css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
     <style>
-        
-        .video-background {
-            background: #000;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -99;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .video-foreground,
-        .video-background iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
+
+        .logo-header-main {
+            height: 100px;
         }
 
-        @media (min-aspect-ratio: 16/9) {
-            .video-foreground {
-                height: 300%;
-                top: -100%;
+        .main-header-text {
+            margin-top: 100px;
+        }
+
+        .footer-logo {
+            height: 70px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .logo-header-main {
+                height: 65px;
             }
-        }
 
-        @media (max-aspect-ratio: 16/9) {
-            .video-foreground {
-                width: 300%;
-                left: -100%;
-            }
-        }
-
-        .content {
-            padding: 25px;
-            background-color: rgba(#000, .3);
-            position: absolute;
-            right: 50px;
-            bottom: 50px;
-
-            h1 {
-                font-family: 'Roboto Slab', serif;
-                margin: 0;
-                color: #fff;
+            .main-header-text {
+                margin-top: 60px;
             }
         }
     </style>
 </head>
 
-<body>
-    <table class="doc-loader">
-        <tr>
-            <td>
-                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." />
-            </td>
-        </tr>
-    </table>
+<body class="dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
 
-    <!-- Menu -->
-    <div class="menu-wrapper center-relative">
-        <nav id="header-main-menu">
-            <div class="mob-menu">MENU</div>
-            <ul class="main-menu sm sm-clean">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Perusahaan</a></li>
-                <li><a href="#product">Produk</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#career">Karir</a></li>
-                <!-- <li><a href="#video">Video</a></li> -->
-                <!-- <li><a href="#skills">Skills</a></li> -->
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </div>
-
-
-    <!-- Home -->
-    <div id="home" class="section intro-page">
-
-        <!-- <div class="video-background">
-            <div class="video-foreground">
-                <iframe src="https://www.youtube.com/embed/0smcuxMuX2w?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen style="opacity: 0.4; filter: alpha(opacity=40);"></iframe> -->
-        <!-- <iframe src="https://player.vimeo.com/video/45878034?background=1" frameborder="0" allowfullscreen></iframe> -->
-        <!-- </div>
-        </div> -->
-
-        <div class="block content-1170 center-relative center-text">
-            <img class="top-logo" src="<?php echo GUEST ?>demo-images/logo.png" alt="Boxus" />
-            <!-- <br> -->
-            <h1 class="big-title">Jaringan Grosir <span>Aksesoris Gadget Terbesar di Indonesia</span></h1>
-            <!-- <p class="title-desc">Support bright students today for a better tomorrow</p> -->
+    <div class="preloader">
+        <div class="preloader-after"></div>
+        <div class="preloader-before"></div>
+        <div class="preloader-block">
+            <div class="title">
+                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 250px;" />
+            </div>
+            <div class="percent">0</div>
+            <div class="loading">loading...</div>
         </div>
-
-    </div>
-
-    <!-- About -->
-    <div id="about" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder left">
-                <div class="section-num">
-                    <span>01</span>
-                </div>
-                <h2 class="entry-title">Tentang</h2>
-            </div>
-            <div class="section-content-holder right">
-                <div class="content-wrapper">
-                    <div class="content-title-holder">
-                        <p class="content-title">About</p>
-                    </div>
-                    <div class="one_half ">
-                        iLuFA 168 merupakan salah satu perusahaan dengan bisnis utama menyediakan segala macam aksesoris handphone, gadget, peralatan pendukung fotografi, gaming, pembuatan konten audio visual dan sound recording.
-                        <!-- iLufa 168 didirikan oleh Bapak Liem Sin Liang pada tanggal 16 Agustus 2000 di kota Solo.
-                        iLuFA 168 merupakan Perusahaan yang semakin berkembang dengan selalu menjunjung tinggi tanggung jawab sebagai landasan dalam menjalankan usaha. -->
-                        <!-- Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor -->
-                    </div>
-                    <div class="one_half last ">
-                        <span style="color: #e54b76;"><strong>2001-2003 ·</strong></span> <span style="color:#727190;"><em>Art Studio Lorem Donec</em></span><br>
-                        <span style="color: #e54b76;"><strong>2003-2006 ·</strong></span> <span style="color:#727190;"><em>Per Set Web Site</em></span><br>
-                        <span style="color: #e54b76;"><strong>2006-2010 ·</strong></span> <span style="color:#727190;"><em>Setera Donec EstNunc</em></span><br>
-                        <span style="color: #e54b76;"><strong>2010-2013 ·</strong></span> <span style="color:#727190;"><em>Studio Labore Tempor</em></span><br>
-                        <span style="color: #e54b76;"><strong>2013-2016 ·</strong></span> <span style="color:#727190;"><em>Magna Ipsum Amet</em></span><br>
-                    </div>
-                    <div class="clear"></div>
-                    <br>
-                    <br>
-                </div>
-
-                <div class="full-width ">
-                    <script>
-                        var aboutImage_speed = "500";
-                        var aboutImage_auto = "false";
-                        var aboutImage_hover = "true";
-                    </script>
-                    <div class="image-slider-wrapper relative img aboutImage">
-                        <a id="aboutImage_next" class="image_slider_next" href="#"></a>
-                        <div class="caroufredsel_wrapper">
-                            <ul id="aboutImage" class="image-slider slides">
-                                <li><img src="<?php echo GUEST ?>demo-images/about_img_04.jpg" alt=""></li>
-                                <li><img src="<?php echo GUEST ?>demo-images/about_img_05.jpg" alt=""></li>
-                                <li><img src="<?php echo GUEST ?>demo-images/about_img_06.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-
-                    <script>
-                        var team1_speed = "500";
-                        var team1_auto = "false";
-                        var team1_hover = "true";
-                    </script>
-                    <div class="image-slider-wrapper relative team team1">
-                        <a id="team1_next" class="image_slider_next" href="#"></a>
-                        <div class="caroufredsel_wrapper">
-                            <ul id="team1" class="image-slider slides">
-                                <li>
-                                    <div class="member-content-holder">
-                                        <h4 class="member-name">Robert Williams</h4>
-                                        <p class="member-position">LEAD DESIGNER</p>
-                                        <div class="member-content">
-                                            Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
-                                        </div>
-                                    </div>
-                                    <div class="member-image-holder">
-                                        <img src="<?php echo GUEST ?>demo-images/about_img_01.jpg" alt="">
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-
-                                <li>
-                                    <div class="member-content-holder">
-                                        <h4 class="member-name">John Doe</h4>
-                                        <p class="member-position">SEO MASTER</p>
-                                        <div class="member-content">
-                                            Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
-                                        </div>
-                                    </div>
-                                    <div class="member-image-holder">
-                                        <img src="<?php echo GUEST ?>demo-images/about_img_02.jpg" alt="">
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-
-                                <li>
-                                    <div class="member-content-holder">
-                                        <h4 class="member-name">John Doe</h4>
-                                        <p class="member-position">PSD GURU</p>
-                                        <div class="member-content">
-                                            Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
-                                        </div>
-                                    </div>
-                                    <div class="member-image-holder">
-                                        <img src="<?php echo GUEST ?>demo-images/about_img_03.jpg" alt="">
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <!-- end full-width div -->
-
-            </div>
-            <div class="clear"></div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
         </div>
     </div>
 
-    <!-- Service -->
-    <!-- <div id="services" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder left"> -->
-
-    <!-- <img src="<?php echo GUEST ?>demo-images/about.png" alt="" style="opacity: 0.4; filter: alpha(opacity=40);"> -->
-
-    <!-- <div class="section-num">
-                    <span>01</span>
-                </div>
-                <h2 class="entry-title">About</h2>
-            </div>
-            <div class="section-content-holder right">
-                <div class="content-wrapper">
-                    <script>
-                        var slider1_speed = "500";
-                        var slider1_auto = "false";
-                        var slider1_hover = "true";
-                    </script>
-                    <div class="image-slider-wrapper relative service slider1">
-                        <a id="slider1_next" class="image_slider_next" href="#"></a>
-
-                        <ul id="slider1" class="image-slider slides">
-                            <li>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">BRANDING</div>
-                                        <div class="service-content">dfdsgfhbg<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">MOBILE APPS</div>
-                                        <div class="service-content">
-                                            Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">WEB</div>
-                                        <div class="service-content">
-                                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">GRAPHIC</div>
-                                        <div class="service-content">
-                                            Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">SERVICES</div>
-                                        <div class="service-content">
-                                            Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">PSD</div>
-                                        <div class="service-content">
-                                            Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">HTML</div>
-                                        <div class="service-content">
-                                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
-                                    <div class="service-content-holder">
-                                        <div class="service-title">PHP</div>
-                                        <div class="service-content">
-                                            Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-
-                </div>
-            </div>
-            <div class='clear'></div>
-        </div>
-    </div> -->
-
-    <!-- Portfolio -->
-    <div id="product" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder right">
-                <div class="section-num">
-                    <span>02</span>
-                </div>
-                <h2 class="entry-title">Product</h2>
-            </div>
-            <div class="section-content-holder portfolio-holder left">
-                <div class="grid" id="portfolio-grid">
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item element-item p_one">
-                        <a href="single-portfolio.html">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_01.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item element-item p_one_half">
-                        <a href="single-portfolio2.html">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_02.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item element-item p_one_half">
-                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_08.jpg">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_08.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item element-item p_one">
-                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_05.jpg">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_05.jpg" alt="">
-                            <div class="portfolio-text-holder">
-                                <div class="portfolio-text-wrapper">
-                                    <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
-                                    </p>
-                                    <p class="portfolio-text">PSD MOCKUP</p>
-                                    <p class="portfolio-sec-text">Smart Watch</p>
-                                </div>
-                            </div>
+    <!-- Nav Bar -->
+    <div class="dsn-nav-bar">
+        <div class="site-header">
+            <div class="extend-container">
+                <div class="inner-header">
+                    <div class="main-logo">
+                        <a href="#">
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_1_dark.png" alt="" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_1.png" alt="" />
                         </a>
                     </div>
                 </div>
-
-                <div class="clear"></div>
-                <div class="block portfolio-load-more-holder">
-                    <a target="_self" class="more-posts">LOAD MORE</a>
-                    <img src="<?php echo GUEST ?>images/icon_infinity.svg" alt="Load more">
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-
-    <!-- News -->
-    <div id="blog" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder right">
-                <div class="section-num">
-                    <span>03</span>
-                </div>
-                <h2 class="entry-title">Blog</h2>
-            </div>
-            <div class="section-content-holder left">
-                <div class="content-wrapper">
-                    <div class="blog-holder block center-relative">
-
-                        <article class="relative blog-item-holder center-relative">
-                            <div class="num">01</div>
-                            <div class="info">
-                                <div class="author vcard ">Robert Williams</div>
-                                <div class="cat-links">
-                                    <ul>
-                                        <li><a href="#">BRANDING</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h3 class="entry-title">
-                                <a href="#">Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor</a>
-                            </h3>
-                            <div class="clear"></div>
-                        </article>
-
-                        <article class="relative blog-item-holder center-relative">
-                            <div class="num">02</div>
-                            <div class="info">
-                                <div class="author vcard ">Jim Davis</div>
-                                <div class="cat-links">
-                                    <ul>
-                                        <li><a href="#">TECH</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h3 class="entry-title">
-                                <a href="#">Incididunt ut dolore magna labore eiusmod lorem ipsum dolor sit</a>
-                            </h3>
-                            <div class="clear"></div>
-                        </article>
-
-                        <article class="relative blog-item-holder center-relative">
-                            <div class="num">03</div>
-                            <div class="info">
-                                <div class="author vcard ">Ann Peterson</div>
-                                <div class="cat-links">
-                                    <ul>
-                                        <li><a href="#">CRAFTING</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h3 class="entry-title">
-                                <a href="#">Labore eiusmod lorem ipsum dolor sit amet nunc labore incididunt ut dolore</a>
-                            </h3>
-                            <div class="clear"></div>
-                        </article>
-
-                        <article class="relative blog-item-holder center-relative">
-                            <div class="num">04</div>
-                            <div class="info">
-                                <div class="author vcard ">Robert Williams</div>
-                                <div class="cat-links">
-                                    <ul>
-                                        <li><a href="#">CRAFTING</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h3 class="entry-title">
-                                <a href="#">Dolor sit amet nunc labore incididunt ut dolore magna labore eiusmod</a>
-                            </h3>
-                            <div class="clear"></div>
-                        </article>
-
-                        <div class="latest-post-bottom-text">
-                            <a href="#">GO TO BLOG</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-
-        <div class="block content-1170 center-relative">
-            <div class="extra-content-left">
-                <script>
-                    var text1_speed = "500";
-                    var text1_auto = "false";
-                    var text1_hover = "true";
-                </script>
-                <div class="text1 testimonial-slider-holder slider-holder">
-                    <div class="caroufredsel_wrapper">
-                        <ul id="text1" class="slides testimonial">
-                            <li>
-                                <div class="testimonial-content">
-                                    <p class="testimonial-text">The difference between a Designer and Developer, when it comes to design skills, is the difference between shooting a bullet and throwing it.</p>
-                                    <p class="testimonial-author">SCOTT HANSELMAN</p>
-                                </div>
-                                <div class="clear">
-                                </div>
-                            </li>
-                            <li style="width: 500px;">
-                                <div class="testimonial-content">
-                                    <p class="testimonial-text">To create anything–whether a short story or a magazine profile or a film or a sitcom–is to believe, if only momentarily, you are capable of magic.</p>
-                                    <p class="testimonial-author">TOM BISSEL</p>
-                                </div>
-                                <div class="clear"></div>
-                            </li>
-                            <li>
-                                <div class="testimonial-content">
-                                    <p class="testimonial-text">As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.</p>
-                                    <p class="testimonial-author">STEVEN HELLER</p>
-                                </div>
-                                <div class="clear"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <a id="text1_next" class="carousel_text_next" href="#"></a>
-                    <div class="clear"></div>
-                </div>
+                <nav class=" accent-menu main-navigation">
+                    <ul class="extend-container">
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#karir">Karir</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-
-    <!-- Video -->
-    <div id="career" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder left">
-                <div class="section-num">
-                    <span>
-                        05
-                    </span>
-                </div>
-                <h2 class="entry-title">OFFER</h2>
-            </div>
-            <div class="section-content-holder right">
-                <div class="content-wrapper">
-                    <div class="content-title-holder">
-                        <p class="content-title">Video</p>
-                    </div>
-                    <div class="one_half ">
-                        Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor
-                    </div>
-                    <div class="one_half last ">
-                        <span style="color: #FFBA42;"><strong>2001-2003 ·</strong></span> <span style="color: #727190;"><em>Art Studio Lorem Donec</em></span><br>
-                        <span style="color: #FFBA42;"><strong>2003-2006 ·</strong></span> <span style="color: #727190;"><em>Per Set Web Site</em></span><br>
-                        <span style="color: #FFBA42;"><strong>2006-2010 ·</strong></span> <span style="color: #727190;"><em>Setera Donec EstNunc</em></span><br>
-                        <span style="color: #FFBA42;"><strong>2010-2013 ·</strong></span> <span style="color: #727190;"><em>Studio Labore Tempor</em></span><br>
-                        <span style="color: #FFBA42;"><strong>2013-2016 ·</strong></span> <span style="color: #727190;"><em>Magna Ipsum Amet</em></span><br>
-                    </div>
-                    <div class="clear"></div>
-                    <br>
-                    <br>
-                </div>
-                <div class="full-width ">
-                    <a class="video-popup-holder" href="https://vimeo.com/157276599" data-rel="prettyPhoto[gallery-video1]">
-                        <img class="thumb" src="<?php echo GUEST ?>demo-images/video_img.jpg" alt="">
-                        <img class="popup-play" src="<?php echo GUEST ?>images/icon_video.svg" alt="Play">
+        <div class="header-top header-top-hamburger">
+            <div class="header-container">
+                <div class="logo main-logo">
+                    <a href="index-2.html">
+                        <img class="lozad dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
+                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
                     </a>
                 </div>
-            </div>
-            <div class="clear"></div>
-        </div>
 
-        <div class="extra-content-full-width">
-            <script>
-                var fwslider1_speed = "500";
-                var fwslider1_auto = "false";
-                var fwslider1_hover = "true";
-                var fwslider1_start = "0";
-                var fwslider1_width = "400";
-                var fwslider1_num = "5";
-            </script>
-            <div class="fwslider1 fw-image-slider-holder list_carousel relative">
-                <div class="caroufredsel_wrapper">
-                    <ul id="fwslider1" class="fw-image-slider">
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_editing.png" alt="">
-                            <p class="fw-slide-text">Video Editing</p>
-                        </li>
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_clear.png" alt="">
-                            <p class="fw-slide-text">Premium Cleer</p>
-                        </li>
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_display.png" alt="">
-                            <p class="fw-slide-text">For All Displays</p>
-                        </li>
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_time.png" alt="">
-                            <p class="fw-slide-text">Right On Time</p>
-                        </li>
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_ideas.png" alt="">
-                            <p class="fw-slide-text">Innovative Ideas</p>
-                        </li>
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_sound.png" alt="">
-                            <p class="fw-slide-text">Perfect Sound</p>
-                        </li>
-                        <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_solution.png" alt="">
-                            <p class="fw-slide-text">3D Solution</p>
-                        </li>
-                    </ul>
+                <div class="menu-icon" data-dsn="parallax" data-dsn-move="5">
+                    <div class="icon-m">
+                        <i class="menu-icon-close fas fa-times"></i>
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
+                    </div>
+
+                    <div class="text-menu">
+                        <div class="text-button">Menu</div>
+                        <div class="text-open">Open</div>
+                        <div class="text-close">Close</div>
+                    </div>
                 </div>
-                <div class="clear"></div>
-                <div id="fwslider1_fw_image_slide_pager" class="fw_carousel_pagination"></div>
+
+                <div class="nav">
+                    <div class="inner">
+                        <div class="nav__content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-content">
+                    <div class="inner-content">
+                        <address class="v-middle">
+                            <span>Egypt</span>
+                            <span>Damietta</span>
+                            <span>01024552406</span>
+                        </address>
+                    </div>
+                </div>
             </div>
-            <a id="fwslider1_fw_next" class="carousel_fw_next" href="#"></a>
-            <div class="clear"></div>
         </div>
     </div>
+    <!-- End Nav Bar -->
 
-    <!-- Skills -->
-    <div id="skills" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder right">
-                <div class="section-num">
-                    <span>06</span>
+    <main class="main-root">
+        <div id="dsn-scrollbar">
+            <header>
+                <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project">
+                    <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
+                        <div class=" " data-dsn="video" data-overlay="4">
+                            <video class="lozad bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>_droow/assets/img/video-bg.jpg" autoplay loop muted playsinline>
+                                <source src="<?php echo GUEST ?>videos/head_1.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="project-page__inner">
+                        <div class="h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="project-title" id="dsn-hero-parallax-title">
+                                    <div class="sub-text-header">
+                                        <img src="<?php echo GUEST ?>images/logo.svg" alt="Ilufa 168" class="lozad logo-header-main" />
+                                        <!-- <h5>Jaringan Grosir Aksesoris Gadget Terbesar di Indonesia</h5> -->
+                                    </div>
+
+                                    <div class="title-text-header">
+                                        <span class="title-text-header-inner">
+                                            <!-- <span>Jaringan Grosir Aksesoris Gadget<br> -->
+                                            <!-- <span style="text-decoration: underline;"> -->
+                                            <!-- Terbesar di Indonesia -->
+                                            <!-- </span> -->
+                                            <!-- </span> -->
+                                            <br>
+                                            <h6 class="main-header-text">Aplikasi Ilufa bisa di download di</h6>
+                                            <br>
+                                            <a href='https://play.google.com/store/apps/details?id=id.compro.ilufa168&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                                                <img class="lozad" src="<?php echo GUEST ?>images/play1.svg" width="150px">
+                                            </a>
+                                            <a href="https://apps.apple.com/id/app/ilufa168/id1549134035?l=id">
+                                                <img class="lozad" src="<?php echo GUEST ?>images/app1.svg" width="150px">
+                                            </a>
+                                        </span>
+                                        <!-- <div class="link-custom">
+                                            <a class="image-zoom effect-ajax" href="#" data-dsn="parallax">
+                                                <span>Play Store</span>
+                                            </a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="entry-title">EXPERTISE</h2>
-            </div>
-            <div class="section-content-holder left">
-                <div class="content-wrapper">
-                    <div class="content-title-holder">
-                        <p class="content-title">Skills</p>
-                    </div>
-                    <p>Fusce suscipit, orci eget lobortis sodales, velit nunc tristique metus, in tristique odio ante id sem. Etiam in quam et sapien bibendum mollis. Morbi eget velit eros, quis imperdiet arcusere perdan. Nunc lorem justo, pellentesque ac
-                        egestas quis.</p>
-                    <br>
-                    <div class="progress_bar ">
-                        <div class="progress_bar_field_holder" style="width:81%;">
-                            <div class="progress_bar_title" style="color: #55B286">HTML</div>
-                            <div class="progress_bar_percent_text" style="color: #55B286">81%</div>
-                            <div class="progress_bar_field_perecent" style="background-color:#32DB8A;"></div>
+            </header>
+
+            <div class="wrapper">
+
+                <section class="intro-about section-margin" id="tentang">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="intro-content-text">
+
+                                    <h2 data-dsn-grid="move-section" data-dsn-move="-30" data-dsn-duration="100%" data-dsn-opacity="1.2" data-dsn-responsive="tablet">
+                                        Tentang <br />Ilufa 168
+                                    </h2>
+
+                                    <p data-dsn-animate="text">
+                                        iLuFA 168 merupakan salah satu perusahaan dengan bisnis utama menyediakan segala macam aksesoris handphone, gadget, peralatan pendukung fotografi, gaming, pembuatan konten audio visual dan sound recording.
+                                        <h6 data-dsn-animate="text">Didirikan Pada</h6>
+                                        <!-- <small data-dsn-animate="text">Digital Artisit</small> -->
+
+                                        <div class="exper">
+                                            <div class="numb-ex">
+                                                <span class="word" data-dsn-animate="text">16</span>
+                                            </div>
+
+                                            <h4 data-dsn-animate="up">Agustus <br> 2000</h4>
+                                        </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="progress_bar ">
-                        <div class="progress_bar_field_holder" style="width:93%;">
-                            <div class="progress_bar_title" style="color: #E3A536">CSS</div>
-                            <div class="progress_bar_percent_text" style="color: #E3A536">93%</div>
-                            <div class="progress_bar_field_perecent" style="background-color:#FFBB42;"></div>
+                    <div class="background-mask">
+                        <div class="background-mask-bg"></div>
+                        <div class="img-box">
+                            <div class="img-cent" data-dsn-grid="move-up">
+                                <div class="img-container">
+                                    <img class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>images/bgg_2.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="progress_bar ">
-                        <div class="progress_bar_field_holder" style="width:72%;">
-                            <div class="progress_bar_title" style="color: #B24564">PSD</div>
-                            <div class="progress_bar_percent_text" style="color: #B24564">72%</div>
-                            <div class="progress_bar_field_perecent" style="background-color:#E74C78;"></div>
+                </section>
+
+                <section class="our-services section-margin">
+                    <div class="container">
+                        <div class="one-title">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Komitmen</p>
+                            </div>
+                            <h2 class="title-main">Komitmen Kami Pada Pelanggan</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">01</h4>
+                                    <p>Oleh karena pelanggan mempunyai kebutuhan, maka kami mempunyai pekerjaan yang dapat dilakukan </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">02</h4>
+                                    <p>Oleh karena pelanggan mempunyai pilihan, maka kami harus menjadi pilihan terbaik </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">03</h4>
+                                    <p>Oleh karena pelanggan mempunyai perasaan, maka kami harus penuh perhatian </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">04</h4>
+                                    <p>Oleh karena pelanggan mempunyai suatu kepentingan, maka kami harus bertindak cepat dan responsif </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">05</h4>
+                                    <p>Oleh karena pelanggan itu unik, maka kami harus fleksibel </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">06</h4>
+                                    <p>Oleh karena pelanggan mempunyai harapan yang tinggi, maka kami harus mampu mewujudkanya </p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6">
+                                <div class="services-item">
+                                    <div class="line-before"></div>
+                                    <h4 class="subtitle">07</h4>
+                                    <p>Oleh karena pelanggan mempunyai pengaruh, maka kami berusaha untuk memperoleh lebih banyak konsumen </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="progress_bar ">
-                        <div class="progress_bar_field_holder" style="width:99%;">
-                            <div class="progress_bar_title" style="color: #468ac7">DESIGN</div>
-                            <div class="progress_bar_percent_text" style="color: #468ac7">99%</div>
-                            <div class="progress_bar_field_perecent" style="background-color:#4C9EE7;"></div>
+                </section>
+
+                <!-- <div class="box-seat box-seat-full section-margin">
+                    <div class="container-fluid">
+                        <div class="inner-img" data-dsn-grid="move-up">
+                            <img class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>_droow/assets/img/project/project2/3.jpg" alt="">
+                        </div>
+                        <div class="pro-text">
+                            <h3> How is your<br> visual identity?</h3>
+                            <p>A system that young people around the world with a club culture and techno
+                                enthusiasts feel identified. We generated a simple logo that is the basis for
+                                generating a geometric and liquid system. </p>
+                            <div class="link-custom">
+                                <a class="image-zoom effect-ajax" href="project-2.html" data-dsn="parallax">
+                                    <span>Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <section class="our-services-2 section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Skala</p>
+                            </div>
+                            <h2 class="title-main">Skala Kami</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="services-item">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/1.png" alt="" class="lozad">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>24 Store</h3>
+                                    </div>
+                                    <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="services-item selected">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/2.png" alt="" class="lozad">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>93.221 Member</h3>
+                                    </div>
+                                    <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="services-item">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="<?php echo GUEST ?>_droow/assets/img/services/3.png" alt="" class="lozad">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>1.785 Mitra</h3>
+                                    </div>
+                                    <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+                    <div class="container">
+                        <div class="one-title">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Produk</p>
+                            </div>
+                            <h2 class="title-main">Produk Terbaru</h2>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-9 offset-lg-3">
+                                <div class="work-container">
+                                    <div class="slick-slider">
+                                        <div class="work-item slick-slide">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/spe-portable-bluetooth-+-mic-fj-2019.jpg" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Audio</h5>
+                                                    <h4>Speaker Portable Bluetooth + Mic FJ</h4>
+                                                    <span><span>Lihat Detail</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/fuze-luxury-route-66-vivo-y30-y50.jpg" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Phone Case</h5>
+                                                    <h4>Fuze Luxury Route 66 Vivo y30 y50</h4>
+                                                    <span><span>Lihat Detail</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/remax-hf-rm-512.jpg" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Audio</h5>
+                                                    <h4>Remax HF RM 512</h4>
+                                                    <span><span>Lihat Detail</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/pb-foomee-rb10 10000-mah-1.jpg" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Power Product</h5>
+                                                    <h4>Pwer Bank Foomee Rb10 10000 mAh</h4>
+                                                    <span><span>Lihat Detail</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/foomee-ja02-wireless-charger.jpg" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                                    <h5 class="cat">Power Product</h5>
+                                                    <h4>Foomee JA02 Wireless Charger</h4>
+                                                    <span><span>Lihat Detail</span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class=" box-gallery-vertical section-margin section-padding">
+                    <div class="mask-bg"></div>
+                    <div class="container">
+                        <div class="row align-items-center h-100">
+                            <div class="col-lg-6 ">
+                                <div class="box-im" data-dsn-grid="move-up">
+                                    <img class="lozad has-top-bottom" src="<?php echo GUEST ?>images/product/foomee-ja02-wireless-charger.jpg" alt="" data-dsn-move="20%">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+
+
+                                <div class="box-info">
+
+                                    <div class="vertical-title" data-dsn-animate="up">
+                                        <h2>Foomee JA02 Wireless Charger</h2>
+                                    </div>
+
+                                    <h6 data-dsn-animate="up">Sometimes, we need to check the time, wondering when our
+                                        work
+                                        or meeting will finish, without getting caught by others.</h6>
+
+                                    <p data-dsn-animate="up">To avoid your boss’s
+                                        staring eye, you should not roll your eyes to check the time. The Time Tag Watch
+                                        is
+                                        a consummately appropriate for it.
+                                        Those tags do the role of the hands of the watch. By rotating the face of the
+                                        watch
+                                        not the hands, it gets harder to be damaged. It provides you with experience to
+                                        feel
+                                        the time at the end of your finger without damaging your watch.</p>
+
+                                    <div class="link-custom" data-dsn-animate="up">
+                                        <a class="image-zoom effect-ajax" href="project-9.html" data-dsn="parallax">
+                                            <span>Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
+                <section class="client-see section-margin">
+                    <div class="container">
+                        <div class="inner">
+                            <div class="left">
+                                <h2 class="title" data-dsn-grid="move-section" data-dsn-move="-60" data-dsn-duration="100%" data-dsn-opacity="1" data-dsn-responsive="tablet">
+                                    <span class="text">Feedback from our clients.</span>
+                                </h2>
+                            </div>
+
+                            <div class="items">
+                                <div class="bg"></div>
+                                <div class="slick-slider">
+
+                                    <div class="item">
+                                        <div class="quote">
+                                            <p>"Literally everything about cellular. Mainly softcase dan aksesoris, dari budget hingga premium. Kartu member sering hilang, sekarang diganti dengan aplikasi. Good move!"</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="avatar">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GgBunAjbw_jZmHnPKEp2EDDKRm842RbXzHDw6_8yw=w60-h60-p-rp-mo-ba4-br100" alt="">
+                                            </div>
+                                            <div class="label">
+                                                <div class="cell">- MH Hawali, Pelanggan Store Semarang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quote">
+                                            <p>"produk yang tersedia bermacam-macam, dan yang saya tahu ada produk dengan garansi hingga satu tahun. pelayanannya sangat baik."</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="avatar">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GhwuiDPbl3VUKtheQC-jP4eZ7NtoJ6A-NlakXj6VQ=w60-h60-p-rp-mo-ba3-br100" alt="">
+                                            </div>
+                                            <div class="label">
+                                                <div class="cell">- Martha Dewi, Pelanggan Store Semarang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="quote">
+                                            <p>"Pelayanan ramah...harga bersaing. Lebih murah kalau sudah jadi member."</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="avatar">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14Gh0qFGzvlnlMBKf8q-QBTjnRibQwlbHyjxWeGygGA=w60-h60-p-rp-mo-ba4-br100" alt="">
+                                            </div>
+                                            <div class="label">
+                                                <div class="cell">- Arru, Pelanggan Store Salatiga</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="quote">
+                                            <p>"komplit, terlebih murah-murah harganya. jadi langganan belanja aksesoris di ilufa :)"</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="avatar">
+                                                <img class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GhiQiVArrmhHZKgd4uUQN9mJ-9e_KZDY39yD7OO=w60-h60-p-rp-mo-ba2-br100" alt="">
+                                            </div>
+                                            <div class="label">
+                                                <div class="cell">- Verundra W, Pelanggan Store Klaten</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="our-news section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Blog</p>
+                            </div>
+                            <h2 class="title-main">Latest and greatest post</h2>
+                        </div>
+                        <div class="custom-container">
+                            <div class="slick-slider">
+                                <div class="item-new slick-slide">
+                                    <div class="image" data-overlay="5">
+                                        <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/blog/1.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="background"></div>
+                                        <h5>Web , Brand</h5>
+
+                                        <div class="cta">
+                                            <a href="#">Digital Photography Tips</a>
+                                        </div>
+
+                                        <p>Simple point-and-shoot digital cameras can give surprising quality when they
+                                            have the right lenses and sensors.</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="item-new slick-slide">
+                                    <div class="image" data-overlay="5">
+                                        <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/blog/2.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="background"></div>
+                                        <h5>Web , Brand</h5>
+
+                                        <div class="cta">
+                                            <a href="#">Digital Photography Tips</a>
+                                        </div>
+
+                                        <p>Simple point-and-shoot digital cameras can give surprising quality when they
+                                            have the right lenses and sensors.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item-new slick-slide">
+                                    <div class="image" data-overlay="5">
+                                        <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/blog/3.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="background"></div>
+                                        <h5>Web , Brand</h5>
+
+                                        <div class="cta">
+                                            <a href="#">Digital Photography Tips</a>
+                                        </div>
+
+                                        <p>Simple point-and-shoot digital cameras can give surprising quality when they
+                                            have the right lenses and sensors.</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brand-client section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Cabang</p>
+                            </div>
+                            <h2 class="title-main">Daftar Cabang Ilufa</h2>
+                        </div>
+
+                        <div class="wapper-client">
+                            <div class="logo-box">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/1.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i> lihat
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5><a href="https://google.com">Solo 1</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 2</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 3</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 4</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 5</a></h5>
+
+                                                <h5><a href="https://google.com">Solo 6</a></h5>
+                                                <!-- <a href="#">www.google.com</a> -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/2.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>Google</h5>
+                                                <a href="#">www.google.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/3.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>Google</h5>
+                                                <a href="#">www.google.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/4.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>Google</h5>
+                                                <a href="#">www.google.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/5.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>Google</h5>
+                                                <a href="#">www.google.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img class="lozad" src="<?php echo GUEST ?>_droow/assets/img/logo/6.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>Google</h5>
+                                                <a href="#">www.google.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-up section-margin section-padding">
+                    <div class="container">
+                        <div class="c-wapp">
+                            <a href="contact.html" class="effect-ajax">
+                                <span class="hiring">
+                                    We are hiring
+                                </span>
+                                <span class="career">
+                                    Dare and contact us immediately!
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-            <div class="clear"></div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-links p-relative">
+                        <div class="row">
+                            <div class="col-md-4 dsn-col-footer">
+                                <div class="footer-block">
+                                    <div class="footer-logo">
+                                        <a href="#">
+                                            <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class="lozad" height="200px" width="500px" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 dsn-col-footer">
+                                <div class="footer-block">
+                                    <h4 class="footer-title">Temukan kami di</h4>
+                                    <div class="footer-social">
+                                        <ul>
+                                            <li><a href="https://facebook.com/ilufaofficial"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://api.whatsapp.com/send/?phone=6282116750168&text&app_absent=0"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li><a href="https://instagram.com/168ilufa_official"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UCOns8B-ZYPeeGDD8AVR4kAA"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3 dsn-col-footer">
+                                <div class="footer-block col-menu">
+                                    <h4 class="footer-title">Navigation</h4>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Portfolio</a>
+                                            </li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">News</a></li>
+                                            <li><a href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div> -->
+
+                            <div class="col-md-4 dsn-col-footer">
+                                <div class="footer-block col-contact">
+                                    <h4 class="footer-title">Hubungi kami</h4>
+                                    <p><a href="tel:6282116750168"><strong><i class="fa fa-phone"></i></strong><span></span>+62 821 16750 168</a></p>
+                                    <p><a href="tel:628891168168"><strong><i class="fa fa-phone"></i></strong><span></span>+62 8891 168 168</a></p>
+                                    <p class="over-hidden"><a class="link-hover" data-hover-text="168@ilufa.co.id" href="mailto:168@ilufa.co.id"><strong><i class="fa fa-envelope"></i></strong><span></span>168@ilufa.co.id</a></p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-md-4 dsn-col-footer">
+                                <div class="col-address">
+                                    <h4 class="footer-title">Address</h4>
+                                    <p>El-Mahalla El-Kubra 37<br>
+                                        1776 Damietta<br>
+                                        Egypt</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <div class="text-center">
+                            <p>© <?php echo date('Y'); ?> CV Satu Jalan Sukses - Ilufa 168</p>
+                            <div class="copright-text over-hidden">Designed by <a class="link-hover" data-hover-text="DSN Grid" href="https://ilufa.co.id" target="_blank">168 Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Wait Loader -->
+    <div class="wait-loader">
+        <div class="loader-inner">
+            <div class="loader-circle">
+                <div class="loader-layer"></div>
+            </div>
         </div>
     </div>
+    <!-- // Wait Loader -->
 
-    <!-- Contact -->
-    <div id="contact" class="section">
-        <div class="block content-1170 center-relative">
-            <div class="section-title-holder left">
-                <div class="section-num">
-                    <span>
-                        07
-                    </span>
-                </div>
-                <h2 class="entry-title">Contact</h2>
-            </div>
-            <div class="section-content-holder right">
-                <div class="content-wrapper">
-                    <div class="one_half ">
-                        <p>Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.</p>
-                        <br>
-                        <p><strong><span style="color: #e64b77;">Incididunt ut dolore</span></strong> magna labore eiusmod. Dolor sit amet consectetur est adipisicing elit, sed do eiusmod.</p>
-                    </div>
-                    <div class="one_half last">
-                        <div class="contact-form">
-                            <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
-                            <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
-                            <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
-                            <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
-                            <p><input type="submit" onClick="SendMail()" value="SEND"></p>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="full-width">
-                    <!-- <div id="map"></div> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="clear"></div>
+
+    <!-- cursor -->
+    <div class="cursor">
+
+        <div class="cursor-helper cursor-view">
+            <span>VIEW</span>
         </div>
+
+        <div class="cursor-helper cursor-close">
+            <span>Close</span>
+        </div>
+
+        <div class="cursor-helper cursor-link"></div>
     </div>
+    <!-- End cursor -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer content-1170 center-relative">
-            <ul>
-                <li class="copyright-footer">
-                    © <?php echo date("Y"); ?> All rights reserved. | Created by <a href="https://ilufa.co.id">Ilufa Team</a>
-                </li>
-                <li class="social-footer">
-                    <a href="#"><span class="fa fa-instagram"></span></a>
-                    <a href="#"><span class="fa fa-youtube"></span></a>
-                    <!-- <a href="#"><span class="fa fa-dribbble"></span></a> -->
-                    <a href="#"><span class="fa fa-facebook"></span></a>
-                    <!-- <a href="#"><span class="fa fa-rss"></span></a> -->
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-    <!--Load JavaScript-->
-    <script type="text/javascript" src="<?php echo GUEST ?>js/jquery.js"></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.sticky-kit.min.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.smartmenus.min.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.sticky.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.dryMenu.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/isotope.pkgd.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.carouFredSel-6.2.0-packed.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.mousewheel.min.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.touchSwipe.min.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.easing.1.3.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/imagesloaded.pkgd.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/jquery.prettyPhoto.js'></script>
-    <script type='text/javascript' src='<?php echo GUEST ?>js/main.js'></script>
-    
-    <!-- <script>
-        var locations = [
-            ['Bondi Beach', -33.890542, 151.274856, 4],
-            ['Coogee Beach', -33.923036, 151.259052, 5],
-            ['Cronulla Beach', -34.028249, 151.157507, 3],
-            ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-            ['Maroubra Beach', -33.950198, 151.259302, 1]
-        ];
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
-            center: new google.maps.LatLng(-33.92, 151.25),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-
-        var infowindow = new google.maps.InfoWindow();
-
-        var marker, i;
-
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map
-            });
-
-            google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function() {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-        }
-    </script> -->
-
+    <!-- Optional JavaScript -->
+    <script src="<?php echo GUEST ?>_droow/assets/js/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo GUEST ?>_droow/assets/js/plugins.js"></script>
+    <script src="<?php echo GUEST ?>_droow/assets/js/dsn-grid.js"></script>
+    <script src="<?php echo GUEST ?>_droow/assets/js/custom.js"></script>
 </body>
 
 </html>
