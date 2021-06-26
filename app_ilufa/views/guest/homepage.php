@@ -78,8 +78,8 @@
                 <div class="inner-header">
                     <div class="main-logo">
                         <a href="#">
-                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_1_dark.png" alt="" />
-                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_1.png" alt="" />
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
                         </a>
                     </div>
                 </div>
@@ -99,8 +99,8 @@
             <div class="header-container">
                 <div class="logo main-logo">
                     <a href="index-2.html">
-                        <img class="lozad dark-logo" src="<?php echo GUEST ?>_droow/assets/img/logo-dark.png" alt="" />
-                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
+                        <img class="lozad dark-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
+                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
                     </a>
                 </div>
 
@@ -814,7 +814,7 @@
                                 <div class="footer-block">
                                     <div class="footer-logo">
                                         <a href="#">
-                                            <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class="lozad" height="200px" width="500px" />
+                                            <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class=""/>
                                         </a>
                                     </div>
                                 </div>
