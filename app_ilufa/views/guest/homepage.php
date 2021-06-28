@@ -78,8 +78,8 @@
                 <div class="inner-header">
                     <div class="main-logo">
                         <a href="#">
-                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
-                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" />
                         </a>
                     </div>
                 </div>
@@ -99,8 +99,8 @@
             <div class="header-container">
                 <div class="logo main-logo">
                     <a href="index-2.html">
-                        <img class="lozad dark-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
-                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/captain_ilufa.svg" alt="" />
+                        <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" />
+                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" />
                     </a>
                 </div>
 
@@ -792,7 +792,7 @@
                 <section class="contact-up section-margin section-padding">
                     <div class="container">
                         <div class="c-wapp">
-                            <a href="contact.html" class="effect-ajax">
+                            <a href="#contact" class="effect-ajax">
                                 <span class="hiring">
                                     We are hiring
                                 </span>
