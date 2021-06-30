@@ -31,7 +31,11 @@
 
 
         .logo-header-main {
-            height: 100px;
+            height: 250px;
+        }
+
+        .logo-text {
+            font-size: 28px;
         }
 
         .main-header-text {
@@ -43,8 +47,12 @@
         }
 
         @media only screen and (max-width: 400px) {
+            .logo-text {
+                font-size: 10px;
+            }
+
             .logo-header-main {
-                height: 65px;
+                height: 150px;
             }
 
             .main-header-text {
@@ -78,8 +86,8 @@
                 <div class="inner-header">
                     <div class="main-logo">
                         <a href="#">
-                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt=""/>
-                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" />
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
                         </a>
                     </div>
                 </div>
@@ -99,8 +107,8 @@
             <div class="header-container">
                 <div class="logo main-logo">
                     <a href="#">
-                        <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" width="10 px"/>
-                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_menu.png" alt="" width="10 px"/>
+                        <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" width="10 px" />
+                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" width="10 px" />
                     </a>
                 </div>
 
@@ -158,12 +166,14 @@
                             <div class="row justify-content-center align-items-center h-100">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="sub-text-header">
-                                        <img src="<?php echo GUEST ?>images/logo.svg" alt="Ilufa 168" class="lozad logo-header-main" />
-                                        <!-- <h5>Jaringan Grosir Aksesoris Gadget Terbesar di Indonesia</h5> -->
+                                        <img src="<?php echo GUEST ?>images/logo_menu.png" alt="Ilufa 168" class="lozad logo-header-main" />
+                                        <!-- <br> -->
+                                        <!-- <h4 class="logo-text">Jaringan Grosir Aksesoris Gadget Terbesar</h4> -->
                                     </div>
 
                                     <div class="title-text-header">
                                         <span class="title-text-header-inner">
+                                            <h3>Jaringan Grosir Aksesoris Gadget Terbesar</h3>
                                             <!-- <span>Jaringan Grosir Aksesoris Gadget<br> -->
                                             <!-- <span style="text-decoration: underline;"> -->
                                             <!-- Terbesar di Indonesia -->
