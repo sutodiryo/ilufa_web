@@ -96,7 +96,7 @@
                         <li><a href="#">Beranda</a></li>
                         <li><a href="#tentang">Tentang</a></li>
                         <li><a href="#produk">Produk</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="https://ilufa.co.id/blog">Blog</a></li>
                         <li><a href="#karir">Karir</a></li>
                         <li><a href="#kontak">Kontak</a></li>
                     </ul>
