@@ -9,7 +9,7 @@
     <meta name="author" content="Ilufa" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="shortcut icon" href="<?php echo GUEST ?>images/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo GUEST ?>img/favicon.png" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/clear.css' />
     <link rel="stylesheet" type="text/css" href='<?php echo GUEST ?>css/common.css' />
@@ -74,7 +74,7 @@
     <table class="doc-loader">
         <tr>
             <td>
-                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." />
+                <img src="<?php echo GUEST ?>img/ajax-document-loader.gif" alt="Loading..." />
             </td>
         </tr>
     </table>
@@ -108,7 +108,7 @@
         </div> -->
 
         <div class="block content-1170 center-relative center-text">
-            <img class="top-logo" src="<?php echo GUEST ?>demo-images/logo.png" alt="Boxus" />
+            <img class="top-logo" src="<?php echo GUEST ?>demo-img/logo.png" alt="Boxus" />
             <!-- <br> -->
             <h1 class="big-title">Jaringan Grosir <span>Aksesoris Gadget Terbesar di Indonesia</span></h1>
             <!-- <p class="title-desc">Support bright students today for a better tomorrow</p> -->
@@ -158,9 +158,9 @@
                         <a id="aboutImage_next" class="image_slider_next" href="#"></a>
                         <div class="caroufredsel_wrapper">
                             <ul id="aboutImage" class="image-slider slides">
-                                <li><img src="<?php echo GUEST ?>demo-images/about_img_04.jpg" alt=""></li>
-                                <li><img src="<?php echo GUEST ?>demo-images/about_img_05.jpg" alt=""></li>
-                                <li><img src="<?php echo GUEST ?>demo-images/about_img_06.jpg" alt=""></li>
+                                <li><img src="<?php echo GUEST ?>demo-img/about_img_04.jpg" alt=""></li>
+                                <li><img src="<?php echo GUEST ?>demo-img/about_img_05.jpg" alt=""></li>
+                                <li><img src="<?php echo GUEST ?>demo-img/about_img_06.jpg" alt=""></li>
                             </ul>
                         </div>
                         <div class="clear"></div>
@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                                     <div class="member-image-holder">
-                                        <img src="<?php echo GUEST ?>demo-images/about_img_01.jpg" alt="">
+                                        <img src="<?php echo GUEST ?>demo-img/about_img_01.jpg" alt="">
                                     </div>
                                     <div class="clear"></div>
                                 </li>
@@ -198,7 +198,7 @@
                                         </div>
                                     </div>
                                     <div class="member-image-holder">
-                                        <img src="<?php echo GUEST ?>demo-images/about_img_02.jpg" alt="">
+                                        <img src="<?php echo GUEST ?>demo-img/about_img_02.jpg" alt="">
                                     </div>
                                     <div class="clear"></div>
                                 </li>
@@ -212,7 +212,7 @@
                                         </div>
                                     </div>
                                     <div class="member-image-holder">
-                                        <img src="<?php echo GUEST ?>demo-images/about_img_03.jpg" alt="">
+                                        <img src="<?php echo GUEST ?>demo-img/about_img_03.jpg" alt="">
                                     </div>
                                     <div class="clear"></div>
                                 </li>
@@ -233,7 +233,7 @@
         <div class="block content-1170 center-relative">
             <div class="section-title-holder left"> -->
 
-    <!-- <img src="<?php echo GUEST ?>demo-images/about.png" alt="" style="opacity: 0.4; filter: alpha(opacity=40);"> -->
+    <!-- <img src="<?php echo GUEST ?>demo-img/about.png" alt="" style="opacity: 0.4; filter: alpha(opacity=40);"> -->
 
     <!-- <div class="section-num">
                     <span>01</span>
@@ -253,7 +253,7 @@
                         <ul id="slider1" class="image-slider slides">
                             <li>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_01.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">BRANDING</div>
                                         <div class="service-content">dfdsgfhbg<br />
@@ -261,7 +261,7 @@
                                     </div>
                                 </div>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_02.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">MOBILE APPS</div>
                                         <div class="service-content">
@@ -270,7 +270,7 @@
                                     </div>
                                 </div>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_03.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">WEB</div>
                                         <div class="service-content">
@@ -279,7 +279,7 @@
                                     </div>
                                 </div>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_04.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">GRAPHIC</div>
                                         <div class="service-content">
@@ -290,7 +290,7 @@
                             </li>
                             <li>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_03.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_03.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">SERVICES</div>
                                         <div class="service-content">
@@ -299,7 +299,7 @@
                                     </div>
                                 </div>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_04.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_04.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">PSD</div>
                                         <div class="service-content">
@@ -308,7 +308,7 @@
                                     </div>
                                 </div>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_02.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_02.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">HTML</div>
                                         <div class="service-content">
@@ -317,7 +317,7 @@
                                     </div>
                                 </div>
                                 <div class="service-holder ">
-                                    <img src="<?php echo GUEST ?>demo-images/icon_01.png" alt="">
+                                    <img src="<?php echo GUEST ?>demo-img/icon_01.png" alt="">
                                     <div class="service-content-holder">
                                         <div class="service-title">PHP</div>
                                         <div class="service-content">
@@ -350,11 +350,11 @@
                     <div class="grid-sizer"></div>
                     <div class="grid-item element-item p_one">
                         <a href="single-portfolio.html">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_01.jpg" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/portfolio_item_01.jpg" alt="">
                             <div class="portfolio-text-holder">
                                 <div class="portfolio-text-wrapper">
                                     <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                        <img src="<?php echo GUEST ?>img/icon_post.svg" alt="">
                                     </p>
                                     <p class="portfolio-text">PSD MOCKUP</p>
                                     <p class="portfolio-sec-text">Smart Watch</p>
@@ -364,11 +364,11 @@
                     </div>
                     <div class="grid-item element-item p_one_half">
                         <a href="single-portfolio2.html">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_02.jpg" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/portfolio_item_02.jpg" alt="">
                             <div class="portfolio-text-holder">
                                 <div class="portfolio-text-wrapper">
                                     <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                        <img src="<?php echo GUEST ?>img/icon_post.svg" alt="">
                                     </p>
                                     <p class="portfolio-text">PSD MOCKUP</p>
                                     <p class="portfolio-sec-text">Smart Watch</p>
@@ -377,12 +377,12 @@
                         </a>
                     </div>
                     <div class="grid-item element-item p_one_half">
-                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_08.jpg">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_08.jpg" alt="">
+                        <a data-rel="prettyPhoto[gallery1]" href="demo-img/portfolio_item_08.jpg">
+                            <img src="<?php echo GUEST ?>demo-img/portfolio_item_08.jpg" alt="">
                             <div class="portfolio-text-holder">
                                 <div class="portfolio-text-wrapper">
                                     <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                        <img src="<?php echo GUEST ?>img/icon_post.svg" alt="">
                                     </p>
                                     <p class="portfolio-text">PSD MOCKUP</p>
                                     <p class="portfolio-sec-text">Smart Watch</p>
@@ -391,12 +391,12 @@
                         </a>
                     </div>
                     <div class="grid-item element-item p_one">
-                        <a data-rel="prettyPhoto[gallery1]" href="demo-images/portfolio_item_05.jpg">
-                            <img src="<?php echo GUEST ?>demo-images/portfolio_item_05.jpg" alt="">
+                        <a data-rel="prettyPhoto[gallery1]" href="demo-img/portfolio_item_05.jpg">
+                            <img src="<?php echo GUEST ?>demo-img/portfolio_item_05.jpg" alt="">
                             <div class="portfolio-text-holder">
                                 <div class="portfolio-text-wrapper">
                                     <p class="portfolio-type">
-                                        <img src="<?php echo GUEST ?>images/icon_post.svg" alt="">
+                                        <img src="<?php echo GUEST ?>img/icon_post.svg" alt="">
                                     </p>
                                     <p class="portfolio-text">PSD MOCKUP</p>
                                     <p class="portfolio-sec-text">Smart Watch</p>
@@ -409,7 +409,7 @@
                 <div class="clear"></div>
                 <div class="block portfolio-load-more-holder">
                     <a target="_self" class="more-posts">LOAD MORE</a>
-                    <img src="<?php echo GUEST ?>images/icon_infinity.svg" alt="Load more">
+                    <img src="<?php echo GUEST ?>img/icon_infinity.svg" alt="Load more">
                 </div>
             </div>
             <div class="clear"></div>
@@ -577,8 +577,8 @@
                 </div>
                 <div class="full-width ">
                     <a class="video-popup-holder" href="https://vimeo.com/157276599" data-rel="prettyPhoto[gallery-video1]">
-                        <img class="thumb" src="<?php echo GUEST ?>demo-images/video_img.jpg" alt="">
-                        <img class="popup-play" src="<?php echo GUEST ?>images/icon_video.svg" alt="Play">
+                        <img class="thumb" src="<?php echo GUEST ?>demo-img/video_img.jpg" alt="">
+                        <img class="popup-play" src="<?php echo GUEST ?>img/icon_video.svg" alt="Play">
                     </a>
                 </div>
             </div>
@@ -598,31 +598,31 @@
                 <div class="caroufredsel_wrapper">
                     <ul id="fwslider1" class="fw-image-slider">
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_editing.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_editing.png" alt="">
                             <p class="fw-slide-text">Video Editing</p>
                         </li>
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_clear.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_clear.png" alt="">
                             <p class="fw-slide-text">Premium Cleer</p>
                         </li>
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_display.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_display.png" alt="">
                             <p class="fw-slide-text">For All Displays</p>
                         </li>
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_time.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_time.png" alt="">
                             <p class="fw-slide-text">Right On Time</p>
                         </li>
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_ideas.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_ideas.png" alt="">
                             <p class="fw-slide-text">Innovative Ideas</p>
                         </li>
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_sound.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_sound.png" alt="">
                             <p class="fw-slide-text">Perfect Sound</p>
                         </li>
                         <li class="fw-slide">
-                            <img src="<?php echo GUEST ?>demo-images/icon_solution.png" alt="">
+                            <img src="<?php echo GUEST ?>demo-img/icon_solution.png" alt="">
                             <p class="fw-slide-text">3D Solution</p>
                         </li>
                     </ul>

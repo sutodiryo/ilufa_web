@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="<?php echo MAIN_DESC ?>">
-    <link rel="icon" href="<?php echo base_url() ?>assets/images/favicon.ico">
+    <link rel="icon" href="<?php echo base_url() ?>assets/img/favicon.ico">
     <title><?php echo MAIN_TITLE ?></title>
     <meta name="msapplication-tap-highlight" content="no">
 

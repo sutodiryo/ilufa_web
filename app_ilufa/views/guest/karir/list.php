@@ -23,7 +23,7 @@
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
                             <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/blog/4.jpg" alt="">
+                                <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
                         <div class="post-list-item-content text-center">
@@ -63,7 +63,7 @@
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
                             <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/blog/4.jpg" alt="">
+                                <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
                         <div class="post-list-item-content text-center">
@@ -103,7 +103,7 @@
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
                             <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/blog/4.jpg" alt="">
+                                <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
                         <div class="post-list-item-content text-center">
@@ -143,7 +143,7 @@
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
                             <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/blog/4.jpg" alt="">
+                                <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
                         <div class="post-list-item-content text-center">

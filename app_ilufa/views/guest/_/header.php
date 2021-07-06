@@ -15,13 +15,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
 
-    <!-- <link rel="shortcut icon" href="<?php echo GUEST ?>images/icon.png" type="image/png" /> -->
-    <!-- <link rel="icon" href="<?php echo GUEST ?>images/icon.png" type="image/png" /> -->
-    <link rel="icon" type="image/png" href="<?php echo GUEST ?>images/favicons.png">
+    <!-- <link rel="shortcut icon" href="<?php echo GUEST ?>img/icon.png" type="image/png" /> -->
+    <!-- <link rel="icon" href="<?php echo GUEST ?>img/icon.png" type="image/png" /> -->
+    <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
 
     <!-- custom styles (optional) -->
-    <link href="<?php echo GUEST ?>_droow/assets/css/plugins.css" rel="stylesheet" />
-    <link href="<?php echo GUEST ?>_droow/assets/css/style.css" rel="stylesheet" />
+    <link href="<?php echo GUEST ?>css/plugins.css" rel="stylesheet" />
+    <link href="<?php echo GUEST ?>css/style.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <style>
@@ -69,7 +69,7 @@
         <div class="preloader-before"></div>
         <div class="preloader-block">
             <div class="title">
-                <img src="<?php echo GUEST ?>images/ajax-document-loader.gif" alt="Loading..." style="height: 250px;" />
+                <img src="<?php echo GUEST ?>img/ajax-document-loader.gif" alt="Loading..." style="height: 250px;" />
             </div>
             <div class="percent">0</div>
             <div class="loading">loading...</div>
@@ -86,8 +86,8 @@
                 <div class="inner-header">
                     <div class="main-logo">
                         <a href="<?php echo base_url() ?>">
-                            <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
-                            <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" />
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" />
                         </a>
                     </div>
                 </div>
@@ -108,8 +108,8 @@
             <div class="header-container">
                 <div class="logo main-logo">
                     <a href="#">
-                        <img class="lozad dark-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" width="10 px" />
-                        <img class="lozad light-logo" src="<?php echo GUEST ?>images/logo_2.png" alt="" width="10 px" />
+                        <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
+                        <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
                     </a>
                 </div>
 

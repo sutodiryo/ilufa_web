@@ -10,7 +10,7 @@
     <meta name="description" content="<?php echo MAIN_DESC ?>">
     <meta name="author" content="" />
 
-    <link rel="icon" href="<?php echo base_url() ?>assets/images/favicon.ico">
+    <link rel="icon" href="<?php echo base_url() ?>assets/img/favicon.ico">
 
     <title><?php echo MAIN_TITLE ?></title>
 

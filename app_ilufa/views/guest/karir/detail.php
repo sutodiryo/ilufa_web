@@ -9,7 +9,7 @@
                         <h1>THE ART OF LUXURY APPAREL</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia libero
                             quis odio unde ab officia est dolor.</p>
-                        <a href="#" class="view-case scroll-down scroll-to">Scroll Down <img src="<?php echo GUEST ?>_droow/assets/img/arrow-right-wight.png" alt=""></a>
+                        <a href="#" class="view-case scroll-down scroll-to">Scroll Down <img src="<?php echo GUEST ?>img/arrow-right-wight.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
         <div class="box-seat box-seat-full">
             <div class="container-fluid">
                 <div class="inner-img" data-dsn-grid="move-up">
-                    <img src="<?php echo GUEST ?>_droow/assets/img/pexels.jpg" alt="" data-dsn-y="30%" data-dsn-scale="1">
+                    <img src="<?php echo GUEST ?>img/pexels.jpg" alt="" data-dsn-y="30%" data-dsn-scale="1">
                 </div>
                 <div class="pro-text">
                     <h3 data-dsn-animate="up">Hello we are, <br> Dsn Grid.</h3>
@@ -44,7 +44,7 @@
                 <div class="row align-items-center h-100">
                     <div class="col-lg-6">
                         <div class="box-im">
-                            <div class="cover-bg" data-image-src="<?php echo GUEST ?>_droow/assets/img/skills.jpg"></div>
+                            <div class="cover-bg" data-image-src="<?php echo GUEST ?>img/skills.jpg"></div>
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1">
@@ -133,7 +133,7 @@
                     <div class="slick-slider">
                         <div class="team-item slick-slide">
                             <div class="box-img">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/team/1.png" alt="">
+                                <img src="<?php echo GUEST ?>img/team/1.png" alt="">
                             </div>
 
                             <div class="box-content">
@@ -144,7 +144,7 @@
 
                         <div class="team-item slick-slide">
                             <div class="box-img">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/team/2.png" alt="">
+                                <img src="<?php echo GUEST ?>img/team/2.png" alt="">
                             </div>
 
                             <div class="box-content">
@@ -155,7 +155,7 @@
 
                         <div class="team-item slick-slide">
                             <div class="box-img">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/team/3.png" alt="">
+                                <img src="<?php echo GUEST ?>img/team/3.png" alt="">
                             </div>
 
                             <div class="box-content">
@@ -166,7 +166,7 @@
 
                         <div class="team-item slick-slide">
                             <div class="box-img">
-                                <img src="<?php echo GUEST ?>_droow/assets/img/team/4.png" alt="">
+                                <img src="<?php echo GUEST ?>img/team/4.png" alt="">
                             </div>
 
                             <div class="box-content">

@@ -6,7 +6,7 @@
                     <div class="footer-block">
                         <div class="footer-logo">
                             <a href="#">
-                                <img src="<?php echo GUEST ?>images/logo.png" alt="Ilufa 168" class="" />
+                                <img src="<?php echo GUEST ?>img/logo.png" alt="Ilufa 168" class="" />
                             </a>
                         </div>
                     </div>
@@ -100,10 +100,10 @@
 <!-- End cursor -->
 
 <!-- Optional JavaScript -->
-<script src="<?php echo GUEST ?>_droow/assets/js/jquery-3.1.1.min.js"></script>
-<script src="<?php echo GUEST ?>_droow/assets/js/plugins.js"></script>
-<script src="<?php echo GUEST ?>_droow/assets/js/dsn-grid.js"></script>
-<script src="<?php echo GUEST ?>_droow/assets/js/custom.js"></script>
+<script src="<?php echo GUEST ?>js/jquery-3.1.1.min.js"></script>
+<script src="<?php echo GUEST ?>js/plugins.js"></script>
+<script src="<?php echo GUEST ?>js/dsn-grid.js"></script>
+<script src="<?php echo GUEST ?>js/custom.js"></script>
 </body>
 
 <!--Start of Tawk.to Script-->
