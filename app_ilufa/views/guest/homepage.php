@@ -198,26 +198,12 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <img src="<?php echo GUEST ?>img/services/1.png" alt="" class="lozad">
+                            <object data="http://localhost/ilufa/web/public/guest/svg/member/" type="image/svg+xml">
+                                <!-- <img src="http://localhost/ilufa/web/public/guest/svg/member/" /> -->
+                            </object>
                         </div>
                         <div class="services-header">
                             <h3>24 Store</h3>
-                        </div>
-                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
-                                        all
-                                        web.</p> -->
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="services-item selected">
-                        <div class="corner corner-top"></div>
-                        <div class="corner corner-bottom"></div>
-                        <div class="icon">
-                            <img src="<?php echo GUEST ?>img/services/2.png" alt="" class="lozad">
-                        </div>
-                        <div class="services-header">
-                            <h3>93.221 Member</h3>
                         </div>
                         <!-- <p>Web design encompasses many different skills and disciplines in the production of
                                         all
@@ -230,7 +216,9 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <img src="<?php echo GUEST ?>img/services/3.png" alt="" class="lozad">
+                            <object data="http://localhost/ilufa/web/public/guest/svg/member/" type="image/svg+xml">
+                            </object>
+                            <!-- <img src="<?php echo GUEST ?>img/services/3.png" alt="" class="lozad"> -->
                         </div>
                         <div class="services-header">
                             <h3>1.785 Mitra</h3>
@@ -238,6 +226,24 @@
                         <!-- <p>Web design encompasses many different skills and disciplines in the production of
                                         all
                                         web.</p> -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="services-item">
+                        <div class="corner corner-top"></div>
+                        <div class="corner corner-bottom"></div>
+                        <div class="icon">
+                            <object data="http://localhost/ilufa/web/public/guest/svg/member/" type="image/svg+xml">
+                            </object>
+                            <!-- <img src="<?php echo GUEST ?>img/services/2.png" alt="" class="lozad"> -->
+                        </div>
+                        <div class="services-header">
+                            <h3>93.221 Member</h3>
+                        </div>
+                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                        all
+                        web.</p> -->
                     </div>
                 </div>
             </div>
@@ -522,7 +528,7 @@
 
             <div class="wapper-client">
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/1.png" alt="">
+                    <img class="lozad" src="<?php echo GUEST ?>img/logo/solo.png" alt="">
 
                     <div class="info">
                         <div class="content">

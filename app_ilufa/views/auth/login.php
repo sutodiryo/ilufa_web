@@ -1,164 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="<?php echo "aaaa" ?>">
-    <meta name="author" content="natdev.web.id">
-    <title><?php echo "sasa" ?></title>
-    <link href="<?php echo GUEST ?>img/najah_favicon.png" rel="icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <link rel="stylesheet" href="<?php echo ADMIN_ASSETS ?>vendor/nucleo/css/nucleo.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo ADMIN_ASSETS ?>vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo ADMIN_ASSETS ?>css/argon.css?v=1.1.0" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="<?php echo ADMIN_ASSETS?>images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo ADMIN_ASSETS?>images/favicon.png" type="image/x-icon">
+    <title>Cuba - Premium Admin Template</title>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/font-awesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/vendors/icofont.css">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/vendors/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/vendors/feather-icon.css">
+    <!-- Plugins css start-->
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/style.css">
+    <link id="color" rel="stylesheet" href="<?php echo ADMIN_ASSETS?>css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS?>css/responsive.css">
 </head>
 
-<body class="bg-default">
-    <div class="main-content">
-        <div class="header bg-gradient-warning py-7 py-lg-8 pt-lg-9">
-            <div class="container">
-                <div class="header-body text-center mbx-7">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-5 col-lg-6">
-                            <br>
-                            <br>
-                            <h1 class="text-white">Login 168 Ilufa
-                                <!-- <a data-toggle="modal" href="#modal_login_x">Login</a> -->
-                            </h1>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="separator separator-bottom separator-skew zindex-100">
-                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-                </svg>
-            </div>
-        </div>
-
-        <div class="container mt--8 pb-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-7">
-                    <div class="card bg-secondary border-0 mb-0">
-
-                        <div class="card-body px-lg-5 py-lg-5">
-                            <div class="text-center text-red mb-4">
-                                <?php echo $this->session->flashdata('report'); ?>
-                            </div>
-                            <form role="form" method="POST" action="<?php echo base_url('auth/login'); ?>">
-                                <div class="form-group mb-3">
-                                    <div class="input-group input-group-merge input-group-alternative">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
-                                        </div>
-                                        <input class="form-control" placeholder="No Handphone/Email" type="text" name="username">
-                                    </div>
+<body>
+    <!-- login page start-->
+    <div class="container-fluid p-0">
+        <div class="row m-0">
+            <div class="col-12 p-0">
+                <div class="login-card">
+                    <div>
+                        <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="<?php echo ADMIN_ASSETS?>images/logo/login.png" alt="looginpage"><img class="img-fluid for-dark" src="<?php echo ADMIN_ASSETS?>images/logo/logo_dark.png" alt="looginpage"></a></div>
+                        <div class="login-main">
+                            <form class="theme-form">
+                                <h4>Sign in to account</h4>
+                                <p>Enter your email & password to login</p>
+                                <div class="form-group">
+                                    <label class="col-form-label">Email Address</label>
+                                    <input class="form-control" type="email" required="" placeholder="Test@gmail.com">
                                 </div>
                                 <div class="form-group">
-                                    <div class="input-group input-group-merge input-group-alternative">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                                        </div>
-                                        <input class="form-control" placeholder="Password" type="password" name="password">
+                                    <label class="col-form-label">Password</label>
+                                    <div class="form-input position-relative">
+                                        <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
+                                        <div class="show-hide"><span class="show"> </span></div>
                                     </div>
                                 </div>
-                                <div class="custom-control custom-control-alternative custom-checkbox">
-                                    <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                    <label class="custom-control-label" for=" customCheckLogin">
-                                        <span class="text-muted">Remember me</span>
-                                    </label>
+                                <div class="form-group mb-0">
+                                    <div class="checkbox p-0">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label class="text-muted" for="checkbox1">Remember password</label>
+                                    </div><a class="link" href="forget-password.html">Forgot password?</a>
+                                    <div class="text-end mt-3">
+                                        <button class="btn btn-primary btn-block w-100" type="submit">Sign in</button>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary my-4">Sign in</button>
+                                <h6 class="text-muted mt-4 or">Or Sign in with</h6>
+                                <div class="social mt-4">
+                                    <div class="btn-showcase"><a class="btn btn-light" href="https://www.linkedin.com/login" target="_blank"><i class="txt-linkedin" data-feather="linkedin"></i> LinkedIn </a><a class="btn btn-light" href="https://twitter.com/login?lang=en" target="_blank"><i class="txt-twitter" data-feather="twitter"></i>twitter</a><a class="btn btn-light" href="https://www.facebook.com/" target="_blank"><i class="txt-fb" data-feather="facebook"></i>facebook</a></div>
                                 </div>
+                                <p class="mt-4 mb-0 text-center">Don't have account?<a class="ms-2" href="sign-up.html">Create Account</a></p>
                             </form>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-6">
-                            <a href="#" class="text-light"><small>Lupa password?</small></a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <a href="<?php echo base_url('register') ?>" class="text-light"><small>Buat akun baru</small></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+        <!-- latest jquery-->
+        <script src="<?php echo ADMIN_ASSETS?>js/jquery-3.5.1.min.js"></script>
+        <!-- Bootstrap js-->
+        <script src="<?php echo ADMIN_ASSETS?>js/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- feather icon js-->
+        <script src="<?php echo ADMIN_ASSETS?>js/icons/feather-icon/feather.min.js"></script>
+        <script src="<?php echo ADMIN_ASSETS?>js/icons/feather-icon/feather-icon.js"></script>
+        <!-- scrollbar js-->
+        <!-- Sidebar jquery-->
+        <script src="<?php echo ADMIN_ASSETS?>js/config.js"></script>
+        <!-- Plugins JS start-->
+        <!-- Plugins JS Ends-->
+        <!-- Theme js-->
+        <script src="<?php echo ADMIN_ASSETS?>js/script.js"></script>
+        <!-- login js-->
+        <!-- Plugin used-->
     </div>
-
-    <script src="<?php echo ADMIN_ASSETS ?>vendor/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>vendor/js-cookie/js.cookie.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>js/argon.js?v=1.1.0"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>js/demo.min.js"></script>
 </body>
 
 </html>
-
-<div class="modal fade" id="modal_login_x" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h4 class="modal-title"></h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-
-            <form action="<?php echo base_url('admin/act/update_member/0'); ?>" method="POST">
-                <input type="hidden" name="id_member">
-                <div class="modal-body">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-control-label" for="nama">Nama Lengkap</label>
-                                <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama lengkap sesuai KTP" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <?php date_default_timezone_set('Asia/Jakarta'); ?>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="no_hp">No HP (WA)</label>
-                                <input type="number" name="no_hp" class="form-control" id="no_hp" placeholder="No HP aktif" required>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="email">Email</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-control-label" for="alamat">Alamat Lengkap</label>
-                                <textarea name="alamat" class="form-control" id="alamat" rows="3" required placeholder="Alamat lengkap"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Batal</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>

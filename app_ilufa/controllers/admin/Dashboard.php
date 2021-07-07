@@ -1,19 +1,28 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class Dashboard extends CI_Controller
+{
 
-    
+
 	public function __construct()
 	{
 		parent::__construct();
-		if ($this->session->userdata('log_valid') == FALSE) {
-			redirect(base_url('auth'));
-		}
-		if ($this->session->userdata('log_admin') == FALSE) {
-			redirect(base_url('member'));
-		}
+		// if ($this->session->userdata('log_valid') == FALSE) {
+		// 	redirect(base_url('auth'));
+		// }
+		// if ($this->session->userdata('log_admin') == FALSE) {
+		// 	redirect(base_url('member'));
+		// }
+		$this->load->library(['ion_auth', 'form_validation']);
 		$this->load->model('Admin_model');
+
+		if (!$this->ion_auth->logged_in()) {
+			redirect('auth/login', 'refresh');
+		} else if (!$this->ion_auth->is_admin()) {
+			redirect(base_url('member'));
+			// show_error('You must be an administrator to view this page.');
+		}
 	}
 
 	function index()
