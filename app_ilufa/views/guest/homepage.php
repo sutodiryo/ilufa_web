@@ -198,7 +198,7 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <object data="http://localhost/ilufa/web/public/guest/svg/member/" type="image/svg+xml">
+                            <object data="http://localhost/ilufa/web/public/guest/svg/icon_cabang/" type="image/svg+xml">
                                 <!-- <img src="http://localhost/ilufa/web/public/guest/svg/member/" /> -->
                             </object>
                         </div>
@@ -216,7 +216,7 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <object data="http://localhost/ilufa/web/public/guest/svg/member/" type="image/svg+xml">
+                            <object data="http://localhost/ilufa/web/public/guest/svg/icon_mitra/" type="image/svg+xml">
                             </object>
                             <!-- <img src="<?php echo GUEST ?>img/services/3.png" alt="" class="lozad"> -->
                         </div>
@@ -234,7 +234,7 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <object data="http://localhost/ilufa/web/public/guest/svg/member/" type="image/svg+xml">
+                            <object data="http://localhost/ilufa/web/public/guest/svg/icon_member/" type="image/svg+xml">
                             </object>
                             <!-- <img src="<?php echo GUEST ?>img/services/2.png" alt="" class="lozad"> -->
                         </div>
@@ -528,14 +528,12 @@
 
             <div class="wapper-client">
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/solo.png" alt="">
-
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/solo.svg" alt="">
                     <div class="info">
                         <div class="content">
                             <div class="icon">
-                                <i class="fas fa-plus"></i> lihat
+                                <i class="fas fa-plus"></i>
                             </div>
-
                             <div class="entry">
                                 <div>
                                     <h5><a href="https://google.com">Solo 1</a></h5>
@@ -558,14 +556,46 @@
                 </div>
 
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/2.png" alt="">
-
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/klaten.svg" alt="">
                     <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
                             </div>
+                            <div class="entry">
+                                <div>
+                                    <h5>Klaten</h5>
+                                    <a href="#">www.google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="logo-box">
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/sukoharjo.svg" alt="">
+                    <div class="info">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="entry">
+                                <div>
+                                    <h5>Karanganyar</h5>
+                                    <a href="#">www.google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-box">
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/karanganyar.svg" alt="">
+                    <div class="info">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
                             <div class="entry">
                                 <div>
                                     <h5>Google</h5>
@@ -577,14 +607,12 @@
                 </div>
 
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/3.png" alt="">
-
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/sragen.svg" alt="">
                     <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
                             </div>
-
                             <div class="entry">
                                 <div>
                                     <h5>Google</h5>
@@ -596,14 +624,12 @@
                 </div>
 
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/4.png" alt="">
-
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/boyolali.svg" alt="">
                     <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
                             </div>
-
                             <div class="entry">
                                 <div>
                                     <h5>Google</h5>
@@ -615,14 +641,12 @@
                 </div>
 
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/5.png" alt="">
-
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/yogyakarta.svg" alt="">
                     <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
                             </div>
-
                             <div class="entry">
                                 <div>
                                     <h5>Google</h5>
@@ -634,14 +658,80 @@
                 </div>
 
                 <div class="logo-box">
-                    <img class="lozad" src="<?php echo GUEST ?>img/logo/6.png" alt="">
-
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/semarang.svg" alt="">
                     <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
                             </div>
+                            <div class="entry">
+                                <div>
+                                    <h5>Google</h5>
+                                    <a href="#">www.google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="logo-box">
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/grobogan.svg" alt="">
+                    <div class="info">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="entry">
+                                <div>
+                                    <h5>Google</h5>
+                                    <a href="#">www.google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-box">
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/madiun.svg" alt="">
+                    <div class="info">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="entry">
+                                <div>
+                                    <h5>Google</h5>
+                                    <a href="#">www.google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-box">
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/ponorogo.svg" alt="">
+                    <div class="info">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="entry">
+                                <div>
+                                    <h5>Google</h5>
+                                    <a href="#">www.google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-box">
+                    <img class="lozad" src="<?php echo GUEST ?>svg/kota/bojonegoro.svg" alt="">
+                    <div class="info">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
                             <div class="entry">
                                 <div>
                                     <h5>Google</h5>

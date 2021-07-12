@@ -1,1 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.14 175.68"><defs><style>.cls-1{fill:#0f0f0f;}.cls-2{font-size:74.57px;font-family:Montserrat-SemiBold, Montserrat;font-weight:600;}.cls-3{letter-spacing:-0.02em;}.cls-4{letter-spacing:0em;}</style></defs><title>klaten</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1.05,92.73S47.85,3.53,49,2.59,51.77-.92,54.81.34s3.61,1.1,7.8,8.85S88.57,55.88,93.39,62s6.77,9.42,6.28,12.14S96,78.56,91.85,80s-8.3,4.6-7.26,11,1.54,8.09,1.12,8.16-7-10.12-6-13.47,5.65-8.51,9.14-9.77,5.79-4.82,3.84-8S72.17,31.87,66.87,25.52,54,6.12,50.81,7.3s-5.72,7.4-11.09,18.57S12.08,82.4,11,84.28s-1,3.22,1.19,4.26,11.09,1.4,12.49,8.59-1.12,13.12-2.3,17.45-3.45,13.82,1.18,16c1.89.91,12.62,2.59,18.71,3.42,1.53.21-1.12,5.23-3.7,6.28s-15.91.35-21-7.68-.14-18.28-.07-23.73,1.54-9.14-5.93-9.77S-2.65,101.45,1.05,92.73Z"/><path class="cls-1" d="M29.66,76.68s7.54,4.25,14.59,3.07,11-3.77,10.68-11.52S50.11,53.37,44.67,52.74,36,51.83,29.73,55.81c-1.29.82.28-1.47,1.47-2.3a41.2,41.2,0,0,1,12.7-5.66c5.94-1.32,7.47-5.65,4-7.81s-6.91-5-7.68-5.1.28-.84.91-.84,5.58.56,7-1.46,2.16-8,1.68-10.33,4.25-3.84,6.14-3.56-.63,7-2,10.33S52,43,54.44,44.36,61.7,49,66.94,47.71s13.74-4.25,15.14-5.79S82,43.66,81,44.29a50.69,50.69,0,0,1-16.75,6.84c-9.49,2-5.3,8.52-4.6,9.49S70.77,75.77,71.89,77.17A13.31,13.31,0,0,1,74,87.08c-.83,4.53-1.39,6.42-2.72,7.19s.84-7.89-.7-10.75-2.16-4.26-9.35-2.93S46.83,85.05,38,82.19,27.53,76.83,29.66,76.68Z"/><text class="cls-2" transform="translate(41.22 155.91)">Kla<tspan class="cls-3" x="121.18" y="0">t</tspan><tspan class="cls-4" x="151.46" y="0">en</tspan></text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 290.14 175.68"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="klaten.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview22"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="3.529144"
+     inkscape:cx="144.93599"
+     inkscape:cy="87.981674"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#0f0f0f;}.cls-2{font-size:74.57px;font-family:Montserrat-SemiBold, Montserrat;font-weight:600;}.cls-3{letter-spacing:-0.02em;}.cls-4{letter-spacing:0em;}</style>
+  </defs>
+  <title
+     id="title6">klaten</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     style="fill:#ffffff">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1"
+       style="fill:#ffffff">
+      <path
+         class="cls-1"
+         d="M1.05,92.73S47.85,3.53,49,2.59,51.77-.92,54.81.34s3.61,1.1,7.8,8.85S88.57,55.88,93.39,62s6.77,9.42,6.28,12.14S96,78.56,91.85,80s-8.3,4.6-7.26,11,1.54,8.09,1.12,8.16-7-10.12-6-13.47,5.65-8.51,9.14-9.77,5.79-4.82,3.84-8S72.17,31.87,66.87,25.52,54,6.12,50.81,7.3s-5.72,7.4-11.09,18.57S12.08,82.4,11,84.28s-1,3.22,1.19,4.26,11.09,1.4,12.49,8.59-1.12,13.12-2.3,17.45-3.45,13.82,1.18,16c1.89.91,12.62,2.59,18.71,3.42,1.53.21-1.12,5.23-3.7,6.28s-15.91.35-21-7.68-.14-18.28-.07-23.73,1.54-9.14-5.93-9.77S-2.65,101.45,1.05,92.73Z"
+         id="path8"
+         style="fill:#ffffff" />
+      <path
+         class="cls-1"
+         d="M29.66,76.68s7.54,4.25,14.59,3.07,11-3.77,10.68-11.52S50.11,53.37,44.67,52.74,36,51.83,29.73,55.81c-1.29.82.28-1.47,1.47-2.3a41.2,41.2,0,0,1,12.7-5.66c5.94-1.32,7.47-5.65,4-7.81s-6.91-5-7.68-5.1.28-.84.91-.84,5.58.56,7-1.46,2.16-8,1.68-10.33,4.25-3.84,6.14-3.56-.63,7-2,10.33S52,43,54.44,44.36,61.7,49,66.94,47.71s13.74-4.25,15.14-5.79S82,43.66,81,44.29a50.69,50.69,0,0,1-16.75,6.84c-9.49,2-5.3,8.52-4.6,9.49S70.77,75.77,71.89,77.17A13.31,13.31,0,0,1,74,87.08c-.83,4.53-1.39,6.42-2.72,7.19s.84-7.89-.7-10.75-2.16-4.26-9.35-2.93S46.83,85.05,38,82.19,27.53,76.83,29.66,76.68Z"
+         id="path10"
+         style="fill:#ffffff" />
+      <text
+         class="cls-2"
+         transform="translate(41.22 155.91)"
+         id="text16"
+         style="fill:#ffffff">Kla<tspan
+   class="cls-3"
+   x="121.18"
+   y="0"
+   id="tspan12"
+   style="fill:#ffffff">t</tspan><tspan
+   class="cls-4"
+   x="151.46"
+   y="0"
+   id="tspan14"
+   style="fill:#ffffff">en</tspan></text>
+    </g>
+  </g>
+</svg>

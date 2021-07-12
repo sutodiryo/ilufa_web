@@ -46,6 +46,11 @@
             height: 70px;
         }
 
+
+        svg {
+            fill: white;
+        }
+
         @media only screen and (max-width: 400px) {
             .logo-text {
                 font-size: 10px;
@@ -103,7 +108,7 @@
                 </nav>
             </div>
         </div>
-        
+
         <div class="header-top header-top-hamburger">
             <div class="header-container">
                 <div class="logo main-logo">
