@@ -3,12 +3,8 @@
         <div class="footer-links p-relative">
             <div class="row">
                 <div class="col-md-4 dsn-col-footer">
-                    <div class="footer-block">
-                        <div class="footer-logo">
-                            <a href="#">
-                                <img src="<?php echo GUEST ?>img/logo.png" alt="Ilufa 168" class="" />
-                            </a>
-                        </div>
+                    <div class="footer-block" style="margin: auto;">
+                        <img src="<?php echo GUEST ?>img/logo.svg" alt="Ilufa 168" class="footer-img" />
                     </div>
                 </div>
 
@@ -25,7 +21,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-3 dsn-col-footer">
+                <!--
+                    <div class="col-md-3 dsn-col-footer">
                                 <div class="footer-block col-menu">
                                     <h4 class="footer-title">Navigation</h4>
                                     <nav>
@@ -39,7 +36,8 @@
                                         </ul>
                                     </nav>
                                 </div>
-                            </div> -->
+                            </div>
+                        -->
 
                 <div class="col-md-4 dsn-col-footer">
                     <div class="footer-block col-contact">

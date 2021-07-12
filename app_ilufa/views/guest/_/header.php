@@ -42,8 +42,8 @@
             margin-top: 100px;
         }
 
-        .footer-logo {
-            height: 70px;
+        .footer-img {
+            height: 40px;
         }
 
 
@@ -62,6 +62,14 @@
 
             .main-header-text {
                 margin-top: 60px;
+            }
+
+            .footer-img {
+                height: 40px;
+            }
+
+            .footer .footer-links .footer-block {
+                margin: auto;
             }
         }
     </style>

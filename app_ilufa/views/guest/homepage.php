@@ -198,8 +198,8 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <object data="http://localhost/ilufa/web/public/guest/svg/icon_cabang/" type="image/svg+xml">
-                                <!-- <img src="http://localhost/ilufa/web/public/guest/svg/member/" /> -->
+                            <object data="<?php echo GUEST ?>svg/icon_cabang/" type="image/svg+xml">
+                                <!-- <img src="<?php echo GUEST ?>svg/member/" /> -->
                             </object>
                         </div>
                         <div class="services-header">
@@ -216,7 +216,7 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <object data="http://localhost/ilufa/web/public/guest/svg/icon_mitra/" type="image/svg+xml">
+                            <object data="<?php echo GUEST ?>svg/icon_mitra/" type="image/svg+xml">
                             </object>
                             <!-- <img src="<?php echo GUEST ?>img/services/3.png" alt="" class="lozad"> -->
                         </div>
@@ -234,7 +234,7 @@
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
-                            <object data="http://localhost/ilufa/web/public/guest/svg/icon_member/" type="image/svg+xml">
+                            <object data="<?php echo GUEST ?>svg/icon_member/" type="image/svg+xml">
                             </object>
                             <!-- <img src="<?php echo GUEST ?>img/services/2.png" alt="" class="lozad"> -->
                         </div>
