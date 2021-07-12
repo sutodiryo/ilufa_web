@@ -39,18 +39,23 @@
 
     <div id="impress" data-transition-duration="1000" data-width="1024" data-height="768" data-max-scale="3" data-min-scale="0" data-perspective="1000" data-autoplay="7">
 
-        <div id="home" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+        <!-- <div id="home" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10"> -->
+        <div id="home" class="step slide" data-x="0" data-y="-1500" data-autoplay="10">
             <q style="text-align: center;">
-                <b>Website <a href="https://ilufa.co.id" target="_blank">ilufa.co.id</a><br>+ Backbone Apps</b>
+                <b>
+                    Website <a href="https://ilufa.co.id" target="_blank">ilufa.co.id</a>
+                    <br>
+                    + Backbone Apps
+                </b>
                 <center>
                     <img src="assets/web.png" class="img-full">
                 </center>
             </q>
         </div>
 
-        <div class="step slide" data-x="0" data-y="-1500">
+        <!-- <div class="step slide" data-x="0" data-y="-1500">
             <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
-        </div>
+        </div> -->
 
         <div class="step slide" data-x="1000" data-y="-1500">
             <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
