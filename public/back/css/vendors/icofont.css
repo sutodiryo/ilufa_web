@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'icofont';
-    src: url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/icofont.eot?v=1.0.0-beta");
-    src: url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/icofont.eot?v=1.0.0-beta#iefix") format("embedded-opentype"), url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/icofont.ttf?v=1.0.0-beta") format("truetype"), url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/icofont.woff?v=1.0.0-beta") format("woff"), url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/icofont.svg?v=1.0.0-beta#icofont") format("svg");
+    src: url("http://localhost/ilufa/web/public/back/fonts/icofont.eot?v=1.0.0-beta");
+    src: url("http://localhost/ilufa/web/public/back/fonts/icofont.eot?v=1.0.0-beta#iefix") format("embedded-opentype"), url("http://localhost/ilufa/web/public/back/fonts/icofont.ttf?v=1.0.0-beta") format("truetype"), url("http://localhost/ilufa/web/public/back/fonts/icofont.woff?v=1.0.0-beta") format("woff"), url("http://localhost/ilufa/web/public/back/fonts/icofont.svg?v=1.0.0-beta#icofont") format("svg");
     font-weight: normal;
     font-style: normal
 }

@@ -37,11 +37,6 @@ class Dashboard extends CI_Controller
 
 		// $data['produk'] 		= $this->db->query("SELECT * FROM produk")->result();
 
-		$this->load->view('admin/dashboard', $data);
-	}
-
-	public function homepage2()
-	{
-		$this->load->view('guest/homepage2');
+		$this->load->view('back/admin/dashboard', $data);
 	}
 }

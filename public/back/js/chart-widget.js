@@ -301,7 +301,7 @@ chartcolumnchart.render();
             hollow: {
               margin: 15,
               size: '70%',
-              image: '../assets/images/email-template/success.png',
+              image: 'http://localhost/ilufa/web/public/back/images/email-template/success.png',
               imageWidth: 64,
               imageHeight: 64,
               imageClipped: false
@@ -323,7 +323,7 @@ chartcolumnchart.render();
         fill: {
           type: 'image',
           image: {
-            src: ['../assets/images/user-card/5.jpg'],
+            src: ['http://localhost/ilufa/web/public/back/images/user-card/5.jpg'],
           }
         },
         stroke: {

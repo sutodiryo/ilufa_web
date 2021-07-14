@@ -62,7 +62,7 @@
             <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
         </div> -->
 
-        <div class="step slide" data-x="1000" data-y="-1500">
+        <div class="website" data-x="1000" data-y="-1500">
             <q>
                 <center><strong>WEBSITE</strong></center>
                 <br>
@@ -80,20 +80,22 @@
             </q>
         </div>
 
-        <div id="title" class="step" data-x="-800" data-y="300" data-scale="4">
+        <div id="optimasi" class="step" data-x="-800" data-y="300" data-scale="4">
             <center>
-                <a href="https://sharing.clickup.com/l/h/6-28843880-1/52c924fff10d7ff" target="_blank">
+                <a href="#" target="_blank">
                     <span>Optimasi</span><br>
                     <img src="assets/optimasi.jpg" class="img-page">
                 </a>
             </center>
 
-            <!-- <span class="try">then you should try</span>
+            <!--
+            <span class="try">then you should try</span>
             <h1>impress.js<sup>*</sup></h1>
-            <span class="footnote"><sup>*</sup> no rhyme intended</span> -->
+            <span class="footnote"><sup>*</sup> no rhyme intended</span>
+            -->
         </div>
 
-        <div id="big" class="step" data-x="-800" data-y="3500" data-rotate="90" data-scale="5">
+        <div id="backend-1" class="step" data-x="-800" data-y="3500" data-rotate="90" data-scale="5">
             <!-- <p>Search Engine Optimization <b>SEO</b></p> -->
             <p>Backend <b>Apps</b></p>
             <!-- <p>It’s a <strong>presentation tool</strong> <br />
@@ -101,7 +103,7 @@
                 and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p> -->
         </div>
 
-        <div id="its" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <div id="backend-2" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
             <center>
                 <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
                 <p><b class="rotating">Ilustrasi</b><br>Back End & Front End</p>
@@ -109,11 +111,11 @@
             </center>
         </div>
 
-        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <div id="cloud-computing-1" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
             <p>Cloud <b>Computing</b></p>
         </div>
 
-        <div id="ing" class="step" data-x="3500" data-y="-1600" data-z="0" data-rotate="270" data-scale="6">
+        <div id="cloud-computing-2" class="step" data-x="3500" data-y="-1600" data-z="0" data-rotate="270" data-scale="6">
             <center>
                 <a href="https://idcloudhost.com/cloud-vps/" target="_blank">
                     <span>Cloud Computing</span><br>
@@ -122,31 +124,30 @@
             </center>
         </div>
 
-        <!-- <div id="imagination" class="step" data-x="6700" data-y="-800" data-scale="6">
+        <!--
+        <div id="imagination" class="step" data-x="6700" data-y="-800" data-scale="6">
             <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-        </div> -->
-
-        <!-- <div id="source" class="step" data-x="8000" data-y="2000" data-rotate="20" data-scale="4">
+        </div>
+        <div id="source" class="step" data-x="8000" data-y="2000" data-rotate="20" data-scale="4">
             <p>want to know more?</p>
             <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
-        </div> -->
+        </div>
+        -->
 
-        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <div id="timeline-1" class="step" data-x="6000" data-y="4000" data-scale="2">
             <p>TIMELINE</p>
         </div>
 
-        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-
+        <div id="timeline-2" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
             <center>
-                <a href="https://sharing.clickup.com/l/h/6-28843880-1/52c924fff10d7ff" target="_blank">
+                <a href="https://app.clickup.com/5719520/v/l/6-28843880-1" target="_blank">
                     <span class="have">Clickup.com</span>
-                
-                
-                <img src="assets/tl.png" class="img-page">
+                </a>
+                <a href="https://sharing.clickup.com/l/h/6-28843880-1/52c924fff10d7ff" target="_blank">
+                    <img src="assets/tl.png" class="img-page">
                 </a>
             </center>
             <!-- <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p> -->
-
             <!-- <span class="footnote">* beat that, prezi ;)</span> -->
         </div>
 

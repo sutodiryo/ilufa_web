@@ -265,7 +265,7 @@
                     <div class="work-container">
                         <div class="slick-slider">
                             <div class="work-item slick-slide">
-                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>img/product/spe-portable-bluetooth-+-mic-fj-2019.jpg" alt="">
+                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="">
                                 <div class="item-border"></div>
                                 <div class="item-info">
                                     <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
@@ -277,7 +277,7 @@
                             </div>
 
                             <div class="work-item slick-slide">
-                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>img/product/fuze-luxury-route-66-vivo-y30-y50.jpg" alt="">
+                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/P1077833-Edit.jpg" alt="">
                                 <div class="item-border"></div>
                                 <div class="item-info">
                                     <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
@@ -289,7 +289,7 @@
                             </div>
 
                             <div class="work-item slick-slide">
-                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>img/product/remax-hf-rm-512.jpg" alt="">
+                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/remax-hf-rm-512.jpg" alt="">
                                 <div class="item-border"></div>
                                 <div class="item-info">
                                     <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
@@ -301,7 +301,7 @@
                             </div>
 
                             <div class="work-item slick-slide">
-                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>img/product/pb-foomee-rb10 10000-mah-1.jpg" alt="">
+                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/pb foomee rb10 10000 mahArtboard 1.jpg" alt="">
                                 <div class="item-border"></div>
                                 <div class="item-info">
                                     <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
@@ -313,7 +313,7 @@
                             </div>
 
                             <div class="work-item slick-slide">
-                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>img/product/foomee-ja02-wireless-charger.jpg" alt="">
+                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/foomee-ja02-wireless-charger.jpg" alt="">
                                 <div class="item-border"></div>
                                 <div class="item-info">
                                     <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
@@ -337,7 +337,7 @@
             <div class="row align-items-center h-100">
                 <div class="col-lg-6 ">
                     <div class="box-im" data-dsn-grid="move-up">
-                        <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>img/product/foomee-ja02-wireless-charger.jpg" alt="" data-dsn-move="20%">
+                        <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/foomee-ja02-wireless-charger_NOTEXT.jpg" alt="" data-dsn-move="20%">
                     </div>
                 </div>
 

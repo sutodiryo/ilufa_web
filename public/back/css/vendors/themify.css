@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'themify';
-    src: url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/themify.eot?-fvbane");
-    src: url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/themify.woff?-fvbane") format("woff"), url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/themify.ttf?-fvbane") format("truetype"), url("http://localhost/ilufa/web/public/back/cuba/assets/fonts/themify.svg?-fvbane#themify") format("svg");
+    src: url("http://localhost/ilufa/web/public/back/fonts/themify.eot?-fvbane");
+    src: url("http://localhost/ilufa/web/public/back/fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("http://localhost/ilufa/web/public/back/fonts/themify.woff?-fvbane") format("woff"), url("http://localhost/ilufa/web/public/back/fonts/themify.ttf?-fvbane") format("truetype"), url("http://localhost/ilufa/web/public/back/fonts/themify.svg?-fvbane#themify") format("svg");
     font-weight: normal;
     font-style: normal
 }
