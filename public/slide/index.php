@@ -6,10 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Website Ilufa.co.id & Backbone Apps</title>
+    <title>Website Ilufa.co.id & Backend Apps</title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description" content="Slide presentasi website iLuFA & Backend Aplikasi" />
+    <meta name="author" content="Yogi Sulistianto" />
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -80,7 +80,7 @@
             </q>
         </div>
 
-        <div id="optimasi" class="step" data-x="-800" data-y="300" data-scale="4">
+        <div id="optimasi-1" class="step" data-x="-800" data-y="300" data-scale="4">
             <center>
                 <a href="#" target="_blank">
                     <span>Optimasi</span><br>
@@ -95,7 +95,21 @@
             -->
         </div>
 
-        <div id="backend-1" class="step" data-x="-800" data-y="3500" data-rotate="90" data-scale="5">
+        <div id="optimasi-2" class="step" data-x="-800" data-y="5000" data-rotate="90" data-scale="5">
+            <!-- <p>Search Engine Optimization <b>SEO</b></p> -->
+            <p><b>1.Keywording</b> -> <a href="https://trends.google.co.id/trends/?geo=ID" target="_blank">Google Trends</a></p>
+            <p><b>2.Konten</b></p>
+            <p><b>3.Analisis</b> -> <a href="https://www.alexa.com/siteinfo" target="_blank">Alexa</a></p>
+            <p><b>4.Html</b></p>
+            <p><b>5.Sosmed</b></p>
+            <p><b>6.Desain</b></p>
+            <p><b>8.Rank</b> -> <a href="https://www.serprobot.com/serp-check.php" target="_blank">Serprobot</a></p>
+            <!-- <p>It’s a <strong>presentation tool</strong> <br />
+                inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br />
+                and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p> -->
+        </div>
+
+        <div id="backend-1" class="step" data-x="-4000" data-y="5000" data-rotate="90" data-scale="5">
             <!-- <p>Search Engine Optimization <b>SEO</b></p> -->
             <p>Backend <b>Apps</b></p>
             <!-- <p>It’s a <strong>presentation tool</strong> <br />
