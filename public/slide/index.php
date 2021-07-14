@@ -62,7 +62,7 @@
             <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
         </div> -->
 
-        <div class="website" data-x="1000" data-y="-1500">
+        <div id="website" class="step slide" data-x="1000" data-y="-1500">
             <q>
                 <center><strong>WEBSITE</strong></center>
                 <br>
