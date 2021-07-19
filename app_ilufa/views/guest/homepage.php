@@ -331,7 +331,7 @@
         </div>
     </section>
 
-    <div class=" box-gallery-vertical section-margin section-padding">
+    <div class=" box-gallery-vertical section-margin section-padding" data-dsn="color">
         <div class="mask-bg"></div>
         <div class="container">
             <div class="row align-items-center h-100">
@@ -537,15 +537,10 @@
                             <div class="entry">
                                 <div>
                                     <h5><a href="https://google.com">Solo 1</a></h5>
-
                                     <h5><a href="https://google.com">Solo 2</a></h5>
-
                                     <h5><a href="https://google.com">Solo 3</a></h5>
-
                                     <h5><a href="https://google.com">Solo 4</a></h5>
-
                                     <h5><a href="https://google.com">Solo 5</a></h5>
-
                                     <h5><a href="https://google.com">Solo 6</a></h5>
                                     <!-- <a href="#">www.google.com</a> -->
                                 </div>
@@ -555,9 +550,9 @@
                     </div>
                 </div>
 
-                <div class="logo-box">
+                <a class="logo-box" data-toggle="modal" data-target="#klaten-1">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/klaten.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -569,8 +564,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                </a>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/sukoharjo.svg" alt="">
@@ -642,7 +637,7 @@
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/yogyakarta.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -654,12 +649,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/semarang.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -671,12 +666,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/grobogan.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -688,12 +683,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/madiun.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -705,12 +700,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/ponorogo.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -722,12 +717,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/bojonegoro.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -739,7 +734,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -763,3 +758,54 @@
 </div>
 
 <?php $this->load->view('guest/_/footer') ?>
+
+<div class="modal fade" id="klaten-1" tabindex="-1" role="dialog" aria-labelledby="klaten-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><font color="black">Modal title</font></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="maps-klaten" style="min-height: 500px;">
+                <!-- <div ></div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var locations = [
+        ['Bondi Beach', -7.7005765, 110.6011722, 1]
+        // ,
+        // ['Coogee Beach', -33.923036, 151.259052, 5],
+        // ['Cronulla Beach', -34.028249, 151.157507, 3],
+        // ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+        // ['Maroubra Beach', -33.950198, 151.259302, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('maps-klaten'), {
+        zoom: 14,
+        center: new google.maps.LatLng(-7.7005765, 110.601172),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+    }
+</script>
