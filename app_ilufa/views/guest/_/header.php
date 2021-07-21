@@ -25,7 +25,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <!-- <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script> -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuN6ntOYC-xeTru8wCUT9aOsAxQOxXFPk&callback=initMap">
+    </script>
 
     <style>
         html {

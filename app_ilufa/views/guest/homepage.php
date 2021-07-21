@@ -527,9 +527,9 @@
             </div>
 
             <div class="wapper-client">
-                <div class="logo-box">
+                <a class="logo-box" data-toggle="modal" data-target="#solo_modal">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/solo.svg" alt="">
-                    <div class="info">
+                    <!-- <div class="info">
                         <div class="content">
                             <div class="icon">
                                 <i class="fas fa-plus"></i>
@@ -542,199 +542,55 @@
                                     <h5><a href="https://google.com">Solo 4</a></h5>
                                     <h5><a href="https://google.com">Solo 5</a></h5>
                                     <h5><a href="https://google.com">Solo 6</a></h5>
-                                    <!-- <a href="#">www.google.com</a> -->
                                 </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a class="logo-box" data-toggle="modal" data-target="#klaten-1">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/klaten.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Klaten</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
                             </div>
                         </div>
                     </div> -->
                 </a>
 
+                <a class="logo-box" data-toggle="modal" data-target="#klaten_modal">
+                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/klaten.svg" alt="">
+                </a>
+
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/sukoharjo.svg" alt="">
-                    <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Karanganyar</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/karanganyar.svg" alt="">
-                    <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/sragen.svg" alt="">
-                    <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/boyolali.svg" alt="">
-                    <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/yogyakarta.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/semarang.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/grobogan.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/madiun.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/ponorogo.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="logo-box">
                     <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/bojonegoro.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5>Google</h5>
-                                    <a href="#">www.google.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -759,51 +615,91 @@
 
 <?php $this->load->view('guest/_/footer') ?>
 
-<div class="modal fade" id="klaten-1" tabindex="-1" role="dialog" aria-labelledby="klaten-1" aria-hidden="true">
+<div class="modal fade" id="klaten_modal" tabindex="-1" role="dialog" aria-labelledby="klaten_modal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title"><font color="black">Modal title</font></h5>
+            <!-- <div class="modal-header">
+                <h5 class="modal-title">
+                    <font color="black">Modal title</font>
+                </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
-            <div class="modal-body" id="maps-klaten" style="min-height: 500px;">
-                <!-- <div ></div> -->
+            </div> -->
+            <div class="modal-body" id="klaten_maps" style="min-height: 500px;">
             </div>
         </div>
     </div>
 </div>
-
 <script type="text/javascript">
-    var locations = [
-        ['Bondi Beach', -7.7005765, 110.6011722, 1]
-        // ,
-        // ['Coogee Beach', -33.923036, 151.259052, 5],
-        // ['Cronulla Beach', -34.028249, 151.157507, 3],
-        // ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-        // ['Maroubra Beach', -33.950198, 151.259302, 1]
+    var klaten_location = [
+        ['Ilufa Klaten', -7.7005765, 110.6011722, 1],
     ];
-
-    var map = new google.maps.Map(document.getElementById('maps-klaten'), {
+    var map = new google.maps.Map(document.getElementById('klaten_maps'), {
         zoom: 14,
         center: new google.maps.LatLng(-7.7005765, 110.601172),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
     var infowindow = new google.maps.InfoWindow();
-
     var marker, i;
-
-    for (i = 0; i < locations.length; i++) {
+    for (i = 0; i < klaten_location.length; i++) {
         marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            position: new google.maps.LatLng(klaten_location[i][1], klaten_location[i][2]),
             map: map
         });
-
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infowindow.setContent(locations[i][0]);
+                infowindow.setContent(klaten_location[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+    }
+</script>
+
+
+<div class="modal fade" id="solo_modal" tabindex="-1" role="dialog" aria-labelledby="solo_modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <font color="black">Modal title</font>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="solo_maps" style="min-height: 500px;">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var solo_location = [
+        ['iLuFA 168 Super Store Solo', -7.5738807, 110.820649, 1],
+        ['iLuFA Department Store Singosaren', -7.5735717, 110.8188525, 2],
+        ['iLuFA 168 Widuran', -7.5661434, 110.830692, 3],
+        ['iLuFA 168 Nusukan', -7.5507699, 110.8204172, 4],
+        ['iLuFA 168 Mojosongo', -7.5380712, 110.8434102, 5],
+        ['iLuFA 168 Pabelan', -7.5516168, 110.7689047, 6],
+        ['iLuFA 168 Colomadu', -7.5397822, 110.7441351, 7],
+        ['iLuFA 168 Sennia', -7.605364, 110.8033049, 8],
+    ];
+    var map = new google.maps.Map(document.getElementById('solo_maps'), {
+        zoom: 13,
+        center: new google.maps.LatLng(-7.563828, 110.8173266),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    var infowindow = new google.maps.InfoWindow();
+    var marker, i;
+    for (i = 0; i < solo_location.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(solo_location[i][1], solo_location[i][2]),
+            // label: labels[labelIndex++ % labels.length],
+            map: map
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(solo_location[i][0]);
                 infowindow.open(map, marker);
             }
         })(marker, i));
