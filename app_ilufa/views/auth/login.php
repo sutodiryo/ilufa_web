@@ -1,100 +1,136 @@
+<!-- <h1><?php echo lang('login_heading'); ?></h1> -->
+<!-- <p><?php echo lang('login_subheading'); ?></p> -->
+
+<!-- <div id="infoMessage"><?php echo $message; ?></div>
+
+<?php echo form_open("auth/login"); ?>
+
+<p>
+    <?php echo lang('login_identity_label', 'identity'); ?>
+    <?php echo form_input($identity); ?>
+</p>
+
+<p>
+    <?php echo lang('login_password_label', 'password'); ?>
+    <?php echo form_input($password); ?>
+</p>
+
+<p>
+    <?php echo lang('login_remember_label', 'remember'); ?>
+    <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"'); ?>
+</p>
+
+
+<p><?php echo form_submit('submit', lang('login_submit_btn')); ?></p>
+
+<?php echo form_close(); ?>
+
+<p><a href="forgot_password"><?php echo lang('login_forgot_password'); ?></a></p> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
-    <link rel="icon" href="<?php echo ADMIN_ASSETS ?>images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="<?php echo ADMIN_ASSETS ?>images/favicon.png" type="image/x-icon">
-    <title>iLuFA | Login Member</title>
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/font-awesome.css">
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/icofont.css">
-    <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/themify.css">
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/flag-icon.css">
-    <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/feather-icon.css">
-    <!-- Plugins css start-->
-    <!-- Plugins css Ends-->
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/bootstrap.css">
-    <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/style.css">
-    <link id="color" rel="stylesheet" href="<?php echo ADMIN_ASSETS ?>css/color-1.css" media="screen">
-    <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>iLuFA | Login Page</title>
+    <link rel="icon" type="image/x-icon" href="<?php echo ADMIN_ASSETS ?>assets/img/favicon.ico" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="<?php echo ADMIN_ASSETS ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo ADMIN_ASSETS ?>assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo ADMIN_ASSETS ?>assets/css/authentication/form-2.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>assets/css/forms/theme-checkbox-radio.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>assets/css/forms/switches.css">
 </head>
 
-<body>
-    <!-- login page start-->
-    <div class="container-fluid p-0">
-        <div class="row m-0">
-            <div class="col-12 p-0">
-                <div class="login-card">
-                    <div>
-                        <div><a class="logo" href="#"><img class="img-fluid for-light" src="<?php echo ADMIN_ASSETS ?>images/logo/ilufa_login.png" alt="looginpage"><img class="img-fluid for-dark" src="<?php echo ADMIN_ASSETS ?>images/logo/logo_dark.png" alt="looginpage"></a></div>
-                        <div class="login-main">
-                            
-                            <!-- <h1><?php echo lang('login_heading'); ?></h1> -->
-                            <!-- <p><?php echo lang('login_subheading'); ?></p> -->
-
-                            <div id="infoMessage"><?php echo $message; ?></div>
-
-                            <?php echo form_open("auth/login"); ?>
-
-                            <p>
-                                <?php echo lang('login_identity_label', 'identity'); ?>
-                                <?php echo form_input($identity); ?>
-                            </p>
-
-                            <p>
-                                <?php echo lang('login_password_label', 'password'); ?>
-                                <?php echo form_input($password); ?>
-                            </p>
-
-                            <p>
-                                <?php echo lang('login_remember_label', 'remember'); ?>
-                                <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"'); ?>
-                            </p>
+<body class="form">
 
 
-                            <p><?php echo form_submit('submit', lang('login_submit_btn')); ?></p>
+    <div class="form-container outer">
+        <div class="form-form">
+            <div class="form-form-wrap">
+                <div class="form-container">
+                    <div class="form-content">
 
-                            <?php echo form_close(); ?>
+                        <h1 class="">Sign In</h1>
+                        <p class="">Log in to your account to continue.</p>
 
-                            <p><a href="forgot_password"><?php echo lang('login_forgot_password'); ?></a></p>
+                        <form class="text-left">
+                            <div class="form">
 
-                        </div>
+                                <div id="username-field" class="field-wrapper input">
+                                    <label for="username">USERNAME</label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <input id="username" name="username" type="text" class="form-control" placeholder="e.g John_Doe">
+                                </div>
+
+                                <div id="password-field" class="field-wrapper input mb-2">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="password">PASSWORD</label>
+                                        <a href="auth_pass_recovery_boxed.html" class="forgot-pass-link">Forgot Password?</a>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <input id="password" name="password" type="password" class="form-control" placeholder="Password">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="toggle-password" class="feather feather-eye">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="d-sm-flex justify-content-between">
+                                    <div class="field-wrapper">
+                                        <button type="submit" class="btn btn-primary" value="">Log In</button>
+                                    </div>
+                                </div>
+
+                                <div class="division">
+                                    <span>OR</span>
+                                </div>
+
+                                <div class="social">
+                                    <a href="javascript:void(0);" class="btn social-fb">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                        </svg>
+                                        <span class="brand-name">Facebook</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn social-github">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                        <span class="brand-name">Github</span>
+                                    </a>
+                                </div>
+
+                                <p class="signup-link">Not registered ? <a href="auth_register_boxed.html">Create an account</a></p>
+
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- latest jquery-->
-        <script src="<?php echo ADMIN_ASSETS ?>js/jquery-3.5.1.min.js"></script>
-        <!-- Bootstrap js-->
-        <script src="<?php echo ADMIN_ASSETS ?>js/bootstrap/bootstrap.bundle.min.js"></script>
-        <!-- feather icon js-->
-        <script src="<?php echo ADMIN_ASSETS ?>js/icons/feather-icon/feather.min.js"></script>
-        <script src="<?php echo ADMIN_ASSETS ?>js/icons/feather-icon/feather-icon.js"></script>
-        <!-- scrollbar js-->
-        <!-- Sidebar jquery-->
-        <script src="<?php echo ADMIN_ASSETS ?>js/config.js"></script>
-        <!-- Plugins JS start-->
-        <!-- Plugins JS Ends-->
-        <!-- Theme js-->
-        <script src="<?php echo ADMIN_ASSETS ?>js/script.js"></script>
-        <!-- login js-->
-        <!-- Plugin used-->
     </div>
+
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="<?php echo ADMIN_ASSETS ?>assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo ADMIN_ASSETS ?>bootstrap/js/popper.min.js"></script>
+    <script src="<?php echo ADMIN_ASSETS ?>bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <script src="<?php echo ADMIN_ASSETS ?>assets/js/authentication/form-2.js"></script>
+
 </body>
 
 </html>

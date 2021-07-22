@@ -668,12 +668,14 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" id="solo_maps" style="min-height: 500px;">
+            <div class="modal-body"  style="min-height: 500px;">
+            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1vfG3GBLHz3ivmAGq_z_tm69I0wpi9T3F" width="100%" height="500px"></iframe> -->
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SQm2EVeJcDyl8qsjbJ2-cakO6OHp_4M7&z=12" width="100%" height="500"></iframe>
             </div>
         </div>
     </div>
 </div>
-<script>
+<!-- <script>
     var solo_location = [
         ['iLuFA 168 Super Store Solo', -7.5738807, 110.820649, 1],
         ['iLuFA Department Store Singosaren', -7.5735717, 110.8188525, 2],
@@ -704,4 +706,4 @@
             }
         })(marker, i));
     }
-</script>
+</script> -->
