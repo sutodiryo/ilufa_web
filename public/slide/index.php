@@ -44,6 +44,13 @@
 
     <div id="impress" data-transition-duration="1000" data-width="1024" data-height="768" data-max-scale="3" data-min-scale="0" data-perspective="1000" data-autoplay="7">
 
+        <div id="overview" class="step" data-x="1000" data-y="500" data-z="0" data-scale="7">
+        </div>
+
+        <div id="title" class="step" data-x="1000" data-y="1000" data-scale="7">
+            <p style="font-size: 50px;">Website ilufa.co.id + Backend Apps</p>
+        </div>
+
         <!-- <div id="home" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10"> -->
         <div id="home" class="step slide" data-x="0" data-y="-1500" data-autoplay="10">
             <q style="text-align: center;">
@@ -80,7 +87,7 @@
             </q>
         </div>
 
-        <div id="optimasi-1" class="step" data-x="-800" data-y="300" data-scale="4">
+        <div id="optimasi-1" class="step" data-x="1000" data-y="-800" data-scale="1">
             <center>
                 <a href="#" target="_blank">
                     <span>Optimasi</span><br>
@@ -95,7 +102,7 @@
             -->
         </div>
 
-        <div id="optimasi-2" class="step" data-x="-800" data-y="5000" data-rotate="90" data-scale="5">
+        <div id="optimasi-2" class="step" data-x="00" data-y="-500" data-rotate="90" data-scale="1">
             <!-- <p>Search Engine Optimization <b>SEO</b></p> -->
             <p><b>1.Keywording</b> -> <a href="https://trends.google.co.id/trends/?geo=ID" target="_blank">Google Trends</a></p>
             <p><b>2.Konten</b></p>
@@ -109,7 +116,7 @@
                 and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p> -->
         </div>
 
-        <div id="backend-1" class="step" data-x="-4000" data-y="5000" data-rotate="90" data-scale="5">
+        <div id="backend-1" class="step" data-x="3000" data-y="-500" data-rotate="90" data-scale="1">
             <!-- <p>Search Engine Optimization <b>SEO</b></p> -->
             <p>Backend <b>Apps</b></p>
             <!-- <p>It’s a <strong>presentation tool</strong> <br />
@@ -117,7 +124,7 @@
                 and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p> -->
         </div>
 
-        <div id="backend-2" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <div id="backend-2" class="step" data-x="2200" data-y="-700" data-rotate="180" data-scale="1">
             <center>
                 <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
                 <p><b class="rotating">Ilustrasi</b><br>Back End & Front End</p>
@@ -125,11 +132,19 @@
             </center>
         </div>
 
-        <div id="cloud-computing-1" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <div id="backend-3" class="step" data-x="2500" data-y="-500" data-z="-3000" data-rotate="300" data-scale="1">
+            <center>
+                <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
+                <p><b class="rotating">Ilustrasi</b></p>
+                <img src="assets/post2x.png" class="img-page">
+            </center>
+        </div>
+
+        <div id="cloud-computing-1" class="step" data-x="1500" data-y="-500" data-z="-3000" data-rotate="300" data-scale="1">
             <p>Cloud <b>Computing</b></p>
         </div>
 
-        <div id="cloud-computing-2" class="step" data-x="3500" data-y="-1600" data-z="0" data-rotate="270" data-scale="6">
+        <div id="cloud-computing-2" class="step" data-x="1500" data-y="-200" data-z="0" data-rotate="300" data-scale="1">
             <center>
                 <a href="https://idcloudhost.com/cloud-vps/" target="_blank">
                     <span>Cloud Computing</span><br>
@@ -148,11 +163,11 @@
         </div>
         -->
 
-        <div id="timeline-1" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <div id="timeline-1" class="step" data-x="-500" data-y="0" data-scale="1">
             <p>TIMELINE</p>
         </div>
 
-        <div id="timeline-2" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <div id="timeline-2" class="step" data-x="-500" data-y="300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="1">
             <center>
                 <a href="https://app.clickup.com/5719520/v/l/6-28843880-1" target="_blank">
                     <span class="have">Clickup.com</span>
@@ -163,9 +178,6 @@
             </center>
             <!-- <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p> -->
             <!-- <span class="footnote">* beat that, prezi ;)</span> -->
-        </div>
-
-        <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
         </div>
 
     </div>
