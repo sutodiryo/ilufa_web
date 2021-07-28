@@ -1,825 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from admin.pixelstrap.com/cuba/theme/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Jul 2021 04:29:37 GMT -->
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
-    <link rel="icon" href="<?php echo ADMIN_ASSETS ?>images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="<?php echo ADMIN_ASSETS ?>images/favicon.png" type="image/x-icon">
-    <title>Cuba - Premium Admin Template</title>
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/font-awesome.css">
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/icofont.css">
-    <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/themify.css">
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/flag-icon.css">
-    <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/feather-icon.css">
-    <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/chartist.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/date-picker.css">
-    <!-- Plugins css Ends-->
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/vendors/bootstrap.css">
-    <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/style.css">
-    <link id="color" rel="stylesheet" href="<?php echo ADMIN_ASSETS ?>css/color-1.css" media="screen">
-    <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>iLuFa 168 - <?php echo $title ?> </title>
+    <link rel="icon" type="image/x-icon" href="<?php echo BACK ?>assets/img/favicon.ico" />
+    <link href="<?php echo BACK ?>assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="<?php echo BACK ?>assets/js/loader.js"></script>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="<?php echo BACK ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo BACK ?>assets/css/plugins.css" rel="stylesheet" type="text/css" />
+
+    
+    <link rel="stylesheet" href="<?php echo BACK ?>plugins/font-icons/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="<?php echo BACK ?>plugins/font-icons/fontawesome/css/fontawesome.css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+    <?php if ($page == "dashboard") { ?>
+
+        <link href="<?php echo BACK ?>plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+
+    <?php } elseif ($page == "games") { ?>
+
+        <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/datatables.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/custom_dt_html5.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/dt-global_style.css">
+
+    <?php } ?>
+
+    <link href="<?php echo BACK ?>assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
 </head>
 
-<body onload="startTime()">
-    <div class="loader-wrapper">
-        <div class="loader-index"><span></span></div>
-        <svg>
-            <defs></defs>
-            <filter id="goo">
-                <fegaussianblur in="SourceGraphic" stddeviation="11" result="blur"></fegaussianblur>
-                <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"> </fecolormatrix>
-            </filter>
-        </svg>
-    </div>
-    <!-- tap on top starts-->
-    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-    <!-- tap on tap ends-->
-    <!-- page-wrapper Start-->
-    <div class="page-wrapper compact-wrapper" id="pageWrapper">
-        <!-- Page Header Start-->
-        <div class="page-header">
-            <div class="header-wrapper row m-0">
-                <form class="form-inline search-full col" action="#" method="get">
-                    <div class="form-group w-100">
-                        <div class="Typeahead Typeahead--twitterUsers">
-                            <div class="u-posRelative">
-                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Cuba .." name="q" title="" autofocus>
-                                <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
-                            </div>
-                            <div class="Typeahead-menu"></div>
-                        </div>
-                    </div>
-                </form>
-                <div class="header-logo-wrapper col-auto p-0">
-                    <div class="logo-wrapper"><a href="index-2.html"><img class="img-fluid" src="<?php echo ADMIN_ASSETS ?>images/logo/logo.png" alt=""></a></div>
-                    <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
-                </div>
-                <div class="left-header col horizontal-wrapper ps-0">
-                    <ul class="horizontal-menu">
-                        <!-- <li class="mega-menu outside"><a class="nav-link" href="#!"><i data-feather="layers"></i><span>Bonus Ui</span></a>
-                            <div class="mega-menu-container nav-submenu menu-to-be-close header-mega">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col mega-box">
-                                            <div class="mobile-title d-none">
-                                                <h5>Mega menu</h5><i data-feather="x"></i>
-                                            </div>
-                                            <div class="link-section icon">
-                                                <div>
-                                                    <h6>Error Page</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><a href="error-400.html">Error page 400</a></li>
-                                                    <li><a href="error-401.html">Error page 401</a></li>
-                                                    <li><a href="error-403.html">Error page 403</a></li>
-                                                    <li><a href="error-404.html">Error page 404</a></li>
-                                                    <li><a href="error-500.html">Error page 500</a></li>
-                                                    <li><a href="error-503.html">Error page 503</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col mega-box">
-                                            <div class="link-section doted">
-                                                <div>
-                                                    <h6> Authentication</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="login_one.html">Login with image</a></li>
-                                                    <li><a href="login-bs-validation.html">Login with validation</a></li>
-                                                    <li><a href="sign-up.html">Sign Up</a></li>
-                                                    <li><a href="sign-up-one.html">SignUp with image</a></li>
-                                                    <li><a href="sign-up-two.html">SignUp with image</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col mega-box">
-                                            <div class="link-section dashed-links">
-                                                <div>
-                                                    <h6>Usefull Pages</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><a href="search.html">Search Website</a></li>
-                                                    <li><a href="unlock.html">Unlock User</a></li>
-                                                    <li><a href="forget-password.html">Forget Password</a></li>
-                                                    <li><a href="reset-password.html">Reset Password</a></li>
-                                                    <li><a href="maintenance.html">Maintenance</a></li>
-                                                    <li><a href="login-sa-validation.html">Login validation</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col mega-box">
-                                            <div class="link-section">
-                                                <div>
-                                                    <h6>Email templates</h6>
-                                                </div>
-                                                <ul>
-                                                    <li class="ps-0"><a href="basic-template.html">Basic Email</a></li>
-                                                    <li class="ps-0"><a href="email-header.html">Basic With Header</a></li>
-                                                    <li class="ps-0"><a href="template-email.html">Ecomerce Template</a></li>
-                                                    <li class="ps-0"><a href="template-email-2.html">Email Template 2</a></li>
-                                                    <li class="ps-0"><a href="ecommerce-templates.html">Ecommerce Email</a></li>
-                                                    <li class="ps-0"><a href="email-order-success.html">Order Success</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col mega-box">
-                                            <div class="link-section">
-                                                <div>
-                                                    <h6>Coming Soon</h6>
-                                                </div>
-                                                <ul class="svg-icon">
-                                                    <li><a href="comingsoon.html"> <i data-feather="file"> </i>Coming-soon</a></li>
-                                                    <li><a href="comingsoon-bg-video.html"> <i data-feather="film"> </i>Coming-video</a></li>
-                                                    <li><a href="comingsoon-bg-img.html"><i data-feather="image"> </i>Coming-Image</a></li>
-                                                </ul>
-                                                <div>
-                                                    <h6>Other Soon</h6>
-                                                </div>
-                                                <ul class="svg-icon">
-                                                    <li><a class="txt-primary" href="landing-page.html"> <i data-feather="cast"></i>Landing Page</a></li>
-                                                    <li><a class="txt-secondary" href="sample-page.html"> <i data-feather="airplay"></i>Sample Page</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="level-menu outside"><a class="nav-link" href="#!"><i data-feather="inbox"></i><span>Level Menu</span></a>
-                            <ul class="header-level-menu menu-to-be-close">
-                                <li><a href="file-manager.html" data-original-title="" title=""> <i data-feather="git-pull-request"></i><span>File manager </span></a></li>
-                                <li><a href="#!" data-original-title="" title=""> <i data-feather="users"></i><span>Users</span></a>
-                                    <ul class="header-level-sub-menu">
-                                        <li><a href="file-manager.html" data-original-title="" title=""> <i data-feather="user"></i><span>User Profile</span></a></li>
-                                        <li><a href="file-manager.html" data-original-title="" title=""> <i data-feather="user-minus"></i><span>User Edit</span></a></li>
-                                        <li><a href="file-manager.html" data-original-title="" title=""> <i data-feather="user-check"></i><span>Users Cards</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="kanban.html" data-original-title="" title=""> <i data-feather="airplay"></i><span>Kanban Board</span></a></li>
-                                <li><a href="bookmark.html" data-original-title="" title=""> <i data-feather="heart"></i><span>Bookmark</span></a></li>
-                                <li><a href="social-app.html" data-original-title="" title=""> <i data-feather="zap"></i><span>Social App </span></a></li>
-                            </ul>
-                        </li> -->
-                    </ul>
-                </div>
-                <div class="nav-right col-8 pull-right right-header p-0">
-                    <ul class="nav-menus">
-                        <!-- <li class="language-nav">
-                            <div class="translate_wrapper">
-                                <div class="current_lang">
-                                    <div class="lang"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">EN </span></div>
-                                </div>
-                                <div class="more_lang">
-                                    <div class="lang selected" data-value="en"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span> (US)</span></span></div>
-                                    <div class="lang" data-value="de"><i class="flag-icon flag-icon-de"></i><span class="lang-txt">Deutsch</span></div>
-                                    <div class="lang" data-value="es"><i class="flag-icon flag-icon-es"></i><span class="lang-txt">Español</span></div>
-                                    <div class="lang" data-value="fr"><i class="flag-icon flag-icon-fr"></i><span class="lang-txt">Français</span></div>
-                                    <div class="lang" data-value="pt"><i class="flag-icon flag-icon-pt"></i><span class="lang-txt">Português<span> (BR)</span></span></div>
-                                    <div class="lang" data-value="cn"><i class="flag-icon flag-icon-cn"></i><span class="lang-txt">简体中文</span></div>
-                                    <div class="lang" data-value="ae"><i class="flag-icon flag-icon-ae"></i><span class="lang-txt">لعربية <span> (ae)</span></span></div>
-                                </div>
-                            </div>
-                        </li> -->
-                        <li> <span class="header-search"><i data-feather="search"></i></span></li>
-                        <li class="onhover-dropdown">
-                            <div class="notification-box"><i data-feather="bell"> </i><span class="badge rounded-pill badge-secondary">4 </span></div>
-                            <ul class="notification-dropdown onhover-show-div">
-                                <li><i data-feather="bell"></i>
-                                    <h6 class="f-18 mb-0">Notitications</h6>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-circle-o me-3 font-primary"> </i>Delivery processing <span class="pull-right">10 min.</span></p>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-circle-o me-3 font-success"></i>Order Complete<span class="pull-right">1 hr</span></p>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-circle-o me-3 font-info"></i>Tickets Generated<span class="pull-right">3 hr</span></p>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-circle-o me-3 font-danger"></i>Delivery Complete<span class="pull-right">6 hr</span></p>
-                                </li>
-                                <li><a class="btn btn-primary" href="#">Check all notification</a></li>
-                            </ul>
-                        </li>
-                        <!-- <li class="onhover-dropdown">
-                            <div class="notification-box"><i data-feather="star"></i></div>
-                            <div class="onhover-show-div bookmark-flip">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="front">
-                                            <ul class="droplet-dropdown bookmark-dropdown">
-                                                <li class="gradient-primary"><i data-feather="star"></i>
-                                                    <h6 class="f-18 mb-0">Bookmark</h6>
-                                                </li>
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-4 text-center"><i data-feather="file-text"></i></div>
-                                                        <div class="col-4 text-center"><i data-feather="activity"></i></div>
-                                                        <div class="col-4 text-center"><i data-feather="users"></i></div>
-                                                        <div class="col-4 text-center"><i data-feather="clipboard"></i></div>
-                                                        <div class="col-4 text-center"><i data-feather="anchor"></i></div>
-                                                        <div class="col-4 text-center"><i data-feather="settings"></i></div>
-                                                    </div>
-                                                </li>
-                                                <li class="text-center">
-                                                    <button class="flip-btn" id="flip-btn">Add New Bookmark</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="back">
-                                            <ul>
-                                                <li>
-                                                    <div class="droplet-dropdown bookmark-dropdown flip-back-content">
-                                                        <input type="text" placeholder="search...">
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <button class="d-block flip-back" id="flip-back">Back</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
-                        <li>
-                            <div class="mode"><i class="fa fa-moon-o"></i></div>
-                        </li>
-                        <!-- <li class="cart-nav onhover-dropdown">
-                            <div class="cart-box"><i data-feather="shopping-cart"></i><span class="badge rounded-pill badge-primary">2</span></div>
-                            <ul class="cart-dropdown onhover-show-div">
-                                <li>
-                                    <h6 class="mb-0 f-20">Shoping Bag</h6><i data-feather="shopping-cart"></i>
-                                </li>
-                                <li class="mt-0">
-                                    <div class="media"><img class="img-fluid rounded-circle me-3 img-60" src="<?php echo ADMIN_ASSETS ?>images/ecommerce/01.jpg" alt="">
-                                        <div class="media-body"><span>V-Neck Shawl Collar Woman's Solid T-Shirt</span>
-                                            <p>Yellow(#fcb102)</p>
-                                            <div class="qty-box">
-                                                <div class="input-group"><span class="input-group-prepend">
-                                                        <button class="btn quantity-left-minus" type="button" data-type="minus" data-field=""><i data-feather="minus"></i></button></span>
-                                                    <input class="form-control input-number" type="text" name="quantity" value="1"><span class="input-group-prepend">
-                                                        <button class="btn quantity-right-plus" type="button" data-type="plus" data-field=""><i data-feather="plus"></i></button></span>
-                                                </div>
-                                            </div>
-                                            <h6 class="text-end text-muted">$299.00</h6>
-                                        </div>
-                                        <div class="close-circle"><a href="#"><i data-feather="x"></i></a></div>
-                                    </div>
-                                </li>
-                                <li class="mt-0">
-                                    <div class="media"><img class="img-fluid rounded-circle me-3 img-60" src="<?php echo ADMIN_ASSETS ?>images/ecommerce/03.jpg" alt="">
-                                        <div class="media-body"><span>V-Neck Shawl Collar Woman's Solid T-Shirt</span>
-                                            <p>Yellow(#fcb102)</p>
-                                            <div class="qty-box">
-                                                <div class="input-group"><span class="input-group-prepend">
-                                                        <button class="btn quantity-left-minus" type="button" data-type="minus" data-field=""><i data-feather="minus"></i></button></span>
-                                                    <input class="form-control input-number" type="text" name="quantity" value="1"><span class="input-group-prepend">
-                                                        <button class="btn quantity-right-plus" type="button" data-type="plus" data-field=""><i data-feather="plus"></i></button></span>
-                                                </div>
-                                            </div>
-                                            <h6 class="text-end text-muted">$299.00</h6>
-                                        </div>
-                                        <div class="close-circle"><a href="#"><i data-feather="x"></i></a></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="total">
-                                        <h6 class="mb-2 mt-0 text-muted">Order Total : <span class="f-right f-20">$598.00</span></h6>
-                                    </div>
-                                </li>
-                                <li><a class="btn btn-block w-100 mb-2 btn-primary view-cart" href="cart.html">Go to shoping bag</a><a class="btn btn-block w-100 btn-secondary view-cart" href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li> -->
-                        <!-- <li class="onhover-dropdown"><i data-feather="message-square"></i>
-                            <ul class="chat-dropdown onhover-show-div">
-                                <li><i data-feather="message-square"></i>
-                                    <h6 class="f-18 mb-0">Message Box </h6>
-                                </li>
-                                <li>
-                                    <div class="media"><img class="img-fluid rounded-circle me-3" src="<?php echo ADMIN_ASSETS ?>images/user/1.jpg" alt="">
-                                        <div class="status-circle online"></div>
-                                        <div class="media-body"><span>Erica Hughes</span>
-                                            <p>Lorem Ipsum is simply dummy...</p>
-                                        </div>
-                                        <p class="f-12 font-success">58 mins ago</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media"><img class="img-fluid rounded-circle me-3" src="<?php echo ADMIN_ASSETS ?>images/user/2.jpg" alt="">
-                                        <div class="status-circle online"></div>
-                                        <div class="media-body"><span>Kori Thomas</span>
-                                            <p>Lorem Ipsum is simply dummy...</p>
-                                        </div>
-                                        <p class="f-12 font-success">1 hr ago</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media"><img class="img-fluid rounded-circle me-3" src="<?php echo ADMIN_ASSETS ?>images/user/4.jpg" alt="">
-                                        <div class="status-circle offline"></div>
-                                        <div class="media-body"><span>Ain Chavez</span>
-                                            <p>Lorem Ipsum is simply dummy...</p>
-                                        </div>
-                                        <p class="f-12 font-danger">32 mins ago</p>
-                                    </div>
-                                </li>
-                                <li class="text-center"> <a class="btn btn-primary" href="#">View All </a></li>
-                            </ul>
-                        </li> -->
-                        <li class="maximize"><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
-                        <li class="profile-nav onhover-dropdown p-0 me-0">
-                            <div class="media profile-media"><img class="b-r-10" src="<?php echo ADMIN_ASSETS ?>images/dashboard/profile.jpg" alt="">
-                                <div class="media-body"><span>Emay Walter</span>
-                                    <p class="mb-0 font-roboto">Admin <i class="middle fa fa-angle-down"></i></p>
-                                </div>
-                            </div>
-                            <ul class="profile-dropdown onhover-show-div">
-                                <li><a href="#"><i data-feather="user"></i><span>Account </span></a></li>
-                                <li><a href="#"><i data-feather="mail"></i><span>Inbox</span></a></li>
-                                <li><a href="#"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
-                                <li><a href="#"><i data-feather="settings"></i><span>Settings</span></a></li>
-                                <li><a href="<?php echo base_url('logout') ?>" onclick="return confirm('Anda yakin ingin keluar ?');"><i data-feather="log-out"> </i><span>Log Out</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <script class="result-template" type="text/x-handlebars-template">
-                    <div class="ProfileCard u-cf">                        
-            <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
-            <div class="ProfileCard-details">
-            <div class="ProfileCard-realName">{{name}}</div>
-            </div>
-            </div>
-          </script>
-                <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+<body class="sidebar-noneoverflow">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
             </div>
         </div>
-        <!-- Page Header Ends                              -->
-        <!-- Page Body Start-->
-        <div class="page-body-wrapper">
-            <!-- Page Sidebar Start-->
-            <div class="sidebar-wrapper">
-                <div>
-                    <div class="logo-wrapper"><a href="index-2.html"><img class="img-fluid for-light" src="<?php echo ADMIN_ASSETS ?>images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="<?php echo ADMIN_ASSETS ?>images/logo/logo_dark.png" alt=""></a>
-                        <div class="back-btn"><i class="fa fa-angle-left"></i></div>
-                        <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
+    </div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm">
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg></a>
+
+            <ul class="navbar-item flex-row">
+                <li class="nav-item align-self-center page-heading">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <!-- <h3><?php echo $this->session->userdata('log_name') ?></h3> -->
+                            <h3><?php echo $title ?></h3>
+                        </div>
                     </div>
-                    <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="<?php echo ADMIN_ASSETS ?>images/logo/logo-icon.png" alt=""></a></div>
-                    <nav class="sidebar-main">
-                        <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
-                        <div id="sidebar-menu">
-                            <ul class="sidebar-links" id="simple-bar">
-                                <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="<?php echo ADMIN_ASSETS ?>images/logo/logo-icon.png" alt=""></a>
-                                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
-                                </li>
-                                <li class="sidebar-main-title">
-                                    <div>
-                                        <h6 class="lan-1">General</h6>
-                                        <p class="lan-2">Dashboards,widgets & layout.</p>
-                                    </div>
-                                </li>
+                </li>
+            </ul>
+            <ul class="navbar-item flex-row search-ul">
+                <!-- <li class="nav-item align-self-center search-animated">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search toggle-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <form class="form-inline search-full form-inline search" role="search">
+                        <div class="search-bar">
+                            <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                        </div>
+                    </form>
+                </li> -->
+            </ul>
+            <ul class="navbar-item flex-row navbar-dropdown">
+                <!-- <li class="nav-item dropdown language-dropdown more-dropdown">
+                    <div class="dropdown  custom-dropdown-icon">
+                        <a class="dropdown-toggle btn" href="#" role="button" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo BACK ?>assets/img/ca.png" class="flag-width" alt="flag"><span>English</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg></a>
 
-                                <!-- <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav active" href="<?php echo base_url('admin') ?>">
-                                        <i data-feather="home"> </i><span class="lan-3">Dashboard</span>
-                                    </a>
-                                </li> -->
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="customDropdown">
+                            <a class="dropdown-item" data-img-value="de" data-value="German" href="javascript:void(0);"><img src="<?php echo BACK ?>assets/img/de.png" class="flag-width" alt="flag"> German</a>
+                            <a class="dropdown-item" data-img-value="jp" data-value="Japanese" href="javascript:void(0);"><img src="<?php echo BACK ?>assets/img/jp.png" class="flag-width" alt="flag"> Japanese</a>
+                            <a class="dropdown-item" data-img-value="fr" data-value="French" href="javascript:void(0);"><img src="<?php echo BACK ?>assets/img/fr.png" class="flag-width" alt="flag"> French</a>
+                            <a class="dropdown-item" data-img-value="ca" data-value="English" href="javascript:void(0);"><img src="<?php echo BACK ?>assets/img/ca.png" class="flag-width" alt="flag"> English</a>
+                        </div>
+                    </div>
+                </li> -->
 
+                <li class="nav-item dropdown message-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="messageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg><span class="badge badge-primary"></span>
+                    </a>
+                    <div class="dropdown-menu p-0 position-absolute" aria-labelledby="messageDropdown">
+                        <div class="">
+                            <a class="dropdown-item">
+                                <div class="">
 
-                                <li class="sidebar-list">
-                                    <label class="badge badge-success">2</label><a class="sidebar-link sidebar-title" href="#"><i data-feather="home"></i><span class="lan-3">Dashboard </span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a class="lan-4" href="index-2.html">Default</a></li>
-                                        <li><a class="lan-5" href="dashboard-02.html">Ecommerce</a></li>
-                                    </ul>
-                                </li>
-                                
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="airplay"></i><span class="lan-6">Widgets</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="general-widget.html">General</a></li>
-                                        <li><a href="chart-widget.html">Chart</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="layout"></i><span class="lan-7">Page layout</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="box-layout.html">Boxed</a></li>
-                                        <li><a href="layout-rtl.html">RTL</a></li>
-                                        <li><a href="layout-dark.html">Dark Layout</a></li>
-                                        <li><a href="hide-on-scroll.html">Hide Nav Scroll</a></li>
-                                        <li><a href="footer-light.html">Footer Light</a></li>
-                                        <li><a href="footer-dark.html">Footer Dark</a></li>
-                                        <li><a href="footer-fixed.html">Footer Fixed</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-main-title">
-                                    <div>
-                                        <h6 class="lan-8">Applications</h6>
-                                        <p class="lan-9">Ready to use Apps</p>
-                                    </div>
-                                </li>
-                                <li class="sidebar-list">
-                                    <label class="badge badge-danger">New</label><a class="sidebar-link sidebar-title" href="#"><i data-feather="box"></i><span>Project </span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="projects.html">Project List</a></li>
-                                        <li><a href="projectcreate.html">Create new</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="file-manager.html"><i data-feather="git-pull-request"> </i><span>File manager</span></a></li>
-                                <li class="sidebar-list">
-                                    <label class="badge badge-info">Latest </label><a class="sidebar-link sidebar-title link-nav" href="kanban.html"><i data-feather="monitor"> </i><span>kanban Board</span></a>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="shopping-bag"></i><span>Ecommerce</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="product.html">Product</a></li>
-                                        <li><a href="product-page.html">Product page</a></li>
-                                        <li><a href="list-products.html">Product list</a></li>
-                                        <li><a href="payment-details.html">Payment Details</a></li>
-                                        <li><a href="order-history.html">Order History</a></li>
-                                        <li><a href="invoice-template.html">Invoice</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="list-wish.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="pricing.html">Pricing </a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="mail"></i><span>Email</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="email-application.html">Email App</a></li>
-                                        <li><a href="email-compose.html">Email Compose</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="message-circle"></i><span>Chat</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="chat.html">Chat App</a></li>
-                                        <li><a href="chat-video.html">Video chat</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="users"></i><span>Users</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="user-profile.html">Users Profile</a></li>
-                                        <li><a href="edit-profile.html">Users Edit</a></li>
-                                        <li><a href="user-cards.html">Users Cards</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="bookmark.html"><i data-feather="heart"> </i><span>Bookmarks</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="contacts.html"><i data-feather="list"> </i><span>Contacts</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="task.html"><i data-feather="check-square"> </i><span>Tasks</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="calendar-basic.html"><i data-feather="calendar"> </i><span>Calendar</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="social-app.html"><i data-feather="zap"> </i><span>Social App</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="to-do.html"><i data-feather="clock"> </i><span>To-Do</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="search.html"><i data-feather="search"> </i><span>Search Result</span></a></li>
-                                <li class="sidebar-main-title">
-                                    <div>
-                                        <h6>Forms & Table</h6>
-                                        <p>Ready to use froms & tables </p>
-                                    </div>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="file-text"></i><span>Forms</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a class="submenu-title" href="#">Form Controls<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="form-validation.html">Form Validation</a></li>
-                                                <li><a href="base-input.html">Base Inputs</a></li>
-                                                <li><a href="radio-checkbox-control.html">Checkbox & Radio</a></li>
-                                                <li><a href="input-group.html">Input Groups</a></li>
-                                                <li><a href="megaoptions.html">Mega Options</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="submenu-title" href="#">Form Widgets<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="datepicker.html">Datepicker</a></li>
-                                                <li><a href="time-picker.html">Timepicker</a></li>
-                                                <li><a href="datetimepicker.html">Datetimepicker</a></li>
-                                                <li><a href="daterangepicker.html">Daterangepicker</a></li>
-                                                <li><a href="touchspin.html">Touchspin</a></li>
-                                                <li><a href="select2.html">Select2</a></li>
-                                                <li><a href="switch.html">Switch</a></li>
-                                                <li><a href="typeahead.html">Typeahead</a></li>
-                                                <li><a href="clipboard.html">Clipboard</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="submenu-title" href="#">Form layout<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="default-form.html">Default Forms</a></li>
-                                                <li><a href="form-wizard.html">Form Wizard 1</a></li>
-                                                <li><a href="form-wizard-two.html">Form Wizard 2</a></li>
-                                                <li><a href="form-wizard-three.html">Form Wizard 3</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="server"></i><span>Tables</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a class="submenu-title" href="#">Bootstrap Tables<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="bootstrap-basic-table.html">Basic Tables</a></li>
-                                                <li><a href="bootstrap-sizing-table.html">Sizing Tables</a></li>
-                                                <li><a href="bootstrap-border-table.html">Border Tables</a></li>
-                                                <li><a href="bootstrap-styling-table.html">Styling Tables</a></li>
-                                                <li><a href="table-components.html">Table components</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="submenu-title" href="#">Data Tables<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="datatable-basic-init.html">Basic Init</a></li>
-                                                <li><a href="datatable-advance.html">Advance Init</a></li>
-                                                <li><a href="datatable-styling.html">Styling</a></li>
-                                                <li><a href="datatable-AJAX.html">AJAX</a></li>
-                                                <li><a href="datatable-server-side.html">Server Side</a></li>
-                                                <li><a href="datatable-plugin.html">Plug-in</a></li>
-                                                <li><a href="datatable-API.html">API</a></li>
-                                                <li><a href="datatable-data-source.html">Data Sources</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="submenu-title" href="#">Ex. Data Tables<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="datatable-ext-autofill.html">Auto Fill</a></li>
-                                                <li><a href="datatable-ext-basic-button.html">Basic Button</a></li>
-                                                <li><a href="datatable-ext-col-reorder.html">Column Reorder</a></li>
-                                                <li><a href="datatable-ext-fixed-header.html">Fixed Header</a></li>
-                                                <li><a href="datatable-ext-html-5-data-export.html">HTML 5 Export</a></li>
-                                                <li><a href="datatable-ext-key-table.html">Key Table</a></li>
-                                                <li><a href="datatable-ext-responsive.html">Responsive</a></li>
-                                                <li><a href="datatable-ext-row-reorder.html">Row Reorder</a></li>
-                                                <li><a href="datatable-ext-scroller.html">Scroller</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="jsgrid-table.html">Js Grid Table </a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-main-title">
-                                    <div>
-                                        <h6>Components</h6>
-                                        <p>UI Components & Elements </p>
-                                    </div>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="box"></i><span>Ui Kits</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="state-color.html">State color</a></li>
-                                        <li><a href="typography.html">Typography</a></li>
-                                        <li><a href="avatars.html">Avatars</a></li>
-                                        <li><a href="helper-classes.html">helper classes</a></li>
-                                        <li><a href="grid.html">Grid</a></li>
-                                        <li><a href="tag-pills.html">Tag & pills</a></li>
-                                        <li><a href="progress-bar.html">Progress</a></li>
-                                        <li><a href="modal.html">Modal</a></li>
-                                        <li><a href="alert.html">Alert</a></li>
-                                        <li><a href="popover.html">Popover</a></li>
-                                        <li><a href="tooltip.html">Tooltip</a></li>
-                                        <li><a href="loader.html">Spinners</a></li>
-                                        <li><a href="dropdown.html">Dropdown</a></li>
-                                        <li><a href="according.html">Accordion</a></li>
-                                        <li><a class="submenu-title" href="#">Tabs<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="tab-bootstrap.html">Bootstrap Tabs</a></li>
-                                                <li><a href="tab-material.html">Line Tabs</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="box-shadow.html">Shadow</a></li>
-                                        <li><a href="list.html">Lists</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="folder-plus"></i><span>Bonus Ui</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="scrollable.html">Scrollable</a></li>
-                                        <li><a href="tree.html">Tree view</a></li>
-                                        <li><a href="bootstrap-notify.html">Bootstrap Notify</a></li>
-                                        <li><a href="rating.html">Rating</a></li>
-                                        <li><a href="dropzone.html">dropzone</a></li>
-                                        <li><a href="tour.html">Tour</a></li>
-                                        <li><a href="sweet-alert2.html">SweetAlert2</a></li>
-                                        <li><a href="modal-animated.html">Animated Modal</a></li>
-                                        <li><a href="owl-carousel.html">Owl Carousel</a></li>
-                                        <li><a href="ribbons.html">Ribbons</a></li>
-                                        <li><a href="pagination.html">Pagination</a></li>
-                                        <li><a href="breadcrumb.html">Breadcrumb</a></li>
-                                        <li><a href="range-slider.html">Range Slider</a></li>
-                                        <li><a href="image-cropper.html">Image cropper</a></li>
-                                        <li><a href="sticky.html">Sticky</a></li>
-                                        <li><a href="basic-card.html">Basic Card</a></li>
-                                        <li><a href="creative-card.html">Creative Card</a></li>
-                                        <li><a href="tabbed-card.html">Tabbed Card</a></li>
-                                        <li><a href="dragable-card.html">Draggable Card</a></li>
-                                        <li><a class="submenu-title" href="#">Timeline<span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
-                                            <ul class="nav-sub-childmenu submenu-content">
-                                                <li><a href="timeline-v-1.html">Timeline 1</a></li>
-                                                <li><a href="timeline-v-2.html">Timeline 2</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="edit-3"></i><span>Builders</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="form-builder-1.html"> Form Builder 1</a></li>
-                                        <li><a href="form-builder-2.html"> Form Builder 2</a></li>
-                                        <li><a href="pagebuild.html">Page Builder</a></li>
-                                        <li><a href="button-builder.html">Button Builder</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="cloud-drizzle"></i><span>Animation</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="animate.html">Animate</a></li>
-                                        <li><a href="scroll-reval.html">Scroll Reveal</a></li>
-                                        <li><a href="AOS.html">AOS animation</a></li>
-                                        <li><a href="tilt.html">Tilt Animation</a></li>
-                                        <li><a href="wow.html">Wow Animation</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="command"></i><span>Icons</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="flag-icon.html">Flag icon</a></li>
-                                        <li><a href="font-awesome.html">Fontawesome Icon</a></li>
-                                        <li><a href="ico-icon.html">Ico Icon</a></li>
-                                        <li><a href="themify-icon.html">Thimify Icon</a></li>
-                                        <li><a href="feather-icon.html">Feather icon</a></li>
-                                        <li><a href="whether-icon.html">Whether Icon</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="cloud"></i><span>Buttons</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="buttons.html">Default Style</a></li>
-                                        <li><a href="buttons-flat.html">Flat Style</a></li>
-                                        <li><a href="buttons-edge.html">Edge Style</a></li>
-                                        <li><a href="raised-button.html">Raised Style</a></li>
-                                        <li><a href="button-group.html">Button Group</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="bar-chart"></i><span>Charts</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="echarts.html">Echarts</a></li>
-                                        <li><a href="chart-apex.html">Apex Chart</a></li>
-                                        <li><a href="chart-google.html">Google Chart</a></li>
-                                        <li><a href="chart-sparkline.html">Sparkline chart</a></li>
-                                        <li><a href="chart-flot.html">Flot Chart</a></li>
-                                        <li><a href="chart-knob.html">Knob Chart</a></li>
-                                        <li><a href="chart-morris.html">Morris Chart</a></li>
-                                        <li><a href="chartjs.html">Chatjs Chart</a></li>
-                                        <li><a href="chartist.html">Chartist Chart</a></li>
-                                        <li><a href="chart-peity.html">Peity Chart</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-main-title">
-                                    <div>
-                                        <h6>Pages</h6>
-                                        <p>All neccesory pages added</p>
-                                    </div>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="landing-page.html"><i data-feather="cast"> </i><span>Landing page</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="sample-page.html"><i data-feather="file-text"> </i><span>Sample page</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="internationalization.html"><i data-feather="globe"> </i><span>Internationalization</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="https://admin.pixelstrap.com/cuba/starter-kit/index.html" target="_blank"><i data-feather="anchor"></i><span>Starter kit</span></a></li>
-                                <li class="mega-menu"><a class="sidebar-link sidebar-title" href="#"><i data-feather="layers"></i><span>Others</span></a>
-                                    <div class="mega-menu-container menu-content">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col mega-box">
-                                                    <div class="link-section">
-                                                        <div class="submenu-title">
-                                                            <h5>Error Page</h5>
-                                                        </div>
-                                                        <ul class="submenu-content opensubmegamenu">
-                                                            <li><a href="error-400.html">Error 400</a></li>
-                                                            <li><a href="error-401.html">Error 401</a></li>
-                                                            <li><a href="error-403.html">Error 403</a></li>
-                                                            <li><a href="error-404.html">Error 404</a></li>
-                                                            <li><a href="error-500.html">Error 500</a></li>
-                                                            <li><a href="error-503.html">Error 503</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col mega-box">
-                                                    <div class="link-section">
-                                                        <div class="submenu-title">
-                                                            <h5> Authentication</h5>
-                                                        </div>
-                                                        <ul class="submenu-content opensubmegamenu">
-                                                            <li><a href="login.html" target="_blank">Login Simple</a></li>
-                                                            <li><a href="login_one.html" target="_blank">Login with bg image</a></li>
-                                                            <li><a href="login_two.html" target="_blank">Login with image two </a></li>
-                                                            <li><a href="login-bs-validation.html" target="_blank">Login With validation</a></li>
-                                                            <li><a href="login-bs-tt-validation.html" target="_blank">Login with tooltip</a></li>
-                                                            <li><a href="login-sa-validation-2.html" target="_blank">Login with sweetalert</a></li>
-                                                            <li><a href="sign-up.html" target="_blank">Register Simple</a></li>
-                                                            <li><a href="sign-up-one.html" target="_blank">Register with Bg Image </a></li>
-                                                            <li><a href="sign-up-two.html" target="_blank">Register with Bg video</a></li>
-                                                            <li><a href="sign-up-wizard.html" target="_blank">Register wizard</a></li>
-                                                            <li><a href="unlock.html">Unlock User</a></li>
-                                                            <li><a href="forget-password.html">Forget Password</a></li>
-                                                            <li><a href="reset-password.html">Reset Password</a></li>
-                                                            <li><a href="maintenance.html">Maintenance</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col mega-box">
-                                                    <div class="link-section">
-                                                        <div class="submenu-title">
-                                                            <h5>Coming Soon</h5>
-                                                        </div>
-                                                        <ul class="submenu-content opensubmegamenu">
-                                                            <li><a href="comingsoon.html">Coming Simple</a></li>
-                                                            <li><a href="comingsoon-bg-video.html">Coming with Bg video</a></li>
-                                                            <li><a href="comingsoon-bg-img.html">Coming with Bg Image</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col mega-box">
-                                                    <div class="link-section">
-                                                        <div class="submenu-title">
-                                                            <h5>Email templates</h5>
-                                                        </div>
-                                                        <ul class="submenu-content opensubmegamenu">
-                                                            <li><a href="basic-template.html">Basic Email</a></li>
-                                                            <li><a href="email-header.html">Basic With Header</a></li>
-                                                            <li><a href="template-email.html">Ecomerce Template</a></li>
-                                                            <li><a href="template-email-2.html">Email Template 2</a></li>
-                                                            <li><a href="ecommerce-templates.html">Ecommerce Email</a></li>
-                                                            <li><a href="email-order-success.html">Order Success</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                    <div class="media">
+                                        <div class="user-img">
+                                            <img class="usr-img rounded-circle" src="<?php echo BACK ?>assets/img/90x90.jpg" alt="profile">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="">
+                                                <h5 class="usr-name">Kara Young</h5>
+                                                <p class="msg-title">ACCOUNT UPDATE</p>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="sidebar-main-title">
-                                    <div>
-                                        <h6>Miscellaneous</h6>
-                                        <p>Bouns pages & apps</p>
+
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="">
+
+                                    <div class="media">
+                                        <div class="user-img">
+                                            <img class="usr-img rounded-circle" src="<?php echo BACK ?>assets/img/90x90.jpg" alt="profile">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="">
+                                                <h5 class="usr-name">Daisy Anderson</h5>
+                                                <p class="msg-title">ACCOUNT UPDATE</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="image"></i><span>Gallery</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="gallery.html">Gallery Grid</a></li>
-                                        <li><a href="gallery-with-description.html">Gallery Grid Desc</a></li>
-                                        <li><a href="gallery-masonry.html">Masonry Gallery</a></li>
-                                        <li><a href="masonry-gallery-with-disc.html">Masonry with Desc</a></li>
-                                        <li><a href="gallery-hover.html">Hover Effects</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="film"></i><span>Blog</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="blog.html">Blog Details</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                        <li><a href="add-post.html">Add Post</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="faq.html"><i data-feather="help-circle"> </i><span>FAQ</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="package"></i><span>Job Search</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="job-cards-view.html">Cards view</a></li>
-                                        <li><a href="job-list-view.html">List View</a></li>
-                                        <li><a href="job-details.html">Job Details</a></li>
-                                        <li><a href="job-apply.html">Apply</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="radio"></i><span>Learning</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="learning-list-view.html">Learning List</a></li>
-                                        <li><a href="learning-detailed.html">Detailed Course</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="map"></i><span>Maps</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="map-js.html">Maps JS</a></li>
-                                        <li><a href="vector-map.html">Vector Maps</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="edit"></i><span>Editors</span></a>
-                                    <ul class="sidebar-submenu">
-                                        <li><a href="summernote.html">Summer Note</a></li>
-                                        <li><a href="ckeditor.html">CK editor</a></li>
-                                        <li><a href="simple-MDE.html">MDE editor</a></li>
-                                        <li><a href="ace-code-editor.html">ACE code editor </a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="knowledgebase.html"><i data-feather="sunrise"> </i><span>Knowledgebase</span></a></li>
-                                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html"><i data-feather="users"> </i><span>Support Ticket</span></a></li>
-                            </ul>
+
+                                </div>
+                            </a>
+                            <a class="dropdown-item">
+                                <div class="">
+
+                                    <div class="media">
+                                        <div class="user-img">
+                                            <img class="usr-img rounded-circle" src="<?php echo BACK ?>assets/img/90x90.jpg" alt="profile">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="">
+                                                <h5 class="usr-name">Oscar Garner</h5>
+                                                <p class="msg-title">ACCOUNT UPDATE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
-                        <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
-                    </nav>
-                </div>
-            </div>
-            <!-- Page Sidebar Ends-->
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown notification-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg><span class="badge badge-success"></span>
+                    </a>
+                    <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
+                        <div class="notification-scroll">
+
+                            <div class="dropdown-item">
+                                <div class="media">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="notification-para"><span class="user-name">Shaun Park</span> likes your photo.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2">
+                                        <circle cx="18" cy="5" r="3"></circle>
+                                        <circle cx="6" cy="12" r="3"></circle>
+                                        <circle cx="18" cy="19" r="3"></circle>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="notification-para"><span class="user-name">Kelly Young</span> shared your post</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="notification-para"><span class="user-name">Kelly Young</span> mentioned you in comment.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                        <div class="">
+                            <div class="dropdown-item">
+                                <a class="" href="user_profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg> My Profile</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="apps_mailbox.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
+                                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                        <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                                    </svg> Inbox</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="auth_lockscreen.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg> Lock Screen</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="<?php echo base_url('logout') ?>" onclick="return confirm('Anda yakin ingin keluar ?');"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                        <polyline points="16 17 21 12 16 7"></polyline>
+                                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                                    </svg> Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="cs-overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+
+                <ul class="navbar-nav theme-brand flex-row  text-center">
+                    <li class="nav-item theme-logo">
+                        <a href="index.html">
+                            <img src="<?php echo BACK ?>assets/img/90x90.jpg" class="navbar-logo" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item theme-text">
+                        <a href="index.html" class="nav-link"> iLuFA </a>
+                    </li>
+                    <li class="nav-item toggle-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left sidebarCollapse">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </li>
+                </ul>
+
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+
+                    <?php if ($this->session->userdata('log_admin') == TRUE) {
+                        if ($this->session->userdata('log_level') == 0) { ?>
+
+                            <li class="menu active">
+                                <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                        </svg>
+                                        <span>Dashboard</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu recent-submenu mini-recent-submenu list-unstyled show" id="dashboard" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="index.html"> Analytics </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="index2.html"> Sales </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>Apps</span></div>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_chat.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        <span>Chat</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_mailbox.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span>Mailbox</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_todoList.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                        </svg>
+                                        <span>Todo List</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_notes.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        <span>Notes</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_scrumboard.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                                        </svg>
+                                        <span>Scrumboard</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_contacts.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Contacts</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_invoice.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg>
+                                        <span>Invoice List</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="apps_calendar.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>Calendar</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>USER INTERFACE</span></div>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#components" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                        </svg>
+                                        <span>Components</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="components" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="component_tabs.html"> Tabs </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_accordion.html"> Accordions </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_modal.html"> Modals </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_cards.html"> Cards </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_bootstrap_carousel.html">Carousel</a>
+                                    </li>
+                                    <li>
+                                        <a href="component_blockui.html"> Block UI </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_countdown.html"> Countdown </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_counter.html"> Counter </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_sweetalert.html"> Sweet Alerts </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_timeline.html"> Timeline </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_snackbar.html"> Notifications </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_session_timeout.html"> Session Timeout </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_media_object.html"> Media Object </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_list_group.html"> List Group </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_pricing_table.html"> Pricing Tables </a>
+                                    </li>
+                                    <li>
+                                        <a href="component_lightbox.html"> Lightbox </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                        </svg>
+                                        <span>Elements</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="element_alerts.html"> Alerts </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_avatar.html"> Avatar </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_badges.html"> Badges </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_breadcrumbs.html"> Breadcrumbs </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_buttons.html"> Buttons </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_buttons_group.html"> Button Groups </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_color_library.html"> Color Library </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_dropdown.html"> Dropdown </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_infobox.html"> Infobox </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_jumbotron.html"> Jumbotron </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_loader.html"> Loader </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_pagination.html"> Pagination </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_popovers.html"> Popovers </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_progress_bar.html"> Progress Bar </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_search.html"> Search </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_tooltips.html"> Tooltips </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_treeview.html"> Treeview </a>
+                                    </li>
+                                    <li>
+                                        <a href="element_typography.html"> Typography </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu">
+                                <a href="fonticons.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <circle cx="12" cy="12" r="6"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                        </svg>
+                                        <span>Font Icons</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay">
+                                            <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                                            <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                                        </svg>
+                                        <span>Widgets</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>TABLES AND FORMS</span></div>
+                            </li>
+
+                            <li class="menu">
+                                <a href="table_basic.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                                        </svg>
+                                        <span>Tables</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#datatables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
+                                        <span>DataTables</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="datatables" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="table_dt_basic.html"> Basic </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_basic-dark.html"> Dark </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_ordering_sorting.html"> Order Sorting </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_multi-column_ordering.html"> Multi-Column </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_multiple_tables.html"> Multiple Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_alternative_pagination.html"> Alt. Pagination</a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_custom.html"> Custom </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_range_search.html"> Range Search </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_html5.html"> HTML5 Export </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_live_dom_ordering.html"> Live DOM ordering </a>
+                                    </li>
+                                    <li>
+                                        <a href="table_dt_miscellaneous.html"> Miscellaneous </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
+                                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                        </svg>
+                                        <span>Forms</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="forms" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="form_bootstrap_basic.html"> Basic </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_input_group_basic.html"> Input Group </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_layouts.html"> Layouts </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_validation.html"> Validation </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_input_mask.html"> Input Mask </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_bootstrap_select.html"> Bootstrap Select </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_select2.html"> Select2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_bootstrap_touchspin.html"> TouchSpin </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_maxlength.html"> Maxlength </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_checkbox_radio.html"> Checkbox &amp; Radio </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_switches.html"> Switches </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_wizard.html"> Wizards </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_fileupload.html"> File Upload </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_quill.html"> Quill Editor </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_markdown.html"> Markdown Editor </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_date_range_picker.html"> Date &amp; Range Picker </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_clipboard.html"> Clipboard </a>
+                                    </li>
+                                    <li>
+                                        <a href="form_typeahead.html"> Typeahead </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>USER AND PAGES</span></div>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#users" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                        <span>Users</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="user_profile.html"> Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_account_setting.html"> Account Settings </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+                                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                            <polyline points="13 2 13 9 20 9"></polyline>
+                                        </svg>
+                                        <span>Pages</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="pages" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="pages_helpdesk.html"> Helpdesk </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages_contact_us.html"> Contact Form </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages_faq.html"> FAQ </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages_faq2.html"> FAQ 2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages_privacy.html"> Privacy Policy </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages_coming_soon.html"> Coming Soon </a>
+                                    </li>
+                                    <li>
+                                        <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Error <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg> </a>
+                                        <ul class="collapse list-unstyled sub-submenu" id="pages-error" data-parent="#pages">
+                                            <li>
+                                                <a href="pages_error404.html"> 404 </a>
+                                            </li>
+                                            <li>
+                                                <a href="pages_error500.html"> 500 </a>
+                                            </li>
+                                            <li>
+                                                <a href="pages_error503.html"> 503 </a>
+                                            </li>
+                                            <li>
+                                                <a href="pages_maintenence.html"> Maintanence </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>EXTRA ELEMENTS</span></div>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#authentication" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                        </svg>
+                                        <span>Authentication</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="authentication" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="auth_login_boxed.html"> Login Boxed </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_register_boxed.html"> Register Boxed </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_lockscreen_boxed.html"> Unlock Boxed </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_pass_recovery_boxed.html"> Recover ID Boxed </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_login.html"> Login Cover </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_register.html"> Register Cover </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_lockscreen.html"> Unlock Cover </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth_pass_recovery.html"> Recover ID Cover </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu">
+                                <a href="dragndrop_dragula.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-move">
+                                            <polyline points="5 9 2 12 5 15"></polyline>
+                                            <polyline points="9 5 12 2 15 5"></polyline>
+                                            <polyline points="15 19 12 22 9 19"></polyline>
+                                            <polyline points="19 9 22 12 19 15"></polyline>
+                                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                                            <line x1="12" y1="2" x2="12" y2="22"></line>
+                                        </svg>
+                                        <span>Drag and Drop</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="map_jvector.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map">
+                                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                                        </svg>
+                                        <span>Maps</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="charts_apex.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart">
+                                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                                        </svg>
+                                        <span>Charts</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu">
+                                <a href="#starter-kit" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal">
+                                            <polyline points="4 17 10 11 4 5"></polyline>
+                                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                                        </svg>
+                                        <span>Starter Kit</span>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="starter-kit" data-parent="#accordionExample">
+                                    <li>
+                                        <a href="starter_kit_blank_page.html"> Blank Page </a>
+                                    </li>
+                                    <li>
+                                        <a href="starter_kit_boxed.html"> Boxed </a>
+                                    </li>
+                                    <li>
+                                        <a href="starter_kit_collapsible_menu.html"> Collapsible </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu">
+                                <a href="../../documentation/index.html" aria-expanded="false" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                        </svg>
+                                        <span>Documentation</span>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php
+                            }
+                        } elseif ($this->session->userdata('log_level') == "store") {
+                            ?>
+
+                        <li class="menu <?php if ($page == "dashboard") {
+                                                echo "active";
+                                            } ?>">
+                            <a href="<?php echo base_url('store') ?>" aria-expanded="<?php if ($page == "dashboard") {
+                                                                                                echo "true";
+                                                                                            } ?>" class="dropdown-toggle">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                        <polyline points="17 6 23 6 23 12"></polyline>
+                                    </svg>
+                                    <span>Dashboard</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu <?php if ($page == "games") {
+                                                echo "active";
+                                            } ?>">
+                            <a href="<?php echo base_url('store/games') ?>" aria-expanded="<?php if ($page == "games") {
+                                                                                                    echo "true";
+                                                                                                } ?>" class="dropdown-toggle">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <span>Games</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    <?php
+
+                    } ?>
+
+                </ul>
+
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">

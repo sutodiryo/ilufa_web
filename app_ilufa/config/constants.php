@@ -86,5 +86,5 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 
 define('GUEST', 'http://localhost/ilufa/web/public/guest/');
-define('ADMIN_ASSETS', 'http://localhost/ilufa/web/public/back/');
+define('BACK', 'http://localhost/ilufa/web/public/back/');
 // define('', 'http://localhost/ilufa/web/public/guest/');

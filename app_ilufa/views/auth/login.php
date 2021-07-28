@@ -1,33 +1,3 @@
-<!-- <h1><?php echo lang('login_heading'); ?></h1> -->
-<!-- <p><?php echo lang('login_subheading'); ?></p> -->
-
-<!-- <div id="infoMessage"><?php echo $message; ?></div>
-
-<?php echo form_open("auth/login"); ?>
-
-<p>
-    <?php echo lang('login_identity_label', 'identity'); ?>
-    <?php echo form_input($identity); ?>
-</p>
-
-<p>
-    <?php echo lang('login_password_label', 'password'); ?>
-    <?php echo form_input($password); ?>
-</p>
-
-<p>
-    <?php echo lang('login_remember_label', 'remember'); ?>
-    <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"'); ?>
-</p>
-
-
-<p><?php echo form_submit('submit', lang('login_submit_btn')); ?></p>
-
-<?php echo form_close(); ?>
-
-<p><a href="forgot_password"><?php echo lang('login_forgot_password'); ?></a></p> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>iLuFA | Login Page</title>
-    <link rel="icon" type="image/x-icon" href="<?php echo ADMIN_ASSETS ?>assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="<?php echo BACK ?>assets/img/favicon.ico" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="<?php echo ADMIN_ASSETS ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo ADMIN_ASSETS ?>assets/css/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo ADMIN_ASSETS ?>assets/css/authentication/form-2.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo BACK ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo BACK ?>assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo BACK ?>assets/css/authentication/form-2.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>assets/css/forms/theme-checkbox-radio.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_ASSETS ?>assets/css/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/switches.css">
 </head>
 
 <body class="form">
-
 
     <div class="form-container outer">
         <div class="form-form">
@@ -56,10 +25,11 @@
                 <div class="form-container">
                     <div class="form-content">
 
-                        <h1 class="">Sign In</h1>
-                        <p class="">Log in to your account to continue.</p>
+                        <h1 class="">Login</h1>
+                        <!-- <p class="text-red">Log in to your account to continue.</p> -->
+                        <p><font color="red"><?php echo $this->session->flashdata('report'); ?></font></p>
 
-                        <form class="text-left">
+                        <form class="text-left" role="form" method="POST" action="<?php echo base_url('auth/act_login'); ?>">
                             <div class="form">
 
                                 <div id="username-field" class="field-wrapper input">
@@ -68,7 +38,7 @@
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
-                                    <input id="username" name="username" type="text" class="form-control" placeholder="e.g John_Doe">
+                                    <input id="username" name="username" type="text" class="form-control" placeholder="Masukkan username anda" required>
                                 </div>
 
                                 <div id="password-field" class="field-wrapper input mb-2">
@@ -80,7 +50,7 @@
                                         <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                     </svg>
-                                    <input id="password" name="password" type="password" class="form-control" placeholder="Password">
+                                    <input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="toggle-password" class="feather feather-eye">
                                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                         <circle cx="12" cy="12" r="3"></circle>
@@ -92,11 +62,11 @@
                                     </div>
                                 </div>
 
-                                <div class="division">
+                                <!-- <div class="division">
                                     <span>OR</span>
-                                </div>
+                                </div> -->
 
-                                <div class="social">
+                                <!-- <div class="social">
                                     <a href="javascript:void(0);" class="btn social-fb">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
                                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
@@ -109,9 +79,9 @@
                                         </svg>
                                         <span class="brand-name">Github</span>
                                     </a>
-                                </div>
+                                </div> -->
 
-                                <p class="signup-link">Not registered ? <a href="auth_register_boxed.html">Create an account</a></p>
+                                <p class="signup-link">Belum daftar ? <a href="auth_register_boxed.html">Daftar sekarang</a></p>
 
                             </div>
                         </form>
@@ -124,12 +94,12 @@
 
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="<?php echo ADMIN_ASSETS ?>assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>bootstrap/js/popper.min.js"></script>
-    <script src="<?php echo ADMIN_ASSETS ?>bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo BACK ?>assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo BACK ?>bootstrap/js/popper.min.js"></script>
+    <script src="<?php echo BACK ?>bootstrap/js/bootstrap.min.js"></script>
 
     <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="<?php echo ADMIN_ASSETS ?>assets/js/authentication/form-2.js"></script>
+    <script src="<?php echo BACK ?>assets/js/authentication/form-2.js"></script>
 
 </body>
 
