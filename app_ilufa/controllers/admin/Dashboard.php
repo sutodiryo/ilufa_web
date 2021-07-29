@@ -5,37 +5,39 @@ class Dashboard extends CI_Controller
 {
 
 
+
 	public function __construct()
 	{
 		parent::__construct();
-		// if ($this->session->userdata('log_valid') == FALSE) {
-		// 	redirect(base_url('auth'));
-		// }
-		// if ($this->session->userdata('log_admin') == FALSE) {
-		// 	redirect(base_url('member'));
-		// }
-		$this->load->library(['ion_auth', 'form_validation']);
-		$this->load->model('Admin_model');
-
-		if (!$this->ion_auth->logged_in()) {
-			redirect('auth/login', 'refresh');
-		} else if (!$this->ion_auth->is_admin()) {
-			redirect(base_url('member'));
-			// show_error('You must be an administrator to view this page.');
+		if ($this->session->userdata('log_valid') == FALSE) {
+			$this->session->set_flashdata("report", "<div><p>Anda harus login terlebih dahulu...</p></div>");
+			redirect(base_url('login'));
 		}
+		if ($this->session->userdata('log_admin') == FALSE) {
+			$this->session->set_flashdata("report", "<div><p>Anda tidak diperkenankan mengakses halaman Admin.</p></div>");
+			redirect(base_url('login'));
+		}
+		$this->load->model('Admin_model');
 	}
 
 	function index()
 	{
-		$data['title'] 	= 'Dashboard Admin';
+		$x = $this->session->userdata('log_level');
 		$data['page'] 	= 'dashboard';
 
-		// $data['member_stat'] 	= $this->Admin_model->get_stat_member_dashboard();
-		// $data['sales_stat'] 	= $this->Admin_model->get_stat_sales_dashboard();
+		if ($x == 0) {
 
-		// $data['produk_stat']	= $this->db->query("SELECT id_produk,nama_produk,img_1,satuan FROM produk")->result();
+			$data['title'] 	= 'Dashboard Admin';
+			$data['produk'] = $this->db->query("SELECT * FROM produk")->result();
+		} elseif ($x == 1) {
 
-		// $data['produk'] 		= $this->db->query("SELECT * FROM produk")->result();
+			$data['title'] 	= 'Dashboard Admin Penjualan';
+			// $data['produk'] = $this->db->query("SELECT * FROM produk")->result();
+			// $data['member_stat'] 	= $this->Admin_model->get_stat_member_dashboard();
+			// $data['sales_stat'] 	= $this->Admin_model->get_stat_sales_dashboard();
+	
+			// $data['produk_stat']	= $this->db->query("SELECT id_produk,nama_produk,img_1,satuan FROM produk")->result();
+		}
 
 		$this->load->view('back/admin/dashboard', $data);
 	}
