@@ -31,7 +31,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/custom_dt_html5.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/dt-global_style.css">
 
-    <?php } elseif ($page == "job" || $page == "job_applicant") { ?>
+    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant") { ?>
 
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/datatables.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
@@ -564,7 +564,7 @@
                             <li class="menu <?php if ($page == "job_type") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('job/type') ?>" aria-expanded="<?php if ($page == "job_type") {
+                                <a href="<?php echo base_url('admin/job/type') ?>" aria-expanded="<?php if ($page == "job_type") {
                                                                                                         echo "true";
                                                                                                     } ?>" class="dropdown-toggle">
                                     <div>

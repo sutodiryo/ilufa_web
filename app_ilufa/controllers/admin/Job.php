@@ -39,11 +39,22 @@ class Job extends CI_Controller
         $this->load->view('back/admin/job/list', $data);
     }
 
+    function type()
+    {
+        $x = $this->session->userdata('log_level');
+        $data['page']   = 'job_type';
+        $data['title']  = 'Master Jenis Lowongan';
+
+        if ($x == 0) { } elseif ($x == 1) { }
+
+        $this->load->view('back/admin/job/type', $data);
+    }
     function applicant()
     {
         $x = $this->session->userdata('log_level');
         $data['page']   = 'job_applicant';
         $data['title']  = 'Data Pelamar Kerja';
+        
         if ($x == 0) { } elseif ($x == 1) { }
 
         $this->load->view('back/admin/job/applicant', $data);
