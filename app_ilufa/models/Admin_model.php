@@ -9,37 +9,39 @@ class Admin_model extends CI_Model
         $this->load->database();
     }
 
-    function get_stat_member_dashboard()
+    function get_stat_applicant()
     {
         date_default_timezone_set('Asia/Jakarta');
-        // $now 	= date("Y-m-d h:i:s");
-        $now     = "MONTH(tgl_reg) = MONTH(CURRENT_DATE())";
-        $total     = "SELECT SUM(total) FROM transaksi WHERE transaksi.id_member=member.id_member";
-        $tnow     = " AND MONTH(tgl_pesan) = MONTH(CURRENT_DATE())";
-        $tm1     = " AND MONTH(tgl_pesan) IN ( (MONTH(CURRENT_DATE()) -1),(MONTH(CURRENT_DATE()) -2) ) ";
-        $tm2     = " AND MONTH(tgl_pesan) IN ( MONTH(CURRENT_DATE()),(MONTH(CURRENT_DATE()) -1),(MONTH(CURRENT_DATE()) -2) ) ";
 
-        $query = $this->db->query("SELECT	(SELECT count(*) FROM member) AS semua,
-                                            (SELECT count(*) FROM member WHERE $now) AS all_now,
-                                            (SELECT count(*) FROM member WHERE level=0) AS pri,
-                                            (SELECT count(*) FROM member WHERE level=0 AND $now) AS pri_now,
-                                            (SELECT count(*) FROM member WHERE level=1) AS eks,
-                                            (SELECT count(*) FROM member WHERE level=1 AND $now) AS eks_now,
-                                            (SELECT count(*) FROM member WHERE level=2) AS bus,
-                                            (SELECT count(*) FROM member WHERE level=2 AND $now) AS bus_now,
-                                            (SELECT count(*) FROM member WHERE level=3) AS dro,
-                                            (SELECT count(*) FROM member WHERE level=3 AND $now) AS dro_now,
-                                            (SELECT count(*) FROM member WHERE level=4) AS sto,
-                                            (SELECT count(*) FROM member WHERE level=4 AND $now) AS sto_now,
-
-                                            (SELECT count(*) FROM member WHERE ($total $tnow) >= (SELECT smp FROM member_level WHERE id_member_level=member.level)) AS ga,
-                                            (SELECT count(*) FROM member WHERE ($total $tnow) < (SELECT smp FROM member_level WHERE id_member_level=member.level)) AS gb,
-                                            (SELECT count(*) FROM member WHERE ($total $tnow) IS NULL AND ($total $tm1) IS NOT NULL) AS gc,
-                                            (SELECT count(*) FROM member WHERE ($total $tm2) IS NULL) AS gd
-                                    FROM member")->row();
+        $query = $this->db->query("SELECT	posisi,
+                                            (SELECT count(*) FROM ilufa_job_applicant WHERE id_job=ilufa_job.id_job) AS tot_aplicant
+                                    FROM ilufa_job")->result();
 
         return $query;
     }
+
+    function get_job()
+    {
+        $query = $this->db->query("SELECT   id_job,posisi,deskripsi,lokasi,date_start,date_end,created,status,
+                                            (SELECT branch_name FROM ilufa_master_branch WHERE id_branch=ilufa_job.lokasi) AS cabang,
+                                            (SELECT name FROM ilufa_job_type WHERE id_job_type =ilufa_job.id_job_type ) AS jenis
+                                    FROM ilufa_job")->result();
+
+        return $query;
+    }
+
+    function get_applicant()
+    {
+        $query = $this->db->query("SELECT      id_job_applicant,id_job,nik,full_name,birth_place,birth_date,gender,email,no_hp,id_location_province,id_location_district,id_location_subdistrict,id_location_village,address,image,expected_salary,last_education,department,school,language_skills,skills,
+                                                        (SELECT posisi FROM ilufa_job WHERE id_job=ilufa_job_applicant.id_job) AS posisi,
+                                                        (SELECT name FROM ilufa_location_province WHERE id_location_province =ilufa_job_applicant.id_location_province ) AS provinsi,
+                                                        (SELECT name FROM ilufa_location_district WHERE id_location_district =ilufa_job_applicant.id_location_district ) AS kota,
+                                                        (SELECT name FROM ilufa_location_subdistrict WHERE id_location_subdistrict =ilufa_job_applicant.id_location_subdistrict ) AS kecamatan,
+                                                        (SELECT name FROM ilufa_location_village WHERE id_location_village =ilufa_job_applicant.id_location_village ) AS desa
+                                                FROM ilufa_job_applicant")->result();
+        return $query;
+    }
+    
     function get_stat_sales_dashboard()
     {
         $query = $this->db->query("SELECT   SUM(total) AS tot,
@@ -236,7 +238,7 @@ class Admin_model extends CI_Model
         return $query;
     }
 
-    function get_product_purchase_cart($idm,$idp)
+    function get_product_purchase_cart($idm, $idp)
     {
         $query =  $this->db->query("SELECT  id_produk,nama_produk,satuan,nilai,img_1,img_2,keterangan,waktu_input,status,berat,
                                             (SELECT harga FROM produk_harga WHERE id_produk=produk.id_produk AND produk_harga.id_member_level=(SELECT level FROM member WHERE member.id_member='$idm')) AS harga,

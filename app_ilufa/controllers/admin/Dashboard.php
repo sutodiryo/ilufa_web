@@ -28,10 +28,10 @@ class Dashboard extends CI_Controller
 			// $data['produk'] = $this->db->query("SELECT * FROM produk")->result();
 		} elseif ($x == 1) {
 
-			$data['title'] 	= 'Dashboard HRD Recruitment';
+			$data['title'] 			= 'Dashboard HRD Recruitment';
+			$data['stat_applicant'] = $this->Admin_model->get_stat_applicant();
 			// $data['produk'] = $this->db->query("SELECT * FROM produk")->result();
 			// $data['member_stat'] 	= $this->Admin_model->get_stat_member_dashboard();
-			// $data['sales_stat'] 	= $this->Admin_model->get_stat_sales_dashboard();
 
 			// $data['produk_stat']	= $this->db->query("SELECT id_produk,nama_produk,img_1,satuan FROM produk")->result();
 		}
