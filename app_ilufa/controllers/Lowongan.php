@@ -5,11 +5,16 @@ class Lowongan extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('guest/karir/list');
+		$this->load->view('guest/lowongan/list');
 	}
 
 	public function detail($id)
 	{
-		$this->load->view('guest/karir/detail');
+		$this->load->view('guest/lowongan/detail');
+	}
+
+	public function apply($id)
+	{
+		$this->load->view('guest/lowongan/apply');
 	}
 }
