@@ -13,7 +13,7 @@ class Admin_model extends CI_Model
     {
         date_default_timezone_set('Asia/Jakarta');
 
-        $query = $this->db->query("SELECT	posisi,
+        $query = $this->db->query("SELECT	id_job,posisi,
                                             (SELECT count(*) FROM ilufa_job_applicant WHERE id_job=ilufa_job.id_job) AS tot_aplicant
                                     FROM ilufa_job")->result();
 
@@ -30,7 +30,30 @@ class Admin_model extends CI_Model
         return $query;
     }
 
-    function get_applicant()
+    function get_applicant($x, $by)
+    {
+        if ($by == 'by_status') {
+            if ($x == 'all') {
+                $where = "";
+            } else {
+                $where = "WHERE status='$x'";
+            }
+        } elseif ($by == 'by_job') {
+            $where = "WHERE id_job='$x'";
+        }
+        $query = $this->db->query("SELECT      id_job_applicant,id_job,nik,full_name,birth_place,birth_date,gender,email,no_hp,id_location_province,id_location_district,id_location_subdistrict,id_location_village,address,image,expected_salary,last_education,department,school,language_skills,skills,
+                                                        (SELECT posisi FROM ilufa_job WHERE id_job=ilufa_job_applicant.id_job) AS posisi,
+                                                        (SELECT name FROM ilufa_location_province WHERE id_location_province =ilufa_job_applicant.id_location_province ) AS provinsi,
+                                                        (SELECT name FROM ilufa_location_district WHERE id_location_district =ilufa_job_applicant.id_location_district ) AS kota,
+                                                        (SELECT name FROM ilufa_location_subdistrict WHERE id_location_subdistrict =ilufa_job_applicant.id_location_subdistrict ) AS kecamatan,
+                                                        (SELECT name FROM ilufa_location_village WHERE id_location_village =ilufa_job_applicant.id_location_village ) AS desa
+                                                FROM ilufa_job_applicant $where")->result();
+        return $query;
+    }
+
+
+
+    function get_stat_games()
     {
         $query = $this->db->query("SELECT      id_job_applicant,id_job,nik,full_name,birth_place,birth_date,gender,email,no_hp,id_location_province,id_location_district,id_location_subdistrict,id_location_village,address,image,expected_salary,last_education,department,school,language_skills,skills,
                                                         (SELECT posisi FROM ilufa_job WHERE id_job=ilufa_job_applicant.id_job) AS posisi,
@@ -41,7 +64,7 @@ class Admin_model extends CI_Model
                                                 FROM ilufa_job_applicant")->result();
         return $query;
     }
-    
+
     function get_stat_sales_dashboard()
     {
         $query = $this->db->query("SELECT   SUM(total) AS tot,

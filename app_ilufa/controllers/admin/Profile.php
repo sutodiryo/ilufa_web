@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Job extends CI_Controller
+class Profile extends CI_Controller
 {
     public function __construct()
     {
@@ -19,19 +19,16 @@ class Job extends CI_Controller
     function index()
     {
         $x = $this->session->userdata('log_level');
-        $data['page']   = 'job';
-        $data['title']  = 'Master Data Lowongan Kerja';
+        $data['page']   = 'profile';
+        $data['title']  = 'Profile';
 
-        if ($x == 0) { } elseif ($x == 1) {
-            $data['job']    = $this->Admin_model->get_job();
-            $data['cabang'] = $this->db->query("SELECT * FROM ilufa_master_branch")->result();
-            $data['jenis']  = $this->db->query("SELECT * FROM ilufa_job_type")->result();
-        }
+        $data['branch'] = $this->db->query("SELECT * FROM ilufa_master_branch")->result();
+        if ($x == 0) { } elseif ($x == 2) { }
 
-        $this->load->view('back/admin/job/list', $data);
+        $this->load->view('back/admin/profile/detail', $data);
     }
 
-    function type()
+    function edit()
     {
         $x = $this->session->userdata('log_level');
         $data['page']   = 'job_type';
@@ -41,38 +38,8 @@ class Job extends CI_Controller
             $data['jenis']  = $this->db->query("SELECT * FROM ilufa_job_type")->result();
         }
 
-        $this->load->view('back/admin/job/type', $data);
+        $this->load->view('back/admin/profile/edit', $data);
     }
-    function applicant($x)
-    {
-        $level = $this->session->userdata('log_level');
-        $data['page']   = 'job_applicant';
-
-        if ($x == "all") {
-            $data['title']  = 'Data Pelamar Kerja';
-            $applicant = $this->Admin_model->get_applicant('all', 'by_status');
-        } elseif ($x == "process") {
-            $data['title']  = 'Data Pelamar Kerja Diproses';
-            $applicant = $this->Admin_model->get_applicant('0', 'by_status');
-        } elseif ($x == "accepted") {
-            $data['title']  = 'Data Pelamar Kerja Diterima';
-            $applicant = $this->Admin_model->get_applicant('1', 'by_status');
-        } elseif ($x == "rejected") {
-            $data['title']  = 'Data Pelamar Kerja Ditolak';
-            $applicant = $this->Admin_model->get_applicant('2', 'by_status');
-        } else {
-            $job            = $this->db->query("SELECT posisi FROM ilufa_job WHERE id_job='$x'")->row();
-            $data['title']  = 'Data Pelamar Kerja (' . $job->posisi . ')';
-            $applicant = $this->Admin_model->get_applicant($x, 'by_job');
-        }
-
-        $data['applicant']  = $applicant;
-        if ($level == 0) { } elseif ($level == 1) { }
-
-        $this->load->view('back/admin/job/applicant', $data);
-    }
-
-    //ACT
 
     //ACT
     function add($x)

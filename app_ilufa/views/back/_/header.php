@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>iLuFa 168 - <?php echo $title ?> </title>
-    <link rel="icon" type="image/x-icon" href="<?php echo BACK ?>assets/img/favicon.ico" />
+    <!-- <link rel="icon" type="image/x-icon" href="<?php echo BACK ?>assets/img/favicon.ico" /> -->
+    <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
     <link href="<?php echo BACK ?>assets/css/loader.css" rel="stylesheet" type="text/css" />
     <script src="<?php echo BACK ?>assets/js/loader.js"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -16,7 +17,8 @@
 
 
     <link rel="stylesheet" href="<?php echo BACK ?>plugins/font-icons/fontawesome/css/regular.css">
-    <link rel="stylesheet" href="<?php echo BACK ?>plugins/font-icons/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-GV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGiDtbLrcW77HPEwrJM2Ej2yFNYwvsg+p" crossorigin="anonymous" /> -->
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
@@ -31,7 +33,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/custom_dt_html5.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/dt-global_style.css">
 
-    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant" || $page == "job_type") { ?>
+    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant" || $page == "job_type" || $page == "branch") { ?>
 
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/datatables.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
@@ -41,8 +43,6 @@
         <link href="<?php echo BACK ?>assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/select2/select2.min.css">
     <?php } ?>
-
-
 
     <link href="<?php echo BACK ?>assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
@@ -235,7 +235,7 @@
                                 <a class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
-                                    </svg> My Profile</a>
+                                    </svg> Profil</a>
                             </div>
                             <div class="dropdown-item">
                                 <a href="https://api.whatsapp.com/send/?phone=6285220007411">
@@ -250,7 +250,7 @@
                                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                         <polyline points="16 17 21 12 16 7"></polyline>
                                         <line x1="21" y1="12" x2="9" y2="12"></line>
-                                    </svg> Sign Out</a>
+                                    </svg> Keluar</a>
                             </div>
                         </div>
                     </div>
@@ -329,9 +329,9 @@
                             <li class="menu <?php if ($page == "job_applicant") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('job/applicant') ?>" aria-expanded="<?php if ($page == "job_applicant") {
-                                                                                                                echo "true";
-                                                                                                            } ?>" class="dropdown-toggle">
+                                <a href="<?php echo base_url('job/applicant/all') ?>" aria-expanded="<?php if ($page == "job_applicant") {
+                                                                                                                    echo "true";
+                                                                                                                } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check">
                                             <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -509,7 +509,6 @@
                         <?php
                             } elseif ($level == 1) { ?>
 
-
                             <li class="menu <?php if ($page == "dashboard") {
                                                         echo "active";
                                                     } ?>">
@@ -529,9 +528,9 @@
                             <li class="menu <?php if ($page == "job_applicant") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('admin/job/applicant') ?>" aria-expanded="<?php if ($page == "job_applicant") {
-                                                                                                                    echo "true";
-                                                                                                                } ?>" class="dropdown-toggle">
+                                <a href="<?php echo base_url('admin/job/applicant/all') ?>" aria-expanded="<?php if ($page == "job_applicant") {
+                                                                                                                        echo "true";
+                                                                                                                    } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check">
                                             <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -583,7 +582,68 @@
                             </li>
 
                         <?php
-                            }
+                            } elseif ($level == 2) { ?>
+
+                            <li class="menu <?php if ($page == "dashboard") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('admin') ?>" aria-expanded="<?php if ($page == "dashboard") {
+                                                                                                        echo "true";
+                                                                                                    } ?>" class="dropdown-toggle">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up">
+                                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                            <polyline points="17 6 23 6 23 12"></polyline>
+                                        </svg>
+                                        <span>Dashboard</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu <?php if ($page == "games") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('store/games') ?>" aria-expanded="<?php if ($page == "games") {
+                                                                                                            echo "true";
+                                                                                                        } ?>" class="dropdown-toggle">
+                                    <div>
+                                        <!-- <i width="24" height="24" class="fas fa-gamepad"></i> -->
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                        </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                        <span>Games</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>MASTER</span></div>
+                            </li>
+
+                            <li class="menu <?php if ($page == "branch") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('admin/master/branch') ?>" aria-expanded="<?php if ($page == "branch") {
+                                                                                                                    echo "true";
+                                                                                                                } ?>" class="dropdown-toggle">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-pull-request">
+                                            <circle cx="18" cy="18" r="3"></circle>
+                                            <circle cx="6" cy="6" r="3"></circle>
+                                            <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                                            <line x1="6" y1="9" x2="6" y2="21"></line>
+                                        </svg>
+                                        <span>Cabang</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        <?php }
                         } elseif ($level == "store") {
                             ?>
 

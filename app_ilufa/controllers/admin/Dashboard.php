@@ -34,6 +34,10 @@ class Dashboard extends CI_Controller
 			// $data['member_stat'] 	= $this->Admin_model->get_stat_member_dashboard();
 
 			// $data['produk_stat']	= $this->db->query("SELECT id_produk,nama_produk,img_1,satuan FROM produk")->result();
+		} elseif ($x == 2) {
+
+			$data['title'] 			= 'Dashboard DMM';
+			$data['stat_games'] 	= $this->Admin_model->get_stat_games();
 		}
 
 		$this->load->view('back/admin/dashboard', $data);

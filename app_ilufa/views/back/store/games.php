@@ -1,7 +1,7 @@
 <?php $this->load->view('back/_/header'); ?>
 
 <div class="layout-px-spacing">
-    
+
     <div class="row layout-top-spacing" id="cancel-row">
         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
             <div class="widget-content widget-content-area br-6">
@@ -9,19 +9,27 @@
                 <div class="widget-header">
                     <div class="row">
                         <div class="col-md-8 col-12">
-                            <h5>Style 1</h5>
+                            <!-- <h5>Style 1</h5> -->
                         </div>
                         <div class="col-md-4 col-12">
 
-                            <form action="javascript:void(0);" class="form-horizontal mt-md-0 mt-3 text-md-right text-center">
-                                <!-- <a class="btn btn-primary" href="<?php echo base_url('games') ?>" target="_blank"> -->
-                                <a class="btn btn-success" data-toggle="modal" data-target="#modal_main_sekarang">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                                    </svg>
-                                    Mainkan</a>
-                            </form>
+                            <?php
+                            $level = $this->session->userdata('log_level');
+                            if ($level == "store") { ?>
+
+                                <form action="javascript:void(0);" class="form-horizontal mt-md-0 mt-3 text-md-right text-center">
+                                    <!-- <a class="btn btn-primary" href="<?php echo base_url('games') ?>" target="_blank"> -->
+                                    <a class="btn btn-success" data-toggle="modal" data-target="#modal_main_sekarang">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                        Mainkan</a>
+                                </form>
+
+                            <?php
+                            }
+                            ?>
 
                             <!-- <button type="button" class="btn btn-secondary mb-2 mr-2" data-toggle="modal" data-target="#modal_main_sekarang">
                                 Register
@@ -67,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-
+                <br>
                 <div class="table-responsive mb-4 mt-4">
                     <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
                         <thead>

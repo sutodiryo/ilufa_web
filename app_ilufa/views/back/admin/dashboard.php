@@ -7,7 +7,6 @@
         $x = $this->session->userdata('log_level');
 
         if ($x == 0) {
-            $data['title'] = 'Dashboard Admin';
             ?>
 
             <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
@@ -603,7 +602,7 @@
                             <div class="invoice-box">
                                 <div class="acc-total-info">
                                     <h5><?php echo $sa->posisi ?></h5>
-                                    <p class="acc-amount"><?php echo $sa->tot_aplicant ?></p>
+                                    <p class="acc-amount"><?php echo $sa->tot_aplicant ?> Pendaftar</p>
                                 </div>
                                 <!-- <div class="inv-detail">
                                     <div class="info-detail-3 info-sub">
@@ -622,7 +621,8 @@
                                     </div>
                                 </div> -->
                                 <div class="inv-action">
-                                    <a href="" class="btn btn-primary">Lihat Detail</a>
+                                    <a href="<?php echo base_url('admin/job/applicant/');
+                                                        echo  $sa->id_job; ?>" class="btn btn-primary">Lihat Detail</a>
                                 </div>
                             </div>
                         </div>
@@ -631,7 +631,31 @@
 
             <?php } ?>
 
-        <?php }
+        <?php } elseif ($x == 2) { ?>
+
+
+            <?php foreach ($stat_games as $sg) { ?>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                    <div class="widget widget-account-invoice-one">
+                        <div class="widget-content">
+                            <div class="invoice-box">
+                                <div class="acc-total-info">
+                                    <h5><?php echo $sg->id_branch ?></h5>
+                                    <p class="acc-amount"><?php echo $sg->id_branch ?> Pendaftar</p>
+                                </div>
+                                <div class="inv-action">
+                                    <a href="<?php echo base_url('admin/job/applicant/');
+                                                        echo  $sg->id_branch; ?>" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <?php } ?>
+        <?php
+        }
         ?>
     </div>
 </div>

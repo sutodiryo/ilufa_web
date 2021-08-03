@@ -14,7 +14,6 @@
                 </div> -->
                 <div class="widget-content widget-content-area">
 
-
                     <div class="widget-header">
                         <div class="row">
                             <div class="col-md-8 col-12">
@@ -76,6 +75,7 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="table-responsive mb-4">
                         <table id="job_type" class="table style-3  table-hover">
                             <thead>
