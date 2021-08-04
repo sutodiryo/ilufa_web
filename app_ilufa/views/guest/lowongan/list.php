@@ -19,10 +19,65 @@
 
             <div class="row">
 
+                <?php foreach ($job as $j) {
+                    $date_start = new DateTime($j->date_start);
+                    $date_end   = new DateTime($j->date_end);
+
+                    $tgl1 = $date_start->format('d M Y');
+                    $tgl2 = $date_end->format('d M Y');
+
+                    // $t2 = new DateTime($tgl_2);
+                    // $tg1 = $t1->format('d M Y');
+
+                    ?>
+
+                    <div class="col-lg-4">
+                        <article class="post-list-item" style="border: 3px solid white; padding:5px;">
+                            <figure>
+                                <a class="image-zoom effect-ajax" href="<?php echo "" . base_url('lowongan/detail/') . "$j->id_job"; ?>" data-dsn-animate="up">
+                                    <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
+                                </a>
+                            </figure>
+                            <div class="post-list-item-content text-center">
+                                <div class="post-info-top">
+                                    <div class="post-info-date">
+                                        <span><?php echo "$tgl1 - $tgl2"; ?></span>
+                                    </div>
+                                    <br>
+                                    <div class="post-info-category">
+                                        <a href="<?php echo "" . base_url('lowongan/detail/') . "$j->id_job"; ?>">iLuFA <?php echo $j->cabang ?></a>
+                                    </div>
+                                </div>
+                                <h3>
+                                    <a href="<?php echo "" . base_url('lowongan/detail/') . "$j->id_job"; ?>"><?php echo $j->posisi ?></a>
+                                </h3>
+
+                                <div class="post-info-top">
+                                    <div class="post-info-date">
+                                        <span><?php echo $j->kota ?></span>
+                                    </div>
+
+                                    <div class="post-info-category">
+                                        <a href="<?php echo "" . base_url('lowongan/') . ""; ?>"><?php echo $j->tipe; ?></a>
+                                    </div>
+                                </div>
+                                <div class="link-custom" data-dsn-animate="up">
+                                    <a class="image-zoom effect-ajax" href="<?php echo "" . base_url('lowongan/detail/') . "$j->id_job"; ?>" data-dsn="parallax">
+                                        <span>Detail</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                        </article>
+                    </div>
+
+                <?php
+                } ?>
+                <!-- 
                 <div class="col-lg-4">
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
-                            <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
+                            <a class="image-zoom effect-ajax" href="<?php echo base_url('lowongan/detail/1') ?>" data-dsn-animate="up">
                                 <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
@@ -50,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="link-custom" data-dsn-animate="up">
-                                <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn="parallax">
+                                <a class="image-zoom effect-ajax" href="<?php echo base_url('lowongan/detail/1') ?>" data-dsn="parallax">
                                     <span>Detail</span>
                                 </a>
                             </div>
@@ -62,7 +117,7 @@
                 <div class="col-lg-4">
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
-                            <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
+                            <a class="image-zoom effect-ajax" href="<?php echo base_url('lowongan/detail/1') ?>" data-dsn-animate="up">
                                 <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
@@ -90,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="link-custom" data-dsn-animate="up">
-                                <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn="parallax">
+                                <a class="image-zoom effect-ajax" href="<?php echo base_url('lowongan/detail/1') ?>" data-dsn="parallax">
                                     <span>Detail</span>
                                 </a>
                             </div>
@@ -102,7 +157,7 @@
                 <div class="col-lg-4">
                     <article class="post-list-item" style="border: 3px solid white; padding:5px;">
                         <figure>
-                            <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
+                            <a class="image-zoom effect-ajax" href="<?php echo base_url('lowongan/detail/1') ?>" data-dsn-animate="up">
                                 <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
                             </a>
                         </figure>
@@ -130,7 +185,7 @@
                                 </div>
                             </div>
                             <div class="link-custom" data-dsn-animate="up">
-                                <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn="parallax">
+                                <a class="image-zoom effect-ajax" href="<?php echo base_url('lowongan/detail/1') ?>" data-dsn="parallax">
                                     <span>Detail</span>
                                 </a>
                             </div>
@@ -138,46 +193,7 @@
                         <br>
                     </article>
                 </div>
-
-                <div class="col-lg-4">
-                    <article class="post-list-item" style="border: 3px solid white; padding:5px;">
-                        <figure>
-                            <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn-animate="up">
-                                <img src="<?php echo GUEST ?>img/blog/4.jpg" alt="">
-                            </a>
-                        </figure>
-                        <div class="post-list-item-content text-center">
-                            <div class="post-info-top">
-                                <div class="post-info-date">
-                                    <span>02 Sep 2021 - 25 Aug 2021</span>
-                                </div>
-
-                                <div class="post-info-category">
-                                    <a href="#">Ilufa 168</a>
-                                </div>
-                            </div>
-                            <h3>
-                                <a href="#">Digital Multimedia Marketing</a>
-                            </h3>
-
-                            <div class="post-info-top">
-                                <div class="post-info-date">
-                                    <span>Bojonegoro</span>
-                                </div>
-
-                                <div class="post-info-category">
-                                    <a href="#">Fulltime</a>
-                                </div>
-                            </div>
-                            <div class="link-custom" data-dsn-animate="up">
-                                <a class="image-zoom effect-ajax" href="<?php echo base_url('karir/detail/1') ?>" data-dsn="parallax">
-                                    <span>Detail</span>
-                                </a>
-                            </div>
-                        </div>
-                        <br>
-                    </article>
-                </div>
+                -->
 
             </div>
 

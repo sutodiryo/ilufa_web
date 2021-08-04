@@ -1,25 +1,24 @@
 <?php $this->load->view('guest/_/header') ?>
 
-<header>
+<!-- <header>
     <div class="header-hero header-hero-2 ">
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-lg-12">
                     <div class="contenet-hero">
-                        <h1>THE ART OF LUXURY APPAREL</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia libero
-                            quis odio unde ab officia est dolor.</p>
+                        <h1><?php echo $detail_job->posisi ?></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia libero quis odio unde ab officia est dolor.</p>
                         <a href="#" class="view-case scroll-down scroll-to">Scroll Down <img src="<?php echo GUEST ?>img/arrow-right-wight.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
+</header> -->
 
 <div class="wrapper">
     <div class="root-about">
-        <div class="box-seat box-seat-full">
+        <!-- <div class="box-seat box-seat-full">
             <div class="container-fluid">
                 <div class="inner-img" data-dsn-grid="move-up">
                     <img src="<?php echo GUEST ?>img/pexels.jpg" alt="" data-dsn-y="30%" data-dsn-scale="1">
@@ -36,9 +35,9 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <section class="intro-about section-margin section-padding hidden">
+        <!-- <section class="intro-about section-margin section-padding hidden">
             <div class="mask-bg"></div>
             <div class="container">
                 <div class="row align-items-center h-100">
@@ -65,15 +64,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="our-services section-margin">
             <div class="container">
                 <div class="one-title" data-dsn-animate="up">
                     <div class="title-sub-container">
-                        <p class="title-sub">OUR SERVCIES</p>
+                        <p class="title-sub">Lowongan</p>
                     </div>
-                    <h2 class="title-main">New Branding Agency</h2>
+                    <h2 class="title-main"><?php echo $detail_job->posisi ?></h2>
                 </div>
 
                 <div class="row">
