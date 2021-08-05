@@ -395,7 +395,7 @@
                             </div>
                             <div class="bottom">
                                 <div class="avatar">
-                                    <img loading="lazy" class="lozad" src="https://lh3.googleusercontent.com/a-/AOh14GgBunAjbw_jZmHnPKEp2EDDKRm842RbXzHDw6_8yw=w60-h60-p-rp-mo-ba4-br100" alt="">
+                                    <img loading="lazy" class="lozad" src="https://lh3.googleusercontent.com/a-/GV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGiNYwzHDw6_8yw=w60-h60-p-rp-mo-ba4-br100" alt="">
                                 </div>
                                 <div class="label">
                                     <div class="cell">- MH Hawali, Pelanggan Store Semarang</div>
@@ -527,71 +527,17 @@
             </div>
 
             <div class="wapper-client">
-                <a class="logo-box" data-toggle="modal" data-target="#solo_modal">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/solo.svg" alt="">
-                    <!-- <div class="info">
-                        <div class="content">
-                            <div class="icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="entry">
-                                <div>
-                                    <h5><a href="https://google.com">Solo 1</a></h5>
-                                    <h5><a href="https://google.com">Solo 2</a></h5>
-                                    <h5><a href="https://google.com">Solo 3</a></h5>
-                                    <h5><a href="https://google.com">Solo 4</a></h5>
-                                    <h5><a href="https://google.com">Solo 5</a></h5>
-                                    <h5><a href="https://google.com">Solo 6</a></h5>
-                                </div>
+                <?php
+                foreach ($branch_group as $bg) { ?>
 
-                            </div>
-                        </div>
-                    </div> -->
-                </a>
+                    <a class="logo-box" data-toggle="modal" data-target="#<?php echo $bg->branch_group_id ?>_modal">
+                        <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/<?php echo $bg->icon ?>" alt="">
+                    </a>
 
-                <a class="logo-box" data-toggle="modal" data-target="#klaten_modal">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/klaten.svg" alt="">
-                </a>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/sukoharjo.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/karanganyar.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/sragen.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/boyolali.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/yogyakarta.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/semarang.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/grobogan.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/madiun.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/ponorogo.svg" alt="">
-                </div>
-
-                <div class="logo-box">
-                    <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/bojonegoro.svg" alt="">
-                </div>
+                <?php
+                }
+                ?>
+                
             </div>
         </div>
     </section>
@@ -615,19 +561,48 @@
 
 <?php $this->load->view('guest/_/footer') ?>
 
-<div class="modal fade" id="klaten_modal" tabindex="-1" role="dialog" aria-labelledby="klaten_modal" aria-hidden="true">
+<?php
+foreach ($branch_group as $bg) { ?>
+
+    <div class="modal fade" id="<?php echo $bg->branch_group_id ?>_modal" tabindex="-1" role="dialog" aria-labelledby="<?php echo $bg->branch_group_id ?>_modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <font color="black">Cabang <?php echo $bg->name ?></font>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: auto; margin-right: 0px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="min-height: 500px;">
+                    <iframe src="<?php echo "" . $bg->link_map . "&z=" . $bg->zoom_map . ""; ?>" width="100%" height="500"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php
+}
+?>
+
+<!-- <div class="modal fade" id="klaten_modal" tabindex="-1" role="dialog" aria-labelledby="klaten_modal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <!-- <div class="modal-header">
+        <div class="modal-content"> -->
+
+<!--        
+            <div class="modal-header">
                 <h5 class="modal-title">
                     <font color="black">Modal title</font>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div> -->
-            <div class="modal-body" id="klaten_maps" style="min-height: 500px;">
             </div>
+            -->
+
+<!--
+            <div class="modal-body" id="klaten_maps" style="min-height: 500px;"></div>
         </div>
     </div>
 </div>
@@ -655,27 +630,10 @@
         })(marker, i));
     }
 </script>
+-->
 
-
-<div class="modal fade" id="solo_modal" tabindex="-1" role="dialog" aria-labelledby="solo_modal" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <font color="black">Modal title</font>
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body"  style="min-height: 500px;">
-            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1vfG3GBLHz3ivmAGq_z_tm69I0wpi9T3F" width="100%" height="500px"></iframe> -->
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SQm2EVeJcDyl8qsjbJ2-cakO6OHp_4M7&z=12" width="100%" height="500"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- <script>
+<!--
+    <script>
     var solo_location = [
         ['iLuFA 168 Super Store Solo', -7.5738807, 110.820649, 1],
         ['iLuFA Department Store Singosaren', -7.5735717, 110.8188525, 2],
@@ -706,4 +664,5 @@
             }
         })(marker, i));
     }
-</script> -->
+</script>
+-->

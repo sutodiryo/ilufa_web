@@ -2,30 +2,19 @@
 <html lang="en-US">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="discrption" content="lufa 168" />
     <meta name="keyword" content="lufa 168" />
 
-    <!--  Title -->
     <title>Ilufa 168 | Official Website</title>
 
-    <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
-
-    <!-- <link rel="shortcut icon" href="<?php echo GUEST ?>img/icon.png" type="image/png" /> -->
-    <!-- <link rel="icon" href="<?php echo GUEST ?>img/icon.png" type="image/png" /> -->
     <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
-
-    <!-- custom styles (optional) -->
     <link href="<?php echo GUEST ?>css/plugins.css" rel="stylesheet" />
     <link href="<?php echo GUEST ?>css/style.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
-
-    <!-- <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script> -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuN6ntOYC-xeTru8wCUT9aOsAxQOxXFPk&callback=initMap">
     </script>
 
@@ -75,6 +64,10 @@
 
             .footer .footer-links .footer-block {
                 margin: auto;
+            }
+
+            .footer-block {
+                align-items: center;
             }
         }
 
