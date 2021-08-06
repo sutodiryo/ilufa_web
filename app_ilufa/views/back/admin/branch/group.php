@@ -5,50 +5,36 @@
     <div class="row layout-top-spacing layout-spacing">
         <div class="col-lg-12">
             <div class="statbox widget box box-shadow">
-                <!-- <div class="widget-header">
-                    <div class="row">
-                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                            <h4>Style 3</h4>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="widget-content widget-content-area">
 
                     <div class="widget-header">
                         <div class="row">
                             <div class="col-md-8 col-12">
-                                <!-- <h5>Style 1</h5> -->
                             </div>
                             <div class="col-md-4 col-12">
 
                                 <form action="javascript:void(0);" class="form-horizontal mt-md-0 mt-3 text-md-right text-center">
-                                    <!-- <a class="btn btn-primary" href="<?php echo base_url('games') ?>" target="_blank"> -->
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_branch">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_branch_group">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-pull-request">
                                             <circle cx="18" cy="18" r="3"></circle>
                                             <circle cx="6" cy="6" r="3"></circle>
                                             <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
                                             <line x1="6" y1="9" x2="6" y2="21"></line>
                                         </svg>
-                                        Cabang Baru</a>
+                                        Kelompok Cabang Baru</a>
                                 </form>
-
-                                <!-- <button type="button" class="btn btn-secondary mb-2 mr-2" data-toggle="modal" data-target="#modal_add_new_branch">
-                                    Register
-                                </button> -->
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="table-responsive mb-4">
-                        <table id="branch" class="table style-3  table-hover">
+                        <table id="branch_group" class="table style-3  table-hover">
                             <thead>
                                 <tr>
                                     <th class="text-center">No</th>
-                                    <th class="checkbox-column text-center"> Kode </th>
-                                    <th>Nama Cabang</th>
-                                    <th>Kontak</th>
-                                    <th>Lokasi</th>
+                                    <th>Kelompok Cabang</th>
+                                    <th class="text-center">Ikon</th>
+                                    <th class="text-center">Maps</th>
                                     <th class="text-center">Status</th>
                                     <th class="text-center">Action</th>
                                 </tr>
@@ -56,29 +42,36 @@
                             <tbody>
                                 <?php
                                 $no = 0;
-                                foreach ($branch as $b) {
+                                foreach ($branch_group as $b) {
                                     $no++; ?>
 
                                     <tr>
-                                        <td class="checkbox-column text-center"> <?php echo $no ?> </td>
-                                        <td class="checkbox-column text-center user-name"> <?php echo $b->id_branch ?> </td>
-                                        <td class="user-name"><?php echo $b->branch_name ?></td>
-                                        <td><?php echo "$b->phone $b->email $b->instagram"; ?></td>
-                                        <td><?php echo $b->kota ?>
-                                            <br>
-                                            <textarea class="form-control"><?php echo $b->address ?></textarea>
+                                        <td class="checkbox-column text-center"> <?php echo $b->show_number ?> </td>
+                                        <td class="user-name"><span title="<?php echo $b->branch_group_id ?>"><?php echo $b->name ?></span></td>
+                                        <!-- <td class="checkbox-column text-center user-name" style="background-color:#1b55e2; border-radius:20px; height: 20px;"> -->
+                                        <td class="text-center" style="background-color:#1b55e2; border-radius:20px; height: 10px;">
+                                            <img src="<?php echo GUEST ?>svg/kota/<?php echo $b->icon ?>" alt="">
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="btn btn-outline-info mb-2 btn-sm" data-toggle="modal" data-target="#modal_add_new_branch_group">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                    <circle cx="12" cy="10" r="3"></circle>
+                                                </svg>
+                                            </button>
+                                            <!-- <br> -->
+                                            <!-- <textarea class="form-control"><?php echo $b->link_map ?></textarea> -->
                                         </td>
                                         <td class="text-center"><?php if ($b->status == 0) {
-                                                                        echo "<span class='shadow-none badge badge-warning'>On Progress</span>";
+                                                                        echo "<span class='shadow-none badge badge-warning'>Tidak Aktif</span>";
                                                                     } elseif ($b->status == 1) {
                                                                         echo "<span class='shadow-none badge badge-primary'>Aktif</span>";
-                                                                    } elseif ($b->status == 2) {
-                                                                        echo "<span class='shadow-none badge badge-danger'>Tidak Aktif</span>";
                                                                     } ?>
                                         </td>
                                         <td class="text-center">
                                             <ul class="table-controls">
-                                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1">
                                                             <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
                                                         </svg>
@@ -109,12 +102,12 @@
 
 
 <!-- Modal -->
-<div class="modal fade register-modal" id="modal_add_new_branch" tabindex="-1" role="dialog" aria-labelledby="modal_add_new_branch" aria-hidden="true">
+<div class="modal fade register-modal" id="modal_add_new_branch_group" tabindex="-1" role="dialog" aria-labelledby="modal_add_new_branch_group" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
 
-            <div class="modal-header" id="modal_add_new_branch">
-                <h4 class="modal-title">Tambah Cabang Baru</h4>
+            <div class="modal-header" id="modal_add_new_branch_group">
+                <h4 class="modal-title">Tambah Kelompok Cabang Baru</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
                         <line x1="6" y1="6" x2="18" y2="18"></line>

@@ -16,13 +16,29 @@ class Master extends CI_Controller
         $this->load->model('Admin_model');
     }
 
+    function branch_group()
+    {
+        $x = $this->session->userdata('log_level');
+        $data['page']   = 'branch_group';
+        $data['title']  = 'Master Data Kelompok Cabang';
+
+        $data['branch_group'] = $this->db->query("SELECT *  FROM ilufa_master_branch_group
+                                                            WHERE status=1
+                                                            ORDER BY show_number ASC")->result();
+        if ($x == 0) { } elseif ($x == 2) { }
+
+        $this->load->view('back/admin/branch/group', $data);
+    }
+
     function branch()
     {
         $x = $this->session->userdata('log_level');
         $data['page']   = 'branch';
         $data['title']  = 'Master Data Cabang';
 
-        $data['branch'] = $this->db->query("SELECT * FROM ilufa_master_branch")->result();
+        $data['branch'] = $this->db->query("SELECT  id_branch,branch_name,phone,email,password,instagram,facebook,tiktok,twitter,city,address,lat,lng,branch_group_id,status,
+                                                    (SELECT name FROM ilufa_location_district WHERE id_location_district=ilufa_master_branch.city) AS kota
+                                                    FROM ilufa_master_branch")->result();
         if ($x == 0) { } elseif ($x == 2) { }
 
         $this->load->view('back/admin/branch/list', $data);
