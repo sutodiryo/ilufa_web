@@ -46,15 +46,21 @@
 
                     <div class="row layout-top-spacing">
 
-                        <div id="pribadi" class="col-lg-12 col-sm-12 col-12 layout-spacing">
+                        <div id="pribadi" class="col-lg-12">
+                            <div class="seperator-header text-center">
+                                <h3 class="">INFORMASI PRIBADI</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
+                                <!-- <div class="widget-header">
                                     <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Default</h4>
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12 text-center">
+                                            <h3></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="widget-content widget-content-area">
 
                                     <label for="basic-url">Nomor KTP (NIK)</label>
@@ -572,38 +578,6 @@
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-
-&lt;div class="input-group mb-4"&gt;
-    &lt;div class="input-group-prepend"&gt;
-        &lt;div class="input-group-text"&gt;
-            &lt;label class="switch s-primary mb-0"&gt;
-                &lt;input type="checkbox" checked=""&gt;
-                &lt;span class="slider"&gt;&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;input type="text" class="form-control" placeholder="Switch" aria-label="switch" &gt;
-&lt;/div&gt;
-
-=========
-  RIGHT
-=========
-
-&lt;div class="input-group mb-4"&gt;
-    &lt;input type="text" class="form-control" placeholder="Switch" aria-label="switch"&gt;
-    &lt;div class="input-group-append"&gt;
-        &lt;div class="input-group-text"&gt;
-            &lt;label class="switch s-danger mb-0"&gt;
-                &lt;input type="checkbox" checked=""&gt;
-                &lt;span class="slider"&gt;&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
                                         </div>
                                     </div>
 
@@ -615,8 +589,8 @@
                     <div class="row layout-spacing">
 
                         <div id="pendidikan" class="col-lg-12">
-                            <div class="seperator-header">
-                                <h4 class="">Sizing</h4>
+                            <div class="seperator-header text-center">
+                                <h3 class="">RIWAYAT PENDIDIKAN</h3>
                             </div>
                         </div>
 
@@ -658,28 +632,6 @@
                                                 <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                                 <div class="code-section text-left">
-                                                    <pre>
-&lt;div class="input-group input-group-sm mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;span class="input-group-text" id="inputGroup-sizing-sm"&gt;Small&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"&gt;
-&lt;/div&gt;
-
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;span class="input-group-text" id="inputGroup-sizing-default"&gt;Default&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"&gt;
-&lt;/div&gt;
-
-&lt;div class="input-group input-group-lg mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;span class="input-group-text" id="inputGroup-sizing-lg"&gt;Large&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"&gt;
-&lt;/div&gt;
-</pre>
                                                 </div>
                                             </div>
 
@@ -688,8 +640,8 @@
                                 </div>
 
                                 <div id="pengalaman" class="col-lg-12">
-                                    <div class="seperator-header">
-                                        <h4 class="">Multiple Fields</h4>
+                                    <div class="seperator-header text-center">
+                                        <h3 class="">PENGALAMAN BEKERJA</h3>
                                     </div>
                                 </div>
 
