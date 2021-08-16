@@ -22,6 +22,8 @@
     <link href="<?php echo BACK ?>assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/switches.css">
+    
+    <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/select2/select2.min.css">
     <!--  END CUSTOM STYLE FILE  -->
 
 </head>
@@ -63,25 +65,67 @@
                                 </div> -->
                                 <div class="widget-content widget-content-area">
 
-                                    <label for="basic-url">Nomor KTP (NIK)</label>
+                                    <label for="nik">Nomor KTP (NIK)</label>
                                     <div class="input-group mb-4">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
+                                        <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
                                     </div>
 
-                                    <label for="basic-url">Nama Lengkap (Sesuai KTP)</label>
+                                    <label for="full_name">Nama Lengkap (Sesuai KTP)</label>
                                     <div class="input-group mb-4">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
+                                        <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
                                     </div>
 
-                                    <label for="basic-url">Tempat Lahir</label>
+                                    <label for="birth_place">Tempat Lahir</label>
                                     <div class="input-group mb-4">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
+                                        <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
                                     </div>
 
-                                    <label for="basic-url">Tanggal Lahir</label>
+                                    <label for="birth_date">Tanggal Lahir</label>
                                     <div class="input-group mb-4">
-                                        <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                        <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
                                     </div>
+
+                                    <label for="gender">Jenis Kelain</label>
+                                    <div class="input-group mb-4">
+                                        <div class="col-sm-12 col-12 input-fields">
+                                            <div class="n-chk">
+                                                <label class="new-control new-radio radio-primary">
+                                                    <input type="radio" class="new-control-input" name="gender" id="gender" value="L" required>
+                                                    <span class="new-control-indicator"></span>Laki-laki
+                                                </label>
+                                            </div>
+                                            <div class="n-chk">
+                                                <label class="new-control new-radio radio-primary">
+                                                    <input type="radio" class="new-control-input" name="gender" id="gender" value="P" required>
+                                                    <span class="new-control-indicator"></span>Perempuan
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <label for="email">Email</label>
+                                    <div class="input-group mb-4">
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="basic-addon3" placeholder="Alamat Email anda">
+                                    </div>
+
+                                    <label for="no_hp">Nomor Handphone (WA)</label>
+                                    <div class="input-group mb-4">
+                                        <input type="number" class="form-control" id="no_hp" name="no_hp" aria-describedby="basic-addon3" placeholder="Nomor Whatsapp anda">
+                                    </div>
+
+                                    <label for="id_location_province">Provinsi</label>
+                                    <div class="input-group mb-4">
+                                        <select class="form-control disabled-results" name="id_location_province" id="id_location_province">
+                                            <option disabled="disabled">Pilih provinsi anda</option>
+                                            <option value="one">First</option>
+                                            <option value="three">Third</option>
+                                        </select>
+                                    </div>
+
+
+
+
+
 
                                     <div class="input-group mb-4">
                                         <div class="input-group-prepend">
@@ -1084,6 +1128,8 @@
     <script src="<?php echo BACK ?>assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="<?php echo BACK ?>assets/js/scrollspyNav.js"></script>
+    <script src="<?php echo BACK ?>plugins/select2/select2.min.js"></script>
+    <script src="<?php echo BACK ?>plugins/select2/custom-select2.js"></script>
 </body>
 
 </html>

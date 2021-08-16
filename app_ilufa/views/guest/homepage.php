@@ -74,7 +74,6 @@
                                 <div class="numb-ex">
                                     <span class="word" data-dsn-animate="text">16</span>
                                 </div>
-
                                 <h4 data-dsn-animate="up">Agustus <br> 2000</h4>
                             </div>
 
@@ -94,6 +93,7 @@
         </div>
     </section>
 
+    <!--     
     <section class="our-services section-margin">
         <div class="container">
             <div class="one-title">
@@ -163,25 +163,28 @@
             </div>
         </div>
     </section>
+    -->
 
-    <!-- <div class="box-seat box-seat-full section-margin">
-                    <div class="container-fluid">
-                        <div class="inner-img" data-dsn-grid="move-up">
-                            <img loading="lazy" class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>img/project/project2/3.jpg" alt="">
-                        </div>
-                        <div class="pro-text">
-                            <h3> How is your<br> visual identity?</h3>
-                            <p>A system that young people around the world with a club culture and techno
-                                enthusiasts feel identified. We generated a simple logo that is the basis for
-                                generating a geometric and liquid system. </p>
-                            <div class="link-custom">
-                                <a class="image-zoom effect-ajax" href="project-2.html" data-dsn="parallax">
-                                    <span>Learn More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+    <!-- 
+    <div class="box-seat box-seat-full section-margin">
+        <div class="container-fluid">
+            <div class="inner-img" data-dsn-grid="move-up">
+                <img loading="lazy" class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>img/project/project2/3.jpg" alt="">
+            </div>
+            <div class="pro-text">
+                <h3> How is your<br> visual identity?</h3>
+                <p>A system that young people around the world with a club culture and techno
+                    enthusiasts feel identified. We generated a simple logo that is the basis for
+                    generating a geometric and liquid system. </p>
+                <div class="link-custom">
+                    <a class="image-zoom effect-ajax" href="project-2.html" data-dsn="parallax">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
 
     <section class="our-services-2 section-margin">
         <div class="container">
@@ -353,7 +356,6 @@
                         <h6 data-dsn-animate="up">Sometimes, we need to check the time, wondering when our
                             work
                             or meeting will finish, without getting caught by others.</h6>
-
                         <p data-dsn-animate="up">To avoid your boss’s
                             staring eye, you should not roll your eyes to check the time. The Time Tag Watch
                             is
@@ -363,7 +365,6 @@
                             not the hands, it gets harder to be damaged. It provides you with experience to
                             feel
                             the time at the end of your finger without damaging your watch.</p>
-
                         <div class="link-custom" data-dsn-animate="up">
                             <a class="image-zoom effect-ajax" href="project-9.html" data-dsn="parallax">
                                 <span>Learn More</span>
@@ -530,9 +531,24 @@
                 <?php
                 foreach ($branch_group as $bg) { ?>
 
-                    <a class="logo-box" data-toggle="modal" data-target="#<?php echo $bg->branch_group_id ?>_modal">
+                    <div class="logo-box" data-toggle="modal" data-target="#<?php echo $bg->branch_group_id ?>_modal">
                         <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/<?php echo $bg->icon ?>" alt="">
-                    </a>
+
+                        <div class="info">
+                            <div class="content" onclick="javascript:void(0);">
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+
+                                <div class="entry">
+                                    <div>
+                                        <h5>Klik untuk lihat map</h5>
+                                        <!-- <a href="#">www.google.com</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 <?php
                 }
