@@ -9,20 +9,30 @@
 
     <title>Ilufa 168 | Official Website</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
+
+    <?php
+    if ($title == 'home' || $title == 'home') { ?>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <?php
+    } elseif ($title == 'job_list') {
+        ?>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&amp;display=swap" rel="stylesheet">
+    <?php } ?>
+
     <link href="<?php echo GUEST ?>css/plugins.css" rel="stylesheet" />
     <link href="<?php echo GUEST ?>css/style.css" rel="stylesheet" />
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuN6ntOYC-xeTru8wCUT9aOsAxQOxXFPk&callback=initMap">
-    </script>
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuN6ntOYC-xeTru8wCUT9aOsAxQOxXFPk&callback=initMap"> -->
+    <!-- </script> -->
 
     <style>
         html {
             scroll-behavior: smooth;
         }
-
 
         .logo-header-main {
             height: 250px;
@@ -39,7 +49,6 @@
         .footer-img {
             height: 40px;
         }
-
 
         svg {
             fill: white;
@@ -70,7 +79,6 @@
                 align-items: center;
             }
         }
-
 
         .modal-open {
             overflow: hidden
@@ -246,93 +254,104 @@
     </style>
 </head>
 
-<body class="dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+<?php
+if ($title == 'home') { ?>
 
-    <div class="preloader">
-        <div class="preloader-after"></div>
-        <div class="preloader-before"></div>
-        <div class="preloader-block">
-            <div class="title">
-                <img src="<?php echo GUEST ?>img/ajax-document-loader.gif" alt="Loading..." style="height: 250px;" />
+    <body class="dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+
+        <div class="preloader">
+            <div class="preloader-after"></div>
+            <div class="preloader-before"></div>
+            <div class="preloader-block">
+                <div class="title">
+                    <img src="<?php echo GUEST ?>img/ajax-document-loader.gif" alt="Loading..." style="height: 250px;" />
+                </div>
+                <div class="percent">0</div>
+                <div class="loading">loading...</div>
             </div>
-            <div class="percent">0</div>
-            <div class="loading">loading...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
         </div>
-        <div class="preloader-bar">
-            <div class="preloader-progress"></div>
-        </div>
-    </div>
 
-    <!-- Nav Bar -->
-    <div class="dsn-nav-bar">
-        <div class="site-header">
-            <div class="extend-container">
-                <div class="inner-header">
-                    <div class="main-logo">
-                        <a href="<?php echo base_url() ?>">
-                            <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" />
-                            <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" />
+    <?php
+    } else { ?>
+
+        <body class="hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+
+        <?php } ?>
+
+
+        <!-- Nav Bar -->
+        <div class="dsn-nav-bar">
+            <div class="site-header">
+                <div class="extend-container">
+                    <div class="inner-header">
+                        <div class="main-logo">
+                            <a href="<?php echo base_url() ?>">
+                                <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" />
+                                <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <nav class=" accent-menu main-navigation">
+                        <ul class="extend-container">
+                            <li><a href="<?php echo base_url() ?>">Beranda</a></li>
+                            <li><a href="<?php echo base_url('tentang') ?>">Tentang</a></li>
+                            <li><a href="<?php echo base_url('produk') ?>">Produk</a></li>
+                            <li><a href="https://ilufa.co.id/blog">Blog</a></li>
+                            <li><a href="<?php echo base_url('lowongan') ?>">Lowongan</a></li>
+                            <li><a href="<?php echo base_url('kontak') ?>">Kontak</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header-top header-top-hamburger">
+                <div class="header-container">
+                    <div class="logo main-logo">
+                        <a href="#">
+                            <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
+                            <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
                         </a>
                     </div>
-                </div>
-                <nav class=" accent-menu main-navigation">
-                    <ul class="extend-container">
-                        <li><a href="<?php echo base_url() ?>">Beranda</a></li>
-                        <li><a href="<?php echo base_url('tentang') ?>">Tentang</a></li>
-                        <li><a href="<?php echo base_url('produk') ?>">Produk</a></li>
-                        <li><a href="https://ilufa.co.id/blog">Blog</a></li>
-                        <li><a href="<?php echo base_url('lowongan') ?>">Lowongan</a></li>
-                        <li><a href="<?php echo base_url('kontak') ?>">Kontak</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
 
-        <div class="header-top header-top-hamburger">
-            <div class="header-container">
-                <div class="logo main-logo">
-                    <a href="#">
-                        <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
-                        <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
-                    </a>
-                </div>
+                    <div class="menu-icon" data-dsn="parallax" data-dsn-move="5">
+                        <div class="icon-m">
+                            <i class="menu-icon-close fas fa-times"></i>
+                            <span class="menu-icon__line menu-icon__line-left"></span>
+                            <span class="menu-icon__line"></span>
+                            <span class="menu-icon__line menu-icon__line-right"></span>
+                        </div>
 
-                <div class="menu-icon" data-dsn="parallax" data-dsn-move="5">
-                    <div class="icon-m">
-                        <i class="menu-icon-close fas fa-times"></i>
-                        <span class="menu-icon__line menu-icon__line-left"></span>
-                        <span class="menu-icon__line"></span>
-                        <span class="menu-icon__line menu-icon__line-right"></span>
+                        <div class="text-menu">
+                            <div class="text-button">Menu</div>
+                            <div class="text-open">Open</div>
+                            <div class="text-close">Close</div>
+                        </div>
                     </div>
 
-                    <div class="text-menu">
-                        <div class="text-button">Menu</div>
-                        <div class="text-open">Open</div>
-                        <div class="text-close">Close</div>
+                    <div class="nav">
+                        <div class="inner">
+                            <div class="nav__content">
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="nav">
-                    <div class="inner">
-                        <div class="nav__content">
-
+                    <div class="nav-content">
+                        <div class="inner-content">
+                            <!-- <address class="v-middle">
+                                <span>Egypt</span>
+                                <span>Damietta</span>
+                                <span>01024552406</span>
+                            </address> -->
                         </div>
                     </div>
                 </div>
-                <div class="nav-content">
-                    <div class="inner-content">
-                        <address class="v-middle">
-                            <span>Egypt</span>
-                            <span>Damietta</span>
-                            <span>01024552406</span>
-                        </address>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- End Nav Bar -->
+        <!-- End Nav Bar -->
 
 
-    <main class="main-root">
-        <div id="dsn-scrollbar">
+        <main class="main-root">
+            <div id="dsn-scrollbar">

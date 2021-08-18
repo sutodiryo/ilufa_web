@@ -12,18 +12,21 @@ class Lowongan extends CI_Controller
 
 	public function index()
 	{
-		$data['job'] = $this->Guest_model->get_job();
+		$data['title']	= "job_list";
+		$data['job'] 	= $this->Guest_model->get_job();
 		$this->load->view('guest/lowongan/list', $data);
 	}
 
 	public function detail($id)
 	{
+		$data['title'] 		= "job_detail";
 		$data['detail_job'] = $this->Guest_model->get_job_by_id($id);
 		$this->load->view('guest/lowongan/detail', $data);
 	}
 
 	public function apply($id)
 	{
-		$this->load->view('guest/lowongan/apply');
+		$data['title'] 	= "job_apply";
+		$this->load->view('guest/lowongan/apply', $data);
 	}
 }

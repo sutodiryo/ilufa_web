@@ -257,6 +257,48 @@
         <div class="container">
             <div class="one-title">
                 <div class="title-sub-container">
+                    <p class="title-sub">Store</p>
+                </div>
+                <h2 class="title-main">Store iLuFA</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-3">
+                    <div class="work-container">
+                        <div class="slick-slider">
+                            <?php
+                            foreach ($store as $st) { ?>
+
+                                <div class="work-item slick-slide">
+                                    <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/store/<?php if ($st->img == '') {
+                                                                                                                                    echo "colomadu.jpg";
+                                                                                                                                } else {
+                                                                                                                                    echo $st->img;
+                                                                                                                                } ?>" alt="">
+                                    <div class="item-border"></div>
+                                    <div class="item-info">
+                                        <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                            <h4><?php echo $st->branch_name ?></h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            <?php
+                            }
+                            ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+        <div class="container">
+            <div class="one-title">
+                <div class="title-sub-container">
                     <p class="title-sub">Produk</p>
                 </div>
                 <h2 class="title-main">Produk Terbaru</h2>

@@ -1,6 +1,6 @@
 <?php $this->load->view('guest/_/header') ?>
 
-<!-- <header>
+<header>
     <div class="header-hero header-hero-2 ">
         <div class="container h-100">
             <div class="row align-items-center h-100">
@@ -14,10 +14,10 @@
             </div>
         </div>
     </div>
-</header> -->
+</header>
 
 <div class="wrapper">
-    <div class="root-about">
+    <div class="root-blog">
         <!-- <div class="box-seat box-seat-full">
             <div class="container-fluid">
                 <div class="inner-img" data-dsn-grid="move-up">
@@ -68,7 +68,7 @@
 
         <section class="our-services section-margin">
             <div class="container">
-                <div class="one-title" data-dsn-animate="up">
+                <div class="one-title">
                     <div class="title-sub-container">
                         <p class="title-sub">Lowongan</p>
                     </div>
@@ -222,7 +222,7 @@
     <section class="contact-up section-margin section-padding">
         <div class="container">
             <div class="c-wapp">
-                <a href="contact.html" class="effect-ajax">
+                <a href="<?php echo base_url('lowongan/apply/'); echo $detail_job->id_job ?>">
                     <span class="hiring">
                         We are hiring
                     </span>

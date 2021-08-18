@@ -8,23 +8,18 @@
     <meta name="discrption" content="lufa 168" />
     <meta name="keyword" content="lufa 168" />
 
-    <!--  Title -->
     <title>Ilufa 168 | Official Website</title>
 
     <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link href="<?php echo BACK ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo BACK ?>assets/css/plugins.css" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
 
-    <!--  BEGIN CUSTOM STYLE FILE  -->
     <link href="<?php echo BACK ?>assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/switches.css">
-    
+
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/select2/select2.min.css">
-    <!--  END CUSTOM STYLE FILE  -->
 
 </head>
 
@@ -75,15 +70,25 @@
                                         <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
                                     </div>
 
-                                    <label for="birth_place">Tempat Lahir</label>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
+                                    <div class="col-12 row">
+                                        <div class="col-sm-7 col-12 input-fields">
+                                            <label for="birth_place">Tempat Lahir</label>
+                                            <div class="input-group mb-4">
+                                                <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 col-12 input-fields">
+                                            <label for="birth_date">Tanggal Lahir</label>
+                                            <div class="input-group mb-4">
+                                                <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <label for="birth_date">Tanggal Lahir</label>
+                                    <!-- <label for="birth_date">Tanggal Lahir</label>
                                     <div class="input-group mb-4">
                                         <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
-                                    </div>
+                                    </div> -->
 
                                     <label for="gender">Jenis Kelain</label>
                                     <div class="input-group mb-4">
@@ -123,10 +128,7 @@
                                     </div>
 
 
-
-
-
-
+                                    <!-- 
                                     <div class="input-group mb-4">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="basic-addon5">@</span>
@@ -164,13 +166,13 @@
                                             <span class="input-group-text">With textarea</span>
                                         </div>
                                         <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
                         </div>
 
-                        <div class="col-lg-12 layout-spacing">
+                        <!-- <div class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-header">
                                     <div class="row">
@@ -200,35 +202,6 @@
                                                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                                                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                                                 </svg></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;div class="input-group-prepend"&gt;
-        &lt;span class="input-group-text" id="basic-addon1"&gt;&lt;svg&gt; ... &lt;/svg&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;input type="text" class="form-control" placeholder="Notification" aria-label="notification" aria-describedby="basic-addon1"&gt;
-&lt;/div&gt;
-
-=========
-  Right
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;input type="text" class="form-control" placeholder="Notification" aria-label="notification" aria-describedby="basic-addon2"&gt;
-    &lt;div class="input-group-append"&gt;
-        &lt;span class="input-group-text" id="basic-addon2"&gt;&lt;svg&gt; ... &lt;/svg&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
                                         </div>
                                     </div>
 
@@ -277,35 +250,6 @@
                                                     <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
                                                     <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
                                                 </svg></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;div class="input-group-prepend"&gt;
-        &lt;span class="input-group-text" id="basic-addon3"&gt;&lt;svg class="spin"&gt; ... &lt;/svg&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;input type="text" class="form-control" placeholder="Spinners" aria-label="spinners" aria-describedby="basic-addon3"&gt;
-&lt;/div&gt;
-
-=========
-  Right
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;input type="text" class="form-control" placeholder="Spinners" aria-label="spinners" aria-describedby="basic-addon4"&gt;
-    &lt;div class="input-group-append"&gt;
-        &lt;span class="input-group-text" id="basic-addon4"&gt;&lt;svg class="spin"&gt; ... &lt;/svg&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
                                         </div>
                                     </div>
 
@@ -359,49 +303,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;div class="input-group-prepend"&gt;
-        &lt;button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;svg&gt; ... &lt;/svg&gt; &lt;/button&gt;
-        &lt;div class="dropdown-menu"&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Action&lt;/a&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Another action&lt;/a&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Something else here&lt;/a&gt;
-            &lt;div role="separator" class="dropdown-divider"&gt;&lt;/div&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Separated link&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;input type="text" class="form-control" placeholder="Dropdown" aria-label="dropdown"&gt;
-&lt;/div&gt;
-
-=========
-  Right
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;input type="text" class="form-control" placeholder="Dropdown" aria-label="dropdown"&gt;
-    &lt;div class="input-group-append"&gt;
-        &lt;button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;svg&gt; ... &lt;/svg&gt; &lt;/button&gt;
-        &lt;div class="dropdown-menu"&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Action&lt;/a&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Another action&lt;/a&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Something else here&lt;/a&gt;
-            &lt;div role="separator" class="dropdown-divider"&gt;&lt;/div&gt;
-            &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Separated link&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -443,49 +344,6 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;div class="input-group-text"&gt;
-        &lt;div class="n-chk align-self-end"&gt;
-            &lt;label class="new-control new-checkbox checkbox-danger" style="height: 21px; margin-bottom: 0; margin-right: 0"&gt;
-              &lt;input type="checkbox" class="new-control-input" checked&gt;
-              &lt;span class="new-control-indicator"&gt;&lt;/span&gt;
-            &lt;/label&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" placeholder="Checkbox" aria-label="checkbox" &gt;
-&lt;/div&gt;
-
-=========
-  Right
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;input type="text" class="form-control" placeholder="Checkbox" aria-label="checkbox" aria-describedby="basic-addon1"&gt;
-    &lt;div class="input-group-append"&gt;
-        &lt;div class="input-group-text"&gt;
-            &lt;div class="n-chk align-self-end"&gt;
-                &lt;label class="new-control new-checkbox checkbox-warning" style="height: 21px; margin-bottom: 0; margin-right: 0"&gt;
-                  &lt;input type="checkbox" class="new-control-input" checked&gt;
-                  &lt;span class="new-control-indicator"&gt;&lt;/span&gt;
-                &lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
                                         </div>
                                     </div>
 
@@ -533,50 +391,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;div class="input-group-prepend"&gt;
-        &lt;div class="input-group-text"&gt;
-            &lt;div class="n-chk align-self-end"&gt;
-                &lt;label class="new-control new-radio radio-info" style="height: 21px; margin-bottom: 0; margin-right: 0"&gt;
-                    &lt;input type="radio" class="new-control-input" name="custom-radio-1" checked&gt;
-                    &lt;span class="new-control-indicator"&gt;&lt;/span&gt;
-                &lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;input type="text" class="form-control" placeholder="Radio" aria-label="radio" &gt;
-&lt;/div&gt;
-
-=========
-  Right
-=========
-&lt;div class="input-group mb-4"&gt;
-    &lt;input type="text" class="form-control" placeholder="Radio" aria-label="Radio"&gt;
-    &lt;div class="input-group-append"&gt;
-        &lt;div class="input-group-text"&gt;
-            &lt;div class="n-chk align-self-end"&gt;
-                &lt;label class="new-control new-radio radio-success" style="height: 21px; margin-bottom: 0; margin-right: 0"&gt;
-                  &lt;input type="radio" class="new-control-input" name="custom-radio-1" checked&gt;
-                  &lt;span class="new-control-indicator"&gt;&lt;/span&gt;
-                &lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-</pre>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -617,17 +431,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="row layout-spacing">
@@ -642,41 +448,16 @@
                             <div class="row">
                                 <div class="col-md-12 mb-4">
                                     <div class="statbox widget box box-shadow">
-                                        <div class="widget-header">
-                                            <div class="row">
-                                                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                    <h4>Sizing</h4>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="widget-content widget-content-area">
-                                            <div class="input-group input-group-sm mb-4">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
-                                                </div>
-                                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                                            </div>
 
+                                            <label for="nik">Nomor KTP (NIK)</label>
                                             <div class="input-group mb-4">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-                                                </div>
-                                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                                                <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
                                             </div>
 
-                                            <div class="input-group input-group-lg mb-4">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-                                                </div>
-                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                            </div>
-
-                                            <div class="code-section-container">
-
-                                                <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                                <div class="code-section text-left">
-                                                </div>
+                                            <label for="full_name">Nama Lengkap (Sesuai KTP)</label>
+                                            <div class="input-group mb-4">
+                                                <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
                                             </div>
 
                                         </div>
@@ -691,37 +472,23 @@
 
                                 <div class="col-md-12">
                                     <div class="statbox widget box box-shadow">
-                                        <div class="widget-header">
+                                        <!-- <div class="widget-header">
                                             <div class="row">
                                                 <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                                                     <h4>Multiple inputs</h4>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="widget-content widget-content-area">
+
+                                            <label for="nik">Nomor KTP (NIK)</label>
                                             <div class="input-group mb-4">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">First and last name</span>
-                                                </div>
-                                                <input type="text" class="form-control">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
                                             </div>
 
-                                            <div class="code-section-container">
-
-                                                <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                                <div class="code-section text-left">
-                                                    <pre>
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;span class="input-group-text"&gt;First and last name&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control"&gt;
-  &lt;input type="text" class="form-control"&gt;
-&lt;/div&gt;
-</pre>
-                                                </div>
+                                            <label for="full_name">Nama Lengkap (Sesuai KTP)</label>
+                                            <div class="input-group mb-4">
+                                                <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
                                             </div>
 
                                         </div>
@@ -730,7 +497,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
+                        <!-- <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-header">
                                     <div class="row">
@@ -755,37 +522,6 @@
                                         <div class="input-group-append">
                                             <span class="input-group-text">$</span>
                                             <span class="input-group-text">0.00</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;span class="input-group-text"&gt;$&lt;/span&gt;
-    &lt;span class="input-group-text"&gt;0.00&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"&gt;
-&lt;/div&gt;
-
-=========
-  RIGHT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"&gt;
-  &lt;div class="input-group-append"&gt;
-    &lt;span class="input-group-text"&gt;$&lt;/span&gt;
-    &lt;span class="input-group-text"&gt;0.00&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
                                         </div>
                                     </div>
 
@@ -836,49 +572,6 @@
                                                 <div role="separator" class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;Dropdown &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Another action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Something else here&lt;/a&gt;
-      &lt;div role="separator" class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Separated link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" aria-label="Text input with dropdown button"&gt;
-&lt;/div&gt;
-
-=========
-  RIGHT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;input type="text" class="form-control" aria-label="Text input with dropdown button"&gt;
-  &lt;div class="input-group-append"&gt;
-    &lt;button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;Dropdown &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Another action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Something else here&lt;/a&gt;
-      &lt;div role="separator" class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Separated link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
                                         </div>
                                     </div>
 
@@ -936,56 +629,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;button type="button" class="btn btn-info"&gt;Action&lt;/button&gt;
-    &lt;button type="button" class="btn btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
-        &lt;svg&gt; ... &lt;/svg&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Another action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Something else here&lt;/a&gt;
-      &lt;div role="separator" class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Separated link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" aria-label="Text input with segmented dropdown button"&gt;
-&lt;/div&gt;
-
-=========
-  RIGHT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;input type="text" class="form-control" aria-label="Text input with segmented dropdown button"&gt;
-  &lt;div class="input-group-append"&gt;
-    &lt;button type="button" class="btn btn-outline-info"&gt;Action&lt;/button&gt;
-    &lt;button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
-        &lt;svg&gt; ... &lt;/svg&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Another action&lt;/a&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Something else here&lt;/a&gt;
-      &lt;div role="separator" class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Separated link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</pre>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -1034,61 +677,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="code-section-container">
-
-                                        <button class="btn toggle-code-snippet"><span>Code</span></button>
-
-                                        <div class="code-section text-left">
-                                            <pre>
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;button class="btn btn-primary" type="button"&gt;Button&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" placeholder="" aria-label=""&gt;
-&lt;/div&gt;
-
-=========
-  RIGHT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"&gt;
-  &lt;div class="input-group-append"&gt;
-    &lt;button class="btn btn-primary" type="button"&gt;Button&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-=========
-  LEFT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;div class="input-group-prepend"&gt;
-    &lt;button class="btn btn-outline-primary" type="button"&gt;Button&lt;/button&gt;
-    &lt;button class="btn btn-outline-primary" type="button"&gt;Button&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control" placeholder="" aria-label=""&gt;
-&lt;/div&gt;
-
-=========
-  RIGHT
-=========
-&lt;div class="input-group mb-4"&gt;
-  &lt;input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"&gt;
-  &lt;div class="input-group-append"&gt;
-    &lt;button class="btn btn-outline-primary" type="button"&gt;Button&lt;/button&gt;
-    &lt;button class="btn btn-outline-primary" type="button"&gt;Button&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</pre>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -1105,14 +696,9 @@
                 </div>
             </div>
         </div>
-        <!--  END CONTENT AREA  -->
 
     </div>
-    <!-- END MAIN CONTAINER -->
 
-
-
-    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="<?php echo BACK ?>assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="<?php echo BACK ?>bootstrap/js/popper.min.js"></script>
     <script src="<?php echo BACK ?>bootstrap/js/bootstrap.min.js"></script>
