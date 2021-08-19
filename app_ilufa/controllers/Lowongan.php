@@ -26,7 +26,10 @@ class Lowongan extends CI_Controller
 
 	public function apply($id)
 	{
-		$data['title'] 	= "job_apply";
+		$data['title'] 		= "job_apply";
+		$data['detail_job'] = $this->Guest_model->get_job_by_id($id);
+		$data['province'] 	= $this->Guest_model->get_province();
+		$data['district'] 	= $this->Guest_model->get_district();
 		$this->load->view('guest/lowongan/apply', $data);
 	}
 }

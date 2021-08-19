@@ -31,4 +31,16 @@ class Guest_model extends CI_Model
                                 WHERE id_job='$id'")->row();
         return $q;
     }
+
+    function get_province()
+    {
+        $q = $this->db->query("SELECT * FROM ilufa_location_province ORDER BY id_location_province ASC")->result();
+        return $q;
+    }
+
+    function get_district()
+    {
+        $q = $this->db->query("SELECT id_location_district,name,tipe FROM ilufa_location_district ORDER BY id_location_district ASC LIMIT 30")->result();
+        return $q;
+    }
 }

@@ -8,7 +8,7 @@
     <meta name="discrption" content="lufa 168" />
     <meta name="keyword" content="lufa 168" />
 
-    <title>Ilufa 168 | Official Website</title>
+    <title>Ilufa 168 | <?php echo "Lowongan $detail_job->posisi"; ?></title>
 
     <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
@@ -27,11 +27,86 @@
 
     <div class="main-container" id="container">
 
+
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="container">
-
                 <div class="container">
+
+                    <div class="row layout-top-spacing">
+
+                        <div class="col-lg-12 col-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-header">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h4>Simple Pills</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content widget-content-area simple-pills">
+                                    <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                                </svg></a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" id="pills-profile-tab" data-toggle="tab" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Action</a>
+                                                <a class="dropdown-item" id="pills-profile-tab2" data-toggle="tab" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false">Another action</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <p class="mb-4">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            <div class="media">
+                                                <img class="mr-3" src="assets/img/90x90.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2">
+                                            <p class="">
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                            <p class="dropcap  dc-outline-primary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                     <div id="navSection" data-spy="affix" class="nav  sidenav">
                         <div class="sidenav-content">
@@ -51,389 +126,163 @@
 
                         <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
-                                <!-- <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12 text-center">
-                                            <h3></h3>
-                                        </div>
-                                    </div>
-                                </div> -->
                                 <div class="widget-content widget-content-area">
 
-                                    <label for="nik">Nomor KTP (NIK)</label>
+                                    <p for="nik">Nomor KTP (NIK)</p>
                                     <div class="input-group mb-4">
                                         <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
                                     </div>
 
-                                    <label for="full_name">Nama Lengkap (Sesuai KTP)</label>
+                                    <p for="full_name">Nama Lengkap (Sesuai KTP)</p>
                                     <div class="input-group mb-4">
                                         <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
                                     </div>
 
-                                    <div class="col-12 row">
-                                        <div class="col-sm-7 col-12 input-fields">
-                                            <label for="birth_place">Tempat Lahir</label>
-                                            <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
-                                            </div>
+                                    <div class="form-row mb-4">
+                                        <div class="form-group col-md-6">
+                                            <p for="birth_place">Tempat Lahir</p>
+                                            <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
                                         </div>
-                                        <div class="col-sm-5 col-12 input-fields">
-                                            <label for="birth_date">Tanggal Lahir</label>
-                                            <div class="input-group mb-4">
-                                                <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
-                                            </div>
+                                        <div class="form-group col-md-6">
+                                            <p for="birth_date">Tanggal Lahir</p>
+                                            <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
                                         </div>
                                     </div>
 
-                                    <!-- <label for="birth_date">Tanggal Lahir</label>
-                                    <div class="input-group mb-4">
-                                        <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
-                                    </div> -->
-
-                                    <label for="gender">Jenis Kelain</label>
-                                    <div class="input-group mb-4">
-                                        <div class="col-sm-12 col-12 input-fields">
-                                            <div class="n-chk">
-                                                <label class="new-control new-radio radio-primary">
-                                                    <input type="radio" class="new-control-input" name="gender" id="gender" value="L" required>
-                                                    <span class="new-control-indicator"></span>Laki-laki
-                                                </label>
-                                            </div>
-                                            <div class="n-chk">
-                                                <label class="new-control new-radio radio-primary">
-                                                    <input type="radio" class="new-control-input" name="gender" id="gender" value="P" required>
-                                                    <span class="new-control-indicator"></span>Perempuan
-                                                </label>
-                                            </div>
+                                    <p for="gender">Jenis Kelamin</p>
+                                    <div class="form-group col-md-6">
+                                        <div class="n-chk">
+                                            <label class="new-control new-radio radio-success">
+                                                <input type="radio" class="new-control-input" name="gender" id="gender" value="L" required>
+                                                <span class="new-control-indicator"></span>Laki-laki
+                                            </label>
+                                        </div>
+                                        <div class="n-chk">
+                                            <label class="new-control new-radio radio-success">
+                                                <input type="radio" class="new-control-input" name="gender" id="gender" value="P" required>
+                                                <span class="new-control-indicator"></span>Perempuan
+                                            </label>
                                         </div>
                                     </div>
 
-                                    <label for="email">Email</label>
+                                    <p for="email">Email</p>
                                     <div class="input-group mb-4">
                                         <input type="email" class="form-control" id="email" name="email" aria-describedby="basic-addon3" placeholder="Alamat Email anda">
                                     </div>
 
-                                    <label for="no_hp">Nomor Handphone (WA)</label>
+                                    <p for="no_hp">Nomor Handphone (WA)</p>
                                     <div class="input-group mb-4">
                                         <input type="number" class="form-control" id="no_hp" name="no_hp" aria-describedby="basic-addon3" placeholder="Nomor Whatsapp anda">
                                     </div>
 
-                                    <label for="id_location_province">Provinsi</label>
+                                    <p for="image">Foto Terbaru</p>
                                     <div class="input-group mb-4">
-                                        <select class="form-control disabled-results" name="id_location_province" id="id_location_province">
-                                            <option disabled="disabled">Pilih provinsi anda</option>
-                                            <option value="one">First</option>
-                                            <option value="three">Third</option>
-                                        </select>
+                                        <input type="file" class="form-control" id="image" name="image" aria-describedby="basic-addon3">
                                     </div>
 
-
-                                    <!-- 
+                                    <p for="expected_salary">Gaji Yang Diharapkan</p>
                                     <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon5">@</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                        <input type="number" class="form-control" id="expected_salary" name="expected_salary" aria-describedby="basic-addon3" placeholder="Gaji Yang Diharapkan">
                                     </div>
 
-                                    <div class="input-group mb-5">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" id="basic-addon6">@example.com</span>
-                                        </div>
-                                    </div>
-
-                                    <label for="basic-url">Your vanity URL</label>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon7">https://</span>
-                                        </div>
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="example.com/users/">
-                                    </div>
-
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">$</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">.00</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">With textarea</span>
-                                        </div>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div> -->
                                 </div>
 
                             </div>
                         </div>
 
-                        <!-- <div class="col-lg-12 layout-spacing">
+                        <div id="fs2Placeholder" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-header">
                                     <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Simple Icon</h4>
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12 text-center">
+                                            <h4>Alamat</h4>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
-                                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                                                </svg></span>
+                                    <div class="form-row mb-4">
+                                        <div class="form-group col-md-6">
+                                            <p for="id_location_province">Provinsi</p>
+                                            <select class="placeholder js-states form-control" name="id_location_province" id="id_location_province">
+                                                <option>Provinsi...</option>
+                                                <?php
+                                                foreach ($province as $pr) {
+                                                    echo "<option value='$pr->id_location_province'>$pr->name</option>";
+                                                }
+                                                ?>
+                                            </select>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Notification" aria-label="notification" aria-describedby="basic-addon1">
+                                        <div class="form-group col-md-6">
+                                            <p for="id_location_district">Kota/Kabupaten</p>
+                                            <select class="placeholder js-states form-control" name="id_location_district" id="id_location_district">
+                                                <option>Kota/Kabupaten...</option>
+                                                <?php
+                                                foreach ($district as $di) {
+                                                    echo "<option value='$di->id_location_district'>";
+
+                                                    if ($di->tipe == 1) {
+                                                        echo "Kabupaten ";
+                                                    } else {
+                                                        echo "Kota ";
+                                                    }
+
+                                                    echo "$di->name</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <p for="id_location_subdistrict">Kecamatan</p>
+                                            <select class="placeholder js-states form-control" name="id_location_subdistrict" id="id_location_subdistrict">
+                                                <option>Kecamatan...</option>
+                                                <?php
+                                                foreach ($district as $di) {
+                                                    echo "<option value='$di->id_location_district'>";
+
+                                                    if ($di->tipe == 1) {
+                                                        echo "Kabupaten ";
+                                                    } else {
+                                                        echo "Kota ";
+                                                    }
+
+                                                    echo "$di->name</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <p for="id_location_village ">Desa/Kelurahan</p>
+                                            <select class="placeholder js-states form-control" name="id_location_village " id="id_location_village ">
+                                                <option>Desa/Kelurahan...</option>
+                                                <?php
+                                                foreach ($district as $di) {
+                                                    echo "<option value='$di->id_location_district'>";
+
+                                                    if ($di->tipe == 1) {
+                                                        echo "Kabupaten ";
+                                                    } else {
+                                                        echo "Kota ";
+                                                    }
+
+                                                    echo "$di->name</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+
+                                        <p for="address">Alamat Lengkap</p>
+                                        <div class="input-group mb-4">
+                                            <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                                        </div>
                                     </div>
 
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Notification" aria-label="notification" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
-                                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                                                </svg></span>
-                                        </div>
-                                    </div>
+
 
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Spinning Icon</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader spin">
-                                                    <line x1="12" y1="2" x2="12" y2="6"></line>
-                                                    <line x1="12" y1="18" x2="12" y2="22"></line>
-                                                    <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
-                                                    <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
-                                                    <line x1="2" y1="12" x2="6" y2="12"></line>
-                                                    <line x1="18" y1="12" x2="22" y2="12"></line>
-                                                    <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
-                                                    <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
-                                                </svg></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Spinners" aria-label="spinners" aria-describedby="basic-addon3">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Spinners" aria-label="spinners" aria-describedby="basic-addon4">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" id="basic-addon4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader spin">
-                                                    <line x1="12" y1="2" x2="12" y2="6"></line>
-                                                    <line x1="12" y1="18" x2="12" y2="22"></line>
-                                                    <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
-                                                    <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
-                                                    <line x1="2" y1="12" x2="6" y2="12"></line>
-                                                    <line x1="18" y1="12" x2="22" y2="12"></line>
-                                                    <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
-                                                    <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
-                                                </svg></span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Dropdown Icon</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
-                                                    <circle cx="12" cy="12" r="3"></circle>
-                                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                                                </svg> </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Dropdown" aria-label="dropdown">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Dropdown" aria-label="dropdown">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
-                                                    <circle cx="12" cy="12" r="3"></circle>
-                                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                                                </svg> </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Checkboxes</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">
-                                                <div class="n-chk align-self-end">
-                                                    <label class="new-control new-checkbox checkbox-danger" style="height: 21px; margin-bottom: 0; margin-right: 0">
-                                                        <input type="checkbox" class="new-control-input" checked>
-                                                        <span class="new-control-indicator"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Checkbox" aria-label="checkbox">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Checkbox" aria-label="checkbox" aria-describedby="basic-addon1">
-                                        <div class="input-group-append">
-                                            <div class="input-group-text">
-                                                <div class="n-chk align-self-end">
-                                                    <label class="new-control new-checkbox checkbox-warning" style="height: 21px; margin-bottom: 0; margin-right: 0">
-                                                        <input type="checkbox" class="new-control-input" checked>
-                                                        <span class="new-control-indicator"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Radios</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">
-                                                <div class="n-chk align-self-end">
-                                                    <label class="new-control new-radio radio-info" style="height: 21px; margin-bottom: 0; margin-right: 0">
-                                                        <input type="radio" class="new-control-input" name="custom-radio-1" checked>
-                                                        <span class="new-control-indicator"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Radio" aria-label="radio">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Radio" aria-label="Radio">
-                                        <div class="input-group-append">
-                                            <div class="input-group-text">
-                                                <div class="n-chk align-self-end">
-                                                    <label class="new-control new-radio radio-success" style="height: 21px; margin-bottom: 0; margin-right: 0">
-                                                        <input type="radio" class="new-control-input" name="custom-radio-1" checked>
-                                                        <span class="new-control-indicator"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Switch</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">
-                                                <label class="switch s-primary mb-0">
-                                                    <input type="checkbox" checked="">
-                                                    <span class="slider round"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Switch" aria-label="switch">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Switch" aria-label="switch">
-                                        <div class="input-group-append">
-                                            <div class="input-group-text">
-                                                <label class="switch s-danger mb-0">
-                                                    <input type="checkbox" checked="">
-                                                    <span class="slider round"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
 
                     <div class="row layout-spacing">
@@ -450,14 +299,79 @@
                                     <div class="statbox widget box box-shadow">
                                         <div class="widget-content widget-content-area">
 
-                                            <label for="nik">Nomor KTP (NIK)</label>
+                                            <p for="last_education">Pendidikan Terakhir</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
+                                                <select class="form-control" name="last_education" id="last_education">
+                                                    <option readonly>Pendidikan Terakhir</option>
+                                                    <option value="SMA/SMK">SMA/SMK</option>
+                                                    <option value="D1">D1</option>
+                                                    <option value="D2">D2</option>
+                                                    <option value="D3">D3</option>
+                                                    <option value="S1">S1</option>
+                                                    <option value="S2">S2</option>
+                                                    <option value="S3">S3</option>
+                                                </select>
                                             </div>
 
-                                            <label for="full_name">Nama Lengkap (Sesuai KTP)</label>
+                                            <p for="department">Jurusan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
+                                                <input type="text" class="form-control" id="department" name="department" aria-describedby="basic-addon3" placeholder="Jurusan">
+                                            </div>
+
+                                            <p for="school">Nama Sekolah/Universitas</p>
+                                            <div class="input-group mb-4">
+                                                <input type="text" class="form-control" id="school" name="school" aria-describedby="basic-addon3" placeholder="Nama Sekolah/Universitas">
+                                            </div>
+
+                                            <div class="form-row mb-4">
+                                                <div class="form-group col-md-6">
+                                                    <p for="language_skills">Kemampuan Bahasa</p>
+                                                    <!-- <input type="text" class="form-control" id="language_skills" name="language_skills" aria-describedby="basic-addon3" placeholder="Kemampuan Bahasa"> -->
+                                                    <div class="n-chk">
+                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                            <input type="checkbox" class="new-control-input">
+                                                            <span class="new-control-indicator"></span>Success
+                                                        </label>
+                                                    </div>
+                                                    <div class="n-chk">
+                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                            <input type="checkbox" class="new-control-input">
+                                                            <span class="new-control-indicator"></span>Success
+                                                        </label>
+                                                    </div>
+                                                    <div class="n-chk">
+                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                            <input type="checkbox" class="new-control-input">
+                                                            <span class="new-control-indicator"></span>Success
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <p for="skills">Keterampilan</p>
+                                                    <!-- <input type="text" class="form-control" id="skills" name="skills" aria-describedby="basic-addon3" placeholder="Keterampilan"> -->
+                                                    <!-- <div class="widget-content widget-content-area"> -->
+
+                                                    <div class="n-chk">
+                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                            <input type="checkbox" class="new-control-input">
+                                                            <span class="new-control-indicator"></span>Success
+                                                        </label>
+                                                    </div>
+                                                    <div class="n-chk">
+                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                            <input type="checkbox" class="new-control-input">
+                                                            <span class="new-control-indicator"></span>Success
+                                                        </label>
+                                                    </div>
+                                                    <div class="n-chk">
+                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                            <input type="checkbox" class="new-control-input">
+                                                            <span class="new-control-indicator"></span>Success
+                                                        </label>
+                                                    </div>
+                                                    <!-- </div> -->
+
+                                                </div>
                                             </div>
 
                                         </div>
@@ -472,23 +386,27 @@
 
                                 <div class="col-md-12">
                                     <div class="statbox widget box box-shadow">
-                                        <!-- <div class="widget-header">
-                                            <div class="row">
-                                                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                    <h4>Multiple inputs</h4>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                         <div class="widget-content widget-content-area">
 
-                                            <label for="nik">Nomor KTP (NIK)</label>
+                                            <p for="position">Posisi/Jabatan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
+                                                <input type="text" class="form-control" id="position" name="position" aria-describedby="basic-addon3" placeholder="Posisi/Jabatan">
                                             </div>
 
-                                            <label for="full_name">Nama Lengkap (Sesuai KTP)</label>
+                                            <p for="company">Nama Perusahaan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
+                                                <input type="text" class="form-control" id="company" name="company" aria-describedby="basic-addon3" placeholder="Nama Perusahaan">
+                                            </div>
+
+                                            <div class="form-row mb-4">
+                                                <div class="form-group col-md-6">
+                                                    <p for="date_start">Tanggal Masuk</p>
+                                                    <input type="date" class="form-control" id="date_start" name="date_start" aria-describedby="basic-addon3">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <p for="date_end">Tanggal Keluar</p>
+                                                    <input type="date" class="form-control" id="date_end" name="date_end" aria-describedby="basic-addon3">
+                                                </div>
                                             </div>
 
                                         </div>
@@ -496,195 +414,14 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Multiple addons</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">$</span>
-                                            <span class="input-group-text">0.00</span>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">$</span>
-                                            <span class="input-group-text">0.00</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Input_group_action" class="col-lg-12">
-                            <div class="seperator-header">
-                                <h4 class="">Input Group with Action</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Buttons with dropdowns</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Segmented buttons</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <button type="button" class="btn btn-info">Action</button>
-                                            <button type="button" class="btn btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                                </svg>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                                        <div class="input-group-append">
-                                            <button type="button" class="btn btn-outline-info">Action</button>
-                                            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                                </svg>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">Action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Another action</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Button addons</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area">
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-primary" type="button">Button</button>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="" aria-label="">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">Button</button>
-                                        </div>
-                                    </div>
-
-                                    <p class="">Left</p>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-outline-primary" type="button">Button</button>
-                                            <button class="btn btn-outline-primary" type="button">Button</button>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="" aria-label="">
-                                    </div>
-
-                                    <p class="">Right</p>
-                                    <div class="input-group mb-4">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-primary" type="button">Button</button>
-                                            <button class="btn btn-outline-primary" type="button">Button</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> -->
-
+                        <button class="btn btn-primary btn-block mb-4 mr-2">Daftar</button>
                     </div>
-
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
                     <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com">DesignReset</a>, All rights reserved.</p>
@@ -710,12 +447,35 @@
             App.init();
         });
     </script>
+
     <script src="<?php echo BACK ?>plugins/highlight/highlight.pack.js"></script>
     <script src="<?php echo BACK ?>assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="<?php echo BACK ?>assets/js/scrollspyNav.js"></script>
     <script src="<?php echo BACK ?>plugins/select2/select2.min.js"></script>
-    <script src="<?php echo BACK ?>plugins/select2/custom-select2.js"></script>
+
+    <script>
+        $(".disabled-results").select2();
+        $(".placeholder").select2({
+            placeholder: "Make a Selection",
+            allowClear: true
+        });
+
+        function formatState(state) {
+            if (!state.id) {
+                return state.text;
+            }
+            var baseClass = "flaticon-";
+            var $state = $(
+                '<span><i class="' + baseClass + state.element.value.toLowerCase() + '" /> ' + state.text + '</i> </span>'
+            );
+            return $state;
+        };
+
+        $(".templating").select2({
+            templateSelection: formatState
+        });
+    </script>
 </body>
 
 </html>

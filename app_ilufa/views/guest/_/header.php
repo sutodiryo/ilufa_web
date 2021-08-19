@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
 
     <?php
-    if ($title == 'home' || $title == 'home') { ?>
+    if ($title == 'home' || $title == 'job_detail') { ?>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
     <?php
