@@ -20,13 +20,14 @@
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/switches.css">
 
     <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/select2/select2.min.css">
-
+    <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/components/custom-carousel.css" />
 </head>
 
 <body class="sidebar-noneoverflow" data-spy="scroll" data-target="#navSection" data-offset="100">
 
-    <div class="main-container" id="container">
+    <?php $this->session->set_userdata('referred_lowongan', current_url()); ?>
 
+    <div class="main-container" id="container">
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
@@ -35,73 +36,40 @@
 
                     <div class="row layout-top-spacing">
 
-                        <div class="col-lg-12 col-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Simple Pills</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content widget-content-area simple-pills">
-                                    <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                                </svg></a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" id="pills-profile-tab" data-toggle="tab" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Action</a>
-                                                <a class="dropdown-item" id="pills-profile-tab2" data-toggle="tab" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false">Another action</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                            <p class="mb-4">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
+                        <div id="top" class="col-lg-12">
 
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                            <div class="media">
-                                                <img class="mr-3" src="assets/img/90x90.jpg" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 mb-3 p-0">
+                                    <div id="style1" class="carousel slide style-custom-1" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item carousel-item-next carousel-item-left">
+                                                <img class="d-block w-100 slide-image" src="<?php echo GUEST ?>upload/lowongan/pusat.jpg" alt="iLuFA Pusat">
+                                                <div class="carousel-caption">
+                                                    <span class="badge badge-warning">iLuFA Distribusindo<br>Membuka Lowongan</span>
+                                                    <h3><?php echo $detail_job->posisi ?></h3>
+                                                    <div class="media">
+                                                        <img src="<?php echo BACK ?>assets/img/90x90.jpg" class="" alt="avatar">
+                                                        <div class="media-body">
+                                                            <h6 class="user-name"><?php echo $detail_job->kota ?></h6>
+                                                            <p class="meta-time">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                                                </svg> <?php
+                                                                        $ds = new DateTime($detail_job->date_start);
+                                                                        $de = new DateTime($detail_job->date_end);
+                                                                        echo "" . date_format($ds, "d M Y") . " - " . date_format($de, "d M Y") . "";
+                                                                        ?>
+                                                                <!-- Jan, 14 2020 -->
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2">
-                                            <p class="">
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                            <p class="dropcap  dc-outline-primary">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -110,6 +78,11 @@
 
                     <div id="navSection" data-spy="affix" class="nav  sidenav">
                         <div class="sidenav-content">
+                            <div class="text-left">
+                                <a>
+                                    <h5>Form Pendaftaran<br><b><?php echo $detail_job->posisi ?></b></h5>
+                                </a>
+                            </div>
                             <a href="#pribadi" class="active nav-link">INFORMASI PRIBADI</a>
                             <a href="#pendidikan" class="nav-link">RIWAYAT PENDIDIKAN</a>
                             <a href="#pengalaman" class="nav-link">PENGALAMAN BEKERJA</a>
@@ -385,37 +358,56 @@
                                 </div>
 
                                 <div class="col-md-12">
+
                                     <div class="statbox widget box box-shadow">
                                         <div class="widget-content widget-content-area">
-
                                             <p for="position">Posisi/Jabatan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="position" name="position" aria-describedby="basic-addon3" placeholder="Posisi/Jabatan">
+                                                <input type="text" class="form-control" id="position" name="position[]" aria-describedby="basic-addon3" placeholder="Posisi/Jabatan">
                                             </div>
-
                                             <p for="company">Nama Perusahaan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="company" name="company" aria-describedby="basic-addon3" placeholder="Nama Perusahaan">
+                                                <input type="text" class="form-control" id="company" name="company[]" aria-describedby="basic-addon3" placeholder="Nama Perusahaan">
                                             </div>
-
                                             <div class="form-row mb-4">
                                                 <div class="form-group col-md-6">
                                                     <p for="date_start">Tanggal Masuk</p>
-                                                    <input type="date" class="form-control" id="date_start" name="date_start" aria-describedby="basic-addon3">
+                                                    <input type="date" class="form-control" id="date_start" name="date_start[]" aria-describedby="basic-addon3">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <p for="date_end">Tanggal Keluar</p>
-                                                    <input type="date" class="form-control" id="date_end" name="date_end" aria-describedby="basic-addon3">
+                                                    <input type="date" class="form-control" id="date_end" name="date_end[]" aria-describedby="basic-addon3">
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
+
+                                    <?php for ($i = 0; $i < 3; $i++) { ?>
+
+                                        <div class="form-group">
+                                            <div class="input-group col-sm-8">
+                                                <label class="col-sm-2">Nama </label>
+                                                <input class="col-sm-4" type="text" name="nama[]" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group col-sm-8">
+                                                <label class="col-sm-2">Alamat </label>
+                                                <input class="col-sm-5" type="text" name="alamat[]" class="form-control">
+                                            </div>
+                                        </div>
+                                        <br />
+                                    <?php
+                                    }
+                                    ?>
+
+
                                 </div>
                             </div>
+                            <button class="btn btn-primary btn-block mb-4 mr-2">Daftar</button>
                         </div>
-                        <button class="btn btn-primary btn-block mb-4 mr-2">Daftar</button>
                     </div>
+
                 </div>
             </div>
             <br>
@@ -424,12 +416,12 @@
 
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
-                    <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com">DesignReset</a>, All rights reserved.</p>
+                    <p class="">Copyright © <?php echo date('Y') ?> <a target="_blank" href="https://ilufa.co.id">iLuFA 168</a>, All rights reserved.</p>
                 </div>
                 <div class="footer-section f-section-2">
-                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                    <!-- <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg></p>
+                        </svg></p> -->
                 </div>
             </div>
         </div>

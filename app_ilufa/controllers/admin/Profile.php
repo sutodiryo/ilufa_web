@@ -19,6 +19,7 @@ class Profile extends CI_Controller
     function index()
     {
         $x = $this->session->userdata('log_level');
+        
         $data['page']   = 'profile';
         $data['title']  = 'Profile';
 
