@@ -89,6 +89,7 @@
                         </div>
                     </div>
 
+                    <?php echo form_open_multipart('lowongan/act/send_applicant'); ?>
                     <div class="row layout-top-spacing">
 
                         <div id="pribadi" class="col-lg-12">
@@ -100,25 +101,22 @@
                         <div class="col-lg-12 col-sm-12 col-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-
                                     <p for="nik">Nomor KTP (NIK)</p>
                                     <div class="input-group mb-4">
-                                        <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK">
+                                        <input type="text" class="form-control" id="nik" name="nik" aria-describedby="basic-addon3" placeholder="Masukkan 16 digit NIK" required>
                                     </div>
-
                                     <p for="full_name">Nama Lengkap (Sesuai KTP)</p>
                                     <div class="input-group mb-4">
-                                        <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap">
+                                        <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="basic-addon3" placeholder="Nama Lengkap" required>
                                     </div>
-
                                     <div class="form-row mb-4">
                                         <div class="form-group col-md-6">
                                             <p for="birth_place">Tempat Lahir</p>
-                                            <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir">
+                                            <input type="text" class="form-control" id="birth_place" name="birth_place" aria-describedby="basic-addon3" placeholder="Tempat Lahir" required>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <p for="birth_date">Tanggal Lahir</p>
-                                            <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3">
+                                            <input type="date" class="form-control" id="birth_date" name="birth_date" aria-describedby="basic-addon3" required>
                                         </div>
                                     </div>
 
@@ -140,22 +138,22 @@
 
                                     <p for="email">Email</p>
                                     <div class="input-group mb-4">
-                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="basic-addon3" placeholder="Alamat Email anda">
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="basic-addon3" placeholder="Alamat Email anda" required>
                                     </div>
 
                                     <p for="no_hp">Nomor Handphone (WA)</p>
                                     <div class="input-group mb-4">
-                                        <input type="number" class="form-control" id="no_hp" name="no_hp" aria-describedby="basic-addon3" placeholder="Nomor Whatsapp anda">
+                                        <input type="number" class="form-control" id="no_hp" name="no_hp" aria-describedby="basic-addon3" placeholder="Nomor Whatsapp anda" required>
                                     </div>
 
-                                    <p for="image">Foto Terbaru</p>
+                                    <p for="cv">Daftar Riwayat Hidup (CV) Terbaru</p>
                                     <div class="input-group mb-4">
-                                        <input type="file" class="form-control" id="image" name="image" aria-describedby="basic-addon3">
+                                        <input type="file" class="form-control" id="cv" name="cv" aria-describedby="basic-addon3">
                                     </div>
 
                                     <p for="expected_salary">Gaji Yang Diharapkan</p>
                                     <div class="input-group mb-4">
-                                        <input type="number" class="form-control" id="expected_salary" name="expected_salary" aria-describedby="basic-addon3" placeholder="Gaji Yang Diharapkan">
+                                        <input type="number" class="form-control" id="expected_salary" name="expected_salary" aria-describedby="basic-addon3" placeholder="Gaji Yang Diharapkan" required>
                                     </div>
 
                                 </div>
@@ -177,7 +175,7 @@
                                     <div class="form-row mb-4">
                                         <div class="form-group col-md-6">
                                             <p for="id_location_province">Provinsi</p>
-                                            <select class="placeholder js-states form-control" name="id_location_province" id="id_location_province">
+                                            <select class="placeholder js-states form-control" name="id_location_province" id="id_location_province" required>
                                                 <option>Provinsi...</option>
                                                 <?php
                                                 foreach ($province as $pr) {
@@ -188,7 +186,7 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <p for="id_location_district">Kota/Kabupaten</p>
-                                            <select class="placeholder js-states form-control" name="id_location_district" id="id_location_district">
+                                            <select class="placeholder js-states form-control" name="id_location_district" id="id_location_district" required>
                                                 <option>Kota/Kabupaten...</option>
                                                 <?php
                                                 foreach ($district as $di) {
@@ -207,7 +205,7 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <p for="id_location_subdistrict">Kecamatan</p>
-                                            <select class="placeholder js-states form-control" name="id_location_subdistrict" id="id_location_subdistrict">
+                                            <select class="placeholder js-states form-control" name="id_location_subdistrict" id="id_location_subdistrict" required>
                                                 <option>Kecamatan...</option>
                                                 <?php
                                                 foreach ($district as $di) {
@@ -226,7 +224,7 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <p for="id_location_village ">Desa/Kelurahan</p>
-                                            <select class="placeholder js-states form-control" name="id_location_village " id="id_location_village ">
+                                            <select class="placeholder js-states form-control" name="id_location_village " id="id_location_village" required>
                                                 <option>Desa/Kelurahan...</option>
                                                 <?php
                                                 foreach ($district as $di) {
@@ -246,7 +244,7 @@
 
                                         <p for="address">Alamat Lengkap</p>
                                         <div class="input-group mb-4">
-                                            <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                                            <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
                                         </div>
                                     </div>
 
@@ -303,47 +301,25 @@
                                                     <div class="n-chk">
                                                         <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
                                                             <input type="checkbox" class="new-control-input">
-                                                            <span class="new-control-indicator"></span>Success
+                                                            <span class="new-control-indicator"></span>Bahasa Indonesia
                                                         </label>
                                                     </div>
                                                     <div class="n-chk">
                                                         <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
                                                             <input type="checkbox" class="new-control-input">
-                                                            <span class="new-control-indicator"></span>Success
+                                                            <span class="new-control-indicator"></span>Bahasa Inggris
                                                         </label>
                                                     </div>
                                                     <div class="n-chk">
                                                         <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
                                                             <input type="checkbox" class="new-control-input">
-                                                            <span class="new-control-indicator"></span>Success
+                                                            <span class="new-control-indicator"></span>Bahasa Jawa
                                                         </label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <p for="skills">Keterampilan</p>
-                                                    <!-- <input type="text" class="form-control" id="skills" name="skills" aria-describedby="basic-addon3" placeholder="Keterampilan"> -->
-                                                    <!-- <div class="widget-content widget-content-area"> -->
-
-                                                    <div class="n-chk">
-                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
-                                                            <input type="checkbox" class="new-control-input">
-                                                            <span class="new-control-indicator"></span>Success
-                                                        </label>
-                                                    </div>
-                                                    <div class="n-chk">
-                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
-                                                            <input type="checkbox" class="new-control-input">
-                                                            <span class="new-control-indicator"></span>Success
-                                                        </label>
-                                                    </div>
-                                                    <div class="n-chk">
-                                                        <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
-                                                            <input type="checkbox" class="new-control-input">
-                                                            <span class="new-control-indicator"></span>Success
-                                                        </label>
-                                                    </div>
-                                                    <!-- </div> -->
-
+                                                    <textarea class="form-control" id="skills" name="skills" rows="3" required></textarea>
                                                 </div>
                                             </div>
 
@@ -363,20 +339,26 @@
                                         <div class="widget-content widget-content-area">
                                             <p for="position">Posisi/Jabatan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="position" name="position[]" aria-describedby="basic-addon3" placeholder="Posisi/Jabatan">
+                                                <input type="text" class="form-control" id="position" name="position[]" aria-describedby="basic-addon3" placeholder="Posisi/Jabatan" required>
                                             </div>
                                             <p for="company">Nama Perusahaan</p>
                                             <div class="input-group mb-4">
-                                                <input type="text" class="form-control" id="company" name="company[]" aria-describedby="basic-addon3" placeholder="Nama Perusahaan">
+                                                <input type="text" class="form-control" id="company" name="company[]" aria-describedby="basic-addon3" placeholder="Nama Perusahaan" required>
                                             </div>
                                             <div class="form-row mb-4">
                                                 <div class="form-group col-md-6">
                                                     <p for="date_start">Tanggal Masuk</p>
-                                                    <input type="date" class="form-control" id="date_start" name="date_start[]" aria-describedby="basic-addon3">
+                                                    <input type="date" class="form-control" id="date_start" name="date_start[]" aria-describedby="basic-addon3" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <p for="date_end">Tanggal Keluar</p>
-                                                    <input type="date" class="form-control" id="date_end" name="date_end[]" aria-describedby="basic-addon3">
+                                                    <input type="date" class="form-control" id="date_end" name="date_end[]" aria-describedby="basic-addon3" required>
+                                                </div>
+                                                <div class="form-group col-md-12 text-right">
+                                                    <button class="btn btn-outline-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                        </svg> Tambah Pengalaman Kerja</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -384,7 +366,7 @@
 
                                     <?php for ($i = 0; $i < 3; $i++) { ?>
 
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <div class="input-group col-sm-8">
                                                 <label class="col-sm-2">Nama </label>
                                                 <input class="col-sm-4" type="text" name="nama[]" class="form-control">
@@ -396,7 +378,7 @@
                                                 <input class="col-sm-5" type="text" name="alamat[]" class="form-control">
                                             </div>
                                         </div>
-                                        <br />
+                                        <br /> -->
                                     <?php
                                     }
                                     ?>
@@ -407,6 +389,7 @@
                             <button class="btn btn-primary btn-block mb-4 mr-2">Daftar</button>
                         </div>
                     </div>
+                    </form>
 
                 </div>
             </div>
