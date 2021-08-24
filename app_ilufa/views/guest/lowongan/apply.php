@@ -37,7 +37,6 @@
                     <div class="row layout-top-spacing">
 
                         <div id="top" class="col-lg-12">
-
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 mb-3 p-0">
                                     <div id="style1" class="carousel slide style-custom-1" data-ride="carousel">
@@ -90,7 +89,14 @@
                     </div>
 
                     <?php echo form_open_multipart('lowongan/act/send_applicant'); ?>
+                    <input type="hidden" name="id_job" value="<?php echo $detail_job->id_job ?>">
                     <div class="row layout-top-spacing">
+
+                        <div class="col-lg-12 text-center">
+                            <div class="widget-content widget-content-area">
+                                <?php echo $this->session->flashdata('report'); ?>
+                            </div>
+                        </div>
 
                         <div id="pribadi" class="col-lg-12">
                             <div class="seperator-header text-center">
@@ -300,19 +306,19 @@
                                                     <!-- <input type="text" class="form-control" id="language_skills" name="language_skills" aria-describedby="basic-addon3" placeholder="Kemampuan Bahasa"> -->
                                                     <div class="n-chk">
                                                         <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
-                                                            <input type="checkbox" class="new-control-input">
+                                                            <input type="checkbox" name="language_skills" value="1" class="new-control-input">
                                                             <span class="new-control-indicator"></span>Bahasa Indonesia
                                                         </label>
                                                     </div>
                                                     <div class="n-chk">
                                                         <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
-                                                            <input type="checkbox" class="new-control-input">
+                                                            <input type="checkbox" name="language_skills" value="2" class="new-control-input">
                                                             <span class="new-control-indicator"></span>Bahasa Inggris
                                                         </label>
                                                     </div>
                                                     <div class="n-chk">
                                                         <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
-                                                            <input type="checkbox" class="new-control-input">
+                                                            <input type="checkbox" name="language_skills" value="3" class="new-control-input">
                                                             <span class="new-control-indicator"></span>Bahasa Jawa
                                                         </label>
                                                     </div>
@@ -335,6 +341,7 @@
 
                                 <div class="col-md-12">
 
+                                <?php for ($i = 0; $i < 3; $i++) { ?>
                                     <div class="statbox widget box box-shadow">
                                         <div class="widget-content widget-content-area">
                                             <p for="position">Posisi/Jabatan</p>
@@ -364,7 +371,6 @@
                                         </div>
                                     </div>
 
-                                    <?php for ($i = 0; $i < 3; $i++) { ?>
 
                                         <!-- <div class="form-group">
                                             <div class="input-group col-sm-8">

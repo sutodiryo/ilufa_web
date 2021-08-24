@@ -48,7 +48,7 @@ class Lowongan extends CI_Controller
 			$config['encrypt_name']     = TRUE;
 			$this->load->library('upload', $config);
 
-			if (!$this->upload->do_upload('bukti_transfer')) {
+			if (!$this->upload->do_upload('cv')) {
 				$error = $this->upload->display_errors();
 				$this->alert('danger', $error);
 				// redirect('lowongan/');
@@ -88,21 +88,43 @@ class Lowongan extends CI_Controller
 			$insert_id = $this->db->insert_id();
 
 			$work_experience = array();
-			foreach ($this->cart->contents() as $cart) {
-				$transaksi_produk[] = array(
-					'id_job_applicant' => $insert_id,
-					'position' => $cart['qty'],
-					'company' => $cart['qty'],
-					'date_start' => $cart['price'],
-					'date_end' => $cart['qty']
+
+			foreach ($this->input->post('position') as $key => $val) {
+				$work_experience[] = array(
+					// 'nama' => $_POST['nama'][$key],
+					// 'alamat' => $_POST['alamat'][$key],
+					
+					'id_job_applicant' => [$insert_id][$key],
+					'position' => $_POST['position'][$key],
+					'company' => $_POST['company'][$key],
+					'date_start' => $_POST['date_start'][$key],
+					'date_end' => $_POST['date_end'][$key]
 				);
 			}
-			$this->db->insert_batch('transaksi_produk', $transaksi_produk);
+			$this->db->insert_batch('ilufa_job_applicant_work_experience', $work_experience);
+
+
+
+
+			// foreach ($work_experience as $we) {
+			// 	$work_ex[] = array(
+			// 		'id_job_applicant' => $insert_id,
+			// 		'position' => $we['position'],
+			// 		'company' => $we['company'],
+			// 		'date_start' => $we['date_start'],
+			// 		'date_end' => $we['date_end']
+			// 	);
+			// }
+			// $this->db->insert_batch('ilufa_job_applicant_work_experience', $work_ex);
 
 
 			$data['notifikasi'] = "";
-			redirect(base_url('guest/lowongan/sent', $data));
+			redirect(base_url('lowongan/sent', $data));
 		} elseif ($x == "") { }
+	}
+
+	function sent(){
+		echo "OK";
 	}
 
 	// Flashdata Report
@@ -110,6 +132,6 @@ class Lowongan extends CI_Controller
 	{
 		// $x : warna
 		// $y : pesan
-		return $this->session->set_flashdata("report", "<div class='alert alert-$x alert-dismissible fade show' role='alert'><span class='alert-icon'><i class='ni ni-like-2'></i></span><span class='alert-text'><strong>$y</strong></span><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span></button></div>");
+		return $this->session->set_flashdata("report", "<div class='alert alert-$x mb-4' role='alert'> <button type='button' class='close' data-dismiss='alert' aria-label='Close'> <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x close' data-dismiss='alert'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg></button> <strong>$y</strong></div>");
 	}
 }
