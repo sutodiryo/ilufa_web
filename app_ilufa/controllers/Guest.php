@@ -15,6 +15,12 @@ class Guest extends CI_Controller
 		$this->load->view('guest/homepage', $data);
 	}
 
+	public function supplier()
+	{
+		$data['title'] = "Form Pendaftaran Supplier";
+		$this->load->view('guest/supplier/form', $data);
+	}
+
 	// public function homepage2()
 	// {
 	// 	$this->load->view('guest/homepage2');

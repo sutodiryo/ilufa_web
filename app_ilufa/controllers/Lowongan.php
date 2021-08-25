@@ -62,6 +62,7 @@ class Lowongan extends CI_Controller
 			}
 
 			$data = array(
+				'id_job' => $this->input->post('id_job'),
 				'nik' => $this->input->post('nik'),
 				'full_name'	=> $this->input->post('full_name'),
 				'birth_place' => $this->input->post('birth_place'),
@@ -94,7 +95,7 @@ class Lowongan extends CI_Controller
 					// 'nama' => $_POST['nama'][$key],
 					// 'alamat' => $_POST['alamat'][$key],
 					
-					'id_job_applicant' => [$insert_id][$key],
+					'id_job_applicant' => $_POST['id_jobs'][$key],
 					'position' => $_POST['position'][$key],
 					'company' => $_POST['company'][$key],
 					'date_start' => $_POST['date_start'][$key],
@@ -102,9 +103,6 @@ class Lowongan extends CI_Controller
 				);
 			}
 			$this->db->insert_batch('ilufa_job_applicant_work_experience', $work_experience);
-
-
-
 
 			// foreach ($work_experience as $we) {
 			// 	$work_ex[] = array(
@@ -117,14 +115,13 @@ class Lowongan extends CI_Controller
 			// }
 			// $this->db->insert_batch('ilufa_job_applicant_work_experience', $work_ex);
 
-
-			$data['notifikasi'] = "";
-			redirect(base_url('lowongan/sent', $data));
+			// $data['notifikasi'] = "";
+			redirect(base_url('lowongan/sent'));
 		} elseif ($x == "") { }
 	}
 
 	function sent(){
-		echo "OK";
+		echo "<center><h1>Lamarane wes kekirim coy, ditunggu yes.<br><br>Pesenku gur siji : <br><br> \"OJO PEDHOT OYOT\"</h1></center>";
 	}
 
 	// Flashdata Report

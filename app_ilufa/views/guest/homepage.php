@@ -5,7 +5,7 @@
         <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
             <div class=" " data-dsn="video" data-overlay="4">
                 <video class="lozad bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>img/video-bg.jpg" autoplay loop muted playsinline>
-                    <source src="<?php echo GUEST ?>videos/head_1.mp4" type="video/mp4">
+                    <source src="<?php echo GUEST ?>videos/head_2.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
@@ -570,6 +570,7 @@
             </div>
 
             <div class="wapper-client">
+                
                 <?php
                 foreach ($branch_group as $bg) { ?>
 
@@ -579,7 +580,7 @@
                         <div class="info">
                             <div class="content" onclick="javascript:void(0);">
                                 <div class="icon">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-map-marker-alt"></i> Lokasi
                                 </div>
 
                                 <div class="entry">

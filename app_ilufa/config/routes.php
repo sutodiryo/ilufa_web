@@ -10,6 +10,7 @@ $route['karir']                 = 'lowongan/index';
 
 $route['nextilufa2021']         = 'guest/nextilufa2021';
 $route['NextiLuFA2021']         = 'guest/nextilufa2021';
+$route['formsupplierilufa']     = 'guest/supplier';
 
 $route['admin']                 = 'admin/dashboard';
 $route['store']                 = 'store/dashboard';
