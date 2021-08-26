@@ -38,6 +38,10 @@ class Dashboard extends CI_Controller
 
 			$data['title'] 			= 'Dashboard DMM';
 			$data['stat_games'] 	= $this->Admin_model->get_stat_games();
+		} elseif ($x == 3) {
+
+			$data['title'] 			= 'Dashboard Purchasing';
+			// $data['stat_games'] 	= $this->Admin_model->get_stat_games();
 		}
 
 		$this->load->view('back/admin/dashboard', $data);

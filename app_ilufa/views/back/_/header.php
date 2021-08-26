@@ -629,8 +629,8 @@
                                                         echo "active";
                                                     } ?>">
                                 <a href="<?php echo base_url('admin/master/branch_group') ?>" aria-expanded="<?php if ($page == "branch_group") {
-                                                                                                                    echo "true";
-                                                                                                                } ?>" class="dropdown-toggle">
+                                                                                                                            echo "true";
+                                                                                                                        } ?>" class="dropdown-toggle">
                                     <div class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit">
                                             <circle cx="12" cy="12" r="4"></circle>
@@ -656,6 +656,65 @@
                                             <line x1="6" y1="9" x2="6" y2="21"></line>
                                         </svg>
                                         <span>Cabang</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        <?php } elseif ($level == 3) { ?>
+
+                            <li class="menu <?php if ($page == "dashboard") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('admin') ?>" aria-expanded="<?php if ($page == "dashboard") {
+                                                                                                        echo "true";
+                                                                                                    } ?>" class="dropdown-toggle">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up">
+                                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                            <polyline points="17 6 23 6 23 12"></polyline>
+                                        </svg>
+                                        <span>Dashboard</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu <?php if ($page == "transaction") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="#" aria-expanded="<?php if ($page == "transaction") {
+                                                                        echo "true";
+                                                                    } ?>" class="dropdown-toggle">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                                            <circle cx="9" cy="21" r="1"></circle>
+                                            <circle cx="20" cy="21" r="1"></circle>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                        </svg>
+                                        <span>Transaksi</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu menu-heading">
+                                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg><span>MASTER</span></div>
+                            </li>
+
+                            <li class="menu <?php if ($page == "suplier") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('admin/master/supplier') ?>" aria-expanded="<?php if ($page == "supplier") {
+                                                                                                            echo "true";
+                                                                                                        } ?>" class="dropdown-toggle">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck">
+                                            <rect x="1" y="3" width="15" height="13"></rect>
+                                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                        </svg>
+                                        <span>Supplier</span>
                                     </div>
                                 </a>
                             </li>

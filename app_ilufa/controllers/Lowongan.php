@@ -79,7 +79,7 @@ class Lowongan extends CI_Controller
 				'last_education' => $this->input->post('last_education'),
 				'department' => $this->input->post('department'),
 				'school' => $this->input->post('school'),
-				'language_skills' => $this->input->post('language_skills'),
+				'language_skills' =>  $this->input->post('language_skills'),
 				'skills' => $this->input->post('skills'),
 				'submit_time' => $now
 			);
