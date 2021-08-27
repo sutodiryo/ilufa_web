@@ -26,6 +26,8 @@ class Dashboard extends CI_Controller
 
 			$data['title'] 	= 'Dashboard Admin';
 			// $data['produk'] = $this->db->query("SELECT * FROM produk")->result();
+
+			$this->load->view('back/admin/dashboard', $data);
 		} elseif ($x == 1) {
 
 			$data['title'] 			= 'Dashboard HRD Recruitment';
@@ -34,16 +36,24 @@ class Dashboard extends CI_Controller
 			// $data['member_stat'] 	= $this->Admin_model->get_stat_member_dashboard();
 
 			// $data['produk_stat']	= $this->db->query("SELECT id_produk,nama_produk,img_1,satuan FROM produk")->result();
+
+			$this->load->view('back/admin/dashboard', $data);
 		} elseif ($x == 2) {
 
 			$data['title'] 			= 'Dashboard DMM';
 			$data['stat_games'] 	= $this->Admin_model->get_stat_games();
-		} elseif ($x == 3) {
 
-			$data['title'] 			= 'Dashboard Purchasing';
+			$this->load->view('back/admin/dashboard', $data);
+		} elseif ($x == 3) {
+			// $data['page'] 	= 'dashboard';
+
+			$data['page']   = 'supplier';
+			$data['title']  = 'Master Supplier';
+
+			$data['supplier']  = $this->db->query("SELECT * FROM ilufa_master_supplier")->result();
+			$this->load->view('back/admin/supplier/list', $data);
+			// $data['title'] 		= 'Dashboard Purchasing';
 			// $data['stat_games'] 	= $this->Admin_model->get_stat_games();
 		}
-
-		$this->load->view('back/admin/dashboard', $data);
 	}
 }

@@ -8,7 +8,7 @@
     <title>iLuFA Form | Registrasi Suplier</title>
     <link rel="icon" type="image/png" href="<?php echo GUEST ?>img/favicons.png">
     <!-- <link rel="icon" type="image/x-icon" href="<?php echo BACK ?>assets/img/favicon.ico" /> -->
-    <link href="<?php echo BACK ?>https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
 
     <link href="<?php echo BACK ?>bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo BACK ?>assets/css/plugins.css" rel="stylesheet" type="text/css" />
@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
 
     <div id="headerWrapper">
         <div class="container-fluid">
@@ -28,7 +27,7 @@
                     </a>
                 </div>
                 <div class="col-md-12 col-sm-12 col-12 text-center">
-                    <h2 class="main-heading">Form Registrasi Suplier iLuFA 168</h2>
+                    <h2 class="main-heading">FORM REGISTRASI SUPPLIER iLuFA 168</h2>
                 </div>
             </div>
         </div>
@@ -55,194 +54,285 @@
 
                 <div class="privacy-content-container">
 
-                    <!-- <form class="mt-0" method="POST" action="<?php echo base_url('admin/master/add/supplier') ?>"> -->
-                    <form class="mt-0" method="POST" action="#">
-                        <h5 class="modal-heading mb-4 mt-2">Data Supplier</h5>
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2" id="name " name="name" placeholder="Nama Supplier">
-                        </div>
+                    <!-- <form class="mt-0" method="POST" action="<?php echo base_url('submit_formsupplierilufa') ?>"> -->
+                    <!-- <form class="mt-0" method="POST" action="<?php echo base_url('formsupplierilufa') ?>"> -->
 
-                        <div class="form-group">
-                            <textarea type="text" class="form-control mb-2" id="address" name="address" placeholder="Alamat Lengkap Supplier" rows="4"></textarea>
-                        </div>
+                    <?php echo form_open_multipart('formsupplierilufa'); ?>
+                    <h5 class="modal-heading mb-4 mt-2">Data Supplier</h5>
+                    <div class="form-group">
+                        <label for="name">Nama Supplier <?php echo $name ?></label>
+                        <input type="text" class="form-control mb-2" id="name " name="name" placeholder="Nama Supplier" value="<?php echo set_value('name'); ?>" required>
+                        <?php echo form_error('name', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                    </div>
 
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="official_phone" name="official_phone" placeholder="Nomor Telepon 1">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="official_phone" name="official_phone" placeholder="Nomor Telepon 2">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="address">Alamat Lengkap Supplier</label>
+                        <textarea type="text" class="form-control mb-2" id="address" name="address" placeholder="Alamat Lengkap Supplier" rows="4" required><?php echo set_value('address'); ?></textarea>
+                        <?php echo form_error('address', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                    </div>
 
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="fax" name="fax" placeholder="Nomor Fax">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="email" class="form-control mb-2" id="official_email" name="official_email" placeholder="Email Supplier">
-                                </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="city">Kota/Kabupaten</label>
+                                <input type="text" class="form-control mb-2" id="city" name="city" placeholder="Kota/Kabupaten" value="<?php echo set_value('city'); ?>" required>
+                                <?php echo form_error('city', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
                             </div>
                         </div>
-
-                        <h5 class="modal-heading mb-4 mt-2">Data Pemilik</h5>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2" id="owner_name " name="owner_name" placeholder="Nama Pemilik">
-                        </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="owner_id" name="owner_id" placeholder="NIK Pemilik">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="file" class="form-control mb-2" id="owner_id_card" name="owner_id_card" placeholder="Email Supplier">
-                                </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="postal_code">Kode POS</label>
+                                <input type="number" class="form-control mb-2" id="postal_code" name="postal_code" placeholder="Kode Pos" value="<?php echo set_value('postal_code'); ?>">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="form-group">
-                            <textarea type="text" class="form-control mb-2" id="owner_address" name="owner_address" placeholder="Alamat Lengkap Pemilik" rows="4"></textarea>
-                        </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="owner_city" name="owner_city" placeholder="Kota">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="owner_postal_code" name="owner_postal_code" placeholder="Kode Pos">
-                                </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="official_phone">Nomor Telepon 1</label>
+                                <input type="text" class="form-control mb-2" id="official_phone" name="official_phone" placeholder="Nomor Telepon 1" value="<?php echo set_value('official_phone'); ?>" required>
+                                <?php echo form_error('official_phone', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
                             </div>
                         </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="owner_phone" name="owner_phone" placeholder="Nomor Telepon Pemilik">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="owner_fax" name="owner_fax" placeholder="Nomor Fax Pemilik">
-                                </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="official_phone_2">Nomor Telepon 2</label>
+                                <input type="text" class="form-control mb-2" id="official_phone_2" name="official_phone_2" placeholder="Nomor Telepon 2" value="<?php echo set_value('official_phone'); ?>">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="form-group">
-                            <input type="email" class="form-control mb-2" id="owner_email" name="owner_email" placeholder="Email Pemilik">
-                        </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="file" class="form-control mb-2" id="owner_npwp" name="owner_npwp" placeholder="Scan NPWP Pemilik">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="owner_npwp_name" name="owner_npwp_name" placeholder="Nama NPWP Pemilik">
-                                </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="fax">Nomor Fax</label>
+                                <input type="number" class="form-control mb-2" id="fax" name="fax" placeholder="Nomor Fax" value="<?php echo set_value('fax'); ?>">
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2" id="bank" name="bank" placeholder="Bank Pemilik">
-                        </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="bank_account" name="bank_account" placeholder="Nomor Rekeing Bank">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="bank_account_name" name="bank_account_name" placeholder="Nama Rekeing Bank">
-                                </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="official_email">Email Supplier</label>
+                                <input type="email" class="form-control mb-2" id="official_email" name="official_email" placeholder="Email Supplier" value="<?php echo set_value('official_email'); ?>" required>
+                                <?php echo form_error('official_email', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
                             </div>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="siup">Nomor SIUP</label>
+                        <input type="text" class="form-control mb-2" id="siup" name="siup" value="<?php echo set_value('siup'); ?>">
+                        <?php echo form_error('siup', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                    </div>
 
-
-                        <h5 class="modal-heading mb-4 mt-2">Company Profile</h5>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2" id="company_name" name="company_name" placeholder="Nama Perusahaan">
-                        </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="company_field" name="company_field" placeholder="Bergerak Dibidang">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <select class="form-control" name="company_established" id="company_established">
-                                        <?php
-                                        for ($year = (int) date('Y'); 1800 <= $year; $year--) : ?>
-                                            <option value="<?= $year; ?>"><?= $year; ?></option>
-                                        <?php endfor; ?>
-                                    </select>
-                                    <!-- <input type="text" class="form-control mb-2" id="company_established" name="company_established" placeholder="Berdiri Sejak"> -->
-                                </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="npwp">Nomor NPWP</label>
+                                <input type="text" class="form-control mb-2" id="npwp" name="npwp" value="<?php echo set_value('npwp'); ?>">
+                                <?php echo form_error('npwp', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
                             </div>
                         </div>
-
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="company_headquarter" name="company_headquarter" placeholder="Kantor Pusat">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="company_pic" name="company_pic" placeholder="Penanggung Jawab">
-                                </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="npwp_name">Nama NPWP</label>
+                                <input type="text" class="form-control mb-2" id="npwp_name" name="npwp_name" placeholder="Nama NPWP Pemilik" value="<?php echo set_value('npwp_name'); ?>">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="company_director" name="company_director" placeholder="Nama Direktur">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="number" class="form-control mb-2" id="company_phone" name="company_phone" placeholder="Nomor Telepon">
-                                </div>
-                            </div>
-                        </div>
+                    <h5 class="modal-heading mb-4 mt-2">Data Pemilik</h5>
 
-                        <div class="form-row mb-4">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control mb-2" id="company_website" name="company_website" placeholder="Alamat Website">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="email" class="form-control mb-2" id="company_email" name="company_email" placeholder="Alamat Email">
-                                </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_name">Nama Pemilik</label>
+                                <input type="text" class="form-control mb-2" id="owner_name " name="owner_name" placeholder="Nama Pemilik" value="<?php echo set_value('owner_name'); ?>" required>
+                                <?php echo form_error('owner_name', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_id">NIK Pemilik</label>
+                                <input type="number" class="form-control mb-2" id="owner_id" name="owner_id" placeholder="NIK Pemilik" value="<?php echo set_value('owner_id'); ?>" required>
+                                <?php echo form_error('owner_id', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                            </div>
+                        </div>
+                        <!-- <div class="col">
+                                <div class="form-group">
+                                    <label for="owner_id_card">Foto KTP</label>
+                                    <input type="file" class="form-control mb-2" id="owner_id_card" name="owner_id_card" placeholder="Foto KTP" value="<?php echo set_value('owner_id_card'); ?>" required>
+                                </div>
+                            </div> -->
+                    </div>
 
+                    <div class="form-group">
+                        <label for="owner_address">Alamat Lengkap Pemilik</label>
+                        <textarea type="text" class="form-control mb-2" id="owner_address" name="owner_address" placeholder="Alamat Lengkap Pemilik" rows="4"><?php echo set_value('owner_address'); ?></textarea>
+                    </div>
 
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_city">Kota/Kabupaten</label>
+                                <input type="text" class="form-control mb-2" id="owner_city" name="owner_city" placeholder="Kota" value="<?php echo set_value('owner_city'); ?>" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_postal_code">Kode Pos</label>
+                                <input type="number" class="form-control mb-2" id="owner_postal_code" name="owner_postal_code" placeholder="Kode Pos" value="<?php echo set_value('owner_postal_code'); ?>" required>
+                            </div>
+                        </div>
+                    </div>
 
-                        <!-- <div class="form-group">
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_phone">Nomor Telepon Pemilik</label>
+                                <input type="text" class="form-control mb-2" id="owner_phone" name="owner_phone" placeholder="Nomor Telepon Pemilik" value="<?php echo set_value('owner_phone'); ?>" required>
+                                <?php echo form_error('owner_phone', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_fax">Nomor Fax Pemilik</label>
+                                <input type="number" class="form-control mb-2" id="owner_fax" name="owner_fax" placeholder="Nomor Fax Pemilik" value="<?php echo set_value('owner_fax'); ?>" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_email">Alamat Email Pemilik</label>
+                                <input type="email" class="form-control mb-2" id="owner_email" name="owner_email" placeholder="Email Pemilik" value="<?php echo set_value('owner_email'); ?>" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_npwp">Nomor NPWP Pemilik</label>
+                                <input type="text" class="form-control mb-2" id="owner_npwp" name="owner_npwp" value="<?php echo set_value('owner_npwp'); ?>">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="owner_npwp_name">Nama NPWP Pemilik</label>
+                                <input type="text" class="form-control mb-2" id="owner_npwp_name" name="owner_npwp_name" placeholder="Nama NPWP Pemilik" value="<?php echo set_value('owner_npwp_name'); ?>">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bank">Bank</label>
+                        <input type="text" class="form-control mb-2" id="bank" name="bank" placeholder="Bank Pemilik" value="<?php echo set_value('bank'); ?>" required>
+                        <?php echo form_error('bank', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="bank_account">Nomor Rekeing Bank</label>
+                                <input type="number" class="form-control mb-2" id="bank_account" name="bank_account" placeholder="Nomor Rekeing Bank" value="<?php echo set_value('bank_account'); ?>" required>
+                                <?php echo form_error('bank_account', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="bank_account_name">Nama Rekeing Bank</label>
+                                <input type="text" class="form-control mb-2" id="bank_account_name" name="bank_account_name" placeholder="Nama Rekeing Bank" value="<?php echo set_value('bank_account_name'); ?>" required>
+                                <?php echo form_error('bank_account_name', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="modal-heading mb-4 mt-2">Company Profile</h5>
+
+                    <div class="form-group">
+                        <label for="company_name">Nama Perusahaan</label>
+                        <input type="text" class="form-control mb-2" id="company_name" name="company_name" placeholder="Nama Perusahaan" value="<?php echo set_value('company_name'); ?>" required>
+                        <?php echo form_error('company_name', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_field">Bergerak Dibidang</label>
+                                <input type="text" class="form-control mb-2" id="company_field" name="company_field" placeholder="Bergerak Dibidang" value="<?php echo set_value('company_field'); ?>" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_established">Berdiri Sejak</label>
+                                <select class="form-control" name="company_established" id="company_established" value="<?php echo set_value('company_established'); ?>" required>
+                                    <?php
+                                    for ($year = (int) date('Y'); 1800 <= $year; $year--) : ?>
+                                        <option value="<?= $year; ?>"><?= $year; ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                                <!-- <input type="text" class="form-control mb-2" id="company_established" name="company_established" placeholder="Berdiri Sejak"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_headquarter">Kantor Pusat</label>
+                                <input type="text" class="form-control mb-2" id="company_headquarter" name="company_headquarter" placeholder="Kantor Pusat" value="<?php echo set_value('company_headquarter'); ?>" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_pic">Penanggung Jawab</label>
+                                <?php echo form_error('company_pic', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+                                <input type="text" class="form-control mb-2" id="company_pic" name="company_pic" placeholder="Penanggung Jawab" value="<?php echo set_value('company_pic'); ?>" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_director">Nama Direktur</label>
+                                <input type="text" class="form-control mb-2" id="company_director" name="company_director" placeholder="Nama Direktur" value="<?php echo set_value('company_director'); ?>" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_phone">Nomor Telepon Perusahaan</label>
+                                <input type="text" class="form-control mb-2" id="company_phone" name="company_phone" placeholder="Nomor Telepon" value="<?php echo set_value('company_phone'); ?>" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_website">Alamat Website</label>
+                                <input type="text" class="form-control mb-2" id="company_website" name="company_website" placeholder="Alamat Website" value="<?php echo set_value('company_website'); ?>">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="company_email">Alamat Email</label>
+                                <input type="email" class="form-control mb-2" id="company_email" name="company_email" placeholder="Alamat Email" value="<?php echo set_value('company_email'); ?>">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attachment">File Lampiran</label>
+                        <input type="file" class="form-control mb-2" id="attachment" name="attachment" value="<?php echo set_value('owner_id_card'); ?>" required>
+                        <div class="invalid-feedback" style="display: block;"><?php echo $this->session->flashdata('report'); ?></div>
+                        <small id="text_attachment" class="form-text text-muted">*Semua Lampiran Dijadikan satu file (.zip atau .rar)</small>
+                        <?php echo form_error('attachment', '<div class="invalid-feedback" style="display: block;">', '</div>') ?>
+
+                    </div>
+
+                    <!-- <div class="form-group">
                         <select class="form-control form-control-sm basic" id="basic" name="lokasi">
                             <option disabled selected>Pilih Lokasi Lowongan</option>
                             <?php foreach ($cabang as $cb) {
@@ -251,7 +341,7 @@
 
                         </select>
                     </div> -->
-                        <button type="submit" class="btn btn-primary mt-2 mb-2 btn-block">Kirim Data</button>
+                    <button type="submit" class="btn mt-2 mb-2 btn-block" style="color: #fff; background-color: #000;">Kirim Data</button>
                     </form>
 
 
@@ -296,7 +386,7 @@
         </div>
     </div>
 
-    <div id="miniFooterWrapper" class="">
+    <div id="miniFooterWrapper" class="" style="background-color: #000;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12">
@@ -307,10 +397,10 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-5 mx-auto col-lg-6 col-md-6 site-content-inner text-md-left text-center copyright align-self-center">
-                            <p class="mt-md-0 mt-4 mb-0"><?php echo date('Y') ?> &copy; <a target="_blank" href="https://ilufa.co.id">iLuFA 168</a>.</p>
+                            <p class="mt-md-0 mt-4 mb-0"><a style="color: #fff;"><?php echo date('Y') ?> &copy; </a><a target="_blank" href="https://ilufa.co.id" style="color: #fff;">iLuFA 168</a>.</p>
                         </div>
                         <div class="col-xl-5 mx-auto col-lg-6 col-md-6 site-content-inner text-md-right text-center align-self-center">
-                            <p class="mb-0">iLuFA Pusat, Jalan Siwalan 45, Kerten, Laweyan, Surakarta</p>
+                            <a class="mb-0" style="color: #fff;">iLuFA Pusat, Jalan Siwalan 45, Kerten, Laweyan, Surakarta</a>
                         </div>
                     </div>
                 </div>

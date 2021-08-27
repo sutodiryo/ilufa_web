@@ -28,16 +28,16 @@
                     </div>
                     <br>
                     <div class="table-responsive mb-4">
-                        <table id="branch" class="table style-3  table-hover">
+                        <table id="supplier" class="table style-3  table-hover">
                             <thead>
                                 <tr>
                                     <th class="text-center">No</th>
-                                    <th class="checkbox-column text-center"> Kode </th>
                                     <th>Nama Supplier</th>
-                                    <th>Kontak</th>
-                                    <th>Lokasi</th>
-                                    <th class="text-center">Status</th>
-                                    <th class="text-center">Action</th>
+                                    <th>Alamat</th>
+                                    <th class="text-center">Kontak</th>
+                                    <th>Owner</th>
+                                    <th class="text-center">Attachment</th>
+                                    <th class="text-center">fhfg</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -47,21 +47,19 @@
                                     $no++; ?>
 
                                     <tr>
-                                        <td class="checkbox-column text-center"> <?php echo $no ?> </td>
-                                        <td class="checkbox-column text-center user-name"> <?php echo $s->name ?> </td>
-                                        <td class="user-name"><?php echo $s->owner_name ?></td>
-                                        <td><?php echo "$s->address"; ?></td>
-                                        <td><?php echo $s->official_phone ?>
-                                            <br>
-                                            <textarea class="form-control"><?php echo $s->address ?></textarea>
+                                        <td class="text-center"> <?php echo $no ?> </td>
+                                        <td class="user-name"> <?php echo $s->name ?> </td>
+                                        <td>
+                                            <textarea class="form-control" readonly rows="3">
+                                                <?php echo $s->address ?>
+                                            </textarea>
                                         </td>
-                                        <td class="text-center"><?php if ($s->status == 0) {
-                                                                        echo "<span class='shadow-none badge badge-warning'>On Progress</span>";
-                                                                    } elseif ($s->status == 1) {
-                                                                        echo "<span class='shadow-none badge badge-primary'>Aktif</span>";
-                                                                    } elseif ($s->status == 2) {
-                                                                        echo "<span class='shadow-none badge badge-danger'>Tidak Aktif</span>";
-                                                                    } ?>
+                                        <td class="text-center">
+                                            <a href="https://api.whatsapp.com/send/?phone=62<?php echo $s->owner_phone ?>" class="btn btn-outline-primary btn-rounded mb-2"><?php echo $s->owner_phone ?></a>
+                                        </td>
+                                        <td><?php echo $s->owner_name ?></td>
+                                        <td class="text-center">
+                                            <a href="<?php echo "" . base_url('public/back/upload/supplier/') . "$s->attachment"; ?>" target="_blank" class="btn btn-primary btn-rounded mb-2">Download</a>
                                         </td>
                                         <td class="text-center">
                                             <ul class="table-controls">
