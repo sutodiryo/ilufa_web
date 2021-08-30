@@ -33,7 +33,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/custom_dt_html5.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/dt-global_style.css">
 
-    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant" || $page == "job_type" || $page == "branch" || $page == "branch_group" || $page == "supplier") { ?>
+    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant" || $page == "job_type" || $page == "branch" || $page == "branch_group" || $page == "supplier" || $page == "product") { ?>
 
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/datatables.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
@@ -45,12 +45,10 @@
     <?php } ?>
 
     <link href="<?php echo BACK ?>assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
 </head>
 
 <body class="sidebar-noneoverflow">
-    <!-- BEGIN LOADER -->
     <div id="load_screen">
         <div class="loader">
             <div class="loader-content">
@@ -58,9 +56,7 @@
             </div>
         </div>
     </div>
-    <!--  END LOADER -->
 
-    <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
         <header class="header navbar navbar-expand-sm">
             <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
@@ -313,9 +309,9 @@
                             <li class="menu <?php if ($page == "transaction") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('transaction') ?>" aria-expanded="<?php if ($page == "transaction") {
-                                                                                                            echo "true";
-                                                                                                        } ?>" class="dropdown-toggle">
+                                <a href="<?php echo base_url('admin/transaction') ?>" aria-expanded="<?php if ($page == "transaction") {
+                                                                                                                    echo "true";
+                                                                                                                } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
                                             <line x1="12" y1="1" x2="12" y2="23"></line>
@@ -329,9 +325,9 @@
                             <li class="menu <?php if ($page == "job_applicant") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('job/applicant/all') ?>" aria-expanded="<?php if ($page == "job_applicant") {
-                                                                                                                    echo "true";
-                                                                                                                } ?>" class="dropdown-toggle">
+                                <a href="<?php echo base_url('admin/job/applicant/all') ?>" aria-expanded="<?php if ($page == "job_applicant") {
+                                                                                                                        echo "true";
+                                                                                                                    } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check">
                                             <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -382,8 +378,10 @@
                                 </ul>
                             </li>
 
-                            <li class="menu">
-                                <a href="<?php echo base_url() ?>" aria-expanded="false" class="dropdown-toggle">
+                            <li class="menu <?php if ($page == "branch") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('admin/master/branch') ?>" aria-expanded="false" class="dropdown-toggle">
                                     <div class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-pull-request">
                                             <circle cx="18" cy="18" r="3"></circle>
@@ -392,6 +390,24 @@
                                             <line x1="6" y1="9" x2="6" y2="21"></line>
                                         </svg>
                                         <span>Cabang</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu <?php if ($page == "suplier") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="<?php echo base_url('admin/master/supplier') ?>" aria-expanded="<?php if ($page == "supplier") {
+                                                                                                                        echo "true";
+                                                                                                                    } ?>" class="dropdown-toggle">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck">
+                                            <rect x="1" y="3" width="15" height="13"></rect>
+                                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                        </svg>
+                                        <span>Supplier</span>
                                     </div>
                                 </a>
                             </li>
@@ -408,8 +424,14 @@
                                 </a>
                             </li>
 
-                            <li class="menu">
-                                <a href="apps_mailbox.html" aria-expanded="false" class="dropdown-toggle">
+                            <li class="menu <?php if ($page == "product") {
+                                                        echo "active";
+                                                    } ?>">
+                                <a href="#product" data-toggle="collapse" aria-expanded="<?php if ($page == "product") {
+                                                                                                        echo "true";
+                                                                                                    } else {
+                                                                                                        echo "false";
+                                                                                                    } ?>" class="dropdown-toggle">
                                     <div class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
                                             <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
@@ -417,15 +439,38 @@
                                         </svg>
                                         <span>Produk</span>
                                     </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
                                 </a>
+                                <ul class="collapse submenu recent-submenu mini-recent-submenu list-unstyled <?php if ($page == "product") {
+                                                                                                                            echo "show";
+                                                                                                                        } ?>" id="product" data-parent="#accordionExample">
+                                    <li class="<?php if ($page == "product") {
+                                                            echo "active";
+                                                        } ?>">
+                                        <a href="<?php echo base_url('admin/master/product') ?>"> Master Produk </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo base_url() ?>"> Master Harga </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo base_url() ?>"> Master Stok </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo base_url() ?>"> Master Kategori </a>
+                                    </li>
+                                </ul>
                             </li>
 
                             <li class="menu <?php if ($page == "job") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('job') ?>" aria-expanded="<?php if ($page == "job") {
-                                                                                                    echo "true";
-                                                                                                } ?>" class="dropdown-toggle">
+                                <a href="<?php echo base_url('admin/job') ?>" aria-expanded="<?php if ($page == "job") {
+                                                                                                            echo "true";
+                                                                                                        } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in">
                                             <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
@@ -665,9 +710,9 @@
                             <li class="menu <?php if ($page == "dashboard") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="<?php echo base_url('#') ?>" aria-expanded="<?php if ($page == "dashboard") {
-                                                                                                        echo "true";
-                                                                                                    } ?>" class="dropdown-toggle">
+                                <a href="#" aria-expanded="<?php if ($page == "dashboard") {
+                                                                        echo "true";
+                                                                    } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up">
                                             <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
@@ -705,8 +750,8 @@
                                                         echo "active";
                                                     } ?>">
                                 <a href="<?php echo base_url('admin/master/supplier') ?>" aria-expanded="<?php if ($page == "supplier") {
-                                                                                                            echo "true";
-                                                                                                        } ?>" class="dropdown-toggle">
+                                                                                                                        echo "true";
+                                                                                                                    } ?>" class="dropdown-toggle">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck">
                                             <rect x="1" y="3" width="15" height="13"></rect>

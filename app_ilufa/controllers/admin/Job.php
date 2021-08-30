@@ -22,7 +22,7 @@ class Job extends CI_Controller
         $data['page']   = 'job';
         $data['title']  = 'Master Data Lowongan Kerja';
 
-        if ($x == 0) { } elseif ($x == 1) {
+        if ($x == 0 || $x == 1) {
             $data['job']    = $this->Admin_model->get_job();
             $data['cabang'] = $this->db->query("SELECT * FROM ilufa_master_branch")->result();
             $data['jenis']  = $this->db->query("SELECT * FROM ilufa_job_type")->result();

@@ -46,7 +46,7 @@
                                     <th class="text-center">No</th>
                                     <th class="checkbox-column text-center"> ID </th>
                                     <th>Posisi</th>
-                                    <th>Deskripsi</th>
+                                    <!-- <th>Deskripsi</th> -->
                                     <th>Lokasi</th>
                                     <th>Tanggal Berlaku</th>
                                     <th class="text-center">Jenis</th>
@@ -59,13 +59,18 @@
                                 foreach ($job as $j) {
                                     $no++; ?>
 
+                                    <?php
+                                        $ds = new DateTime($j->date_start);
+                                        $de = new DateTime($j->date_end);
+                                        ?>
+
                                     <tr>
                                         <td class="checkbox-column text-center"> <?php echo $no ?> </td>
-                                        <td class="checkbox-column text-center"> <?php echo "$j->lokasi-$j->id_job "; ?> </td>
-                                        <td><?php echo $j->posisi ?></td>
-                                        <td><textarea class="form-control"><?php echo $j->deskripsi ?></textarea></td>
+                                        <td class="text-center"> <?php echo "$j->lokasi-$j->id_job "; ?> </td>
+                                        <td><?php echo substr($j->posisi, 0, 15) ?></td>
+                                        <!-- <td><textarea class="form-control" style="font-size: smaller;" rows="3"><?php echo $j->deskripsi ?></textarea></td> -->
                                         <td>iLuFA <?php echo $j->cabang ?></td>
-                                        <td><?php echo "$j->date_start sampai $j->date_end"; ?></td>
+                                        <td><?php echo "" . $ds->format('d M y') . " - " . $de->format('d M y') . ""; ?></td>
                                         <td class="text-center"><span class="shadow-none badge badge-primary"><?php echo $j->jenis ?></span></td>
                                         <td class="text-center">
                                             <ul class="table-controls">

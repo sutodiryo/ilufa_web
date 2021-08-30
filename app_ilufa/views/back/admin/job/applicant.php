@@ -20,8 +20,7 @@
                             </div>
                             <div class="col-md-4 col-12">
 
-                                <form action="javascript:void(0);" class="form-horizontal mt-md-0 mt-3 text-md-right text-center">
-                                    <!-- <a class="btn btn-primary" href="<?php echo base_url('games') ?>" target="_blank"> -->
+                                <!-- <form action="javascript:void(0);" class="form-horizontal mt-md-0 mt-3 text-md-right text-center">
                                     <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_loker">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square">
                                             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -29,7 +28,7 @@
                                             <line x1="8" y1="12" x2="16" y2="12"></line>
                                         </svg>
                                         Lowongan Baru</a>
-                                </form>
+                                </form> -->
 
                                 <!-- <button type="button" class="btn btn-secondary mb-2 mr-2" data-toggle="modal" data-target="#modal_add_new_loker">
                                     Register
@@ -65,7 +64,7 @@
                                         <td>$app->full_name</td>
                                         <td>$app->last_education</td>
                                         <td>$app->address</td>
-                                        <td class='text-center'><a class='btn btn-success btn-rounded mb-2' href='https://api.whatsapp.com/send/?phone=62$app->no_hp'><i class='fab fa-whatsapp'></i> $app->no_hp</a></td>
+                                        <td class='text-center'><a class='badge badge-pills outline-badge-primary' href='https://api.whatsapp.com/send/?phone=62$app->no_hp'><i class='fab fa-whatsapp'></i> $app->no_hp</a></td>
                                         <td class='text-center'>";
 
                                     if ($app->status ==  0) {
@@ -75,26 +74,29 @@
                                     }
 
                                     echo "</td>
-                                        <td class='text-center'>
-                                            <ul class='table-controls'>
-                                                <li><a href='javascript:void(0);' class='bs-tooltip' data-toggle='tooltip' data-placement='top' title='' data-original-title='Edit'>
-                                                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-edit-2 p-1 br-6 mb-1'>
-                                                            <path d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z'></path>
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href='javascript:void(0);' class='bs-tooltip' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete'>
-                                                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-trash p-1 br-6 mb-1'>
-                                                            <polyline points='3 6 5 6 21 6'></polyline>
-                                                            <path d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'></path>
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                   ";
+                                    <td class='text-center'>";
+
+                                    if ($this->session->userdata('log_level') == 1) {
+
+                                        echo "<ul class='table-controls'>
+                                                    <li><a href='javascript:void(0);' class='bs-tooltip' data-toggle='tooltip' data-placement='top' title='' data-original-title='Edit'>
+                                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-edit-2 p-1 br-6 mb-1'>
+                                                                <path d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z'></path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='javascript:void(0);' class='bs-tooltip' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete'>
+                                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-trash p-1 br-6 mb-1'>
+                                                                <polyline points='3 6 5 6 21 6'></polyline>
+                                                                <path d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'></path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>";
+                                    }
+
+                                    echo "</td></tr>";
                                 } ?>
 
                             </tbody>

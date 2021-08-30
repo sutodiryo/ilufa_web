@@ -1,112 +1,80 @@
-<?php $this->load->view('admin/_/header'); ?>
+<?php $this->load->view('back/_/header'); ?>
 
-<!-- Header -->
-<div class="header pb-6">
-    <div class="container-fluid">
-        <div class="header-body">
-            <div class="row align-items-center py-4">
-                <div class="col-lg-6 col-7">
-                    <h6 class="h2 d-inline-block mb-0"><?php echo $title ?></h6>
-                </div>
-                <div class="col-lg-6 col-5 text-right">
-                    <a href="<?php echo base_url('admin/product/member') ?>" class="btn btn-sm btn-info" title="Tambah Produk Baru"><i class="fa fa-archive"></i> Stok Member</a>
-                    <a href="<?php echo base_url('admin/product/add') ?>" class="btn btn-sm btn-neutral" title="Tambah Produk Baru"><i class="fa fa-plus"></i> Produk Baru</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="layout-px-spacing">
 
-<!-- Page content -->
-<div class="container-fluid mt--6">
-    <div class="row">
-        <div class="col">
-            <div class="card">
+    <div class="row layout-top-spacing layout-spacing">
+        <div class="col-lg-12">
+            <div class="statbox widget box box-shadow">
+                <div class="widget-content widget-content-area">
 
-                <div class="table-responsive py-4">
-                    <table class="table table-flush" id="datatable-buttons">
-                        <thead class="thead-light">
-                            <tr>
-                                <th width="1%">No</th>
-                                <th width="39%">Nama Produk</th>
-                                <th width="20%">Harga Pasaran</th>
-                                <th width="15%">Nilai Produk</th>
-                                <th width="15%">Stok</th>
-                                <th width="10%" class="text-center">Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                    <div class="widget-header">
+                        <div class="row">
+                            <div class="col-md-8 col-12"></div>
+                            <div class="col-md-4 col-12">
 
-                            <?php
-                            $no = 0;
-                            foreach ($product as $p) {
-                                $no++;
-
-                                date_default_timezone_set('UTC');
-                                $waktu_input  = new DateTime($p->waktu_input);
-
-                                echo "<tr>
-                                        <td><span class='lead mb-0'>$no</span></td>
-                                        <td class='table-user'><img src='" . ASSETS . "produk/$p->img_1' class='avatar rounded-circle mr-3'>
-                                            <b>$p->nama_produk</b>
-                                        </td>
-                                        <td><span class='lead mb-0'>Rp " . number_format($p->harga, 0, ',', '.') . "</span></td>
-                                        <td><span class='lead text-danger mb-0'>$p->nilai PV</span></td>";
-
-                                echo "<td>";
-                                if ($p->stock <= 100) {
-                                    echo "<a class='badge badge-dot mr-4'><i class='bg-red'></i><span class='status'>" . number_format($p->stock-$p->stock_, 0, '.', '.') . " $p->satuan</span></a>";
-                                } else if ($p->stock > 100 && $p->stock <= 200) {
-                                    echo "<a class='badge badge-dot mr-4'><i class='bg-yellow'></i><span class='status'>" . number_format($p->stock-$p->stock_, 0, '.', '.') . " $p->satuan</span></a>";
-                                } else if ($p->stock > 200) {
-                                    echo "<a class='badge badge-dot mr-4'><i class='bg-green'></i><span class='status'>" . number_format($p->stock-$p->stock_, 0, '.', '.') . " $p->satuan</span></a>";
+                                <form action="javascript:void(0);" class="form-horizontal mt-md-0 mt-3 text-md-right text-center">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_loker">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                                        </svg>
+                                        Product Baru</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="table-responsive mb-4">
+                        <table id="multi-column-ordering" class="table table-hover dataTable" style="width: 100%;" role="grid" aria-describedby="multi-column-ordering_info">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc">Nama Produk</th>
+                                    <th class="sorting">Kategori</th>
+                                    <th class="sorting">Harga</th>
+                                    <th class="sorting">Stok</th>
+                                    <th class="sorting">Status</th>
+                                    <th class="sorting"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                foreach ($product as $pr) {
+                                    echo "<tr role='row'>
+                                            <td class='sorting_1 sorting_2'>
+                                                <div class='d-flex'>
+                                                    <div class='usr-img-frame mr-2 rounded-circle'>
+                                                        <img alt='avatar' class='img-fluid rounded-circle' src='" . base_url('public/back/assets/') . "img/90x90.jpg'>
+                                                    </div>
+                                                    <p class='align-self-center mb-0 admin-name'> $pr->name </p>
+                                                </div>
+                                            </td>
+                                            <td>Case</td>
+                                            <td>$313,500</td>
+                                            <td>43</td>
+                                            <td>OK</td>
+                                            <td>$313,500</td>
+                                        </tr>";
                                 }
-
-                                // echo "<td>";
-                                // if ($p->status == 0) {
-                                //     echo "<a class='badge badge-dot mr-4'><i class='bg-red'></i><span class='status'>Tidak Aktif</span></a>";
-                                // } else if ($p->status == 1) {
-                                //     echo "<a class='badge badge-dot mr-4'><i class='bg-green'></i><span class='status'>Aktif</span></a>";
-                                // }
-
-                                echo "</td>";
-
-                                //AKSI
-                                echo "  <td class='text-center'>
-                                            <ul class='navbar-nav align-items-center ml-auto ml-md-0'>
-                                                <li class='nav-item dropdown'>
-                                                    <button title='Update Status' data-toggle='dropdown' class='btn btn-icon btn-sm btn-default'><span class='btn-inner--icon'><i class='ni ni-settings-gear-65'></i></span></button>
-                                                        <div class='dropdown-menu dropdown-menu-right'>
-                                                            <a href='" . base_url('admin/edit/produk_harga/') . "$p->id_produk' class='dropdown-item'><i class='ni ni-credit-card'></i><span> Set Harga</span></a>
-                                                            <a href='" . base_url('admin/edit/produk_stock/') . "$p->id_produk' class='dropdown-item'><i class='ni ni-archive-2'></i><span> Update Stock</span></a>
-                                                            <a href='" . base_url('admin/edit/produk_link/') . "$p->id_produk' class='dropdown-item'><i class='ni ni-planet'></i><span> Set Link Landingpage</span></a>
-                                                            <div class='dropdown-divider'></div>
-                                                            <a href='" . base_url('admin/edit/produk/') . "$p->id_produk' class='dropdown-item'><i class='fa fa-edit'></i><span>Edit</span></a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                        </td>";
-
-                                echo "</tr>";
-                            } ?>
-
-                        </tbody>
-                    </table>
+                                ?>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th rowspan="1" colspan="1">Nama Produk</th>
+                                    <th rowspan="1" colspan="1">Kategori</th>
+                                    <th rowspan="1" colspan="1">Harga</th>
+                                    <th rowspan="1" colspan="1">Stok</th>
+                                    <th rowspan="1" colspan="1">Status</th>
+                                    <th rowspan="1" colspan="1"></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-12">
-                <div class="copyright text-center text-lg-center text-muted">
-                    &copy; <?php echo date('Y');?> <a href="https://najahnet.id" class="font-weight-bold ml-1" target="_blank">Najah Network</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 
-<?php $this->load->view('admin/_/footer'); ?>
+<?php $this->load->view('back/_/footer'); ?>

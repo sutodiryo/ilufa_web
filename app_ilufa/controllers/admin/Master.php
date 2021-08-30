@@ -64,6 +64,40 @@ class Master extends CI_Controller
         }
     }
 
+    function partner()
+    {
+        $x = $this->session->userdata('log_level');
+        $data['page']   = 'partner';
+        $data['title']  = 'Master Data Partnership';
+
+        if ($x == 0 || $x == 2) {
+
+            $data['partner'] = $this->db->query("SELECT  *
+                                                        FROM ilufa_master_partner")->result();
+
+            $this->load->view('back/admin/product/list', $data);
+        } else {
+            echo "Akses Ditolak";
+        }
+    }
+
+    function product()
+    {
+        $x = $this->session->userdata('log_level');
+        $data['page']   = 'product';
+        $data['title']  = 'Master Data Produk';
+
+        if ($x == 0 || $x == 3) {
+
+            $data['product'] = $this->db->query("SELECT  *
+                                                        FROM ilufa_master_product")->result();
+
+            $this->load->view('back/admin/product/list', $data);
+        } else {
+            echo "Akses Ditolak";
+        }
+    }
+
     function supplier() //Master Data Supplier
     {
         $x = $this->session->userdata('log_level');

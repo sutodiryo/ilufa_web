@@ -64,9 +64,9 @@
                                         <td class="checkbox-column text-center user-name"> <?php echo $b->id_branch ?> </td>
                                         <td class="user-name"><?php echo $b->branch_name ?></td>
                                         <td><?php echo "$b->phone $b->email $b->instagram"; ?></td>
-                                        <td><?php echo $b->kota ?>
-                                            <br>
-                                            <textarea class="form-control"><?php echo $b->address ?></textarea>
+                                        <td><span title="<?php echo $b->address ?>"><?php echo $b->kota ?></span>
+                                            <!-- <br>
+                                            <textarea class="form-control"><?php echo $b->address ?></textarea> -->
                                         </td>
                                         <td class="text-center"><?php if ($b->status == 0) {
                                                                         echo "<span class='shadow-none badge badge-warning'>On Progress</span>";
@@ -77,6 +77,7 @@
                                                                     } ?>
                                         </td>
                                         <td class="text-center">
+                                            
                                             <ul class="table-controls">
                                                 <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1">
