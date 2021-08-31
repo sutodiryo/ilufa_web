@@ -310,7 +310,7 @@ if ($title == 'home') { ?>
             <div class="header-top header-top-hamburger">
                 <div class="header-container">
                     <div class="logo main-logo">
-                        <a href="#">
+                        <a href="<?php echo base_url() ?>">
                             <img class="lozad dark-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
                             <img class="lozad light-logo" src="<?php echo GUEST ?>img/logo_2.png" alt="" width="10 px" />
                         </a>

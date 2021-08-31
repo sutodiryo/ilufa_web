@@ -70,11 +70,10 @@
                                                     </svg>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuReference5" style="will-change: transform;">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <a class="dropdown-item" href="#">Detail</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                    <a class="dropdown-item" href="<?php echo "" . base_url('admin/master/del/supplier/') . "$s->id_supplier "; ?>">Hapus</a>
                                                 </div>
                                             </div>
                                         </td>

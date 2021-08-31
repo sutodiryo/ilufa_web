@@ -16,8 +16,10 @@
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/impress-common.css" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" /> -->
+    
+    <link rel="icon" type="image/png" href="https://ilufa.co.id/public/guest/img/favicons.png">
     <style>
         .img-page {
             display: flex;
@@ -77,7 +79,8 @@
                     <li>1.Web Profile (branding)</li>
                     <li>2.Informasi Produk Terbaru</li>
                     <li><a href="https://ilufa.co.id/blog/" target="_blank">3.Blog (SEO)</a></li>
-                    <li><a href="http://recruitment.ptsci.id/" target="_blank">4.Sistem Lamaran Kerja (HRD)</a></li>
+                    <li><a href="https://ilufa.co.id/lowongan/" target="_blank">4.Sistem Lamaran Kerja (HRD)</a></li>
+                    <li><a href="https://ilufa.co.id/formsupplierilufa/" target="_blank">5.Form Pendataan Supplier</a></li>
                 </ul>
 
                 <!-- <a href="https://idcloudhost.com/cloud-vps/" target="_blank">Cloud VPS</a>
@@ -111,9 +114,11 @@
             <p><b>5.Sosmed</b></p>
             <p><b>6.Desain</b></p>
             <p><b>8.Rank</b> -> <a href="https://www.serprobot.com/serp-check.php" target="_blank">Serprobot</a></p>
-            <!-- <p>It’s a <strong>presentation tool</strong> <br />
+            <!--
+                <p>It’s a <strong>presentation tool</strong> <br />
                 inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br />
-                and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p> -->
+                and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+            -->
         </div>
 
         <div id="backend-1" class="step" data-x="3000" data-y="-500" data-rotate="90" data-scale="1">
@@ -136,12 +141,12 @@
             <center>
                 <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
                 <p><b class="rotating">Ilustrasi</b></p>
-                <img src="assets/post2x.png" class="img-page">
+                <a href="assets/post2x.png" target="_blank"><img src="assets/post2x.png" class="img-page"></a>
             </center>
         </div>
 
         <div id="cloud-computing-1" class="step" data-x="1500" data-y="-500" data-z="-3000" data-rotate="300" data-scale="1">
-            <p>Cloud <b>Computing</b></p>
+            <p>Cloud <b>Computing </b> </p>
         </div>
 
         <div id="cloud-computing-2" class="step" data-x="1500" data-y="-200" data-z="0" data-rotate="300" data-scale="1">

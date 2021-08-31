@@ -8,18 +8,22 @@ class Guest extends CI_Controller
 	{
 		$data['title'] 			= "home";
 		$data['branch_group'] 	= $this->db->query("SELECT * FROM ilufa_master_branch_group WHERE status=1 ORDER BY show_number ASC")->result();
-		$data['store'] 			= $this->db->query("SELECT * 	FROM ilufa_master_branch
-																WHERE id_branch != 'C0000'
-																ORDER BY branch_name ASC")->result();
+		$data['store'] 			= $this->db->query("SELECT * FROM ilufa_master_branch
+													WHERE id_branch != 'C0000'
+													ORDER BY branch_name ASC")->result();
 
 		$this->load->view('guest/homepage', $data);
 	}
 
-	// public function supplier()
-	// {
-	// 	$data['title'] = "Form Pendaftaran Supplier";
-	// 	$this->load->view('guest/supplier/form', $data);
-	// }
+	public function store()
+	{
+		$data['title'] 			= "store";
+		$data['store'] 			= $this->db->query("SELECT * FROM ilufa_master_branch
+													WHERE id_branch != 'C0000' AND status=1
+													ORDER BY branch_name ASC")->result();
+
+		$this->load->view('guest/store/index', $data);
+	}
 
 	public function supplier()
 	{
@@ -41,52 +45,8 @@ class Guest extends CI_Controller
 		$this->form_validation->set_rules('company_name', 'company_name', 'required', ['required' => 'Nama profil perusahaan wajib diisi!']);
 		$this->form_validation->set_rules('company_pic', 'company_pic', 'required', ['required' => 'Penanggungjawab perusahaan wajib diisi!']);
 
-
 		date_default_timezone_set('Asia/Jakarta');
 		$now   = date("Y-m-d H:i:s");
-
-		$data 	= [
-			'name' => $this->input->post('name'),
-			'address' => $this->input->post('address'),
-			'city' => $this->input->post('city'),
-			'postal_code' => $this->input->post('postal_code'),
-			'official_phone'  => $this->input->post('official_phone'),
-			'official_phone_2' => $this->input->post('official_phone_2'),
-			'fax' => $this->input->post('fax'),
-			'official_email' => $this->input->post('official_email'),
-			// 'scan_npwp' => $this->input->post('scan_npwp'),
-			'npwp_name' => $this->input->post('npwp_name'),
-			'npwp' => $this->input->post('npwp'),
-			'siup' => $this->input->post('siup'),
-			'owner_name' => $this->input->post('owner_name'),
-			'owner_id' => $this->input->post('owner_id'),
-			// 'owner_id_card' => $this->input->post('owner_id_card'),
-			// 'owner_id_card' => $ktp,
-			'owner_address' => $this->input->post('owner_address'),
-			'owner_city' => $this->input->post('owner_city'),
-			'owner_postal_code' => $this->input->post('owner_postal_code'),
-			'owner_phone' => $this->input->post('owner_phone'),
-			'owner_fax' => $this->input->post('owner_fax'),
-			'owner_email' => $this->input->post('owner_email'),
-			'owner_npwp' => $this->input->post('owner_npwp'),
-			'owner_npwp_name' => $this->input->post('owner_npwp_name'),
-			'bank' => $this->input->post('bank'),
-			'bank_account' => $this->input->post('bank_account'),
-			'bank_account_name' => $this->input->post('bank_account_name'),
-			'company_name' => $this->input->post('company_name'),
-			'company_field' => $this->input->post('company_field'),
-			'company_established' => $this->input->post('company_established'),
-			'company_headquarter' => $this->input->post('company_headquarter'),
-			'company_pic' => $this->input->post('company_pic'),
-			'company_director' => $this->input->post('company_director'),
-			'company_phone' => $this->input->post('company_phone'),
-			'company_website' => $this->input->post('company_website'),
-			'company_email' => $this->input->post('company_email'),
-			'attachment' => NULL,
-			'status' => 1,
-			'date_add' => $now
-		];
-
 
 		if (empty($_FILES['attachment']['name'])) {
 			$this->form_validation->set_rules('attachment', 'Document', 'required', ['required' => 'Anda belum memilih file attachment!']);
@@ -111,11 +71,9 @@ class Guest extends CI_Controller
 			}
 		}
 
-
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('guest/supplier/form', $data);
 		} else {
-
 
 			$data 	= [
 				'name' => $this->input->post('name'),
