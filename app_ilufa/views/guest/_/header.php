@@ -298,7 +298,8 @@ if ($title == 'home') { ?>
                         <ul class="extend-container">
                             <li><a href="<?php echo base_url() ?>">Beranda</a></li>
                             <li><a href="<?php echo base_url('tentang') ?>">Tentang</a></li>
-                            <li><a href="<?php echo base_url('produk') ?>">Produk</a></li>
+                            <!-- <li><a href="<?php echo base_url('produk') ?>">Produk</a></li> -->
+                            <li><a href="<?php echo base_url('store') ?>">Store</a></li>
                             <li><a href="https://ilufa.co.id/blog">Blog</a></li>
                             <li><a href="<?php echo base_url('lowongan') ?>">Lowongan</a></li>
                             <li><a href="<?php echo base_url('kontak') ?>">Kontak</a></li>

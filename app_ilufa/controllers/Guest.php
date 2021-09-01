@@ -9,7 +9,7 @@ class Guest extends CI_Controller
 		$data['title'] 			= "home";
 		$data['branch_group'] 	= $this->db->query("SELECT * FROM ilufa_master_branch_group WHERE status=1 ORDER BY show_number ASC")->result();
 		$data['store'] 			= $this->db->query("SELECT * FROM ilufa_master_branch
-													WHERE id_branch != 'C0000'
+													WHERE id_branch != 'C0000' AND status=1
 													ORDER BY branch_name ASC")->result();
 
 		$this->load->view('guest/homepage', $data);

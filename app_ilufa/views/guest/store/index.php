@@ -4,7 +4,9 @@
     <div class="dsn-root-slider" id="dsn-hero-parallax-img">
         <div class="slide-inner">
             <div class="swiper-wrapper">
-                <?php foreach ($store as $st) { ?>
+                <?php
+                foreach ($store as $st) {
+                    ?>
 
                     <div class="slide-item swiper-slide">
                         <div class="slide-content">
@@ -23,8 +25,7 @@
                                     </div>
                                 </div>
 
-                                <p>Sometimes, we need to check the time, wondering when our work
-                                    or meeting will finish, without getting caught by others.</p>
+                                <!-- <p>Sometimes, we need to check the time, wondering when our work or meeting will finish, without getting caught by others.</p> -->
 
                                 <div class="link-custom">
                                     <a href="<?php echo base_url('store/') ?>" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider">
@@ -35,8 +36,16 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <div class="image-bg cover-bg" data-image-src="<?php echo GUEST ?>upload/store/colomadu_front.jpg" data-overlay="0">
-                                <img src="<?php echo GUEST ?>upload/store/colomadu_front.jpg" alt="">
+                            <div class="image-bg cover-bg" data-image-src="<?php echo GUEST ?>upload/store/<?php if ($st->img2 == '') {
+                                                                                                                    echo "colomadu_front.jpg";
+                                                                                                                } else {
+                                                                                                                    echo $st->img2;
+                                                                                                                } ?>" data-overlay="0">
+                                <img src="<?php echo GUEST ?>upload/store/<?php if ($st->img2 == '') {
+                                                                                    echo "colomadu_front.jpg";
+                                                                                } else {
+                                                                                    echo $st->img2;
+                                                                                } ?>" alt="">
                             </div>
                         </div>
                     </div>
@@ -57,11 +66,15 @@
                 $no++; ?>
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <div class="image-bg cover-bg" data-image-src="<?php echo GUEST ?>upload/store/colomadu_front.jpg" data-overlay="2">
+                        <div class="image-bg cover-bg" data-image-src="<?php echo GUEST ?>upload/store/<?php if ($st->img2 == '') {
+                                                                                                                echo "colomadu_front.jpg";
+                                                                                                            } else {
+                                                                                                                echo $st->img2;
+                                                                                                            } ?>" data-overlay="2">
                         </div>
                     </div>
                     <div class="content">
-                        <p><?php echo $st->id_branch ?></p>
+                        <p><?php echo $st->branch_name ?></p>
                     </div>
                 </div>
             <?php } ?>
