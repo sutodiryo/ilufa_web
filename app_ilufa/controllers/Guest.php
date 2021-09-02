@@ -11,8 +11,29 @@ class Guest extends CI_Controller
 		$data['store'] 			= $this->db->query("SELECT * FROM ilufa_master_branch
 													WHERE id_branch != 'C0000' AND status=1
 													ORDER BY branch_name ASC")->result();
+													
+		$data['product']		= $this->db->query("SELECT * FROM ilufa_master_product")->result();
 
 		$this->load->view('guest/homepage', $data);
+	}
+
+	//Semua produk
+	public function products()
+	{
+		$data['title']		= "product";
+		$data['product']	= $this->db->query("SELECT * FROM ilufa_master_product")->result();
+
+		$this->load->view('guest/product/index', $data);
+	}
+
+	//Detail Produk
+	public function product($slug)
+	{
+		$data['title'] 			= "product";
+		$data['product'] 		= $this->db->query("SELECT * FROM ilufa_master_product
+													WHERE slug='$slug'")->result();
+
+		$this->load->view('guest/product/detail', $data);
 	}
 
 	public function store()

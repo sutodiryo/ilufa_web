@@ -253,7 +253,7 @@
         </div>
     </section>
 
-    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+    <!-- <section class="our-work work-under-header  section-margin" data-dsn-col="3">
         <div class="container">
             <div class="one-title">
                 <div class="title-sub-container">
@@ -293,7 +293,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="our-work work-under-header  section-margin" data-dsn-col="3">
         <div class="container">
@@ -304,7 +304,147 @@
                 <h2 class="title-main">Produk Terbaru</h2>
             </div>
         </div>
-        <div class="container-fluid">
+
+
+        <div class="wrapper">
+            <div class="root-work">
+                <div class="container">
+                    <div class="box-title" data-dsn-title="cover">
+                        <h2 class="title-cover" data-dsn-grid="move-section" data-dsn-move="-70">Product</h2>
+                    </div>
+
+                    <div class="filterings">
+                        <div class="filtering-wrap">
+                            <div class="filtering">
+                                <div class="selector"></div>
+                                <button type="button" data-filter="*" class="active">
+                                    All
+                                </button>
+                                <button type="button" data-filter=".brand">Brand</button>
+                                <button type="button" data-filter=".photography">Photography</button>
+                                <button type="button" data-filter=".architecture">Architecture</button>
+                                <button type="button" data-filter=".video">video</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-list gallery">
+                        <!-- <div class="item brand">
+                            <a href="project-9.html" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Brand</h5>
+                                    <h4>Time Tag Watch</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item brand">
+                            <a href="project-4.html" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project4/2.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Brand</h5>
+                                    <h4>Under Armour</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item photography">
+                            <a href="project-3.html" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project3/1.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Photography</h5>
+                                    <h4>Re Styling</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div> -->
+
+
+                        <?php foreach ($product as $pr) { ?>
+
+                            <div class="item brand">
+                                <a href="<?php echo "" . base_url('product/') . "$pr->slug"; ?>" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
+                                    <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="" />
+                                    <div class="item-border"></div>
+                                    <div class="item-info">
+                                        <h5 class="cat">Brand</h5>
+                                        <h4><?php echo $pr->name ?></h4>
+                                        <span><span>Detail Produk</span></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <?php
+                        } ?>
+
+
+                        <!-- <div class="item photography">
+                            <a href="project-7.html" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/P1077833-Edit.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Photography</h5>
+                                    <h4>Nile - Kabutha</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item photography">
+                            <a href="project-6.html" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project6/1.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Photography</h5>
+                                    <h4>Sleep Walker</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item brand">
+                            <a href="project-1.html" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project1/1.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">brand</h5>
+                                    <h4>Magista</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item photography">
+                            <a href="project-2.html" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project2/1.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Photography</h5>
+                                    <h4>Bastian Bux</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item architecture">
+                            <a href="project-5.html" data-dsn-grid="move-up">
+                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project5/1.jpg" alt="" />
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <h5 class="cat">Architecture</h5>
+                                    <h4>Novara Conic</h4>
+                                    <span><span>Detail Produk</span></span>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
                     <div class="work-container">
@@ -373,7 +513,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <div class=" box-gallery-vertical section-margin section-padding" data-dsn="color">
@@ -570,7 +710,7 @@
             </div>
 
             <div class="wapper-client">
-                
+
                 <?php
                 foreach ($branch_group as $bg) { ?>
 
