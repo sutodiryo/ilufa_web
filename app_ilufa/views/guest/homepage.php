@@ -5,7 +5,7 @@
         <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
             <div class=" " data-dsn="video" data-overlay="4">
                 <video class="lozad bg-image cover-bg dsn-video" poster="<?php echo GUEST ?>img/video-bg.jpg" autoplay loop muted playsinline>
-                    <source src="<?php echo GUEST ?>videos/head_2.mp4" type="video/mp4">
+                    <source src="<?php echo GUEST ?>videos/head_3.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
             </div>
@@ -54,44 +54,6 @@
 </header>
 
 <div class="wrapper">
-
-    <section class="intro-about section-margin" id="tentang">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="intro-content-text">
-
-                        <h2 data-dsn-grid="move-section" data-dsn-move="-30" data-dsn-duration="100%" data-dsn-opacity="1.2" data-dsn-responsive="tablet">
-                            Tentang <br />Ilufa 168
-                        </h2>
-
-                        <p data-dsn-animate="text">
-                            iLuFA 168 merupakan salah satu perusahaan dengan bisnis utama menyediakan segala macam aksesoris handphone, gadget, peralatan pendukung fotografi, gaming, pembuatan konten audio visual dan sound recording.
-                            <h6 data-dsn-animate="text">Didirikan Pada</h6>
-                            <!-- <small data-dsn-animate="text">Digital Artisit</small> -->
-
-                            <div class="exper">
-                                <div class="numb-ex">
-                                    <span class="word" data-dsn-animate="text">16</span>
-                                </div>
-                                <h4 data-dsn-animate="up">Agustus <br> 2000</h4>
-                            </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="background-mask">
-            <div class="background-mask-bg"></div>
-            <div class="img-box">
-                <div class="img-cent" data-dsn-grid="move-up">
-                    <div class="img-container">
-                        <img loading="lazy" class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>img/bgg_2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--     
     <section class="our-services section-margin">
@@ -295,7 +257,7 @@
         </div>
     </section> -->
 
-    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+    <!-- <section class="our-work work-under-header  section-margin" data-dsn-col="3">
         <div class="container">
             <div class="one-title">
                 <div class="title-sub-container">
@@ -330,48 +292,12 @@
                     </div>
 
                     <div class="projects-list gallery">
-                        <!-- <div class="item brand">
-                            <a href="project-9.html" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Brand</h5>
-                                    <h4>Time Tag Watch</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="item brand">
-                            <a href="project-4.html" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project4/2.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Brand</h5>
-                                    <h4>Under Armour</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="item photography">
-                            <a href="project-3.html" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project3/1.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Photography</h5>
-                                    <h4>Re Styling</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div> -->
-
 
                         <?php foreach ($product as $pr) { ?>
 
                             <div class="item brand">
-                                <a href="<?php echo "" . base_url('product/') . "$pr->slug"; ?>" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
-                                    <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="" />
+                                <a href="<?php echo "" . base_url('p/') . "$pr->slug"; ?>" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
+                                    <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/softcase-foomee.jpg" alt="" />
                                     <div class="item-border"></div>
                                     <div class="item-info">
                                         <h5 class="cat">Brand</h5>
@@ -383,72 +309,29 @@
 
                         <?php
                         } ?>
-
-
-                        <!-- <div class="item photography">
-                            <a href="project-7.html" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/P1077833-Edit.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Photography</h5>
-                                    <h4>Nile - Kabutha</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item photography">
-                            <a href="project-6.html" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project6/1.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Photography</h5>
-                                    <h4>Sleep Walker</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item brand">
-                            <a href="project-1.html" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project1/1.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">brand</h5>
-                                    <h4>Magista</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item photography">
-                            <a href="project-2.html" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project2/1.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Photography</h5>
-                                    <h4>Bastian Bux</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item architecture">
-                            <a href="project-5.html" data-dsn-grid="move-up">
-                                <img class="has-top-bottom" src="<?php echo GUEST ?>img/project/project5/1.jpg" alt="" />
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <h5 class="cat">Architecture</h5>
-                                    <h4>Novara Conic</h4>
-                                    <span><span>Detail Produk</span></span>
-                                </div>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="container-fluid">
+        
+    </section> -->
+
+
+    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+        <div class="container">
+            <div class="one-title">
+                <div class="title-sub-container">
+                    <p class="title-sub">Produk</p>
+                </div>
+                <h2 class="title-main">Produk Terbaru</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
                     <div class="work-container">
                         <div class="slick-slider">
+
                             <div class="work-item slick-slide">
                                 <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="">
                                 <div class="item-border"></div>
@@ -513,7 +396,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </section>
 
     <div class=" box-gallery-vertical section-margin section-padding" data-dsn="color">
@@ -632,6 +515,85 @@
         </div>
     </section>
 
+    <section class="intro-about section-margin" id="tentang">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro-content-text">
+
+                        <h2 data-dsn-grid="move-section" data-dsn-move="-30" data-dsn-duration="100%" data-dsn-opacity="1.2" data-dsn-responsive="tablet">
+                            Tentang <br />Ilufa 168
+                        </h2>
+
+                        <p data-dsn-animate="text">
+                            iLuFA 168 merupakan salah satu perusahaan dengan bisnis utama menyediakan segala macam aksesoris handphone, gadget, peralatan pendukung fotografi, gaming, pembuatan konten audio visual dan sound recording.
+                            <h6 data-dsn-animate="text">Didirikan Pada</h6>
+                            <!-- <small data-dsn-animate="text">Digital Artisit</small> -->
+
+                            <div class="exper">
+                                <div class="numb-ex">
+                                    <span class="word" data-dsn-animate="text">16</span>
+                                </div>
+                                <h4 data-dsn-animate="up">Agustus <br> 2000</h4>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-mask">
+            <div class="background-mask-bg"></div>
+            <div class="img-box">
+                <div class="img-cent" data-dsn-grid="move-up">
+                    <div class="img-container">
+                        <img loading="lazy" class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>img/bgg_2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-client section-margin">
+        <div class="container">
+            <div class="one-title" data-dsn-animate="up">
+                <div class="title-sub-container">
+                    <p class="title-sub">Store</p>
+                </div>
+                <h2 class="title-main">Daftar Store Ilufa</h2>
+            </div>
+
+            <div class="wapper-client">
+
+                <?php
+                foreach ($branch_group as $bg) { ?>
+
+                    <div class="logo-box" data-toggle="modal" data-target="#<?php echo $bg->branch_group_id ?>_modal">
+                        <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/<?php echo $bg->icon ?>" alt="">
+
+                        <div class="info">
+                            <div class="content" onclick="javascript:void(0);">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i> Lokasi
+                                </div>
+
+                                <div class="entry">
+                                    <div>
+                                        <h5>Klik untuk lihat map</h5>
+                                        <!-- <a href="#">www.google.com</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php
+                }
+                ?>
+
+            </div>
+        </div>
+    </section>
+
     <section class="our-news section-margin">
         <div class="container">
             <div class="one-title" data-dsn-animate="up">
@@ -696,47 +658,6 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="brand-client section-margin">
-        <div class="container">
-            <div class="one-title" data-dsn-animate="up">
-                <div class="title-sub-container">
-                    <p class="title-sub">Cabang</p>
-                </div>
-                <h2 class="title-main">Daftar Cabang Ilufa</h2>
-            </div>
-
-            <div class="wapper-client">
-
-                <?php
-                foreach ($branch_group as $bg) { ?>
-
-                    <div class="logo-box" data-toggle="modal" data-target="#<?php echo $bg->branch_group_id ?>_modal">
-                        <img loading="lazy" class="lozad" src="<?php echo GUEST ?>svg/kota/<?php echo $bg->icon ?>" alt="">
-
-                        <div class="info">
-                            <div class="content" onclick="javascript:void(0);">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i> Lokasi
-                                </div>
-
-                                <div class="entry">
-                                    <div>
-                                        <h5>Klik untuk lihat map</h5>
-                                        <!-- <a href="#">www.google.com</a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                <?php
-                }
-                ?>
-
             </div>
         </div>
     </section>

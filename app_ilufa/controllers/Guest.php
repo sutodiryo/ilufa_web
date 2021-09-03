@@ -18,7 +18,7 @@ class Guest extends CI_Controller
 	}
 
 	//Semua produk
-	public function products()
+	public function product()
 	{
 		$data['title']		= "product";
 		$data['product']	= $this->db->query("SELECT * FROM ilufa_master_product")->result();
@@ -27,7 +27,7 @@ class Guest extends CI_Controller
 	}
 
 	//Detail Produk
-	public function product($slug)
+	public function product_detail($slug)
 	{
 		$data['title'] 			= "product";
 		$data['product'] 		= $this->db->query("SELECT * FROM ilufa_master_product

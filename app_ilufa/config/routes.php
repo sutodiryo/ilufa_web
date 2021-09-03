@@ -10,10 +10,13 @@ $route['karir']                 = 'lowongan/index';
 
 $route['nextilufa2021']             = 'guest/nextilufa2021';
 $route['NextiLuFA2021']             = 'guest/nextilufa2021';
+
 $route['store']                     = 'guest/store';
 $route['formsupplierilufa']         = 'guest/supplier';
 $route['supplier_ok']               = 'guest/supplier_ok';
 $route['submit_formsupplierilufa']  = 'guest/submit_formsupplierilufa';
+$route['product']                   = 'guest/product';
+$route['p/(:any)']                  = 'guest/product_detail/$1';
 
 $route['admin']                 = 'admin/dashboard';
 // $route['store']                 = 'store/dashboard';
