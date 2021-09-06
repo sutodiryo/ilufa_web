@@ -89,8 +89,11 @@ class Master extends CI_Controller
 
         if ($x == 0 || $x == 3) {
 
-            $data['product'] = $this->db->query("SELECT  *
-                                                        FROM ilufa_master_product")->result();
+            $data['product'] = $this->db->query("SELECT id_product,id_brand,id_supplier,name,slug,description,category,free_delivery,weight,length,width,height,status,
+                                                        (SELECT name FROM ilufa_master_product_category WHERE id_category=ilufa_master_product.category) AS category_name,
+                                                        (SELECT name FROM ilufa_master_product_brand WHERE id_brand=ilufa_master_product.id_brand) AS brand_name,
+                                                        (SELECT image FROM ilufa_master_product_image WHERE id_product=ilufa_master_product.id_product LIMIT 1) AS image
+                                                FROM ilufa_master_product")->result();
 
             $this->load->view('back/admin/product/list', $data);
         } else {

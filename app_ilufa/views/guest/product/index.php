@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="contenet-hero">
-                    <h5>Our WOrk</h5>
-                    <h1>portfolio</h1>
+                    <h5>Product</h5>
+                    <h1>Produk iLuFA</h1>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
     <div class="root-work">
         <div class="container">
             <div class="box-title" data-dsn-title="cover">
-                <h2 class="title-cover" data-dsn-grid="move-section" data-dsn-move="-70">Projets</h2>
+                <h2 class="title-cover" data-dsn-grid="move-section" data-dsn-move="-70">Produk</h2>
             </div>
 
             <div class="filterings">
@@ -25,21 +25,41 @@
                     <div class="filtering">
                         <div class="selector"></div>
                         <button type="button" data-filter="*" class="active">
-                            All
+                            Semua
                         </button>
 
-                        <button type="button" data-filter=".brand">Brand</button>
-                        <button type="button" data-filter=".photography">Photography</button>
+                        <?php
+                        foreach ($category as $cat) {
+                            echo "<button type='button' data-filter='.$cat->name'>$cat->name</button>";
+                        }
+                        ?>
+
+                        <!-- <button type="button" data-filter=".photography">Photography</button>
                         <button type="button" data-filter=".architecture">Architecture</button>
-                        <button type="button" data-filter=".video">video</button>
+                        <button type="button" data-filter=".video">video</button> -->
 
                     </div>
                 </div>
             </div>
 
             <div class="projects-list gallery">
+                <?php
+                foreach ($product as $pr) {
+                    echo "<div class='item $pr->category_name'>
+                    <a href='" . base_url('p/') . "$pr->slug' class='effect-ajax' data-dsn-ajax='work' data-dsn-grid='move-up'>
+                        <img class='has-top-bottom' src='" . GUEST . "upload/product/$pr->image' alt='$pr->name' />
+                        <div class='item-border'></div>
+                        <div class='item-info'>
+                            <h5 class='cat'>$pr->brand_name</h5>
+                            <h4>$pr->name</h4>
+                            <span><span>Lihat Detail Produk</span></span>
+                        </div>
+                    </a>
+                </div>";
+                }
+                ?>
 
-                <div class="item brand">
+                <!-- <div class="item brand">
                     <a href="project-9.html" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
                         <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/softcase-foomee.jpg" alt="" />
                         <div class="item-border"></div>
@@ -152,7 +172,7 @@
                             <span><span>Veiw Project</span></span>
                         </div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -161,13 +181,13 @@
     <section class="contact-up section-margin section-padding">
         <div class="container">
             <div class="c-wapp">
-                <a href="contact.html" class="effect-ajax">
+                <a href="#" class="effect-ajax">
                     <span class="hiring">
-                        We are hiring
+                        Lihat Semua Produk
                     </span>
-                    <span class="career">
+                    <!-- <span class="career">
                         Dare and contact us immediately!
-                    </span>
+                    </span> -->
                 </a>
             </div>
         </div>

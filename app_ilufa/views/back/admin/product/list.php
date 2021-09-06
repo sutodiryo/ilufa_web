@@ -44,16 +44,16 @@
                                             <td class='sorting_1 sorting_2'>
                                                 <div class='d-flex'>
                                                     <div class='usr-img-frame mr-2 rounded-circle'>
-                                                        <img alt='avatar' class='img-fluid rounded-circle' src='" . base_url('public/back/assets/') . "img/90x90.jpg'>
+                                                        <img alt='avatar' class='img-fluid rounded-circle' src='" . GUEST . "upload/product/$pr->image'>
                                                     </div>
                                                     <p class='align-self-center mb-0 admin-name'> $pr->name </p>
                                                 </div>
                                             </td>
-                                            <td>Case</td>
-                                            <td>$313,500</td>
+                                            <td>$pr->category_name</td>
+                                            <td>Rp 0</td>
                                             <td>43</td>
                                             <td>OK</td>
-                                            <td>$313,500</td>
+                                            <td></td>
                                         </tr>";
                                 }
                                 ?>

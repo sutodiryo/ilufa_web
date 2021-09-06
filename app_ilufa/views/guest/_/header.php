@@ -257,7 +257,7 @@
 <?php
 if ($title == 'home') { ?>
 
-    <body class="dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+    <body class="">
 
         <div class="preloader">
             <div class="preloader-after"></div>
@@ -277,7 +277,7 @@ if ($title == 'home') { ?>
     <?php
     } else { ?>
 
-        <body class="hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+        <body class="hamburger-menu">
 
         <?php } ?>
 

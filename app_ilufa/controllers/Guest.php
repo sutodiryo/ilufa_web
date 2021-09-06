@@ -7,12 +7,17 @@ class Guest extends CI_Controller
 	public function index()
 	{
 		$data['title'] 			= "home";
+		$data['homepage'] 		= $this->db->query("SELECT id_homepage,hero_text,hero_video,featured_product,status FROM ilufa_homepage WHERE status=1")->row();
 		$data['branch_group'] 	= $this->db->query("SELECT * FROM ilufa_master_branch_group WHERE status=1 ORDER BY show_number ASC")->result();
 		$data['store'] 			= $this->db->query("SELECT * FROM ilufa_master_branch
 													WHERE id_branch != 'C0000' AND status=1
 													ORDER BY branch_name ASC")->result();
-													
-		$data['product']		= $this->db->query("SELECT * FROM ilufa_master_product")->result();
+
+		$data['product']		= $this->db->query("SELECT 	id_product,id_brand,id_supplier,name,slug,description,category,free_delivery,weight,length,width,height,status,
+															(SELECT name FROM ilufa_master_product_category WHERE id_category=ilufa_master_product.category) AS category_name,
+															(SELECT name FROM ilufa_master_product_brand WHERE id_brand=ilufa_master_product.id_brand) AS brand_name,
+															(SELECT image FROM ilufa_master_product_image WHERE id_product=ilufa_master_product.id_product LIMIT 1) AS image
+													FROM ilufa_master_product")->result();
 
 		$this->load->view('guest/homepage', $data);
 	}
@@ -21,7 +26,12 @@ class Guest extends CI_Controller
 	public function product()
 	{
 		$data['title']		= "product";
-		$data['product']	= $this->db->query("SELECT * FROM ilufa_master_product")->result();
+		$data['category']	= $this->db->query("SELECT * FROM ilufa_master_product_category")->result();
+		$data['product']	= $this->db->query("SELECT 	id_product,id_brand,id_supplier,name,slug,description,category,free_delivery,weight,length,width,height,status,
+														(SELECT name FROM ilufa_master_product_category WHERE id_category=ilufa_master_product.category) AS category_name,
+														(SELECT name FROM ilufa_master_product_brand WHERE id_brand=ilufa_master_product.id_brand) AS brand_name,
+														(SELECT image FROM ilufa_master_product_image WHERE id_product=ilufa_master_product.id_product LIMIT 1) AS image
+												FROM ilufa_master_product")->result();
 
 		$this->load->view('guest/product/index', $data);
 	}
@@ -29,11 +39,20 @@ class Guest extends CI_Controller
 	//Detail Produk
 	public function product_detail($slug)
 	{
-		$data['title'] 			= "product";
-		$data['product'] 		= $this->db->query("SELECT * FROM ilufa_master_product
-													WHERE slug='$slug'")->result();
+		$data['title'] = "product";
 
-		$this->load->view('guest/product/detail', $data);
+		$q = $this->db->query("SELECT * FROM ilufa_master_product WHERE slug='$slug'")->num_rows();
+
+		if ($q > 0) {
+			$data['product'] = $this->db->query("SELECT 	id_product,id_brand,id_supplier,name,slug,description,category,free_delivery,weight,length,width,height,status,
+																(SELECT name FROM ilufa_master_product_category WHERE id_category=ilufa_master_product.category) AS category_name,
+															(SELECT name FROM ilufa_master_product_brand WHERE id_brand=ilufa_master_product.id_brand) AS brand_name,
+																(SELECT image FROM ilufa_master_product_image WHERE id_product=ilufa_master_product.id_product LIMIT 1) AS image
+														FROM ilufa_master_product WHERE slug='$slug'")->row();
+			$this->load->view('guest/product/detail', $data);
+		} else {
+			echo "produk tidak tersedia";
+		}
 	}
 
 	public function store()

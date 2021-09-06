@@ -80,7 +80,7 @@
     </div>
 </div>
 
-<div class="cursor">
+<!-- <div class="cursor">
 
     <div class="cursor-helper cursor-view">
         <span>VIEW</span>
@@ -91,7 +91,7 @@
     </div>
 
     <div class="cursor-helper cursor-link"></div>
-</div>
+</div> -->
 
 <script src="<?php echo GUEST ?>js/jquery-3.1.1.min.js"></script>
 <script src="<?php echo GUEST ?>js/plugins.js"></script>

@@ -3,7 +3,7 @@
 <header>
     <div class="headefr-fexid" data-dsn-header="project">
         <div class="bg" id="dsn-hero-parallax-img" data-dsn-ajax="img">
-            <div class="bg-image  cover-bg" data-overlay="0" data-image-src="<?php echo GUEST ?>img/project/project9/1.jpg"></div>
+            <div class="bg-image  cover-bg" data-overlay="0" data-image-src="<?php echo "" . GUEST . "upload/product/$product->image"; ?>"></div>
         </div>
 
         <div class="scroll" data-dsn-animate="ajax">
@@ -14,30 +14,30 @@
 
             <div class="title-text-header">
                 <div class="cat">
-                    <span>Brands</span>
+                    <span><?php echo $product->brand_name ?></span>
                 </div>
                 <span class="title-text-header-inner">
-                    <span data-dsn-animate="ajax">Time Tag Watch</span>
+                    <span data-dsn-animate="ajax"><?php echo $product->name ?></span>
                 </span>
             </div>
             <div class="sub-text-header" data-dsn-animate="ajax">
-                <h5>Seohee Lee</h5>
+                <h5>iLuFA</h5>
                 <span>- September 26th 2017</span>
             </div>
         </div>
 
-        <div class="project-page__inner">
+        <!-- <div class="project-page__inner">
             <div class="h-100">
                 <div class="row justify-content-center align-items-end h-100">
                     <div id="descover-holder" class="col-lg-12 project-meta__content">
                         <div class="link">
-                            <a target="_blank" href="https://www.behance.net/gallery/57136617/Time-Tag_Watch?tracking_source=search%7Cwatch%20">View
+                            <a target="_blank" href="#">View
                                 Website</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </header>
 
@@ -47,26 +47,17 @@
         <div class="container intro-project section-margin">
             <div class="intro-text text-center">
                 <div class="title-cover" data-dsn-grid="move-section" data-dsn-opacity="0.1" data-dsn-duration="170%" data-dsn-move="0%">
-                    Watch
+                    <?php echo $product->category_name ?>
                 </div>
                 <div class="inner">
-                    <h2 data-dsn-animate="text">Time Tag</h2>
-                    <p data-dsn-animate="up">
-                        <?php echo var_dump($product); ?>
-                        Sometimes, we need to check the time, wondering when our work
-                        or meeting will finish, without getting caught by others. To avoid your boss’s
-                        staring eye, you should not roll your eyes to check the time. The Time Tag Watch is
-                        a consummately appropriate for it.
-                        Those tags do the role of the hands of the watch. By rotating the face of the watch
-                        not the hands, it gets harder to be damaged. It provides you with experience to feel
-                        the time at the end of your finger without damaging your watch.</p>
-
-                    <a class="bottom-link" data-dsn-animate="up" href="https://www.behance.net/gallery/57136617/Time-Tag_Watch?tracking_source=search%7Cwatch%20" target="_blank">
+                    <h2 data-dsn-animate="text"><?php echo $product->name ?></h2>
+                    <p data-dsn-animate="up"><?php echo $product->description; ?></p>
+                    <a class="bottom-link" data-dsn-animate="up" href="#" target="_blank">
                         <span></span>
                         <span></span>
                         <div class="content">
                             <div class="inner">
-                                <p>VISIT SITE</p>
+                                <p>Beli Sekarang</p>
                             </div>
                         </div>
                     </a>
@@ -74,7 +65,7 @@
             </div>
         </div>
 
-        <div class="container-fluid gallery-col">
+        <!-- <div class="container-fluid gallery-col">
             <div class="row">
                 <div class="col-md-4 box-im section-padding">
                     <div class="image-zoom" data-dsn="parallax">
@@ -228,11 +219,11 @@
                 </div>
             </a>
 
-        </div>
+        </div> -->
 
     </div>
 
-    <div class="next-project" data-dsn-footer="project">
+    <!-- <div class="next-project" data-dsn-footer="project">
         <div id="dsn-next-parallax-img" class="bg">
             <div class="bg-image cover-bg" data-overlay="4" data-image-src="<?php echo GUEST ?>img/project/project1/1.jpg"></div>
         </div>
@@ -249,6 +240,6 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div> -->
 </div>
 <?php $this->load->view('guest/_/footer') ?>

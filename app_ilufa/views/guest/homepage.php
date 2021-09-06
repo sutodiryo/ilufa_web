@@ -55,268 +55,6 @@
 
 <div class="wrapper">
 
-    <!--     
-    <section class="our-services section-margin">
-        <div class="container">
-            <div class="one-title">
-                <div class="title-sub-container">
-                    <p class="title-sub">Komitmen</p>
-                </div>
-                <h2 class="title-main">Komitmen Kami Pada Pelanggan</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">01</h4>
-                        <p>Oleh karena pelanggan mempunyai kebutuhan, maka kami mempunyai pekerjaan yang dapat dilakukan </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">02</h4>
-                        <p>Oleh karena pelanggan mempunyai pilihan, maka kami harus menjadi pilihan terbaik </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">03</h4>
-                        <p>Oleh karena pelanggan mempunyai perasaan, maka kami harus penuh perhatian </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">04</h4>
-                        <p>Oleh karena pelanggan mempunyai suatu kepentingan, maka kami harus bertindak cepat dan responsif </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">05</h4>
-                        <p>Oleh karena pelanggan itu unik, maka kami harus fleksibel </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">06</h4>
-                        <p>Oleh karena pelanggan mempunyai harapan yang tinggi, maka kami harus mampu mewujudkanya </p>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6">
-                    <div class="services-item">
-                        <div class="line-before"></div>
-                        <h4 class="subtitle">07</h4>
-                        <p>Oleh karena pelanggan mempunyai pengaruh, maka kami berusaha untuk memperoleh lebih banyak konsumen </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- 
-    <div class="box-seat box-seat-full section-margin">
-        <div class="container-fluid">
-            <div class="inner-img" data-dsn-grid="move-up">
-                <img loading="lazy" class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>img/project/project2/3.jpg" alt="">
-            </div>
-            <div class="pro-text">
-                <h3> How is your<br> visual identity?</h3>
-                <p>A system that young people around the world with a club culture and techno
-                    enthusiasts feel identified. We generated a simple logo that is the basis for
-                    generating a geometric and liquid system. </p>
-                <div class="link-custom">
-                    <a class="image-zoom effect-ajax" href="project-2.html" data-dsn="parallax">
-                        <span>Learn More</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <section class="our-services-2 section-margin">
-        <div class="container">
-            <div class="one-title" data-dsn-animate="up">
-                <div class="title-sub-container">
-                    <p class="title-sub">Skala</p>
-                </div>
-                <h2 class="title-main">Skala Kami</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="services-item">
-                        <div class="corner corner-top"></div>
-                        <div class="corner corner-bottom"></div>
-                        <div class="icon">
-                            <object data="<?php echo GUEST ?>svg/icon_cabang/" type="image/svg+xml">
-                                <!-- <img loading="lazy" src="<?php echo GUEST ?>svg/member/" /> -->
-                            </object>
-                        </div>
-                        <div class="services-header">
-                            <h3>24 Store</h3>
-                        </div>
-                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
-                                        all
-                                        web.</p> -->
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="services-item">
-                        <div class="corner corner-top"></div>
-                        <div class="corner corner-bottom"></div>
-                        <div class="icon">
-                            <object data="<?php echo GUEST ?>svg/icon_mitra/" type="image/svg+xml">
-                            </object>
-                            <!-- <img loading="lazy" src="<?php echo GUEST ?>img/services/3.png" alt="" class="lozad"> -->
-                        </div>
-                        <div class="services-header">
-                            <h3>1.785 Mitra</h3>
-                        </div>
-                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
-                                        all
-                                        web.</p> -->
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="services-item">
-                        <div class="corner corner-top"></div>
-                        <div class="corner corner-bottom"></div>
-                        <div class="icon">
-                            <object data="<?php echo GUEST ?>svg/icon_member/" type="image/svg+xml">
-                            </object>
-                            <!-- <img loading="lazy" src="<?php echo GUEST ?>img/services/2.png" alt="" class="lozad"> -->
-                        </div>
-                        <div class="services-header">
-                            <h3>93.221 Member</h3>
-                        </div>
-                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
-                        all
-                        web.</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="our-work work-under-header  section-margin" data-dsn-col="3">
-        <div class="container">
-            <div class="one-title">
-                <div class="title-sub-container">
-                    <p class="title-sub">Store</p>
-                </div>
-                <h2 class="title-main">Store iLuFA</h2>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9 offset-lg-3">
-                    <div class="work-container">
-                        <div class="slick-slider">
-                            <?php
-                            foreach ($store as $st) { ?>
-
-                                <div class="work-item slick-slide">
-                                    <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/store/<?php if ($st->img == '') {
-                                                                                                                                    echo "colomadu.jpg";
-                                                                                                                                } else {
-                                                                                                                                    echo $st->img;
-                                                                                                                                } ?>" alt="">
-                                    <div class="item-border"></div>
-                                    <div class="item-info">
-                                        <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
-                                            <h4><?php echo $st->branch_name ?></h4>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            <?php
-                            }
-                            ?>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="our-work work-under-header  section-margin" data-dsn-col="3">
-        <div class="container">
-            <div class="one-title">
-                <div class="title-sub-container">
-                    <p class="title-sub">Produk</p>
-                </div>
-                <h2 class="title-main">Produk Terbaru</h2>
-            </div>
-        </div>
-
-
-        <div class="wrapper">
-            <div class="root-work">
-                <div class="container">
-                    <div class="box-title" data-dsn-title="cover">
-                        <h2 class="title-cover" data-dsn-grid="move-section" data-dsn-move="-70">Product</h2>
-                    </div>
-
-                    <div class="filterings">
-                        <div class="filtering-wrap">
-                            <div class="filtering">
-                                <div class="selector"></div>
-                                <button type="button" data-filter="*" class="active">
-                                    All
-                                </button>
-                                <button type="button" data-filter=".brand">Brand</button>
-                                <button type="button" data-filter=".photography">Photography</button>
-                                <button type="button" data-filter=".architecture">Architecture</button>
-                                <button type="button" data-filter=".video">video</button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projects-list gallery">
-
-                        <?php foreach ($product as $pr) { ?>
-
-                            <div class="item brand">
-                                <a href="<?php echo "" . base_url('p/') . "$pr->slug"; ?>" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
-                                    <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/softcase-foomee.jpg" alt="" />
-                                    <div class="item-border"></div>
-                                    <div class="item-info">
-                                        <h5 class="cat">Brand</h5>
-                                        <h4><?php echo $pr->name ?></h4>
-                                        <span><span>Detail Produk</span></span>
-                                    </div>
-                                </a>
-                            </div>
-
-                        <?php
-                        } ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section> -->
-
-
     <section class="our-work work-under-header  section-margin" data-dsn-col="3">
         <div class="container">
             <div class="one-title">
@@ -332,18 +70,25 @@
                     <div class="work-container">
                         <div class="slick-slider">
 
-                            <div class="work-item slick-slide">
-                                <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/spe portable bluetooth + mic fj-2019Artboard 1 copy.jpg" alt="">
-                                <div class="item-border"></div>
-                                <div class="item-info">
-                                    <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
-                                        <h5 class="cat">Audio</h5>
-                                        <h4>Speaker Portable Bluetooth + Mic FJ</h4>
+                            <?php
+                            foreach ($product as $pr) {
+                                echo "
+                            <div class='work-item slick-slide'>
+                                <img loading='lazy' class='lozad has-top-bottom' src='" . GUEST . "upload/product/$pr->image' alt=''>
+                                <div class='item-border'></div>
+                                <div class='item-info'>
+                                    <a href='" . base_url('p/') . "$pr->slug' data-dsn-grid='move-up' class='effect-ajax'>
+                                        <h5 class='cat'>$pr->category_name</h5>
+                                        <h4>$pr->name</h4>
                                         <span><span>Lihat Detail</span></span>
                                     </a>
                                 </div>
                             </div>
+                            ";
+                            }
+                            ?>
 
+                            <!-- 
                             <div class="work-item slick-slide">
                                 <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/P1077833-Edit.jpg" alt="">
                                 <div class="item-border"></div>
@@ -374,7 +119,7 @@
                                 <div class="item-info">
                                     <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
                                         <h5 class="cat">Power Product</h5>
-                                        <h4>Pwer Bank Foomee Rb10 10000 mAh</h4>
+                                        <h4>Power Bank Foomee Rb10 10000 mAh</h4>
                                         <span><span>Lihat Detail</span></span>
                                     </a>
                                 </div>
@@ -391,10 +136,26 @@
                                     </a>
                                 </div>
                             </div>
+                             -->
                         </div>
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-up section-margin section-padding">
+        <div class="container">
+            <div class="c-wapp">
+                <a href="<?php echo base_url('product') ?>" class="effect-ajax">
+                    <span class="hiring">
+                        Lihat Semua Produk
+                    </span>
+                    <!-- <span class="career">
+                        Dare and contact us immediately!
+                    </span> -->
+                </a>
             </div>
         </div>
     </section>
@@ -405,7 +166,7 @@
             <div class="row align-items-center h-100">
                 <div class="col-lg-6 ">
                     <div class="box-im" data-dsn-grid="move-up">
-                        <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/foomee-ja02-wireless-charger_NOTEXT.jpg" alt="" data-dsn-move="20%">
+                        <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/product/main-foome-ja02-wireless-charger.jpg" alt="" data-dsn-move="20%">
                     </div>
                 </div>
 
@@ -553,6 +314,73 @@
         </div>
     </section>
 
+    <section class="our-services-2 section-margin">
+        <div class="container">
+            <div class="one-title" data-dsn-animate="up">
+                <div class="title-sub-container">
+                    <p class="title-sub">Skala</p>
+                </div>
+                <h2 class="title-main">Skala Kami</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-item">
+                        <div class="corner corner-top"></div>
+                        <div class="corner corner-bottom"></div>
+                        <div class="icon">
+                            <object data="<?php echo GUEST ?>svg/icon_cabang/" type="image/svg+xml">
+                                <!-- <img loading="lazy" src="<?php echo GUEST ?>svg/member/" /> -->
+                            </object>
+                        </div>
+                        <div class="services-header">
+                            <h3>24 Store</h3>
+                        </div>
+                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p> -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="services-item">
+                        <div class="corner corner-top"></div>
+                        <div class="corner corner-bottom"></div>
+                        <div class="icon">
+                            <object data="<?php echo GUEST ?>svg/icon_mitra/" type="image/svg+xml">
+                            </object>
+                            <!-- <img loading="lazy" src="<?php echo GUEST ?>img/services/3.png" alt="" class="lozad"> -->
+                        </div>
+                        <div class="services-header">
+                            <h3>1.785 Mitra</h3>
+                        </div>
+                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                                        all
+                                        web.</p> -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="services-item">
+                        <div class="corner corner-top"></div>
+                        <div class="corner corner-bottom"></div>
+                        <div class="icon">
+                            <object data="<?php echo GUEST ?>svg/icon_member/" type="image/svg+xml">
+                            </object>
+                            <!-- <img loading="lazy" src="<?php echo GUEST ?>img/services/2.png" alt="" class="lozad"> -->
+                        </div>
+                        <div class="services-header">
+                            <h3>93.221 Member</h3>
+                        </div>
+                        <!-- <p>Web design encompasses many different skills and disciplines in the production of
+                        all
+                        web.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="brand-client section-margin">
         <div class="container">
             <div class="one-title" data-dsn-animate="up">
@@ -579,7 +407,6 @@
                                 <div class="entry">
                                     <div>
                                         <h5>Klik untuk lihat map</h5>
-                                        <!-- <a href="#">www.google.com</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -593,6 +420,202 @@
             </div>
         </div>
     </section>
+
+    <!--     
+    <section class="our-services section-margin">
+        <div class="container">
+            <div class="one-title">
+                <div class="title-sub-container">
+                    <p class="title-sub">Komitmen</p>
+                </div>
+                <h2 class="title-main">Komitmen Kami Pada Pelanggan</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">01</h4>
+                        <p>Oleh karena pelanggan mempunyai kebutuhan, maka kami mempunyai pekerjaan yang dapat dilakukan </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">02</h4>
+                        <p>Oleh karena pelanggan mempunyai pilihan, maka kami harus menjadi pilihan terbaik </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">03</h4>
+                        <p>Oleh karena pelanggan mempunyai perasaan, maka kami harus penuh perhatian </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">04</h4>
+                        <p>Oleh karena pelanggan mempunyai suatu kepentingan, maka kami harus bertindak cepat dan responsif </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">05</h4>
+                        <p>Oleh karena pelanggan itu unik, maka kami harus fleksibel </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">06</h4>
+                        <p>Oleh karena pelanggan mempunyai harapan yang tinggi, maka kami harus mampu mewujudkanya </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="services-item">
+                        <div class="line-before"></div>
+                        <h4 class="subtitle">07</h4>
+                        <p>Oleh karena pelanggan mempunyai pengaruh, maka kami berusaha untuk memperoleh lebih banyak konsumen </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- 
+    <div class="box-seat box-seat-full section-margin">
+        <div class="container-fluid">
+            <div class="inner-img" data-dsn-grid="move-up">
+                <img loading="lazy" class="lozad" data-dsn-y="30%" src="<?php echo GUEST ?>img/project/project2/3.jpg" alt="">
+            </div>
+            <div class="pro-text">
+                <h3> How is your<br> visual identity?</h3>
+                <p>A system that young people around the world with a club culture and techno
+                    enthusiasts feel identified. We generated a simple logo that is the basis for
+                    generating a geometric and liquid system. </p>
+                <div class="link-custom">
+                    <a class="image-zoom effect-ajax" href="project-2.html" data-dsn="parallax">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!--
+    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+        <div class="container">
+            <div class="one-title">
+                <div class="title-sub-container">
+                    <p class="title-sub">Store</p>
+                </div>
+                <h2 class="title-main">Store iLuFA</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-3">
+                    <div class="work-container">
+                        <div class="slick-slider">
+                        <?php
+                        foreach ($store as $st) { ?>
+
+                                <div class="work-item slick-slide">
+                                    <img loading="lazy" class="lozad has-top-bottom" src="<?php echo GUEST ?>upload/store/<?php if ($st->img == '') {
+                                                                                                                                    echo "colomadu.jpg";
+                                                                                                                                } else {
+                                                                                                                                    echo $st->img;
+                                                                                                                                } ?>" alt="">
+                                    <div class="item-border"></div>
+                                    <div class="item-info">
+                                        <a href="#google-play" data-dsn-grid="move-up" class="effect-ajax">
+                                            <h4><?php echo $st->branch_name ?></h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            <?php
+                            }
+                            ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--
+    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+        <div class="container">
+            <div class="one-title">
+                <div class="title-sub-container">
+                    <p class="title-sub">Produk</p>
+                </div>
+                <h2 class="title-main">Produk Terbaru</h2>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="root-work">
+                <div class="container">
+                    <div class="box-title" data-dsn-title="cover">
+                        <h2 class="title-cover" data-dsn-grid="move-section" data-dsn-move="-70">Product</h2>
+                    </div>
+
+                    <div class="filterings">
+                        <div class="filtering-wrap">
+                            <div class="filtering">
+                                <div class="selector"></div>
+                                <button type="button" data-filter="*" class="active">
+                                    All
+                                </button>
+                                <button type="button" data-filter=".brand">Brand</button>
+                                <button type="button" data-filter=".photography">Photography</button>
+                                <button type="button" data-filter=".architecture">Architecture</button>
+                                <button type="button" data-filter=".video">video</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-list gallery">
+
+                        <?php foreach ($product as $pr) { ?>
+
+                            <div class="item brand">
+                                <a href="<?php echo "" . base_url('p/') . "$pr->slug"; ?>" class="effect-ajax" data-dsn-ajax="work" data-dsn-grid="move-up">
+                                    <img class="has-top-bottom" src="<?php echo GUEST ?>upload/product/softcase-foomee.jpg" alt="" />
+                                    <div class="item-border"></div>
+                                    <div class="item-info">
+                                        <h5 class="cat">Brand</h5>
+                                        <h4><?php echo $pr->name ?></h4>
+                                        <span><span>Detail Produk</span></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <?php
+                        } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
 
     <section class="our-news section-margin">
         <div class="container">
@@ -662,7 +685,7 @@
         </div>
     </section>
 
-    <section class="contact-up section-margin section-padding">
+    <!-- <section class="contact-up section-margin section-padding">
         <div class="container">
             <div class="c-wapp">
                 <a href="<?php echo base_url('karir') ?>" class="effect-ajax">
@@ -675,7 +698,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
 </div>
 
