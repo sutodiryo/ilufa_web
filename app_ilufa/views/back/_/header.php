@@ -33,7 +33,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/custom_dt_html5.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/dt-global_style.css">
 
-    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant" || $page == "job_type" || $page == "branch" || $page == "branch_group" || $page == "supplier" || $page == "product") { ?>
+    <?php } elseif ($page == "job" || $page == "job_type" || $page == "job_applicant" || $page == "job_type" || $page == "branch" || $page == "branch_group" || $page == "supplier" || $page == "product" || $page == "product_price") { ?>
 
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/table/datatable/datatables.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>assets/css/forms/theme-checkbox-radio.css">
@@ -424,10 +424,10 @@
                                 </a>
                             </li>
 
-                            <li class="menu <?php if ($page == "product") {
+                            <li class="menu <?php if ($page == "product" || $page == "product_price" || $page == "product_stock" || $page == "product_category") {
                                                         echo "active";
                                                     } ?>">
-                                <a href="#product" data-toggle="collapse" aria-expanded="<?php if ($page == "product") {
+                                <a href="#product" data-toggle="collapse" aria-expanded="<?php if ($page == "product" || $page == "product_price" || $page == "product_stock" || $page == "product_category") {
                                                                                                         echo "true";
                                                                                                     } else {
                                                                                                         echo "false";
@@ -445,22 +445,28 @@
                                         </svg>
                                     </div>
                                 </a>
-                                <ul class="collapse submenu recent-submenu mini-recent-submenu list-unstyled <?php if ($page == "product") {
+                                <ul class="collapse submenu recent-submenu mini-recent-submenu list-unstyled <?php if ($page == "product" || $page == "product_price" || $page == "product_stock" || $page == "product_category") {
                                                                                                                             echo "show";
                                                                                                                         } ?>" id="product" data-parent="#accordionExample">
                                     <li class="<?php if ($page == "product") {
                                                             echo "active";
                                                         } ?>">
-                                        <a href="<?php echo base_url('admin/master/product') ?>"> Master Produk </a>
+                                        <a href="<?php echo base_url('admin/master/product/list') ?>"> Master Produk </a>
                                     </li>
-                                    <li>
-                                        <a href="<?php echo base_url() ?>"> Master Harga </a>
+                                    <li class="<?php if ($page == "product_price") {
+                                                            echo "active";
+                                                        } ?>">
+                                        <a href="<?php echo base_url('admin/master/product/price') ?>"> Master Harga </a>
                                     </li>
-                                    <li>
-                                        <a href="<?php echo base_url() ?>"> Master Stok </a>
+                                    <li class="<?php if ($page == "product_stock") {
+                                                            echo "active";
+                                                        } ?>">
+                                        <a href="<?php echo base_url('admin/master/product/stock') ?>"> Master Stok </a>
                                     </li>
-                                    <li>
-                                        <a href="<?php echo base_url() ?>"> Master Kategori </a>
+                                    <li class="<?php if ($page == "product_category") {
+                                                            echo "active";
+                                                        } ?>">
+                                        <a href="<?php echo base_url('admin/master/product/category') ?>"> Master Kategori </a>
                                     </li>
                                 </ul>
                             </li>

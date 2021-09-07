@@ -1,4 +1,4 @@
-<?php $this->load->view('admin/_/header'); ?>
+<?php $this->load->view('back/_/header'); ?>
 
 <!-- Header -->
 <div class="header pb-6">
@@ -6,10 +6,10 @@
 		<div class="header-body">
 			<div class="row align-items-center py-4">
 				<div class="col-lg-6 col-7">
-					<h6 class="h2 d-inline-block mb-0"><?php echo $title ?></h6>
+					<!-- <h6 class="h2 d-inline-block mb-0"><?php echo $title ?></h6> -->
 				</div>
 				<div class="col-lg-6 col-5 text-right">
-					<a href="<?php echo base_url('admin/product/all') ?>" class="btn btn-sm btn-danger" title="Kembali"><i class="fa fa-reply"></i> Kembali</a>
+					<a href="<?php echo base_url('admin/product/all') ?>" class="btn btn-danger mb-2" title="Kembali"><i class="fa fa-reply"></i> Kembali</a>
 				</div>
 			</div>
 		</div>
@@ -143,19 +143,9 @@
 		</div>
 	</div>
 	</form>
-
-	<footer class="footer pt-0">
-		<div class="row align-items-center justify-content-lg-between">
-			<div class="col-lg-12">
-				<div class="copyright text-center text-lg-center text-muted">
-					&copy; <?php echo date('Y'); ?> <a href="https://najahnet.id" class="font-weight-bold ml-1" target="_blank">Najah Network</a>
-				</div>
-			</div>
-		</div>
-	</footer>
 </div>
 
-<?php $this->load->view('admin/_/footer'); ?>
+<?php $this->load->view('back/_/footer'); ?>
 
 
 <script>
@@ -164,7 +154,7 @@
 		let nama_produk = document.getElementById('nama_produk').value;
 
 		$.ajax({
-			url: "<?php echo base_url('admin/get_slug/') ?>",
+			url: "<?php echo base_url('admin/master/get_slug/') ?>",
 			method: "POST",
 			data: {
 				slug: nama_produk

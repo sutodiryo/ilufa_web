@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    <div class="box-seat box-seat-full section-margin">
+    <!-- <div class="box-seat box-seat-full section-margin">
         <div class="container-fluid">
             <div class="inner-img" data-dsn-grid="move-up">
                 <img data-dsn-scale="1" data-dsn-y="30%" src="<?php echo GUEST ?>img/project/project2/3.jpg" alt="">
@@ -232,7 +232,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- <section class="our-work work-under-header  section-margin" data-dsn-col="3">
         <div class="container">
