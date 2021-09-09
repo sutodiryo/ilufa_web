@@ -35,9 +35,6 @@
   // var secondUpload = new FileUploadWithPreview('mySecondImage')
 </script>
 
-<!-- END GLOBAL MANDATORY SCRIPTS -->
-
-<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 <?php if ($page == "dashboard") { ?>
 
   <script src="<?php echo BACK ?>plugins/apex/apexcharts.min.js"></script>
