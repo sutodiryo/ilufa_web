@@ -275,6 +275,7 @@ class Master extends CI_Controller
             if (empty($_FILES['attachment']['name'])) {
                 $this->form_validation->set_rules('attachment', 'Document', 'required', ['required' => 'Anda belum memilih file attachment!']);
             } else {
+                
                 $config['upload_path']      = './public/back/upload/supplier/';
                 $config['allowed_types']    = 'zip|rar|ZIP|RAR';
                 $config['max_size']         = 5120;
@@ -286,7 +287,7 @@ class Master extends CI_Controller
                     $this->session->set_flashdata("report", $error);
                     redirect('formsupplierilufa', $data);
                 } else {
-                    $up_file         = $this->upload->data();
+                    $up_file        = $this->upload->data();
                     $attachment     = $up_file['file_name'];
                 }
             }
@@ -332,7 +333,7 @@ class Master extends CI_Controller
                     'status' => 1,
                     'date_add' => $now
                 ];
-                $this->db->insert('ilufa_master_supplier', $data);
+                $this->db->insert('ilufa_master_products', $data);
 
                 redirect(base_url('supplier_ok'));
             }

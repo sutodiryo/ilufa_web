@@ -45,6 +45,7 @@
     <?php } ?>
 
     <link href="<?php echo BACK ?>assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo BACK ?>plugins/file-upload/file-upload-with-preview.min.css">
 
 </head>
 

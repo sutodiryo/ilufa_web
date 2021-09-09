@@ -59,8 +59,8 @@ class Guest extends CI_Controller
 	{
 		$data['title'] 			= "store";
 		$data['store'] 			= $this->db->query("SELECT * FROM ilufa_master_branch
-													WHERE id_branch != 'C0000' AND status=1
-													ORDER BY branch_name ASC")->result();
+														WHERE id_branch != 'C0000' AND status=1
+														ORDER BY branch_name ASC")->result();
 
 		$this->load->view('guest/store/index', $data);
 	}
